@@ -92,6 +92,6 @@ module.exports = {
 
 ## 注意事项 {#caveats}
 
-### Scoped Style {#scoped-style}
+### Scoped Style
 
 带有 scoped style 的 `@media` 指令 **只在** `css` `postcss` `scss` 中有效 ，而在 `sass` `less` `stylus` 中无效。
