@@ -23,11 +23,11 @@
 
 > 当项目越来越大时（大约几十个组件），最初的编译时间达到了 3s，而使用 Tailwind CSS 热更新时的时间甚至超过了 1s。- [@voorjaar](https://github.com/voorjaar)
 
-通过扫描 HTML 和 CSS 按需生成 utilities，Windi CSS 致力于在开发中提供 [更快的加载体验][video comparison] 以及更快的 HMR，并且在生产环境下无需对 CSS 进行 Purge（一种在生产环境中对未使用的 CSS 进行清除而节省体积的技术）。
+通过扫描 HTML 和 CSS 按需生成工具类（utilities），Windi CSS 致力于在开发中提供 [更快的加载体验][video comparison] 以及更快的 HMR，并且在生产环境下无需对 CSS 进行 Purge（一种在生产环境中对未使用的 CSS 进行清除而节省体积的技术）。
 
 ## 基础用法 {#basic-usage}
 
-Windi CSS 支持 [Tailwind CSS] 的所有 [utilities]，无需任何额外配置。
+Windi CSS 支持 [Tailwind CSS] 的所有 [工具类][utilities]，无需任何额外配置。
 
 你可以像平常一样正常编写你的组件，同时在样式表中使用实用类：
 
@@ -46,7 +46,7 @@ Windi CSS 支持 [Tailwind CSS] 的所有 [utilities]，无需任何额外配置
 </div>
 ```
 
-**只有你使用的 utilities 才会产生相应的 CSS**。
+**只有你使用的工具类才会产生相应的 CSS**。
 
 ## 集成 {#integrations}
 
