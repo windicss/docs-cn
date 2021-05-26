@@ -12,7 +12,7 @@ Windi CSS 智能感知通过提供给 Visual Studio Code 用户高级特性的�
 
 **[通过 Open VSX Registry 安装 →](https://open-vsx.org/extension/voorjaar/windicss-intellisense)**
 
-这个插件打包了一个 windicss 编译器，所以即使你不安装 windicss 也可以使用，也支持了配置文件 `(tailwind|windi).config.(js|cjs|ts)`。
+这个插件打包了一个 windicss 编译器，所以即使你不安装 windicss 也可以使用，支持配置文件 `(tailwind|windi).config.(js|cjs|ts)`。
 
 ## 特性
 
