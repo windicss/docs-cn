@@ -20,7 +20,7 @@
 vue add windicss
 ```
 
-:warning: 本模块为预发布版本，请报告您发现的任何 [问题](https://github.com/windicss/vue-cli-plugin-windicss/issues)。
+:warning: 本模块为预发布版本，请报告你发现的任何 [问题](https://github.com/windicss/vue-cli-plugin-windicss/issues)。
 
 ## 配置 {#configuration}
 
