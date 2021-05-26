@@ -1,6 +1,6 @@
 # 安装 {#installation}
 
-Windi CSS 为主流工具提供了 **完美支持**，你可以选择你喜欢的工具并开始使用 Windi CSS。
+Windi CSS 为主流工具提供了**最佳的适配**，你可以选择你喜欢的工具并开始使用 Windi CSS。
 
 ## 构建工具 {#build-tools}
 
