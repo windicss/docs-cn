@@ -30,14 +30,13 @@ export default {
 import 'virtual:windi.css'
 ```
 
-完事儿~
-
+仅此而已。
 
 ## 配置文件 {#configuration}
 
 ### 预检查 (样式重写) {#preflight-style-reseting}
 
-预检查(Preflight) 随需开启，如果你想完全关掉它，可按照下面进行配置
+预检查 (Preflight) 随需启用，如果你想完全关掉它，可按照下面进行配置
 
 ```ts
 // vite.config.js
@@ -94,7 +93,7 @@ export default {
 
 ### 扫描 {#scanning}
 
-当服务端开始运行，`vite-plugin-windicss` 将扫描你的源代码，并把使用到的工具类提取出来。默认地，只有 `src/` 并且后缀为 `vue, html, mdx, pug, jsx, tsx` 的文件才会被扫描。如果你想扫描本地的其他文件，你可以进行配置如下：
+当服务启动后，`vite-plugin-windicss` 将扫描你的源代码，并把使用到的工具类提取出来。默认情况下，只有 `src/` 且后缀为 `vue, html, mdx, pug, jsx, tsx` 的文件才会被扫描。如果你想扫描本地的其他文件，你可以进行配置如下：
 
 ```ts
 // vite.config.js
@@ -112,4 +111,4 @@ export default {
 
 ### 更多 {#more}
 
-看看 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts) 获取更多参考
+欲了解更多，请参考 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
