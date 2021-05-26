@@ -1,10 +1,10 @@
 <Logo name="vue" class="logo-float-xl"/>
 
-# [Vue CLI](https://cli.vuejs.org) 集成
+# [Vue CLI](https://cli.vuejs.org) 集成 {#integration-for-vue-cli}
 
 <PackageInfo name="vue-cli-plugin-windicss" author="harlan-zw" />
 
-## 功能
+## 功能 {#features}
 
 - ⚡️ **极速** —— 比 [vue-cli-plugin-tailwind](https://github.com/forsartis/vue-cli-plugin-tailwind) 快 20~100 倍
 - 🧩 按需使用的 CSS 工具 (与 Tailwind CSS v2 兼容)，原生元素样式重置
@@ -12,7 +12,7 @@
 - 📄 CSS `@apply` / `@screen` 指令转换
 - 🎳 支持公共组 - 例如： `bg-gray-200 hover:(bg-gray-100 text-red-300)`
 
-## 安装
+## 安装 {#setup}
 
 使用 Vue CLI 进行安装。(建议使用 Vue CLI 4+)
 
@@ -22,7 +22,7 @@ vue add windicss
 
 :warning: 本模块为预发布版本，请报告您发现的任何 [问题](https://github.com/windicss/vue-cli-plugin-windicss/issues)。
 
-## 配置
+## 配置 {#configuration}
 
 你可以通过修改 `./vue.config.js` 中的选项来改变该插件的行为。
 
@@ -42,7 +42,7 @@ module.exports = {
 配置细节见 [这里](https://windicss.netlify.app/guide/configuration.html)。
 
 
-## 迁移
+## 迁移 {#migrating}
 
 如果你以前使用的是 `vue-cli-plugin-tailwind`，请查阅 [文档](https://windicss.netlify.app/guide/migration.html)。
 
@@ -50,7 +50,7 @@ module.exports = {
 yarn remove vue-cli-plugin-tailwind
 ```
 
-## 配置
+## 配置 {#configuration-2}
 
 - 默认:
 
@@ -73,9 +73,9 @@ export default {
 
 - 配置参考见 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
-### 例子
+### 例子 {#examples}
 
-#### 禁用预检
+#### 禁用预检 {#disable-preflight}
 
 _ngridsome.config.js_
 
@@ -90,8 +90,8 @@ module.exports = {
 }
 ```
 
-## 注意事项
+## 注意事项 {#caveats}
 
-### 作用域样式
+### 作用域样式 {#scoped-style}
 
 带有 scoped style 的 `@media` 指令 **只能** 与 `css` `postcss` `scss` 一起工作，而不能与 `sass` `less` `stylus` 一起工作。
