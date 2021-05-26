@@ -1,6 +1,6 @@
 <Logo name="rollup" class="logo-float-xl"/>
 
-# Integration for [Rollup](https://rollupjs.org)
+# [Rollup](https://rollupjs.org) 集成 {#integration-for-rollup}
 
 <PackageInfo
   name="rollup-plugin-windicss"
@@ -8,7 +8,7 @@
   author="antfu"
 />
 
-## Installations
+## 安装 {#installations}
 
 ```bash
 npm i rollup-plugin-windicss -D # yarn add rollup-plugin-windicss -D
@@ -26,18 +26,17 @@ export default {
 ```
 
 ```ts
-// your code entry
+// 你的代码入口
 import 'virtual:windi.css'
 ```
 
-That's all.
+完事儿~
 
+## 配置文件 {#configuration}
 
-## Configuration
+### 预检查 (样式重写) {#preflight-style-reseting}
 
-### Preflight (style reseting)
-
-Preflight is enables on demanded, if you'd like to completely disable it, you can configure it as below
+预检查(Preflight) 随需开启，如果你想完全关掉它，可按照下面进行配置
 
 ```ts
 // vite.config.js
@@ -50,16 +49,16 @@ export default {
 }
 ```
 
-### Safelist
+### 安全清单 {#safelist}
 
-By default, we scan your source code statically and find all the usages of the utilities then generated corresponding CSS on-demand. However, there is some limitation that utilities that decided in the runtime can not be matched efficiently, for example
+默认情况下，我们会静态扫描你的源代码，并找出所有用到的工具类，然后随需生成响应的 CSS。然而，这有一些限制，那个工具类取决于运行时，并不能被高效地匹配。举个例子
 
 ```html
-<!-- will not be detected -->
+<!-- 不会被侦测到 -->
 <div className={`p-${size}`}>
 ```
 
-For that, you will need to specify the possible combinations in the `safelist` options of `vite.config.js`.
+为了实现这个，你需要在 `vite.config.js` 中的 `safelist` 选项中指定可能的组合。
 
 ```ts
 // vite.config.js
@@ -72,7 +71,7 @@ export default {
 }
 ```
 
-Or you can do it this way
+或者你可以这样做
 
 ```ts
 function range(size, startAt = 1) {
@@ -92,10 +91,9 @@ export default {
 }
 ```
 
-### Scanning
+### 扫描 {#scanning}
 
-On server start, `vite-plugin-windicss` will scan your source code and extract the utilities usages. By default,
-only files under `src/` with extensions `vue, html, mdx, pug, jsx, tsx` will be included. If you want to enable scaning for other file type of locations, you can configure it via:
+当服务端开始运行，`vite-plugin-windicss` 将扫描你的源代码，并把使用到的工具类提取出来。默认地，只有 `src/` 并且后缀为 `vue, html, mdx, pug, jsx, tsx` 的文件才会被扫描。如果你想扫描本地的其他文件，你可以进行配置如下：
 
 ```ts
 // vite.config.js
@@ -103,14 +101,14 @@ export default {
   plugins: [
     WindiCSS({
       scan: {
-        dirs: ['.'], // all files in the cwd
-        fileExtensions: ['vue', 'js', 'ts'], // also enabled scanning for js/ts
+        dirs: ['.'], // cwd 中所有的文件
+        fileExtensions: ['vue', 'js', 'ts'], // 为js、ts文件启用
       },
     }),
   ],
 }
 ```
 
-### More
+### 更多 {#more}
 
-See [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts) for more configuration reference.
+看看 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts) 获取更多参考
