@@ -1,10 +1,10 @@
 <Logo name="vscode" class="logo-float-xl"/>
 
-# 为 VS Code 提供的 Windi CSS 智能感知 {#windi-css-intellisense-for-vs-code}
+# 为 VS Code 提供的 Windi CSS Intellisense {#windi-css-intellisense-for-vs-code}
 
 <PackageInfo name="windicss-intellisense" :hideNpm="true" author="voorjaar" />
 
-Windi CSS 智能感知通过提供给 Visual Studio Code 用户一些特性的方式来提高 Windi 的开发体验，例如：自动补全、语法高亮、代码折叠和构建。
+Windi CSS Intellisense 通过提供给 Visual Studio Code 用户一些特性的方式来提高 Windi 的开发体验，例如：自动补全、语法高亮、代码折叠和构建。
 
 ## 安装 {#installation}
 
@@ -61,7 +61,7 @@ Windi CSS 智能感知通过提供给 Visual Studio Code 用户一些特性的�
 | `windicss.enableCodeCompletion`    | boolean | true     | 启用/禁用所有的代码补全                                    |
 | `windicss.enableUtilityCompletion` | boolean | true     | 启用工具类补全。                                           |
 | `windicss.enableVariantCompletion` | boolean | true     | 启用变量补全。                                             |
-| `windicss.enableDynamicCompletion` | boolean | true     | 启用类似于 p-${int}. 的动态工具类补全。                    |
+| `windicss.enableDynamicCompletion` | boolean | true     | 启用类似于 p-${int} 的动态工具类补全。                    |
 | `windicss.enableRemToPxPreview`    | boolean | true     | 允许 Rem 转化为 Px 预览。                                  |
 | `windicss.enableCodeFolding`       | boolean | true     | 允许 ClassNames 代码折叠。                                 |
 | `windicss.foldByLength`            | boolean | false    | 由长度决定折叠代码。默认是关闭的，通过工具类的数量来折叠。 |
