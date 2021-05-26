@@ -18,7 +18,7 @@ Windi CSS Intellisense 通过提供给 Visual Studio Code 用户一些特性的�
 
 ### 自动补全 {#autocomplete}
 
-为工具类和变量提供智能建议。
+为工具类和可变修饰提供智能建议。
 
 <img src="https://raw.githubusercontent.com/windicss/windicss-intellisense/main/screenshots/completion.png" alt="Auto Complete"/>
 
@@ -30,7 +30,7 @@ Windi CSS Intellisense 通过提供给 Visual Studio Code 用户一些特性的�
 
 ### 语法高亮 {#syntax-highlighting}
 
-高亮工具类、变量和重要的部分。
+高亮工具类、可变修饰和重要的部分。
 
 <img src="https://raw.githubusercontent.com/windicss/windicss-intellisense/main/screenshots/highlight.png" alt="Syntax Highlighting"/>
 
@@ -60,8 +60,8 @@ Windi CSS Intellisense 通过提供给 Visual Studio Code 用户一些特性的�
 | `windicss.enableHoverPreview`      | boolean | true     | 启用悬停 className 展示 CSS 预览。                         |
 | `windicss.enableCodeCompletion`    | boolean | true     | 启用/禁用所有的代码补全                                    |
 | `windicss.enableUtilityCompletion` | boolean | true     | 启用工具类补全。                                           |
-| `windicss.enableVariantCompletion` | boolean | true     | 启用变量补全。                                             |
-| `windicss.enableDynamicCompletion` | boolean | true     | 启用类似于 p-${int} 的动态工具类补全。                    |
+| `windicss.enableVariantCompletion` | boolean | true     | 启用可变修饰补全。                                         |
+| `windicss.enableDynamicCompletion` | boolean | true     | 启用类似于 p-${int} 的动态工具类补全。                     |
 | `windicss.enableRemToPxPreview`    | boolean | true     | 允许 Rem 转化为 Px 预览。                                  |
 | `windicss.enableCodeFolding`       | boolean | true     | 允许 ClassNames 代码折叠。                                 |
 | `windicss.foldByLength`            | boolean | false    | 由长度决定折叠代码。默认是关闭的，通过工具类的数量来折叠。 |
