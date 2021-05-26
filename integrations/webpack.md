@@ -1,38 +1,38 @@
 <Logo name="webpack" class="logo-float-xl"/>
 
-# [Webpack](https://webpack.js.org/) 集成 {##integration-for-webpack}
+# Integration for [webpack](https://webpack.js.org/)
 
 <PackageInfo name="windicss-webpack-plugin" author="harlan-zw" />
 
-## 我应该使用吗? {#should-i-use-this}
+## Should I use this?
 
-Windi CSS Webpack 插件是一个语言和框架无关的 Windi CSS 实现
+Windi CSS Webpack Plugin is a language and framework agnostic way to implement Windi CSS.
 
-如果你的使用这这个插件, 你的框架**不应该**是下面这些
+You should use this plugin if you're using webpack and your framework is **not** below.
 
-| 语言 / 框架 |   示例 |
+| Language / Framework |   Example |
 | :-------- | :----- |
-| <Logo name="vue" class="inline"/> Vue CLI | [✅ 插件](/integrations/vue-cli.html) |
-| <Logo name="nuxt" class="inline"/> Nuxt.js | [✅ 插件](/integrations/nuxt.html) |
-| <Logo name="gridsome" class="inline"/> Gridsome | [✅ 插件](/integrations/gridsome.html) |
-| <Logo name="svelte" class="inline"/> Svelte | [✅ 插件](/integrations/svelte.html) |
-| Umi.js | [✅ 配置示例](https://github.com/windicss/windicss-webpack-plugin/tree/master/example/umijs) |
-| Next.js - webpack 4 | ✅ [配置示例](https://github.com/windicss/windicss-webpack-plugin/blob/master/example/next/next.config.js) |
-| Next.js - webpack 5 | ❌ 不支持 HMR (需要帮助) |
-| Angular | ❌ 不支持 (需要帮助) |
+| <Logo name="vue" class="inline"/> Vue CLI | [✅ Plugin](/integrations/vue-cli.html) |
+| <Logo name="nuxt" class="inline"/> Nuxt.js | [✅ Plugin](/integrations/nuxt.html) |
+| <Logo name="gridsome" class="inline"/> Gridsome | [✅ Plugin](/integrations/gridsome.html) |
+| <Logo name="svelte" class="inline"/> Svelte | [✅ Plugin](/integrations/svelte.html) |
+| Umi.js | [✅ Config Example](https://github.com/windicss/windicss-webpack-plugin/tree/master/example/umijs) |
+| Next.js - webpack 4 | ✅ [Config Example](https://github.com/windicss/windicss-webpack-plugin/blob/master/example/next/next.config.js) |
+| Next.js - webpack 5 | ❌ HMR not supported (help needed) |
+| Angular | ❌ Not supported (help needed) |
 
-## 安装
+## Install
 
 ```bash
 yarn add windicss-webpack-plugin -D
 # npm i windicss-webpack-plugin -D
 ```
 
-如果你之前使用的是 Tailwind，请看 [迁移指南](/guide/migration.html)。
+If you were previously using Tailwind, please see the [migration guide](/guide/migration.html).
 
-### 添加插件
+### Add the plugin
 
-你需要把插件添加到你的 webpack 配置文件。如果你有直接修改 `webpack.config.js` 的权限，你可以如下面这样做。
+You will need to add the plugin to your webpack configuration. If you have access to modify the webpack.config.js directly, then you can do the following.
 
 ```js
 // webpack.config.js
@@ -46,22 +46,23 @@ export default {
 }
 ```
 
-带有一个入口文件或者一些只加载一次的东西，添加 `windi.css` 的导入。
+Within an entry point file or something only loaded once, add the import of `windi.css`.
 
-:warn: 为了实现这个，你需要使用 [style-loader](https://webpack.js.org/loaders/style-loader/#modules) 并关掉模块。
+:warn: For this, to work you need to be using a [style-loader](https://webpack.js.org/loaders/style-loader/#modules) with
+modules off.
 
 ```ts
 // main.js
 import 'windi.css'
 ```
 
-## 支持
+## Supports
 
 ### TypeScript
 
-在你的 `tailwind.config.js` 中使用 TypeScript？当然啦，为啥不呢？
+Enable TypeScript for your `tailwind.config.js`? Sure, why not?
 
-改名儿为 `tailwind.config.ts`，完事儿~
+Rename it to `tailwind.config.ts` and things just work!
 
 ```ts
 // tailwind.config.ts
@@ -84,9 +85,9 @@ export default defineConfig({
 })
 ```
 
-## 配置文件
+## Configuration
 
-### 预检查 (样式重置)
+### Preflight (style resetting)
 
 Preflight is enabled on-demanded. If you'd like to completely disable it, you can configure it as below
 
