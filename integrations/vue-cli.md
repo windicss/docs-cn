@@ -94,4 +94,4 @@ module.exports = {
 
 ### 作用域样式 {#scoped-style}
 
-带有 scoped style 的 `@media` 指令 **只能** 与 `css` `postcss` `scss` 一起工作，而不能与 `sass` `less` `stylus` 一起工作。
+带有 scoped style 的 `@media` 指令 **只在** `css` `postcss` `scss` 中有效 ，而在 `sass` `less` `stylus`中无效。
