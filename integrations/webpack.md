@@ -24,7 +24,7 @@ You should use this plugin if you're using webpack and your framework is **not**
 ## Install
 
 ```bash
-yarn add windicss-webpack-plugin -D
+yarn add windicss-webpack-plugin -D 
 # npm i windicss-webpack-plugin -D
 ```
 
@@ -46,7 +46,7 @@ export default {
 }
 ```
 
-Within an entry point file or something only loaded once, add the import of `windi.css`.
+Within an entry point file or something only loaded once, add the import of `windi.css`. 
 
 :warn: For this, to work you need to be using a [style-loader](https://webpack.js.org/loaders/style-loader/#modules) with
 modules off.
