@@ -18,7 +18,7 @@ Windi CSS Intellisense 通过提供给 Visual Studio Code 用户一些特性的�
 
 ### 自动补全 {#autocomplete}
 
-为工具类和可变修饰提供智能建议。
+为工具类 (utilities) 和可变修饰 (variants) 提供智能建议。
 
 <img src="https://raw.githubusercontent.com/windicss/windicss-intellisense/main/screenshots/completion.png" alt="Auto Complete"/>
 
