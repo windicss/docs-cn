@@ -73,7 +73,7 @@ export default {
 
 - 配置参考见 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
-### 例子 {#examples}
+### 示例 {#examples}
 
 #### 禁用预检 {#disable-preflight}
 
