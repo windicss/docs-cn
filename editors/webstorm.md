@@ -1,7 +1,7 @@
 <Logo name="webstorm" class="logo-float-xl"/>
 
-# WebStorm Intellisense
+# WebStorm 智能感知
 
-The support for WebStorm is on our roadmap, but the we haven't get enough bandwidth to working on it yet. 
+对于 WebStorm 的支持在我们的路线图中，但是我们目前没有足够精力来做这件事。
 
-Join the waitlist by [upvoting this comment](https://github.com/windicss/windicss/discussions/136#discussioncomment-557097). Thank you.
+通过 [点赞这条评论](https://github.com/windicss/windicss/discussions/136#discussioncomment-557097) 加入候补名单。谢啦~
