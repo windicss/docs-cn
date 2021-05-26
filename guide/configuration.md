@@ -40,7 +40,7 @@ export default defineConfig({
 })
 ```
 
-`defineConfig`是一个带有类型提示的旁路函数，这意味着如果你不需要自动补充/类型检查，你也可以忽略它。
+`defineConfig` 是带有类型提示的帮助函数，这意味着如果你不需要自动�补全/类型检查，你也可以忽略此处。
 
 ```js
 // windi.config.js
