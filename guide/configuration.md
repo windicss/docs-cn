@@ -8,7 +8,7 @@
 
 如果你要从 Tailwind 迁移，请先查看 [迁移指南][migration guide]。
 
-## 配置文件 {# config-file}
+## 配置文件 {#config-file}
 
 默认情况下，Windi CSS 会在你的项目根目录下搜索配置文件。以下是有效的名称。
 
