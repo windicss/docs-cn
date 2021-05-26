@@ -4,7 +4,7 @@
 
 <PackageInfo name="vue-cli-plugin-windicss" author="harlan-zw" />
 
-## 功能 {#features}
+## 特性 {#features}
 
 - ⚡️ **极速** —— 比 [vue-cli-plugin-tailwind](https://github.com/forsartis/vue-cli-plugin-tailwind) 快 20~100 倍
 - 🧩 按需使用的 CSS 工具 (与 Tailwind CSS v2 兼容)，原生元素样式重置
