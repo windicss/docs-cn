@@ -1,30 +1,30 @@
 <Logo name="vue" class="logo-float-xl"/>
 
-# Integration for [Vue CLI](https://cli.vuejs.org)
+# [Vue CLI](https://cli.vuejs.org) 集成 {#integration-for-vue-cli}
 
 <PackageInfo name="vue-cli-plugin-windicss" author="harlan-zw" />
 
-## Features
+## 特性 {#features}
 
-- ⚡️ **It's FAST** - 20~100x times faster than [vue-cli-plugin-tailwind](https://github.com/forsartis/vue-cli-plugin-tailwind)
-- 🧩 On-demand CSS utilities (Compatible with Tailwind CSS v2) and native elements style resetting
-- 🍃 Load configurations from `tailwind.config.js`
-- 📄 CSS `@apply` / `@screen` directives transforms
-- 🎳 Support Utility Groups - e.g. `bg-gray-200 hover:(bg-gray-100 text-red-300)`
+- ⚡️ **极速** —— 比 [vue-cli-plugin-tailwind](https://github.com/forsartis/vue-cli-plugin-tailwind) 快 20~100 倍
+- 🧩 按需使用的 CSS 工具 (与 Tailwind CSS v2 兼容)，原生元素样式重置
+- 🍃 从 `tailwind.config.js` 加载配置
+- 📄 CSS `@apply` / `@screen` 指令转换
+- 🎳 支持公共组 - 例如： `bg-gray-200 hover:(bg-gray-100 text-red-300)`
 
-## Setup
+## 安装 {#setup}
 
-Install using Vue CLI. (Vue CLI 4+ is recommended)
+使用 Vue CLI 进行安装。(建议使用 Vue CLI 4+)
 
 ```bash
 vue add windicss
 ```
 
-:warning: This module is a pre-release, please report any [issues](https://github.com/windicss/vue-cli-plugin-windicss/issues) you find.
+:warning: 本模块为预发布版本，请报告你发现的任何 [问题](https://github.com/windicss/vue-cli-plugin-windicss/issues)。
 
-## Configuration
+## 配置 {#configuration}
 
-You can change the behaviour of the plugin by modifying the options in `./vue.config.js`.
+你可以通过修改 `./vue.config.js` 中的选项来改变该插件的行为。
 
 ```js
 // vue.config.js
@@ -37,22 +37,22 @@ module.exports = {
 }
 ```
 
-If you have a `tailwind.config.js`, please rename it to `windi.config.js` or `windi.config.ts`.
+如果你有一个 `tailwind.config.js`，请把它重命名为 `windi.config.js` 或 `windi.config.ts`。
 
-See [here](https://windicss.netlify.app/guide/configuration.html) for configuration details.
+配置细节见 [这里](https://windicss.netlify.app/guide/configuration.html)。
 
 
-## Migrating
+## 迁移 {#migrating}
 
-If you were previously using `vue-cli-plugin-tailwind`, please consult the [documentation](https://windicss.netlify.app/guide/migration.html) on migrating.
+如果你以前使用的是 `vue-cli-plugin-tailwind`，请查阅 [文档](https://windicss.netlify.app/guide/migration.html)。
 
 ```bash
 yarn remove vue-cli-plugin-tailwind
 ```
 
-## Configuration
+## 配置 {#configuration-2}
 
-- Default:
+- 默认:
 
 ```js
 export default {
@@ -71,11 +71,11 @@ export default {
 }
 ```  
 
-- See [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts) for configuration reference.
+- 配置参考见 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
-### Examples
+### 示例 {#examples}
 
-#### Disable Preflight
+#### 禁用预检 {#disable-preflight}
 
 _ngridsome.config.js_
 
@@ -90,8 +90,8 @@ module.exports = {
 }
 ```
 
-## Caveats
+## 注意事项 {#caveats}
 
 ### Scoped Style
 
-`@media` directive with scoped style can **only work** with `css` `postcss` `scss` but not `sass`, `less` nor `stylus`
+带有 scoped style 的 `@media` 指令 **只在** `css` `postcss` `scss` 中有效 ，而在 `sass` `less` `stylus` 中无效。
