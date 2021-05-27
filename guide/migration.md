@@ -5,7 +5,7 @@
 
 ### `package.json` {#package-json}
 
-一些依赖不再是必须的。如果它们只是 Tailwind CSS 需要的，你可以移除它们了。
+一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖，你可以安全地移除它们。
 
 ```diff
 - "tailwindcss": "*",
@@ -24,7 +24,7 @@
 - @import 'tailwindcss/utilities';
 ```
 
-（可选）基于你所使用的集成工具，你可能需要在入口显式引入 `virtual:windi.css`。请检查工具的文档来获得更多的细节。
+（可选）基于你所使用的集成工具，你可能需要在入口显式引入 `virtual:windi.css`。请查看工具的文档来获得更多的细节。
 
 ```js
 // main.js
