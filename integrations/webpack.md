@@ -59,9 +59,15 @@ import 'windi.css'
 
 ### TypeScript {#typescript}
 
+<<<<<<< HEAD
 为你的 `windi.config.js` 启用 TypeScript
 
 修改文件名为 `windi.config.ts`
+=======
+Enable TypeScript for your `windi.config.js`? Sure, why not?
+
+Rename it to `windi.config.ts` and things just work!
+>>>>>>> 78dc30540daffe9e5172b9a5fc9d7d0d4bc77180
 
 ```ts
 // windi.config.ts
@@ -139,7 +145,11 @@ export default defineConfig({
 
 ### 扫描 {#scanning}
 
+<<<<<<< HEAD
 当服务启动后，`vite-plugin-windicss` 将扫描你的源代码，并把使用到的工具类提取出来。默认情况下，只有 `src/` 且后缀为 `vue, html, mdx, pug, jsx, tsx` 的文件才会被扫描。如果你想扫描本地的其他文件，你可以进行配置如下：
+=======
+On server start, `windicss-webpack-plugin` will scan your source code and extract the utility usages. By default, only files under `src/` with extensions `vue, html, mdx, pug, jsx, tsx` will be included. If you want to enable scanning for other file types of locations, you can configure it via:
+>>>>>>> 78dc30540daffe9e5172b9a5fc9d7d0d4bc77180
 
 ```ts
 // windi.config.js
