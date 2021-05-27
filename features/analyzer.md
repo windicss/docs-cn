@@ -1,24 +1,24 @@
-# Visual Analyzer
+# 可视化分析器 {#visual-analyzer}
 
 <PackageInfo name="windicss-analysis" author="antfu" />
 
-An visual analyser tool for [Windi CSS](https://github.com/windicss/windicss). Browse your utilities usages, have an overview of your design system, identify "bad practices", and more!
+一个为 [Windi CSS](https://github.com/windicss/windicss) 提供的可视化分析工具。浏览你所有的工具类 (utilities) 使用情况，综观你的设计系统，识别"糟糕的使用"，以及更多！
 
 <img src="https://user-images.githubusercontent.com/11247099/113150805-0c43f880-9267-11eb-85a6-ec1a2f1eed37.png" />
 
-## Get Started
+## 开始使用 {#get-started}
 
-Run the following command under your project root
+在你的项目根目录下运行下面的命令
 
 ```bash
 npx windicss-analysis
 ```
 
-The analysis report will be available at http://localhost:8113/
+分析报告将可在 http://localhost:8113/ 获取
 
-### NPM
+### NPM {#npm}
 
-Or you can install locally to reuse the same version of your local `windicss` module
+或者你可以下载到本地，复用你本地相同版本的 `windicss` 模块
 
 ```bash
 npm i -D windicss-analysis
@@ -33,32 +33,32 @@ npm i -D windicss-analysis
 }
 ```
 
-### VS Code Extension
+### VS Code 扩展 {#vs-code-extension}
 
-From v0.8.0 of [Windi CSS Intellisense](https://github.com/windicss/windicss-intellisense), it has this analyser built-in.
+从 [Windi CSS Intellisense](https://github.com/windicss/windicss-intellisense) 的 v0.8.0 版本开始，内置了这个分析器。
 
-- Open a project using Windi CSS in VS Code
-- Open the Command Palette (⇧⌘P / Ctrl+Shift+P)
-- Run command: `Windi CSS: Run & Open Analysis`
-- See Analyser in the second editor column
+- 在 VS Code 中打开你使用 Windi CSS 的项目
+- 打开你的命令面板 (⇧⌘P / Ctrl+Shift+P)
+- 运行命令：`Windi CSS: Run & Open Analysis`
+- 在编辑器的第二列就可以看到分析器
 
-### Online Preview
+### 在线预览 {#online-preview}
 
-You can have a preview the analysing report of the analyser itself
+你可以在分析器里看到分析报告的预览
 
-[analysis-demo.windicss.org](http://analysis-demo.windicss.org)
+[分析报告示例](http://analysis-demo.windicss.org)
 
-You can genreate your own report and host it statically by running the following command
+你可以生成你自己的报告，并通过下面的命令将它静态保存到本地
 
 ```bash
 npx windicss-analysis --html dist
 ```
 
-## FAQ
+## FAQ {#faq}
 
-### It does not detect my files
+### 它没侦测到我的文件 {#it-does-not-detect-my-files}
 
-You will need to configure the `extract.include` options in `windi.config.js` instead of your framework's configurations file so it can be understood by the analyzer so as other integrations support. For example:
+你需要在 `windi.config.js` 的 `extract.include` 选项中配置，而非你的框架配置文件。这样就可以被分析器所理解了，就如同其他的集成一样。举个例子：
 
 ```ts
 // windi.config.js
@@ -75,17 +75,17 @@ export default defineConfig({
 })
 ```
 
-### Can I use the report for other tools?
+### 我可以为其他工具使用报告吗？ {#can-i-use-the-report-for-other-tools}
 
-Yes. You can get the raw json file via the CLI
+当然。你可以通过命令行工具看到json源文件。
 
 ```bash
 npx windicss-analysis --json report.json
 ```
 
-and process it as you need.
+然后按照你需要的方式进行处理。
 
-You can also have type support for it via:
+你也可以通过下面的方式获得类型支持：
 
 ```ts
 import rawReport from './report.json'
@@ -94,9 +94,9 @@ import type { AnalysisReport } from 'windicss-analysis'
 const report = rawReport as AnalysisReport
 ```
 
-### Programmatic Use?
+### 编程化使用？ {#programmatic-use}
 
-Yes. Just like a normal Node package:
+当然可以。就如同普通的 Node 包一样：
 
 ```ts
 import { startServer } from 'windicss-analysis'
@@ -104,4 +104,4 @@ import { startServer } from 'windicss-analysis'
 startServer({ /* ... */ })
 ```
 
-Check out the type decrations for more APIs avaliable.
+查看类型修饰以获得更多可用的API。
