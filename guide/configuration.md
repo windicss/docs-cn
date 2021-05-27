@@ -17,7 +17,7 @@
 - `tailwind.config.ts`
 - `tailwind.config.js`
 
-**支持 Native ES 模块和 TypeScript 开箱即用**，由 [sucrase](https://github.com/alangpierce/sucrase) 提供。
+得益于 [sucrase](https://github.com/alangpierce/sucrase)，**支持原生 ES 模块和开箱即用的 TypeScript **。
 
 为了获得配置的类型检查，你可以从 `windicss/helpers` 导入 `defineConfig` 函数。例如：
 
@@ -40,7 +40,7 @@ export default defineConfig({
 })
 ```
 
-`defineConfig` 是带有类型提示的帮助函数，这意味着如果你不需要自动�补全/类型检查，你也可以忽略此处。
+`defineConfig` 是带有类型提示的帮助函数，这意味着如果你不需要自动补全/类型检查，你也可以忽略此处。
 
 ```js
 // windi.config.js
@@ -50,7 +50,7 @@ export default {
 }
 ```
 
-你可以使用编辑器的自动补全功能，来查看可用的配置字段。对功能配置的描述将在对应页面中进行。
+你可以使用编辑器的自动补全功能，来查看可用的配置字段。对功能配置的描述将在对应页面中进行展示。
 
 ## 配置实例 {#example-configuration}
 
