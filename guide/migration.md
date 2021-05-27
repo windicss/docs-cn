@@ -16,7 +16,7 @@
 
 ### 基础样式 {#base-styles}
 
-你现在可以从你的 css 入口中移除 Tailwind CSS 的引入。
+你现在可以从你的 CSS 中移除 Tailwind CSS 的入口。
 
 ```diff
 - @import 'tailwindcss/base';
@@ -24,7 +24,7 @@
 - @import 'tailwindcss/utilities';
 ```
 
-（可选的）基于你所使用的集成工具，你可能需要在入口明确地导入 `virtual:windi.css`。请检查工具的文档来获得更多的细节。
+（可选）基于你所使用的集成工具，你可能需要在入口显式引入 `virtual:windi.css`。请检查工具的文档来获得更多的细节。
 
 ```js
 // main.js
@@ -33,7 +33,7 @@ import 'virtual:windi.css'
 
 ### 配置文件 {#configurations}
 
-所有的可变修饰 (variants) 是 [自动启用][auto] 的，`variant` 和 `purge` 配置不再需要。
+所有的可变修饰 (variants) 都是 [默认启用][auto] 的，不再需要对 `variant` 和 `purge` 进行配置。
 
 `colors` 和 `plugins` 需要从 `windicss` 引入来替代。
 
@@ -75,7 +75,7 @@ export default {
 }
 ```
 
-### 清理（可选的） {#cleanup-optional}
+### 清理（可选） {#cleanup-optional}
 
 如果你不使用下面配置文件的其他特性，你可以删掉它。
 
