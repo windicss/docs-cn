@@ -7,7 +7,7 @@
 
 <Logo name="svelte" class="logo-float-xl"/>
 
-# 集成 [Svelte](https://svelte.dev/) {#integration-for-svelte}
+# [Svelte](https://svelte.dev/) 集成 {#integration-for-svelte}
 
 <PackageInfo name="svelte-windicss-preprocess" author="alexanderniebuhr" />
 
