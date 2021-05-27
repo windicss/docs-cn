@@ -17,7 +17,7 @@
 - `tailwind.config.ts`
 - `tailwind.config.js`
 
-得益于 [sucrase](https://github.com/alangpierce/sucrase)，**支持原生 ES 模块和开箱即用的 TypeScript **。
+得益于 [sucrase](https://github.com/alangpierce/sucrase)，**支持原生 ES 模块和开箱即用的 TypeScript**。
 
 为了获得配置的类型检查，你可以从 `windicss/helpers` 导入 `defineConfig` 函数。例如：
 
