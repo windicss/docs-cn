@@ -1,18 +1,18 @@
-# 夜间模式 {#dark-mode}
+# 暗色模式 {#dark-mode}
 
-Windi CSS 拥有开箱即用的夜间模式支持。
+Windi CSS 拥有开箱即用的暗色模式支持。
 
-通过前缀 `dark:` 可变修饰工具类 (utilities)，这些工具类仅会在夜间模式启用的时候生效。在下面的例子中，`Preview` 文本在日间模式下是红色的，在夜间模式下是绿色的。试试：
+通过对工具类 (utilities) 添加可变修饰前缀 `dark:`，这些工具类将仅会在暗色模式启用的时候生效。在下面的例子中，`Preview` 文本在亮色模式下是红色的，在暗色模式下是绿色的。试看看：
 
 <DarkModeSwitch />
 
 <InlinePlayground :input="'text-red-400 dark:text-green-400'" :showCSS="true" :showPreview="true"/>
 
-我们提供了两种启用夜间模式的方式，[class 模式](#class-mode) 和 [媒体查询模式](#media-query-mode)。默认情况下，启用的是 `class` 模式。
+我们提供了两种启用暗色模式的方式，[class 模式](#class-mode) 和 [媒体查询模式](#media-query-mode)。默认情况下，启用的是 `class` 模式。
 
 ## Class 模式 {#class-mode}
 
-Class 模式为你提供了更好的支持，控制在哪应该使用夜间模式。
+Class 模式为你提供了更好的支持，控制在哪应该使用暗色模式。
 
 ```js
 // windi.config.js
@@ -27,13 +27,13 @@ export default {
 ```html
 <html>
 <body>
-  <!-- 夜间模式不生效 -->
+  <!-- 暗色模式不生效 -->
 </body>
 </html>
 
 <html class="dark">
 <body>
-  <!-- 夜间模式生效 -->
+  <!-- 暗色模式生效 -->
 </body>
 </html>
 ```
