@@ -6,9 +6,9 @@
 
 ## 我应该使用吗? {#should-i-use-this}
 
-Windi CSS Webpack 插件是一个语言和框架无关的 Windi CSS 实现。
+Windi CSS 的 webpack 插件通过与语言和框架无关的方式来实现 Windi CSS。
 
-如果你的使用这个插件, 你的框架**不应该**是下面这些：
+如果你使用 webpack，且**未使用**下面的框架，则可以使用此插件：
 
 | 语言 / 框架 |   示例 |
 | :-------- | :----- |
@@ -21,14 +21,14 @@ Windi CSS Webpack 插件是一个语言和框架无关的 Windi CSS 实现。
 | Next.js - webpack 5 | ❌ 不支持 HMR (需要帮助) |
 | Angular | ❌ 不支持 (需要帮助) |
 
-## 安装 {#installations}
+## 安装 {#install}
 
 ```bash
 yarn add windicss-webpack-plugin -D
 # npm i windicss-webpack-plugin -D
 ```
 
-如果你之前使用的是 Tailwind，请看 [迁移指南](/guide/migration.html)。
+如果你之前使用的是 Tailwind，请阅读 [迁移指南](/guide/migration.html)。
 
 ### 添加插件 {#add-the-plugin}
 
@@ -48,7 +48,7 @@ export default {
 
 带有一个入口文件或者一些只加载一次的东西，添加 `windi.css` 的导入。
 
-:warn: 为了实现这个，你需要使用 [style-loader](https://webpack.js.org/loaders/style-loader/#modules) 并关掉模块。
+:warn: 为了实现此效果，你需要使用 [style-loader](https://webpack.js.org/loaders/style-loader/#modules) 并关闭 `modules` 设置选项。
 
 ```ts
 // main.js
@@ -59,12 +59,12 @@ import 'windi.css'
 
 ### TypeScript {#typescript}
 
-在你的 `tailwind.config.js` 中使用 TypeScript？当然，为什么不呢？
+为你的 `windi.config.js` 启用 TypeScript
 
-文件名改为 `tailwind.config.ts`
+修改文件名为 `windi.config.ts`
 
 ```ts
-// tailwind.config.ts
+// windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 import formsPlugin from 'windicss/plugin/forms'
 
@@ -86,9 +86,9 @@ export default defineConfig({
 
 ## 配置文件 {#configuration}
 
-### 预检查 (样式重置) {##preflight-style-resetting}
+### 预检样式 (样式重置) {#preflight-style-resetting}
 
-预检查 (Preflight) 随需启用，如果你想完全关掉它，可按照下面进行配置
+预检样式 (Preflight) 随需启用，如果你想完全关掉它，可按照下面进行配置
 
 ```ts
 // windi.config.ts
