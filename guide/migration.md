@@ -1,11 +1,11 @@
 [auto]: /features/value-auto-infer
 [design]: /posts/story
 
-# Migrate from Tailwind CSS
+# 从 Tailwind CSS 迁移 {#migrate-from-tailwind-css}
 
-### `package.json`
+### `package.json` {#package-json}
 
-Some of your dependencies are no longer required, you can remove them if they were only needed for Tailwind CSS.
+一些依赖不再是必须的。如果它们只是 Tailwind CSS 需要的，你可以移除它们了。
 
 ```diff
 - "tailwindcss": "*",
@@ -14,9 +14,9 @@ Some of your dependencies are no longer required, you can remove them if they we
 + "windicss": "*"
 ```
 
-### Base Styles
+### 基础样式 {#base-styles}
 
-You can now remove the Tailwind CSS imports from your css entry.
+你现在可以从你的 css 入口中移除 Tailwind CSS 的引入。
 
 ```diff
 - @import 'tailwindcss/base';
@@ -24,20 +24,20 @@ You can now remove the Tailwind CSS imports from your css entry.
 - @import 'tailwindcss/utilities';
 ```
 
-(Optional) Based on the integrations tools you are using, you might need to import the `virtual:windi.css` entry explicitly. Please check the docs of the tools for more details.
+（可选的）基于你所使用的集成工具，你可能需要在入口明确地导入 `virtual:windi.css`。请检查工具的文档来获得更多的细节。
 
 ```js
 // main.js
 import 'virtual:windi.css'
 ```
 
-### Configurations
+### 配置文件 {#configurations}
 
-Since all variants are [automatically enabled][auto], `variant` and `purge` fields are no longer needed.
+所有的可变修饰 (variants) 是 [自动启用][auto] 的，`variant` 和 `purge` 配置不再需要。
 
-`colors` and `plugins` need to be imported from `windicss` instead.
+`colors` 和 `plugins` 需要从 `windicss` 引入来替代。
 
-We are compatible with both `windi.config.js` or `tailwind.config.js`
+我们同时兼容 `windi.config.js` 或 `tailwind.config.js`
 
 ```diff
 -const colors = require('tailwindcss/colors')
@@ -75,9 +75,9 @@ export default {
 }
 ```
 
-### Cleanup (optional)
+### 清理（可选的） {#cleanup-optional}
 
-The following files can be removed if you don't use their other features.
+如果你不使用下面配置文件的其他特性，你可以删掉它。
 
 ```diff
 - postcss.config.js
