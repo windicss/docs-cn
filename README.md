@@ -1,14 +1,7 @@
 [windi css]: https://github.com/windicss/windicss
 
-# Windi CSS Documentation
+# [Windi CSS](https://github.com/windicss/windicss) 中文文档
 
-This is the documentation website for [Windi CSS].
+🚧 翻译工作进行中，[任务认领](https://github.com/windicss/docs-cn/issues/2)
 
-https://windicss.org
-
-## Development
-
-```bash
-pnpm i
-pnpm dev
-```
+文档地址：http://cn.windicss.org
