@@ -2,31 +2,31 @@
 [tailwind css]: https://tailwindcss.com/docs
 [migration guide]: /guide/migration
 
-# Configuring Windi CSS
+# 配置 Windi CSS {#configuring-windi-css}
 
-Configuration in [Windi CSS] is similar to what you would expect in [Tailwind CSS] but with additional enchancements and features.
+[Windi CSS] 中的配置与你在 [Tailwind CSS] 中所期望的相似，但有额外的增强和特性。
 
-If you are migrating from Tailwind, check out the [migration guide] first.
+如果你要从 Tailwind 迁移，请先查看 [迁移指南][migration guide]。
 
-## Config File
+## 配置文件 {#config-file}
 
-By default, Windi CSS will search for configurations file under your project root. Here are valid names:
+默认情况下，Windi CSS 会在你的项目根目录下搜索配置文件。以下是有效的名称。
 
 - `windi.config.ts`
 - `windi.config.js`
 - `tailwind.config.ts`
 - `tailwind.config.js`
 
-**Native ES module and TypeScript are supported out-of-box**, powered by [sucrase](https://github.com/alangpierce/sucrase).
+得益于 [sucrase](https://github.com/alangpierce/sucrase)，**支持原生 ES 模块和开箱即用的 TypeScript**。
 
-To get typecheck for your configurations, you can import the `defineConfig` function from `windicss/helpers`. For example
+为了获得配置的类型检查，你可以从 `windicss/helpers` 导入 `defineConfig` 函数。例如：
 
 ```ts
 // windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
-  /* configurations... */
+  /* 配置项... */
 })
 ```
 
@@ -36,23 +36,23 @@ export default defineConfig({
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
-  /* configurations... */
+  /* 配置项... */
 })
 ```
 
-`defineConfig` is a bypass function with type hints, which means you can also omit it if you don't need the autocompletion/typecheck.
+`defineConfig` 是带有类型提示的帮助函数，这意味着如果你不需要自动补全/类型检查，你也可以忽略此处。
 
 ```js
 // windi.config.js
 
 export default {
-  /* configurations... */
+  /* 配置项... */
 }
 ```
 
-You can use the autocompletion from your editor to see possible configuration fields. Customization for features will be described in the corresponding pages. 
+你可以使用编辑器的自动补全功能，来查看可用的配置字段。对功能配置的描述将在对应页面中进行展示。
 
-## Example Configuration
+## 配置实例 {#example-configuration}
 
 ```js
 import { defineConfig } from 'windicss/helpers'
