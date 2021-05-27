@@ -18,7 +18,7 @@ npx windicss-analysis
 
 ### NPM {#npm}
 
-或者你可以下载到本地，复用你本地相同版本的 `windicss` 模块
+或者你可以下载到本地以复用你本地相同版本的 `windicss` 模块
 
 ```bash
 npm i -D windicss-analysis
@@ -58,7 +58,7 @@ npx windicss-analysis --html dist
 
 ### 它没侦测到我的文件 {#it-does-not-detect-my-files}
 
-你需要在 `windi.config.js` 的 `extract.include` 选项中配置，而非你的框架配置文件。这样就可以被分析器所理解了，就如同其他的集成一样。举个例子：
+你需要在 `windi.config.js` 的 `extract.include` 选项中配置，而非你的框架配置文件。这样才可以被分析器所理解，就如同其他的集成一样。例如：
 
 ```ts
 // windi.config.js
@@ -75,9 +75,9 @@ export default defineConfig({
 })
 ```
 
-### 我可以为其他工具使用报告吗？ {#can-i-use-the-report-for-other-tools}
+### 我可以使用其他工具展示报告吗？ {#can-i-use-the-report-for-other-tools}
 
-当然。你可以通过命令行工具看到json源文件。
+当然。你可以通过命令行工具获得 JSON 格式的报告文件。
 
 ```bash
 npx windicss-analysis --json report.json
@@ -104,4 +104,4 @@ import { startServer } from 'windicss-analysis'
 startServer({ /* ... */ })
 ```
 
-查看类型修饰以获得更多可用的API。
+查看类型声明以了解更多可用的 API。
