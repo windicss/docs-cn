@@ -6,7 +6,7 @@
 
 > 🧪 实验性的。
 
-> ⚠️ 因为一些 PostCSS 的 API 限制，这个包是**不鼓励**使用的。使用我们为每一个专用工具提供的 [一流的集成](https://windicss.org/guide/installation.html) 以获得**最好的开发体验和性能**。这个插件应当作为你集成 Windi CSS 的最后一个选择。
+> ⚠️ 因为一些 PostCSS API 的限制，我们并**不鼓励**使用这个包。我们为每一个专用工具提供了 [最佳的适配](https://windicss.org/guide/installation.html) 以获得**最佳的开发体验和性能**。这个插件应当作为你集成 Windi CSS 的最后一个选择。
 
 ## 安装 {#install}
 
@@ -27,7 +27,7 @@ module.exports = {
 }
 ```
 
-将 `@windicss` 添加到你的 `main.css` 入口：
+将 `@windicss` 添加到你的 CSS 入口：
 
 ```css
 /* main.css */
