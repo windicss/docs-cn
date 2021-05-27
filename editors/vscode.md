@@ -1,79 +1,79 @@
 <Logo name="vscode" class="logo-float-xl"/>
 
-# Windi CSS Intellisense for VS Code
+# 为 VS Code 提供的 Windi CSS Intellisense {#windi-css-intellisense-for-vs-code}
 
 <PackageInfo name="windicss-intellisense" :hideNpm="true" author="voorjaar" />
 
-Windi CSS IntelliSense enhances the Windi development experience by providing Visual Studio Code users with advanced features such as autocomplete, syntax highlighting, code folding, and building.
+Windi CSS Intellisense 通过提供给 Visual Studio Code 用户一些特性的方式来提高 Windi 的开发体验，例如：自动补全、语法高亮、代码折叠和构建。
 
-## Installation
+## 安装 {#installation}
 
-**[Install via the Visual Studio Code Marketplace →](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense)**
+**[通过 Visual Studio Code Marketplace 安装 →](https://marketplace.visualstudio.com/items?itemName=voorjaar.windicss-intellisense)**
 
-**[Install via the Open VSX Registry →](https://open-vsx.org/extension/voorjaar/windicss-intellisense)**
+**[通过 Open VSX Registry 安装 →](https://open-vsx.org/extension/voorjaar/windicss-intellisense)**
 
-This plugin packs a windicss compiler, so you can use it without installing windicss, and it also supports the configuration file `(tailwind|windi).config.(js|cjs|ts)`.
+这个插件打包了一个 windicss 编译器，所以即使你不安装 windicss 也可以使用，支持配置文件 `(tailwind|windi).config.(js|cjs|ts)`。
 
-## Features
+## 特性 {#features}
 
-### Autocomplete
+### 自动补全 {#autocomplete}
 
-Intelligent suggestions for utilities and variants.
+为工具类 (utilities) 和可变修饰 (variants) 提供智能建议。
 
 <img src="https://raw.githubusercontent.com/windicss/windicss-intellisense/main/screenshots/completion.png" alt="Auto Complete"/>
 
-### Hover Preview
+### 悬停预览 {#hover-preview}
 
-See the complete CSS for a class name by hovering over it.
+悬停于一个 class name 的上方时可以看到其完整的 CSS。
 
 <img src="https://raw.githubusercontent.com/windicss/windicss-intellisense/main/screenshots/hover.png" alt="Hover Preview"/>
 
-### Syntax Highlighting
+### 语法高亮 {#syntax-highlighting}
 
-Highlight utilities, variants and importants.
+高亮工具类、可变修饰和重要的部分。
 
 <img src="https://raw.githubusercontent.com/windicss/windicss-intellisense/main/screenshots/highlight.png" alt="Syntax Highlighting"/>
 
-### Color Preview
+### 颜色预览 {#color-preview}
 
-Preview color and spectrum.
+预览颜色和色谱。
 
 <img src="https://raw.githubusercontent.com/windicss/windicss-intellisense/main/screenshots/color.png" alt="Color Preview"/>
 
-### Code Folding
+### 代码折叠 {#code-folding}
 
-Fold overly long classes to increase readability.
+折叠超长的 classes 以提高可读性。
 
 <img src="https://raw.githubusercontent.com/windicss/windicss-intellisense/main/screenshots/highlight.png" alt="Code Folding"/>
 
-### Compile Commands
+### 编译命令 {#compile-commands}
 
-Built-in commands, one-key operation.
+内置编译命令，一键操作。
 
 <img src="https://raw.githubusercontent.com/windicss/windicss-intellisense/main/screenshots/commands.png" alt="Compile Commands"/>
 
-## Extension Settings
+## 扩展设置 {#extension-settings}
 
-| Settings                           | type    | default  | description                                                  |
-| :--------------------------------- | :------ | :------- | :----------------------------------------------------------- |
-| `windicss.enableColorDecorators`   | boolean | true     | Enable Color Decorators.                                     |
-| `windicss.enableHoverPreview`      | boolean | true     | Enable hover className to show preview of CSS.               |
-| `windicss.enableCodeCompletion`    | boolean | true     | Enable/Disable all code completions.                         |
-| `windicss.enableUtilityCompletion` | boolean | true     | Enable Utility Completion.                                   |
-| `windicss.enableVariantCompletion` | boolean | true     | Enable Variant Completion.                                   |
-| `windicss.enableDynamicCompletion` | boolean | true     | Enable Dynamic Utilities Completion like p-${int}.           |
-| `windicss.enableRemToPxPreview`    | boolean | true     | Enable Rem to Px Preview.                                    |
-| `windicss.enableCodeFolding`       | boolean | true     | Enable ClassNames Code Folding.                              |
-| `windicss.foldByLength`            | boolean | false    | Folding code by length. Default option is false, will fold by utility count. |
-| `windicss.foldCount`               | number  | 3        | Used by foldByCount.                                         |
-| `windicss.foldLength`              | number  | 25       | Used by foldByLength                                         |
-| `windicss.hiddenText`              | string  | ` ...`   | Placeholder used when folding code.                          |
-| `windicss.hiddenTextColor`         | string  | \#AED0A4 | Placeholder Color.                                           |
-| `windicss.sortOnSave`              | boolean | false    | Runs class sorting on file save.                             |
+| 设置                               | 类型    | 默认值   | 描述                                                       |
+| :--------------------------------- | :------ | :------- | :--------------------------------------------------------- |
+| `windicss.enableColorDecorators`   | boolean | true     | 启用颜色修饰符。                                           |
+| `windicss.enableHoverPreview`      | boolean | true     | 启用悬停 className 展示 CSS 预览。                         |
+| `windicss.enableCodeCompletion`    | boolean | true     | 启用/禁用所有的代码补全                                    |
+| `windicss.enableUtilityCompletion` | boolean | true     | 启用工具类补全。                                           |
+| `windicss.enableVariantCompletion` | boolean | true     | 启用可变修饰补全。                                         |
+| `windicss.enableDynamicCompletion` | boolean | true     | 启用类似于 p-${int} 的动态工具类补全。                     |
+| `windicss.enableRemToPxPreview`    | boolean | true     | 允许 Rem 转化为 Px 预览。                                  |
+| `windicss.enableCodeFolding`       | boolean | true     | 允许 ClassNames 代码折叠。                                 |
+| `windicss.foldByLength`            | boolean | false    | 由长度决定折叠代码。默认是关闭的，通过工具类的数量来折叠。 |
+| `windicss.foldCount`               | number  | 3        | 通过 foldByCount 使用。                                    |
+| `windicss.foldLength`              | number  | 25       | 通过 foldByLength 使用。                                   |
+| `windicss.hiddenText`              | string  | ` ...`   | 占位符用于折叠代码之时。                                   |
+| `windicss.hiddenTextColor`         | string  | \#AED0A4 | 占位符颜色。                                               |
+| `windicss.sortOnSave`              | boolean | false    | 当文件保存时进行 class 排序。                              |
 
-## For more information
+## 了解更多 {#for-more-information}
 
 * [Windi CSS](https://github.com/windicss/windicss)
-* [Documentation](https://windicss.org)
-* [Discussions](https://github.com/windicss/windicss/discussions)
+* [文档](https://windicss.org)
+* [讨论](https://github.com/windicss/windicss/discussions)
 * [Issues](https://github.com/windicss/windicss-intellisense/issues)
