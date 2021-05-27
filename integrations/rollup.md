@@ -35,9 +35,9 @@ import 'virtual:windi.css'
 
 ## 配置文件 {#configuration}
 
-### 预检查 (样式重写) {#preflight-style-reseting}
+### 预检样式 (样式重写) {#preflight-style-reseting}
 
-预检查 (Preflight) 随需启用，如果你想完全关掉它，可按照下面进行配置
+预检样式 (Preflight) 随需启用，如果你想完全关掉它，可按照下面进行配置
 
 ```ts
 // vite.config.js
