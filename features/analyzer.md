@@ -94,7 +94,7 @@ import type { AnalysisReport } from 'windicss-analysis'
 const report = rawReport as AnalysisReport
 ```
 
-### 编程化使用？ {#programmatic-use}
+### 在程序中使用 {#programmatic-use}
 
 当然可以。就如同普通的 Node 包一样：
 
