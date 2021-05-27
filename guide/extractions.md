@@ -1,28 +1,28 @@
-# Extractions
+# 提取 {#Extractions}
 
-Windi CSS relying on **statical scanning and extractions** to your source files and find your utilities usages and generate them for you on-demand. Similar to [Tailwind's Purge limitation](https://tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html), you will need to use statical full names of utilities for Windi CSS to detect and generate correctly. For example:
+Windi CSS 依靠对源文件进行**静态扫描和提取**来找到你使用的工具类并为你按需生成它们。类似于[Tailwind的 清除限制](https://tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html)，为了使 Windi CSS 准确地检测和生成，你将需要使用工具类的静态全名。例如：
 
-String concatenations can NOT be extracted statically
+字符串拼接的部分不能被静态地提取
 
 ```html
 <div class="text-${ active ? 'green' : 'orange' }-400"></div>
 ```
 
-Use the full names of utilities instead
+需使用工具类的全名来代替
 
 ```html
 <div class="${ active ? 'text-green-400' : 'text-orange-400' }"></div>
 ```
 
-## Safelist
+## 安全清单 {#Safelist}
 
-When you have to use dynamic concatenations, like:
+如下场景所示，你在必须使用动态拼接：
 
 ```html
 <div class="p-${size}"></div>
 ```
 
-For that, you will need to specify the possible combinations in the `safelist` options of `windi.config.js`.
+为此，你将需要在`windi.config.js`的配置项`safelist`中列举可能的组合。
 
 ```ts
 // windi.config.js
@@ -33,7 +33,7 @@ export default defineConfig({
 })
 ```
 
-Or to be more fixable:
+或者采用更加灵活的方式：
 
 ```ts
 // windi.config.js
@@ -51,12 +51,11 @@ export default defineConfig({
 })
 ```
 
-## Scanning
+## 扫描 {#Scanning}
 
-On dev server/build process started, Windi CSS will scan your source code and extract the utilities usages. 
-By default, it will scan for files under `src/` with extensions `vue, html, mdx, pug, jsx, tsx`.
+在开发环境启动时，Windi CSS 将会扫描你的源码并提取出你使用的工具类。默认情况下，它会扫描在`src/`目录下扩展名为`vue, html, mdx, pug, jsx, tsx`的文件。
 
-If you want to enable scaning for other file type of locations, you can configure it via:
+假如你想使其能够扫描其他位置的其他文件类型，你可以通过以下所示配置：
 
 ```ts
 // windi.config.js
@@ -77,11 +76,11 @@ export default defineConfig({
 })
 ```
 
-### Preflight
+### 预检样式 {#Preflight}
 
-Preflight (style reseting) is also enables on-demanded along with the scanning.
+预检样式（style reseting) 也可以按需和扫描一起进行。
 
-To completely disable it, you can change the configurations as below
+你可以通过以下配置来完全禁用它
 
 ```ts
 // windi.config.js
@@ -92,7 +91,7 @@ export default defineConfig({
 })
 ```
 
-Or explicitly enables with safelisting
+或者通过safelist进行指定
 
 ```ts
 // windi.config.js
