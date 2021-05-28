@@ -1,4 +1,4 @@
-# Important 前缀
+# Important 前缀 {#important-prefix}
 
 你可以在任意工具类的前面使用 `!` 前缀，使它们变为 `!important`。当你想覆盖之前的样式规则中指定的属性时，这个会非常有用。
 
