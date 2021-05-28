@@ -22,7 +22,7 @@ Windi CSS 依靠对源文件进行**静态扫描和提取**来找到你使用的
 <div class="p-${size}"></div>
 ```
 
-为此，你将需要在`windi.config.js`的配置项`safelist`中列举可能的组合。
+为此，你将需要在 `windi.config.js` 的配置项 `safelist` 中列举可能的组合。
 
 ```ts
 // windi.config.js
@@ -53,7 +53,7 @@ export default defineConfig({
 
 ## 扫描 {#scanning}
 
-在开发环境启动时，Windi CSS 将会扫描你的源码并提取出你使用的工具类。默认情况下，它会扫描在`src/`目录下扩展名为`vue, html, mdx, pug, jsx, tsx`的文件。
+在开发环境启动时，Windi CSS 将会扫描你的源码并提取出你使用的工具类。默认情况下，它会扫描在 `src/` 目录下扩展名为 `vue, html, mdx, pug, jsx, tsx` 的文件。
 
 假如你想使其能够扫描其他位置的其他文件类型，你可以通过以下所示配置：
 
@@ -91,7 +91,7 @@ export default defineConfig({
 })
 ```
 
-或者通过safelist进行指定
+或者通过 safelist 进行指定
 
 ```ts
 // windi.config.js
