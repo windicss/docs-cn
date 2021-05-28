@@ -1,6 +1,6 @@
-# Important Prefix
+# Important 前缀
 
-You can prefix any utility classes with `!` to make them as `!important`. This could be very useful when you want to override previous styling rules for that specific property.
+你可以在任意工具类的前面使用 `!` 前缀，使它们变为 `!important`。当你想覆盖之前的样式规则中指定的属性时，这个会非常有用。
 
 ```css
 !text-green-300
