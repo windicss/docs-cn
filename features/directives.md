@@ -1,14 +1,14 @@
-# Directives
+# 指令 {#directives}
 
-You can use a combination of directives and CSS to take advantage of the available utilities.
+你可以通过将指令和 CSS 组合在一起的方式来使用可用工具类 (utilities)。
 
-## @apply
+## @apply {#apply}
 
-Use `@apply` to inline any existing utility classes into your style block.
+将 `@apply` 使用在你 style 块中同一行的、一些已存在的工具类上。
 
-This is useful when you find a common utility pattern in your HTML that you'd like to extract to a new component.
+当你在 HTML 中发现一个通用工具类组合时, 这个指令非常有用。你会喜欢把这些通用的工具类组合提取到一个新的组件中。
 
-<DirectivesPlayground 
+<DirectivesPlayground
 :input='`
 .btn {
   @apply font-bold py-2 px-4 rounded;
@@ -19,20 +19,20 @@ This is useful when you find a common utility pattern in your HTML that you'd li
 }`.trim()'
 />
 
-If you'd like to `@apply` an existing class and make it `!important`, simply add `!important` to the end of the declaration:
+如果你希望将 `apply` 使用在一个已存在的 class 上，并且使它 `!important`，只需要将 `!important` 加到声明的末尾即可：
 
-<DirectivesPlayground 
+<DirectivesPlayground
 :input='`
 .btn {
   @apply font-bold py-2 px-4 rounded !important;
 }`.trim()'
 />
 
-## @variants
+## @variants {#variants}
 
-You can generate [screen variants, state variants, theme variants](/utilities/variants) of your own utilities by wrapping their definitions in the `@variants` directive.
+你可以通过把自己的工具类定义包装在 `@variants`中，以此来生成带有 [屏幕可变修饰，状态可变修饰，主题可变修饰](/utilities/variants) 的工具类。
 
-<DirectivesPlayground 
+<DirectivesPlayground
 :input='`
 @variants focus, hover {
   .rotate-0 {
@@ -50,12 +50,12 @@ You can generate [screen variants, state variants, theme variants](/utilities/va
 />
 
 
-## @screen
+## @screen {#screen}
 
-The `@screen` directive allows you to create media queries that reference your breakpoints by name instead of duplicating their values in your own CSS.
+`@screen` 指令允许你创建媒体查询，通过名称来引用断点，以此来取代通过复制你 CSS 里面的值来实现。
 
 
-<DirectivesPlayground 
+<DirectivesPlayground
 :input='`
 @screen sm {
   .custom {
@@ -64,11 +64,11 @@ The `@screen` directive allows you to create media queries that reference your b
 }`.trim()'
 />
 
-## @layer
+## @layer {#layer}
 
-The `@layer` directive makes sure the order of each class. Valid layers are `base`, `components`, and `utilities`.
+`@layer` 指令用来确认每个 class 的排序。合法的层级为 `基础 (base)`, `组件 (components)` 和 `工具类 (utilities)`。
 
-<DirectivesPlayground 
+<DirectivesPlayground
 :input='`
 @layer components {
   .components {
@@ -90,11 +90,11 @@ The `@layer` directive makes sure the order of each class. Valid layers are `bas
 }`.trim()'
 />
 
-## theme()
+## theme() {#theme}
 
-The `theme()` function allows you to access your config values using dot notation.
+`theme()`函数允许你通过点符号 `.` 来获取你设置的值。
 
-<DirectivesPlayground 
+<DirectivesPlayground
 :input='`
 .btn-blue {
   background-color: theme("colors.blue.500");
