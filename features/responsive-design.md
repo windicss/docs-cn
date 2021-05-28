@@ -1,20 +1,20 @@
-# Responsive Design
+# 响应式设计 {#responsive-design}
 
-Doing [Responsive Design](https://en.wikipedia.org/wiki/Responsive_web_design) in Windi CSS is effortless. By simply adding variant prefixes like `md:` or `lg:` to the utility you want to use. The corresponding media query will be generated automatically. Try it yourself using the playground below:
+在 Windi CSS 中，实现 [响应式设计](https://en.wikipedia.org/wiki/Responsive_web_design) 是毫不费力的。只需要将可变修饰前缀，比如 `md:`、`lg:` 加到那些你想加的工具类上。对应的媒体查询会自动生成。在下面自己试试吧：
 
 <InlinePlayground :input="'p-1 lg:p-2'" :showCSS="true" :showPreview="false"/>
 
-When you want to apply a breakpoint variant to multiple utilities, in Windi CSS you can do that without repeating yourself by using the [Variant Groups](/features/variant-groups.html) feature.
+当你想把断点可变修饰加到多个工具类上时，在 Windi CSS 中你可以通过使用 [可变修饰组](/features/variant-groups.html) 特性来实现，而不需要你自己重复去做。
 
 <InlinePlayground :input="'p-1 lg:(p-2 m-2 text-red-400)'" :showCSS="true" :showPreview="false"/>
 
-## Custom Range
+## 自定义范围 {#custom-range}
 
-By default, Windi CSS's breakpoints is designed as Mobile First. 
+默认情况下，Windi CSS 的断点被设计为移动端优先。
 
-This means unprefixed utilities (like `p-1`) take effect on all screen sizes, while prefixed utilities (like `md:p-2`) only take effect at the **specified breakpoint and above**.
+这就意味着没有前缀的工具类（比如：`p-1`） 作用在所有尺寸的屏幕上，而带有前缀的工具类（比如：`md:p-2`）只在**指定断点及以上尺寸**起作用。
 
-We also provided the ability to have more controls over the query range by adding the `<` and `@` prefix:
+我们也添加通过 `<` 和 `@` 前缀的方式，提供了超过选择范围的情况下的更多的控制能力。
 
 ```bash
 lg  => greater or equal than this breakpoint
@@ -24,19 +24,19 @@ lg  => greater or equal than this breakpoint
 
 <InlinePlayground :input="'lg:p-1\n<lg:p-2\n@lg:p-3'" :showCSS="true" :showPreview="false"/>
 
-## Breakpoints
+## 断点 {#breakpoints}
 
-|  | Default | `<` prefixed | `@` prefixed |
-| :------ | :--- | :--- | :--- | :--- |
+|  | 默认 | 带有 `<` 前缀 | 带有 `@` 前缀 |
+| :------ | :--- | :--- | :--- |
 | sm | (min-width: 640px) | (max-width: 639.9px) | (min-width: 640px) and <br>(max-width: 767.9px) |
 | md | (min-width: 768px) | (max-width: 767.9px) | (min-width: 768px) and <br>(max-width: 1023.9px) |
 | lg | (min-width: 1024px) | (max-width: 1023.9px) | (min-width: 1024px) and <br>(max-width: 1279.9px) |
 | xl | (min-width: 1280px) | (max-width: 1279.9px) | (min-width: 1280px) and <br>(max-width: 1535.9px) |
 | 2xl | (min-width: 1536px) | (max-width: 1535.9px) | (min-width: 1536px) |
 
-## Customization
+## 自定义 {#customization}
 
-You can customize your breakpoints in your `windi.config.js`
+你可以在你的 `windi.config.js` 中自定义断点。
 
 ```ts
 // windi.config.js
