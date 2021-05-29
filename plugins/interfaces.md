@@ -93,7 +93,7 @@ plugin(({ addBase, theme }) => {
 
 ## 其它工具 {#other-tools}
 
-### CSS Escape {#css-escape}
+### CSS 转义 {#css-escape}
 
 `e()`
 
