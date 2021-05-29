@@ -1,6 +1,6 @@
 # 插件接口 {#plugin-interfaces}
 
-通过 Windi Css 的接口，可以使你的插件开发变得很简单。Windi Css 是基于 TypeScipt 开发的，所以我们强烈推荐你使用 TypeScript 来开发插件，它能提供很好的类型支持和补全提示。当然，JavaScript 也是受支持的。
+通过 Windi CSS 的接口，可以使你的插件开发变得很简单。Windi CSS 是基于 TypeScipt 开发的，所以我们强烈推荐你使用 TypeScript 来开发插件，它能提供很好的类型支持和补全提示。当然，JavaScript 也是受支持的。
 
 ## 添加静态工具类 {#add-static-utilities}
 
