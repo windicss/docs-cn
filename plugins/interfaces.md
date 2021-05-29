@@ -113,7 +113,7 @@ plugin(({ addBase, theme }) => {
 
 `config()`
 
-## Debug {#debug}
+## 调试 {#debug}
 
 ### 使用 loadPlugin 接口 {#using-loadplugin-interface}
 
