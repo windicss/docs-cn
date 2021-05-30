@@ -4,23 +4,23 @@
 
 <PackageInfo name="windicss" author="voorjaar" />
 
-## Install
+## 安装 {#install}
 
-Add the package:
+添加包：
 
 ```bash
 npm i -g windicss
 ```
 
-## Usage
+## 用法 {#usage}
 
-### Print Help Message
+### 打印帮助信息
 
 ```bash
 windicss --help  // windicss -h
 ```
 
-should print the help message like bellow.
+应输出如下信息
 
 ```bash
 Generate css from text files that containing windi classes.
@@ -55,16 +55,16 @@ Options:
   --init PATH           Start a new project on the path.
 ```
 
-### Initial Test Project
+### 初始化测试项目 {#initial-test-project}
 
 ```bash
 windicss --init <project>  // windicss --init .
 windicss --init <project> --compile  // windicss --init hello_world --compile
 ```
 
-### File Names
+### 文件名 {#file-names}
 
-The `[filenames]` parameter can include filepaths and glob patterns(powerd by [node-glob](https://github.com/isaacs/node-glob)).
+`[filenames]` 参数可以包括文件路径和glob模式 (由 [node-glob](https://github.com/isaacs/node-glob) 支持).
 
 ```bash
 windicss './hello.html' './world.html'
@@ -74,11 +74,11 @@ windicss './hello.html' './world.html', './src/**/*.svelte'
 ...
 ```
 
-### Compile CSS File
+### 编译CSS文件 {#compile-css-file}
 
-#### Generate normal css
+#### 生成普通css {#generate-normal-css}
 
-Use the `-o` parameter to specify the name of the generated css file, and the `-t` parameter to specify whether to add preflight (basestyles).
+使用 `-o` 参数指定生成css文件的名称，  `-t` 参数指定是否添加预检查 (基本样式)。
 
 ```bash
 windicss './**/*.html'
@@ -88,18 +88,18 @@ windicss './test.html' --preflight --output windi.css
 
 ```
 
-#### Minimize build
+#### 最小化构建 {#minimize-build}
 
-Use `-m` or `--minify` to generate minimized css file. This parameter is mostly used for build time.
+使用 `-m` 或 `--minify` 来生产最小化的css文件。此参数主要用于构建时。
 
 ```bash
 windicss './**/*.html' -mto windi.min.css
 windicss './**/*.html' -to windi.css --minify
 ```
 
-#### Using compiliation mode
+#### 使用编译模式 {#using-compiliation-mode}
 
-Compiliation mode will combine all windi utilities into a new class, which you can specify with `-p` or `--prefix`
+编译模式会将所有windi工具类合并到一个新的类名中， 你可以使用 `-p` 或 `--prefix` 进行指定。
 
 ```bash
 windicss './**/*.html' -cto windi.css
@@ -109,7 +109,7 @@ windicss './**/*.html' -cto windi.css --minify --prefix 'tw-'
 windicss './test.html' --compile --preflight --output windi.css
 ```
 
-Give an example
+举个例子
 
 ```html
 <div class="windi-15wa4me">
@@ -128,9 +128,9 @@ Give an example
 </div>
 ```
 
-#### Using attributify mode
+#### 使用归因模式 {#using-attributify-mode}
 
-You can combine attributify mode with interpretation mode or compilation mode. 
+你可以将归因模式与解释模式或编译模式相结合。 
 
 ```bash
 windicss './**/*.html' -ato windi.css
@@ -140,7 +140,7 @@ windicss './test.html' --attributify --preflight --output windi.css
 windicss './test.html' --attributify --compile --preflight --output windi.css
 ```
 
-Give an example
+举个例子
 
 ```html
 <button 
@@ -154,15 +154,15 @@ Give an example
 </button>
 ```
 
-#### Pass a config file
+#### 传递配置文件 {#pass-a-config-file}
 
-Pass a configuration file with the `-f` or `--config` parameter, currently only js configuration files are supported.
+使用 `-f` 或 `--config` 参数来传递一个配置文件，目前仅支持js配置文件。
 
 ```bash
 windicss './**/*.html' -to windi.css --config windi.config.js
 ```
 
-Give an example
+举个例子
 
 ```js
 // windi.config.js
@@ -179,25 +179,25 @@ module.exports = {
 }
 ```
 
-#### Dev mode
+#### 开发模式 {#dev-mode}
 
-Development mode will turn on hot reloading and will watch your file changes to update your css file in real time.
+启用开发模式将打开热重载，在检测到文件更改时更新css文件。
 
 ```bash
 windicss './**/*.html' -to windi.css --dev
 ```
 
-> Note: For better hotloading experience (~5ms) we don't remove built css at development time, so you are expected to rebuild it once at release time using the minimize command to get the best experience for both development and build. Such as `windicss './**/*.html' -mto windi.css`
+> 注意: 为达到更好的热重载体验 (约5ms) 我们在开发时不会移除内置的css，所以在发布时使用最小化构建指令进行一次构建，以获得最佳的开发和构建体验。 例如 `windicss './**/*.html' -mto windi.css`
 
-#### Fuzzy mode
+#### 模糊模式 {#fuzzy-mode}
 
-By default windi matches class/className='...' in the incoming files, if your file type doesn't match, you can turn this option on. It will match all possible windi utilities contained in the file
+默认情况下，windi会匹配传入文件的 class/className='...'，如果文件类型不匹配，你可以打开这个选项。 它将匹配文件中所有可能的windi工具类。
 
 ```bash
 windicss './**/*.html' -to windi.css --dev --fuzzy
 ```
 
-You can also configure `extractors` for specific file types
+你也可以为特定类型的文件配置`extractors`
 
 ```js
 // windi.config.js
@@ -217,15 +217,15 @@ module.exports = {
 }
 ```
 
-#### Style block
+#### 样式块 {#style-block}
 
-To enable style block, you need to use `--style` arg.
+要启用样式，你需要使用 `--style` 参数。
 
 ```bash
 windicss './**/*.html' -to windi.css --dev --style
 ```
 
-Define style block like this: 
+像这样定义样式块：
 
 ```html
 <head>
