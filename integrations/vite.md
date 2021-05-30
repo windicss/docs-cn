@@ -5,11 +5,11 @@
 
 <Logo name="vite" class="logo-float-xl"/>
 
-# [Vite](https://vitejs.dev) 集成
+# [Vite](https://vitejs.dev) 集成 {#integration-for-vite}
 
 <PackageInfo name="vite-plugin-windicss" author="antfu" />
 
-## 功能
+## 功能 {#features}
 
 - ⚡️ **极速** - 比 Tailwind 快20~100倍
 - 🧩 按需使用CSS工具类（与 Tailwind CSS v2 完全兼容）
@@ -23,7 +23,7 @@
 
 > 查看 Windi CSS 与 Tailwind CSS 在 Vite 中的[速度对比]。
 
-## 安装
+## 安装 {#install}
 
 安装包：
 
@@ -55,9 +55,9 @@ import 'virtual:windi.css'
 
 > 如果你是从 Tailwind CSS 迁移过来，也可以查看 [_迁移_ 部分][migration]
 
-## 支持
+## 支持 {#supports}
 
-### TypeScript
+### TypeScript {#typeScript}
 
 需要为你的 `tailwind.config.js` 启用TypeScript？当然可以。
 
@@ -84,11 +84,11 @@ export default defineConfig({
 })
 ```
 
-### Pug Support
+### Pug Support {#pug-support}
 
 当在工作区中找到依赖项 `pug` 时，它将自动启用对 `.pug` 和 Vue SFC 的 Pug 支持。
 
-### "Design in DevTools"
+### "Design in DevTools" {#design-in-devtools}
 
 It might be a common practice when you use the purge-based Tailwind where you have all the classes in your browser and you can try how things work by directly changing the classes in DevTools. While you might think this is some kind of limitation of "on-demand" where the DevTools don't know those you haven't used in your source code yet.
 
@@ -106,9 +106,9 @@ import 'virtual:windi-devtools'
 
 > ⚠️ 在使用 [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) 来检测类的更改时请谨慎使用。这意味着你的手动更改和脚本所做的更改都将被检测到并包含在样式表中。**使用动态构造classes**（不一定）时，这可能会导致开发和生产版本之间产生一些不一致。我们建议你将动态部分添加到 `safelist` 中，或在可能的情况下为您的生产版本设置UI回归测试。
 
-## 配置
+## 配置 {#configuration}
 
-### 预检 (样式重置)
+### 预检 (样式重置) {#preflight}
 
 在按需使用下预检是启用的。如果需要禁用，可以按以下方式配置
 
@@ -121,7 +121,7 @@ export default defineConfig({
 })
 ```
 
-### Safelist
+### Safelist {#safelist}
 
 默认情况下，我们会静态扫描你的源码，并查找所有使用的工具类，然后按需生成相应的CSS。但存在一些局限性：在runtime时工具类无法有效匹配，例如
 
@@ -159,7 +159,7 @@ export default defineConfig({
 })
 ```
 
-### Scanning
+### Scanning {#scanning}
 
 在服务启动时，`vite-plugin-windicss` 将扫描你的源码并提取使用的工具类。默认情况下，只有 `src/` 下带有 `vue，html，mdx，pug，jsx，tsx` 扩展名的文件被包含。如果你想启用扫描其他位置的文件类型，则可以通过以下方式进行配置：
 
@@ -194,7 +194,7 @@ export default defineConfig({
 ```
 
 
-### [属性模式](https://windicss.org/posts/v30.html#attributify-mode)
+### [属性模式](https://windicss.org/posts/v30.html#attributify-mode) {#attributify-mode}
 
 通过以下配置启用
 
@@ -219,7 +219,7 @@ export default {
 </button>
 ```
 
-#### Prefix
+#### Prefix {#preflight-style-reseting}
 
 如果担心命名冲突，可以通过以下方式给属性模式添加自定义前缀：
 
@@ -244,7 +244,7 @@ export default {
 </button>
 ```
 
-### [别名配置](https://windicss.org/posts/v30.html#alias-config)
+### [别名配置](https://windicss.org/posts/v30.html#alias-config) {#alias-config}
 
 ```ts
 // windi.config.ts
@@ -259,7 +259,7 @@ export default {
 }
 ```
 
-### 模块顺序
+### 模块顺序 {#layers-ordering}
 
 > 从v0.14.x开始支持
 
@@ -281,25 +281,25 @@ export default {
   import 'virtual:windi-utilities.css'
 ```
 
-### 更多
+### 更多 {#more}
 
 有关更多配置参考，请参阅 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts) 。
 
-## 注意事项
+## 注意事项 {#caveats}
 
-### Scoped Style
+### Scoped Style {#scoped-style}
 
 需要 **设置 `transformCSS：'pre'` 才能使 Scoped Style 工作**。
 
 带有 scoped style 的 `@media` 指令 **只在** `css` `postcss` `scss` 中有效 ，而在 `sass` `less` `stylus` 中无效。
 
-## 示例
+## 示例 {#example}
 
 请参阅 [示例](https://github.com/windicss/vite-plugin-windicss/blob/main/examples) 中的 *react* 、*vue* 和 *vue with pug* 示例项目，或 [`Vitesse`](https://github.com/antfu/vitesse)
 
 ---
 
-## SvelteKit (从 1.0.0-next.100 开始)
+## SvelteKit (从 1.0.0-next.100 开始) {#sveltekit-as-of-1-0-0-next-100}
 
 通过 `npm i -D vite-plugin-windicss` 安装插件并修改 svelte 配置：
 
