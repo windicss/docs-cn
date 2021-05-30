@@ -14,7 +14,7 @@ Windi CSS 依靠对源文件进行**静态扫描和提取**来找到你使用的
 <div class="${ active ? 'text-green-400' : 'text-orange-400' }"></div>
 ```
 
-## 安全清单 {#safelist}
+## 白名单 {#safelist}
 
 如下场景所示，你在必须使用动态拼接：
 
