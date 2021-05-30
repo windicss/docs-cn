@@ -7,11 +7,6 @@ const { extend, isEmpty: _isEmpty } = require('lodash')
 class FrontMatterService {
   constructor() {}
 
-  /** @param {Record<string, any>} obj */
-  __print(obj) {
-    console.log(JSON.stringify(obj, null, 2))
-  }
-
   /** @param {string} filePath */
   open(filePath) {
     this.filePath = filePath
@@ -27,13 +22,6 @@ class FrontMatterService {
   /** @param{(data: string) => void} callback */
   readFile(callback) {
     callback(String(this.file))
-    return this
-  }
-
-  /** @param {string} string */
-  show(key) {
-    let output = flag ? this.matter[key] : this.matter
-    this.__print(output)
     return this
   }
 
@@ -53,12 +41,10 @@ class FrontMatterService {
   }
 
   save() {
-    let matterStringifyData = this.matter.stringify()
+    const matterStringifyData = this.matter.stringify()
     fs.writeFile(this.filePath, matterStringifyData, (err) => {
-      if (err) {
-        console.warn(`${this.filePath} -- Saving file with matter failed !!`)
-        return
-      }
+      if (err)
+        return console.warn(`${this.filePath} -- Saving file with matter failed !!`) // eslint-disable-line no-console
     })
   }
 }

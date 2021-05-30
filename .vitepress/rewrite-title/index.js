@@ -18,7 +18,7 @@ const articleDirs = [
 const rewriteMarkdownTitle = (filePath) => {
   const matter = matterService.open(filePath)
   const lines = String(matter.file).split(/\r?\n/)
-  const h1Line = lines.find((line) => h1MdRegExp.test(line))
+  const h1Line = lines.find(line => h1MdRegExp.test(line))
   if (!h1Line) return
 
   const title = h1MdRegExp.exec(h1Line)[1]
@@ -27,27 +27,20 @@ const rewriteMarkdownTitle = (filePath) => {
 
 const ergodicDirectory = (dirPath) => {
   fs.readdir(dirPath, (err, files) => {
-    if (err) {
-      console.warn('Directory reading failed !')
-      return
-    }
+    if (err) return
 
     files.forEach((file) => {
       const filePath = path.join(dirPath, file)
       fs.stat(filePath, (err, stats) => {
-        if (err) {
-          console.warn('File status reading failed !')
-          return
-        }
+        if (err) return
 
         if (stats.isFile()) {
-          if (filePath.split('.').pop().toLowerCase() === 'md') {
+          if (filePath.split('.').pop().toLowerCase() === 'md')
             rewriteMarkdownTitle(filePath)
-          }
-        } else if (stats.isDirectory()) {
-          if (articleDirs.includes(filePath.split('/').pop())) {
+        }
+        else if (stats.isDirectory()) {
+          if (articleDirs.includes(filePath.split('/').pop()))
             ergodicDirectory(filePath)
-          }
         }
       })
     })
