@@ -91,7 +91,7 @@ export default defineConfig({
 })
 ```
 
-或者通过 safelist 进行指定
+或者通过白名单（safelist）进行指定
 
 ```ts
 // windi.config.js
@@ -103,4 +103,3 @@ export default defineConfig({
   },
 })
 ```
-
