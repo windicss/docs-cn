@@ -1,21 +1,21 @@
 <Logo name="gridsome" class="logo-float-xl"/>
 
-# Integration for [Gridsome](https://gridsome.org/)
+# 集成 [Gridsome](https://gridsome.org/) {#integration-for-gridsome}
 
 <PackageInfo name="gridsome-plugin-windicss" author="harlan-zw" />
 
-## Install
+## 安装 {#install}
 
 ```bash
 yarn add gridsome-plugin-windicss -D
 # npm i gridsome-plugin-windicss -D
 ```
 
-:warning: This module is a pre-release, please report any [issues](https://github.com/windicss/gridsome-plugin-windicss/issues) you find.
+:warning: 该模块是预发行版本，请报告您发现的所有[问题](https://github.com/windicss/gridsome-plugin-windicss/issues) 。
 
-## Usage
+## 使用 {#usage}
 
-Within your `gridsome.config.js` add the following.
+在 `gridsome.config.js` 中添加以下内容。
 
 ```js
 // gridsome.config.js
@@ -25,14 +25,14 @@ export default {
     {
       use: 'gridsome-plugin-windicss',
       options: {
-        // see https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts
+        // 详见 https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts
       },
     },
   ],
 }
 ```
 
-This module won't work with `gridsome-plugin-tailwindcss`, you will need to remove it.
+此模块不适用于 `gridsome-plugin-tailwindcss`， 你需要将其删除。
 
 ```diff
  plugins: [
@@ -45,18 +45,18 @@ This module won't work with `gridsome-plugin-tailwindcss`, you will need to remo
   ],
 ```
 
-If you have a `tailwind.config.js`, please rename it to `windi.config.js` or `windi.config.ts`.
+如果您有 `tailwind.config.js` 文件，请将其重命名为`windi.config.js` 或 `windi.config.ts`。
 
-See [here](https://windicss.netlify.app/guide/configuration.html) for configuration details.
+有关配置详细信息，请在[此处](https://windicss.netlify.app/guide/configuration.html)查看。
 
 
-## Migrating
+## 迁移 {#migrating}
 
-If you were previously using `gridsome-plugin-tailwindcss`, please consult the [documentation](https://windicss.netlify.app/guide/migration.html) on migrating.
+如果您以前使用过 `gridsome-plugin-tailwindcss`，请参考有关迁移的[文档](https://windicss.netlify.app/guide/migration.html)。
 
-## Configuration
+## 配置 {#configuration}
 
-- Default:
+- 默认:
 ```js
 export default {
   scan: {
@@ -74,7 +74,7 @@ export default {
   transformCSS: 'pre',
   preflight: {
     alias: {
-      // add gridsome aliases
+      // 添加gridsome别名
       'g-link': 'a',
       'g-image': 'img',
     },
@@ -82,11 +82,11 @@ export default {
 }
 ```  
 
-- See [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts) for configuration reference.
+- 有关配置参考，请查看[options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
-### Examples
+### 例子 {#examples}
 
-#### Disable Preflight
+#### 禁用预检查 {#disable-preflight}
 
 _gridsome.config.js_
 ```js
@@ -103,8 +103,9 @@ export default {
 }
 ```
 
-## Caveats
+## 注意事项 {#caveats}
 
-### Scoped Style
+### 样式作用域 {#scoped-style}
 
-`@media` directive with scoped style can **only work** with `css` `postcss` `scss` but not `sass`, `less` nor `stylus`
+限定样式作用域的 `@media` 指令只能与 `css` `postcss` `scss` 一起使用，不能和 `sass`, `less`  `stylus` 一起使用。
+
