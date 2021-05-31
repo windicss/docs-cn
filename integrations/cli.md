@@ -191,7 +191,7 @@ windicss './**/*.html' -to windi.css --dev
 
 #### 模糊模式 {#fuzzy-mode}
 
-默认情况下，windi会匹配传入文件的 class/className='...'，如果文件类型不匹配，你可以打开这个选项。 它将匹配文件中所有可能的windi工具类。
+默认情况下，windi 会匹配传入文件的 class/className='...'，如果文件类型不匹配，你可以打开这个选项。 它将匹配文件中所有可能的 windi 工具类。
 
 ```bash
 windicss './**/*.html' -to windi.css --dev --fuzzy
