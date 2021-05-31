@@ -1,6 +1,6 @@
-## Forms
+## 表单 {#forms}
 
-### Base Styles
+### 基础样式 {#base-styles}
 
 - `input[type='text']`
 - `input[type='password']`
@@ -20,7 +20,7 @@
 - `select[multiple]`
 - `textarea`
 
-### Usage
+### 用法 {#usage}
 
 ```js
 // windi.config.js
