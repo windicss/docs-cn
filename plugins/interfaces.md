@@ -1,10 +1,10 @@
-# Plugin Interfaces
+# 插件接口 {#plugin-interfaces}
 
-You can easily create a plugin through the interface of windicss. Windicss is built based on TypeScript, so we highly recommend that you use Typescript to build plugins, it will give you good type support and completion tips, of course, if you want to use JavaScript, it is also supported.
+通过 Windi CSS 的接口，可以使你的插件开发变得很简单。Windi CSS 是基于 TypeScipt 开发的，所以我们强烈推荐你使用 TypeScript 来开发插件，它能提供很好的类型支持和补全提示。当然，JavaScript 也是受支持的。
 
-## Add Static Utilities
+## 添加静态工具类 {#add-static-utilities}
 
-### Basic Usage
+### 基本用法 {#basic-usage}
 
 ```js
 import plugin from 'windicss/plugin'
@@ -28,9 +28,9 @@ plugin(({ addUtilities }) => {
 })
 ```
 
-## Add Dynamic Utilities
+## 添加动态工具类 {#add-dynamic-utilities}
 
-### Basic Usage
+### 基本用法 {#basic-usage}
 
 ```js
 addDynamic('filter', ({ Utility, Style }) => {
@@ -40,7 +40,7 @@ addDynamic('filter', ({ Utility, Style }) => {
 })
 ```
 
-## Add Components
+## 添加组件 {#add-components}
 
 ```js
 import plugin from 'windicss/plugin'
@@ -63,9 +63,9 @@ plugin(({ addComponents }) => {
 })
 ```
 
-## Add Variants
+## 添加可变修饰 {#add-variants}
 
-### Modify Selectors
+### 修改选择器 {#modify-selectors}
 
 ```js
 import plugin from 'windicss/plugin'
@@ -77,7 +77,7 @@ plugin(addVariant('pointer-group-hover', ({ modifySelectors }) => {
 }))
 ```
 
-## Add Base Styles
+## 添加基础样式 {#add-base-styles}
 
 ```js
 import plugin from 'windicss/plugin'
@@ -91,31 +91,31 @@ plugin(({ addBase, theme }) => {
 })
 ```
 
-## Other Tools
+## 其它工具 {#other-tools}
 
-### CSS Escape
+### CSS 转义 {#css-escape}
 
 `e()`
 
-### Manual Prefix
+### 手动添加前缀 {#manual-prefix}
 
 `prefix()`
 
-### Get User Variants
+### 获取用户可变样式 {#get-user-variants}
 
 `variants()`
 
-### Get User Theme
+### 获取用户主题 {#get-user-theme}
 
 `theme()`
 
-### Get User Configuration
+### 获取用户配置 {#get-user-configuration}
 
 `config()`
 
-## Debug
+## 调试 {#debug}
 
-### Using loadPlugin interface
+### 使用 loadPlugin 接口 {#using-loadplugin-interface}
 
 ```js
 import { Processor } from 'windicss/lib'
@@ -132,7 +132,7 @@ describe('Aspect Ratio Plugin', () => {
 })
 ```
 
-### Using configuration
+### 使用自定义配置 {#using-configuration}
 
 ```js
 import { Processor } from 'windicss/lib'
