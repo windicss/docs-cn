@@ -76,7 +76,7 @@ windicss './hello.html' './world.html', './src/**/*.svelte'
 
 ### 编译 CSS 文件 {#compile-css-file}
 
-#### 生成普通css {#generate-normal-css}
+#### 生成普通 css {#generate-normal-css}
 
 使用 `-o` 参数指定生成css文件的名称，  `-t` 参数指定是否添加预检查 (基本样式)。
 
