@@ -197,7 +197,7 @@ windicss './**/*.html' -to windi.css --dev
 windicss './**/*.html' -to windi.css --dev --fuzzy
 ```
 
-你也可以为特定类型的文件配置`extractors`
+你也可以为特定类型的文件配置 `extractors`
 
 ```js
 // windi.config.js
