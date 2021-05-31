@@ -6,7 +6,7 @@
 
 [Windi CSS] 与 [Tailwind CSS] 的 v2 完全兼容。在此基础上，我们新增了许多额外的特性，进一步提升你的工作体验，并给于更多可能性。
 
-### 值自动推断 {#value-auto-infer}
+### 自动值推导 {#value-auto-infer}
 
 在你的 classes 中使用任意值，然后生成相应的样式。
 
