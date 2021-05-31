@@ -1,10 +1,10 @@
 # 响应式设计 {#responsive-design}
 
-在 Windi CSS 中，实现 [响应式设计](https://en.wikipedia.org/wiki/Responsive_web_design) 是毫不费力的。只需要将可变修饰前缀，比如 `md:`、`lg:` 加到那些你想加的工具类上。对应的媒体查询会自动生成。在下面自己试试吧：
+在 Windi CSS 中，可以很轻松实现 [响应式设计](https://en.wikipedia.org/wiki/Responsive_web_design)。只需要将可变修饰（variant）的前缀加到对应的工具类前，比如 `md:`、`lg:`。对应的媒体查询会自动生成。实现方式如下：
 
 <InlinePlayground :input="'p-1 lg:p-2'" :showCSS="true" :showPreview="false"/>
 
-当你想把断点可变修饰加到多个工具类上时，在 Windi CSS 中你可以通过使用 [可变修饰组](/features/variant-groups.html) 特性来实现，而不需要你自己重复去做。
+当你想把断点可变修饰加到多个工具类上时，在 Windi CSS 中你可以通过使用 [可变修饰组](/features/variant-groups.html) 特性来实现，而不需要重复编写。
 
 <InlinePlayground :input="'p-1 lg:(p-2 m-2 text-red-400)'" :showCSS="true" :showPreview="false"/>
 
@@ -14,7 +14,7 @@
 
 这就意味着没有前缀的工具类（比如：`p-1`） 作用在所有尺寸的屏幕上，而带有前缀的工具类（比如：`md:p-2`）只在**指定断点及以上尺寸**起作用。
 
-我们也添加通过 `<` 和 `@` 前缀的方式，提供了超过选择范围的情况下的更多的控制能力。
+我们还添加通过 `<` 和 `@` 前缀的方式，提供了超过查询范围的情况下的更多控制能力。
 
 ```bash
 lg  => greater or equal than this breakpoint
