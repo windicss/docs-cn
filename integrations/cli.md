@@ -74,7 +74,7 @@ windicss './hello.html' './world.html', './src/**/*.svelte'
 ...
 ```
 
-### 编译CSS文件 {#compile-css-file}
+### 编译 CSS 文件 {#compile-css-file}
 
 #### 生成普通css {#generate-normal-css}
 
