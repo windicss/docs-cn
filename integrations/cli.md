@@ -64,7 +64,7 @@ windicss --init <project> --compile  // windicss --init hello_world --compile
 
 ### 文件名 {#file-names}
 
-`[filenames]` 参数可以包括文件路径和glob模式 (由 [node-glob](https://github.com/isaacs/node-glob) 支持).
+`[filenames]` 参数可以包括文件路径和 glob 模式 (由 [node-glob](https://github.com/isaacs/node-glob) 支持).
 
 ```bash
 windicss './hello.html' './world.html'
