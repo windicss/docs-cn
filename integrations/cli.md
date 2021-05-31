@@ -187,7 +187,7 @@ module.exports = {
 windicss './**/*.html' -to windi.css --dev
 ```
 
-> 注意: 为达到更好的热重载体验 (约5ms) 我们在开发时不会移除内置的css，所以在发布时使用最小化构建指令进行一次构建，以获得最佳的开发和构建体验。 例如 `windicss './**/*.html' -mto windi.css`
+> 注意: 为达到更好的热重载体验 (约5ms) 我们在开发时不会移除内置的 css，所以在发布时使用最小化构建指令进行一次构建，以获得最佳的开发和构建体验。 例如 `windicss './**/*.html' -mto windi.css`
 
 #### 模糊模式 {#fuzzy-mode}
 
