@@ -181,7 +181,7 @@ module.exports = {
 
 #### 开发模式 {#dev-mode}
 
-启用开发模式将打开热重载，在检测到文件更改时更新css文件。
+启用开发模式将打开热重载，在检测到文件更改时更新 css 文件。
 
 ```bash
 windicss './**/*.html' -to windi.css --dev
