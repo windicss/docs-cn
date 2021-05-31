@@ -1,6 +1,6 @@
 <Logo name="javascript" class="logo-float-xl"/>
 
-# Windi CSS JavaScript API {#windi-css-javascript-api}
+# Windi CSS 的 JavaScript API {#windi-css-javascript-api}
 
 <PackageInfo name="windicss" author="voorjaar" />
 
@@ -16,7 +16,7 @@
 npm i -D windicss
 ```
 
-## 使用方法 {#usage}
+## 用法 {#usage}
 
 ### 以解释模式开始 {#setup-with-interpret-mode}
 
