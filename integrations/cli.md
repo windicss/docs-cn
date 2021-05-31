@@ -78,7 +78,7 @@ windicss './hello.html' './world.html', './src/**/*.svelte'
 
 #### 生成普通 css {#generate-normal-css}
 
-使用 `-o` 参数指定生成css文件的名称，  `-t` 参数指定是否添加预检查 (基本样式)。
+使用 `-o` 参数指定生成 css 文件的名称，  `-t` 参数指定是否添加预检样式 (基本样式)。
 
 ```bash
 windicss './**/*.html'
