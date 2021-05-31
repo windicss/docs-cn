@@ -99,7 +99,7 @@ windicss './**/*.html' -to windi.css --minify
 
 #### 使用编译模式 {#using-compiliation-mode}
 
-编译模式会将所有windi工具类合并到一个新的类名中， 你可以使用 `-p` 或 `--prefix` 进行指定。
+编译模式会将所有 windi 工具类合并到一个新的类名中， 你可以使用 `-p` 或 `--prefix` 进行指定。
 
 ```bash
 windicss './**/*.html' -cto windi.css
