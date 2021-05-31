@@ -156,7 +156,7 @@ windicss './test.html' --attributify --compile --preflight --output windi.css
 
 #### 传递配置文件 {#pass-a-config-file}
 
-使用 `-f` 或 `--config` 参数来传递一个配置文件，目前仅支持js配置文件。
+使用 `-f` 或 `--config` 参数来传递一个配置文件，目前仅支持 js 配置文件。
 
 ```bash
 windicss './**/*.html' -to windi.css --config windi.config.js
