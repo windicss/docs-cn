@@ -86,7 +86,7 @@ export default {
 
 ### 示例 {#examples}
 
-#### 禁用预检查 {#disable-preflight}
+#### 禁用预检样式{#disable-preflight}
 
 _gridsome.config.js_
 ```js
