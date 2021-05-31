@@ -90,7 +90,7 @@ windicss './test.html' --preflight --output windi.css
 
 #### 最小化构建 {#minimize-build}
 
-使用 `-m` 或 `--minify` 来生产最小化的css文件。此参数主要用于构建时。
+使用 `-m` 或 `--minify` 来生产最小化的 css 文件。此参数主要用于构建时。
 
 ```bash
 windicss './**/*.html' -mto windi.min.css
