@@ -11,7 +11,7 @@ yarn add gridsome-plugin-windicss -D
 # npm i gridsome-plugin-windicss -D
 ```
 
-:warning: 该模块是预发行版本，请报告您发现的所有[问题](https://github.com/windicss/gridsome-plugin-windicss/issues) 。
+:warning: 该模块是预发行版本，请反馈你发现的任何[问题](https://github.com/windicss/gridsome-plugin-windicss/issues) 。
 
 ## 使用 {#usage}
 
@@ -108,4 +108,3 @@ export default {
 ### 样式作用域 {#scoped-style}
 
 限定样式作用域的 `@media` 指令只能与 `css` `postcss` `scss` 一起使用，不能和 `sass`, `less`  `stylus` 一起使用。
-
