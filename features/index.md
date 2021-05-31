@@ -4,7 +4,7 @@
 
 # 特性 {#features}
 
-[Windi CSS] 与 [Tailwind CSS] 的 v2 完全兼容。在此基础上，我们增加了额外的特性进一步提升你的工作流，并给于更多可能性。
+[Windi CSS] 与 [Tailwind CSS] 的 v2 完全兼容。在此基础上，我们新增了许多额外的特性，进一步提升你的工作体验，并给于更多可能性。
 
 ### 值自动推断 {#value-auto-infer}
 
@@ -92,7 +92,7 @@ export default {
 
 ### 指令 {#directives}
 
-完全支持 Tailwind 风格的指令 `@apply`, `@screen`。
+完全兼容 Tailwind 风格的指令 `@apply`, `@screen`。
 
 ```css
 .btn {
@@ -108,6 +108,6 @@ export default {
 
 ### 可视化分析器 {#visual-analyzer}
 
-我们为你提供了可视化分析器，可以让你对工具类的使用情况和设计系统的有一个概览。
+我们为你提供了可视化分析器，可以让你对工具类的使用情况和设计系统的有大致的了解。
 
 <LearnMore to="/features/analyzer" />
