@@ -74,7 +74,7 @@ export default {
   transformCSS: 'pre',
   preflight: {
     alias: {
-      // 添加gridsome别名
+      // 添加 gridsome 别名
       'g-link': 'a',
       'g-image': 'img',
     },
