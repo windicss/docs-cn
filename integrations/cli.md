@@ -14,7 +14,7 @@ npm i -g windicss
 
 ## 用法 {#usage}
 
-### 打印帮助信息
+### 打印帮助信息 {#print-help-message}
 
 ```bash
 windicss --help  // windicss -h
