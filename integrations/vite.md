@@ -1,6 +1,6 @@
 [速度对比]: https://twitter.com/antfu7/status/1361398324587163648
-[CSS指令]: /features/directives
-[classes工具类]: /utilities/
+[CSS 指令]: /features/directives
+[classes 工具类]: /utilities/
 [migration]: /guide/migration
 
 <Logo name="vite" class="logo-float-xl"/>
@@ -9,29 +9,29 @@
 
 <PackageInfo name="vite-plugin-windicss" author="antfu" />
 
-## 功能 {#features}
+## 特性 {#features}
 
-- ⚡️ **极速** - 比 Tailwind 快20~100倍
-- 🧩 按需使用CSS工具类（与 Tailwind CSS v2 完全兼容）
-- 📦 按需使用原生元素样式重置（预检）
+- ⚡️ **极速** - 在 Vite 中比 Tailwind 快20~100倍
+- 🧩 按需使用 CSS 工具类（与 Tailwind CSS v2 完全兼容）
+- 📦 按需使用原生元素样式重置（预检样式）
 - 🔥 模块热替换 (HMR)
 - 🍃 从 `tailwind.config.js` 加载配置
-- 🤝 与框架无关 - Vue, React, Svelte and vanilla!
+- 🤝 与框架无关 - Vue、 React、Svelte and vanilla！
 - 📄 CSS `@apply` / `@screen` 指令转换（也适用于 Vue SFC 的 `<style>` ）
 - 🎳 支持变量组 - 如 `bg-gray-200 hover:(bg-gray-100 text-red-300)`
-- 😎 ["Design in Devtools"](#design-in-devtools) - 支持传统的 Tailwind 运行方式
+- 😎 ["Devtools 设计"](#design-in-devtools) - 支持传统的 Tailwind 运行方式
 
 > 查看 Windi CSS 与 Tailwind CSS 在 Vite 中的[速度对比]。
 
 ## 安装 {#install}
 
-安装包：
+安装相关包：
 
 ```bash
 npm i -D vite-plugin-windicss windicss
 ```
 
-然后，在你的 Vite 配置中安装插件：
+然后，在你的 Vite 配置中添加插件：
 
 ```ts
 // vite.config.js
@@ -51,15 +51,15 @@ export default {
 import 'virtual:windi.css'
 ```
 
-现在可以在你的应用中开始使用 [classes工具类] 或者 [CSS指令] ，感受一下速度吧！⚡️
+现在可以在你的应用中开始使用 [classes 工具类] 或者 [CSS 指令] ，感受一下速度吧！⚡️
 
-> 如果你是从 Tailwind CSS 迁移过来，也可以查看 [_迁移_ 部分][migration]
+> 如果你是从 Tailwind CSS 迁移过来，也可以查看 [_迁移_ 章节][migration] 文档
 
 ## 支持 {#supports}
 
 ### TypeScript {#typeScript}
 
-需要为你的 `tailwind.config.js` 启用TypeScript？当然可以。
+希望在你的 `tailwind.config.js` 启用 TypeScript？当然可以。
 
 将它重命名为 `tailwind.config.ts` 即可。
 
@@ -86,13 +86,13 @@ export default defineConfig({
 
 ### Pug Support {#pug-support}
 
-当在工作区中找到依赖项 `pug` 时，它将自动启用对 `.pug` 和 Vue SFC 的 Pug 支持。
+当在工作区中找到依赖项 `pug` 时，它将自动启用对 `.pug` 和 Vue SFC 的支持。
 
-### "Design in DevTools" {#design-in-devtools}
+### "DevTools 设计" {#design-in-devtools}
 
-It might be a common practice when you use the purge-based Tailwind where you have all the classes in your browser and you can try how things work by directly changing the classes in DevTools. While you might think this is some kind of limitation of "on-demand" where the DevTools don't know those you haven't used in your source code yet.
+当你使用基于 Purge 的 Tailwind 时，常见的情况是，你能在浏览器中查看所有的类，同时你可以通过直接改变 DevTools 中的类来了解其是如何生效的。但 DevTools 依旧不能探知那些你还没有在源码中使用的类，所以你可能认为这是“按需”的某种限制。
 
-但遗憾的是 **我们在这里打破了限制** 😎 查看 [视频示例](https://twitter.com/antfu7/status/1372244287975387145).
+但幸运的是 **我们在这里打破了限制** 😎 查看 [视频示例](https://twitter.com/antfu7/status/1372244287975387145).
 
 只需要在你的主入口文件中添加下面这行代码
 
@@ -102,13 +102,13 @@ import 'virtual:windi-devtools'
 
 它将自动帮你启用。
 
-不用担心最后的打包，在生产版本中 `virtual：windi-devtools` 将是一个空模块，你无需为此额外的事情:)
+不用担心最后的打包，在生产版本中 `virtual:windi-devtools` 将是一个空模块，所以你无需专门处理它。
 
-> ⚠️ 在使用 [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) 来检测类的更改时请谨慎使用。这意味着你的手动更改和脚本所做的更改都将被检测到并包含在样式表中。**使用动态构造classes**（不一定）时，这可能会导致开发和生产版本之间产生一些不一致。我们建议你将动态部分添加到 `safelist` 中，或在可能的情况下为您的生产版本设置UI回归测试。
+> ⚠️ 请谨慎使用它，因为我们在底层使用了 [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) 来检测类的改变。这意味着你的手动更改和脚本所做的更改都将被检测到并包含在样式表中。**使用动态构造类**（不一定）时，这可能会导致开发和生产版本之间产生一些不一致。我们建议你将动态部分添加到 `safelist` 中，或者如果可以的话，为你的生产环境设置 UI 回归测试。
 
 ## 配置 {#configuration}
 
-### 预检 (样式重置) {#preflight}
+### 预检样式 (样式重置) {#preflight}
 
 在按需使用下预检是启用的。如果需要禁用，可以按以下方式配置
 
@@ -121,9 +121,9 @@ export default defineConfig({
 })
 ```
 
-### Safelist {#safelist}
+### 白名单 {#safelist}
 
-默认情况下，我们会静态扫描你的源码，并查找所有使用的工具类，然后按需生成相应的CSS。但存在一些局限性：在runtime时工具类无法有效匹配，例如
+默认情况下，我们会静态扫描你的源码，并查找所有使用的工具类，然后按需生成相应的 CSS。但存在一些局限性：在 runtime 时工具类无法有效匹配，例如
 
 ```html
 <!-- 不会被检测到 -->
@@ -153,15 +153,15 @@ function range(size, startAt = 1) {
 
 export default defineConfig({
   safelist: [
-    range(30).map(i => `p-${i}`), // p-1 to p-3
-    range(10).map(i => `mt-${i}`), // mt-1 to mt-10
+    range(30).map(i => `p-${i}`), // 从 p-1 到 p-3
+    range(10).map(i => `mt-${i}`), // 从 mt-1 到 mt-10
   ],
 })
 ```
 
-### Scanning {#scanning}
+### 扫描 {#scanning}
 
-在服务启动时，`vite-plugin-windicss` 将扫描你的源码并提取使用的工具类。默认情况下，只有 `src/` 下带有 `vue，html，mdx，pug，jsx，tsx` 扩展名的文件被包含。如果你想启用扫描其他位置的文件类型，则可以通过以下方式进行配置：
+在服务启动时，`vite-plugin-windicss` 将扫描你的源码并提取使用的工具类。默认情况下，只有 `src/` 下带有 `vue、html、mdx、pug、jsx、tsx` 扩展名的文件被包含。如果你想扫描其他位置的文件类型，则可以通过以下方式进行配置：
 
 ```ts
 // windi.config.js
@@ -219,7 +219,7 @@ export default {
 </button>
 ```
 
-#### Prefix {#preflight-style-reseting}
+#### 前缀 {#preflight-style-reseting}
 
 如果担心命名冲突，可以通过以下方式给属性模式添加自定义前缀：
 
@@ -259,11 +259,11 @@ export default {
 }
 ```
 
-### 模块顺序 {#layers-ordering}
+### 层顺序 {#layers-ordering}
 
-> 从v0.14.x开始支持
+> 从 v0.14.x 开始支持
 
-默认情况下，导入 `virtual:windi.css` 将会按顺序导入全部三个模块 `base - components - utilities` 。如果你想更好地控制顺序，可以通过以下方法将它们分开：
+默认情况下，导入 `virtual:windi.css` 将会按顺序导入全部三个层 `base - components - utilities` 。如果你想更好地控制顺序，可以通过以下方法将它们分开：
 
 ```diff
 - import 'virtual:windi.css'
@@ -272,7 +272,7 @@ export default {
 + import 'virtual:windi-utilities.css'
 ```
 
-你还可以使自定义的css能够被某些模块覆盖：
+你还可以使自定义的 css 能够被某些层覆盖：
 
 ```diff
   import 'virtual:windi-base.css'
@@ -289,7 +289,7 @@ export default {
 
 ### Scoped Style {#scoped-style}
 
-需要 **设置 `transformCSS：'pre'` 才能使 Scoped Style 工作**。
+需要 **设置 `transformCSS:'pre'` 才能使 Scoped Style 工作**。
 
 带有 scoped style 的 `@media` 指令 **只在** `css` `postcss` `scss` 中有效 ，而在 `sass` `less` `stylus` 中无效。
 
@@ -330,7 +330,7 @@ export default config
 <script>
   import "virtual:windi.css"
 
-  // 如果你需要启用 windi devtools
+  // 如果你想要启用 windi devtools
   import { browser } from "$app/env";
   if (browser) import("virtual:windi-devtools")
   // ...
