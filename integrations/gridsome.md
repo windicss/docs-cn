@@ -45,14 +45,14 @@ export default {
   ],
 ```
 
-如果您有 `tailwind.config.js` 文件，请将其重命名为`windi.config.js` 或 `windi.config.ts`。
+如果你有 `tailwind.config.js` 文件，请将其重命名为`windi.config.js` 或 `windi.config.ts`。
 
 有关配置详细信息，请在[此处](https://windicss.netlify.app/guide/configuration.html)查看。
 
 
 ## 迁移 {#migrating}
 
-如果您以前使用过 `gridsome-plugin-tailwindcss`，请参考有关迁移的[文档](https://windicss.netlify.app/guide/migration.html)。
+如果你以前使用过 `gridsome-plugin-tailwindcss`，请参考有关迁移的[文档](https://windicss.netlify.app/guide/migration.html)。
 
 ## 配置 {#configuration}
 
