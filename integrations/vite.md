@@ -219,7 +219,7 @@ export default {
 </button>
 ```
 
-#### 前缀 {#preflight-style-reseting}
+#### 前缀 {#prefix}
 
 如果担心命名冲突，可以通过以下方式给属性模式添加自定义前缀：
 
