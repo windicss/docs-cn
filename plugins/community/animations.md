@@ -8,7 +8,7 @@
 npm install --save-dev @windicss/animations
 ```
 
-## 用法
+## 用法{#usage}
 
 ```js
 // tailwind.config.js
@@ -32,7 +32,7 @@ export default {
 }
 ```
 
-### 可用的 Animate CSS 类
+### 可用的 Animate CSS 类{#available-animate-css-classes}
 * .animate-animated
 * .animate-infinite
 * .animate-delay
@@ -145,6 +145,6 @@ export default {
 * .animate-backOutLeft
 * .animate-backOutRight
 
-## 致谢
+## 致谢{#credits}
 
 此插件基于超给力的 [Animate.css](https://github.com/animate-css/animate.css)。
