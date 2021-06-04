@@ -1,19 +1,19 @@
 <Logo name="nuxt" class="logo-float-xl"/>
 
-# Integration for [Nuxt.js](https://nuxtjs.org)
+# [Nuxt.js](https://nuxtjs.org) 集成 {#integration-for-nuxt.js}
 
 <PackageInfo name="nuxt-windicss-module" author="harlan-zw" />
 
-## Install
+## 安装{#install}
 
 ```bash
 yarn add nuxt-windicss -D
 # npm i nuxt-windicss -D
 ```
 
-## Usage
+## 用法{#usage}
 
-Within your `nuxt.config.js` add the following.
+在你的 `nuxt.config.js` 中添加如下配置：
 
 ```js
 // nuxt.config.js
@@ -24,9 +24,9 @@ export default {
 }
 ```
 
-## Migrating from tailwind
+## 从 tailwind 迁移{#migrating-from-tailwind}
 
-This module won't work with `@nuxtjs/tailwindcss`, you will need to remove it.
+此模块不支持 `@nuxtjs/tailwindcss`，你需要移除它。
 
 ```diff
 buildModules: [
@@ -34,16 +34,16 @@ buildModules: [
 ],
 ```
 
-If you have a `tailwind.config.js`, please rename it to `windi.config.js` or `windi.config.ts`.
+如果你有 `tailwind.config.js`，请将其重命名为 `windi.config.js` 或者 `windi.config.ts`。
 
-Follow the [migration guide](https://windicss.org/guide/migration.html) for other change details.
+更多信息，请查阅 [迁移指南](https://windicss.org/guide/migration.html)
 
 
-## Configuration
+## 配置{#configuration}
 
-### Preflight (style resetting)
+### 预检样式(重置样式){#preflight}
 
-Preflight is enabled on-demanded. If you'd like to completely disable it, you can configure it as below
+预检样式 (Preflight) 按需启用，如果你想完全禁用它，可按照下面进行配置
 
 ```ts
 // windi.config.ts
@@ -54,16 +54,16 @@ export default defineConfig({
 })
 ```
 
-### Safelist
+### 白名单{#safelist}
 
-By default, we scan your source code statically and find all the usages of the utilities then generated corresponding CSS on-demand. However, there is some limitation that utilities that decided in the runtime can not be matched efficiently, for example
+默认情况下，我们会静态扫描你的源码，并找出所有用到的工具类 (utilities)，然后按需生成响应的 CSS。然而，这存在一定限制，运行时生成的工具类并不能被高效地匹配。例如：
 
 ```vue
-<!-- will not be detected -->
+<!-- 不会被侦测到  -->
 <div :class="{ ['p-'+size]: true}">
 ```
 
-For that, you will need to specify the possible combinations in the `safelist` options of `webpack.config.js`.
+为了解决这个限制，你需要在 `vite.config.js` 中的 `safelist` 选项中指定可能的组合。
 
 ```ts
 // windi.config.ts
@@ -74,7 +74,7 @@ export default defineConfig({
 })
 ```
 
-Or you can do it this way
+或者你可以这样做
 
 ```ts
 // windi.config.ts
@@ -92,10 +92,10 @@ export default defineConfig({
 })
 ```
 
-### Scanning
+### 扫描 {#scanning}
 
-On server start, `nuxt-windicss` will scan your source code and extract the utility usages. By default,
-only files within your root with extensions `vue, html, md, mdx, pug, jsx, tsx` will be included. If you want to enable scanning for other file types of locations, you can configure it via:
+当服务启动后，`vite-plugin-windicss` 将扫描你的源代码，并把使用到的工具类提取出来。
+默认情况下，只有处于项目根目录下且后缀为 `vue, html, md, mdx, pug, jsx, tsx` 的文件才会被扫描。如果你想扫描本地的其他文件，你可以进行配置如下：
 
 ```ts
 // windi.config.js
@@ -109,7 +109,7 @@ export default defineConfig({
 })
 ```
 
-Or in nuxt config:
+或者直接在 nuxt 中配置：
 
 ```ts
 // nuxt.config.js
@@ -127,9 +127,9 @@ export default {
 }
 ```
 
-### Other Options
+### 其他选项{#other-options}
 
-These are the default options for the nuxt module.
+这些是 nuxt 模块的默认选项。
 ```js
 export default {
   // ...
@@ -142,7 +142,7 @@ export default {
         '.git',
         '.github',
         '.nuxt',
-        // testing files & folders
+        // 测试文件 & 文件夹
         'coverage',
         '**/__snapshots__',
         '*.test.js',
@@ -150,9 +150,9 @@ export default {
     },
     preflight: {
       alias: {
-        // add nuxt aliases
+        // 添加 nuxt 别名
         'nuxt-link': 'a',
-        // @nuxt/image module
+        // @nuxt/image 模块
         'nuxt-img': 'img',
       },
     },
@@ -160,18 +160,18 @@ export default {
 }
 ```  
 
-- See [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts) for configuration reference.
+- 配置参考见[options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
-The nuxt module provides the same configuration API as the vite plugin.
+nuxt 模块提供与 vite 插件相同的配置API。
 
-### Examples
+### 示例{#examples}
 
-#### Scan classes from a node_modules package
+#### 从一个 node_modules 包中扫描类{#scan-classes-from-a-node_modules-package}
 
-Out-of-the-box this module ignores any files in node_modules, this is to simplify
-the scanning for most users.
+开箱即用，此模块忽略了 node_modules 中的任何文件，
+这是为了简化大部分用户的扫描。
 
-To opt-in to this scanning you will need to set the scan options yourself.
+要选择加入这种扫描，你需要自己设置扫描选项。
 
 ````js
 // nuxt.config.js
@@ -194,10 +194,10 @@ export default {
 }
 ````
 
-#### Transform @apply's from a node_modules package
+#### 从一个 node_modules 包中转换 @apply{#Transform-@apply's-from-a-node_modules-package}
 
-If you need to load in a CSS file from a node_module folder and have the @apply's transformed,
-then you will need to use the `extraTransformTargets` option.
+如果你需要从 node_module 文件夹中加载一个 CSS 文件，并对 @apply 进行转换，
+那么你需要使用 `extraTransformTargets` 选项。
 
 ```js
 export default {
@@ -213,7 +213,7 @@ export default {
             absolute: true,
           },
         )
-        // make sure file @apply's get transformed
+        // 确保文件 @apply's 得到转化
         windiOptions.scanOptions.extraTransformTargets = {
           css: transformFiles.filter((f: string) => f.endsWith('.css')),
           detect: transformFiles.filter((f: string) => f.endsWith('.vue')),
@@ -226,20 +226,20 @@ export default {
 }
 ```
 
-## Hooks
+## 钩子{#hooks}
 
-You can use the following nuxt hooks to modify the behaviour of the code.
+你可以使用以下 nuxt 钩子来修改代码的行为。
 
 `windicss:config`
-- Arguments: FullConfig
+- 参数：FullConfig
 
-Modify the Windi CSS configuration before it is passed to the webpack plugin.
+在 Windi CSS 配置被传递给 webpack 插件之前，对其进行修改。
 
-Useful for making runtime style changes.
+这对修改运行时的样式很有用。
 
 `windicss:options`
-- Arguments: options
+- 参数：options
 
-Modify the Windi CSS options before they are passed to the webpack plugin.
+在传递给 webpack 插件之前，修改 Windi 的 CSS 选项。
 
-Useful for adding runtime directories to the scan path.
+对于在扫描路径中添加运行时目录很有用。
