@@ -1,6 +1,6 @@
 # @windicss/plugin-animations
 
-将 [Animate CSS](https://github.com/animate-css/animate.css) 作为 [Windi CSS](https://github.com/windicss/windicss) 插件添加到你的项目中。此插件是基于 [tailwind-animate.css](https://github.com/bentzibentz/tailwindcss-animate.css) 修改的，以适应 Windi CSS。
+将 [Animate CSS](https://github.com/animate-css/animate.css) 作为 [Windi CSS](https://github.com/windicss/windicss) 插件添加到你的项目中。此插件是基于 [tailwind-animate.css](https://github.com/bentzibentz/tailwindcss-animate.css) 修改的，以适配 Windi CSS。
 
 ## 安装{#installation}
 
