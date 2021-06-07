@@ -2,13 +2,13 @@
 
 将 [Animate CSS](https://github.com/animate-css/animate.css) 作为 [Windi CSS](https://github.com/windicss/windicss) 插件添加到你的项目中。此插件是基于 [tailwind-animate.css](https://github.com/bentzibentz/tailwindcss-animate.css) 修改的，以适配 Windi CSS。
 
-## 安装{#installation}
+## 安装 {#installation}
 
 ```bash
 npm install --save-dev @windicss/animations
 ```
 
-## 用法{#usage}
+## 用法 {#usage}
 
 ```js
 // tailwind.config.js
@@ -32,7 +32,7 @@ export default {
 }
 ```
 
-### 可用的 Animate CSS 类{#available-animate-css-classes}
+### 可用的 Animate CSS 类 {#available-animate-css-classes}
 * .animate-animated
 * .animate-infinite
 * .animate-delay
@@ -145,6 +145,6 @@ export default {
 * .animate-backOutLeft
 * .animate-backOutRight
 
-## 致谢{#credits}
+## 致谢 {#credits}
 
 此插件基于超给力的 [Animate.css](https://github.com/animate-css/animate.css)。
