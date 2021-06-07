@@ -4,14 +4,14 @@
 
 <PackageInfo name="nuxt-windicss-module" author="harlan-zw" />
 
-## 安装{#install}
+## 安装 {#install}
 
 ```bash
 yarn add nuxt-windicss -D
 # npm i nuxt-windicss -D
 ```
 
-## 用法{#usage}
+## 用法 {#usage}
 
 在你的 `nuxt.config.js` 中添加如下配置：
 
@@ -24,7 +24,7 @@ export default {
 }
 ```
 
-## 从 tailwind 迁移{#migrating-from-tailwind}
+## 从 tailwind 迁移 {#migrating-from-tailwind}
 
 此模块不支持 `@nuxtjs/tailwindcss`，你需要移除它。
 
@@ -39,9 +39,9 @@ buildModules: [
 更多信息，请查阅 [迁移指南](https://windicss.org/guide/migration.html)
 
 
-## 配置{#configuration}
+## 配置 {#configuration}
 
-### 预检样式(重置样式){#preflight}
+### 预检样式(重置样式) {#preflight}
 
 预检样式 (Preflight) 按需启用，如果你想完全禁用它，可按照下面进行配置
 
@@ -54,7 +54,7 @@ export default defineConfig({
 })
 ```
 
-### 白名单{#safelist}
+### 白名单 {#safelist}
 
 默认情况下，我们会静态扫描你的源码，并找出所有用到的工具类 (utilities)，然后按需生成响应的 CSS。然而，这存在一定限制，运行时生成的工具类并不能被高效地匹配。例如：
 
@@ -127,7 +127,7 @@ export default {
 }
 ```
 
-### 其他选项{#other-options}
+### 其他选项 {#other-options}
 
 这些是 nuxt 模块的默认选项。
 ```js
@@ -164,9 +164,9 @@ export default {
 
 nuxt 模块提供与 vite 插件相同的配置API。
 
-### 示例{#examples}
+### 示例 {#examples}
 
-#### 从一个 node_modules 包中扫描类{#scan-classes-from-a-node_modules-package}
+#### 从一个 node_modules 包中扫描类 {#scan-classes-from-a-node_modules-package}
 
 开箱即用，此模块忽略了 node_modules 中的任何文件，
 这是为了简化大部分用户的扫描。
@@ -194,7 +194,7 @@ export default {
 }
 ````
 
-#### 从一个 node_modules 包中转换 @apply{#Transform-@apply's-from-a-node_modules-package}
+#### 从一个 node_modules 包中转换 @apply {#Transform-@apply's-from-a-node_modules-package}
 
 如果你需要从某个 node_module 文件夹中加载一个 CSS 文件，并对 @apply 进行转换，
 那么你需要使用 `extraTransformTargets` 选项。
@@ -226,7 +226,7 @@ export default {
 }
 ```
 
-## 钩子{#hooks}
+## 钩子 {#hooks}
 
 你可以使用以下 nuxt 钩子来修改代码的行为。
 
