@@ -160,7 +160,7 @@ export default {
 }
 ```  
 
-- 配置参考见[options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
+- 配置参考见 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
 nuxt 模块提供与 vite 插件相同的配置API。
 
@@ -196,7 +196,7 @@ export default {
 
 #### 从一个 node_modules 包中转换 @apply{#Transform-@apply's-from-a-node_modules-package}
 
-如果你需要从 node_module 文件夹中加载一个 CSS 文件，并对 @apply 进行转换，
+如果你需要从某个 node_module 文件夹中加载一个 CSS 文件，并对 @apply 进行转换，
 那么你需要使用 `extraTransformTargets` 选项。
 
 ```js
