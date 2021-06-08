@@ -92,7 +92,7 @@
 
 ## theme() {#theme}
 
-`theme()`函数允许你通过点符号 `.` 来获取你设置的值。
+`theme()` 函数允许你通过 `.` 运算符来获取你设置的值。
 
 <DirectivesPlayground
 :input='`
