@@ -1,14 +1,14 @@
 # @windicss/plugin-animations
 
-Add [Animate CSS](https://github.com/animate-css/animate.css) as [Windi CSS](https://github.com/windicss/windicss) plugin to your project. This plugin is modified based on [tailwind-animate.css](https://github.com/bentzibentz/tailwindcss-animate.css) to adapt to Windi CSS.
+将 [Animate CSS](https://github.com/animate-css/animate.css) 作为 [Windi CSS](https://github.com/windicss/windicss) 插件添加到你的项目中。此插件是基于 [tailwind-animate.css](https://github.com/bentzibentz/tailwindcss-animate.css) 修改的，以适配 Windi CSS。
 
-## Installation
+## 安装 {#installation}
 
 ```bash
 npm install --save-dev @windicss/animations
 ```
 
-## Usage
+## 用法 {#usage}
 
 ```js
 // tailwind.config.js
@@ -17,7 +17,7 @@ export default {
     // ...
   },
   plugins: [
-    // Other plugins
+    // 其他插件
     require('@windicss/animations')({
       settings: {
         animatedSpeed: 1000,
@@ -32,7 +32,7 @@ export default {
 }
 ```
 
-### Available Animate CSS classes
+### 可用的 Animate CSS 类 {#available-animate-css-classes}
 * .animate-animated
 * .animate-infinite
 * .animate-delay
@@ -145,6 +145,6 @@ export default {
 * .animate-backOutLeft
 * .animate-backOutRight
 
-## Credits
+## 致谢 {#credits}
 
-This package is based on awesome [Animate.css](https://github.com/animate-css/animate.css).
+此插件基于超给力的 [Animate.css](https://github.com/animate-css/animate.css)。
