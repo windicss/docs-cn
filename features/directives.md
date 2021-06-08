@@ -1,6 +1,6 @@
 # 指令 {#directives}
 
-你可以通过将指令和 CSS 组合在一起的方式来使用可用工具类 (utilities)。
+你可以通过指令与 CSS 相结合的方式来使用可用的工具类 (utilities)。
 
 ## @apply {#apply}
 
