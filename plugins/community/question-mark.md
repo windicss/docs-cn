@@ -14,7 +14,7 @@
 npm install --save-dev @windicss/plugin-question-mark
 ```
 
-然后把本插件添加到 `tailwind.config.js` 文件中：
+然后把本插件添加到 `windi.config.js` 文件中：
 
 ```js
 // windi.config.js
