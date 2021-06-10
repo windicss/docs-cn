@@ -8,7 +8,7 @@
 
 ### 自动值推导 {#value-auto-infer}
 
-在你的 classes 中使用任意值，然后生成相应的样式。
+在你的类名中使用任意值，然后生成相应的样式。
 
 ```html
 <!-- sizes and positions -->
