@@ -37,12 +37,8 @@
     "@iconify/json": "^1.1.354",
     "@types/codemirror": "^5.60.0",
     "@types/lz-string": "^1.3.34",
-<<<<<<< HEAD
     "@types/markdown-it": "^12.0.1",
-    "@types/node": "^15.12.1",
-=======
     "@types/node": "^15.12.2",
->>>>>>> 7455af79ab00a3c8021086f55bff77b8c62502fa
     "@types/prismjs": "^1.16.5",
     "@types/resolve": "^1.20.0",
     "@vitejs/plugin-vue": "^1.2.3",
