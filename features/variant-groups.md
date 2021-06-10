@@ -1,6 +1,6 @@
 # 可变修饰组 {#variant-groups}
 
-通过使用括号对相同的工具类进行分组，将其应用于同一可变修饰。
+通过使用括号对相同的工具类进行编组，将其应用于同一可变修饰。
 
 ```html
 <div class="hover:(bg-gray-400 font-medium) bg-white font-light"/>
