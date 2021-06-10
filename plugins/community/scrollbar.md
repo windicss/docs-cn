@@ -1,6 +1,6 @@
 # @windicss/plugin-scrollbar
 
-为 Firefox 和基于 webkit 的浏览器添加滚动条的样式。此插件是基于 [tailwind-scrollbar](https://github.com/adoxography/tailwind-scrollbar) 修改来适配 Windi CSS 的。
+为 Firefox 和基于 webkit 的浏览器添加滚动条的样式工具类。此插件是基于 [tailwind-scrollbar](https://github.com/adoxography/tailwind-scrollbar) 修改来适配 Windi CSS 的。
 
 ## 安装 {#installation}
 
@@ -27,7 +27,7 @@ export default {
 
 **特别注意：** 此插件只是给滚动条 **添加样式**；它并不保证滚动条会显示。你应该使用传统的 CSS 技巧来让内容溢出从而触发滚动条。
 
-对于每个你想要添加样式的元素，添加 `.scrollbar` 或 `.scrollbar-thin` 类。如果需要，你也可以添加任何 `scrollbar-track-{color}`，`scrollbar-thumb-{color}` 或者 `hover:scrollbar-thumb-{color}` 类。（请注意类名 `hover:scrollbar-thumb-{color}` 只会在基于 webkit 的浏览器上起作用。）
+对于每个你想要添加样式的元素，添加 `.scrollbar` 或 `.scrollbar-thin` 类。如果需要，你也可以添加任何 `scrollbar-track-{color}`，`scrollbar-thumb-{color}` 或者 `hover:scrollbar-thumb-{color}` 类。（请注意 `hover:scrollbar-thumb-{color}` 类只会在基于 webkit 的浏览器上起作用。）
 
 这里有个简单的例子（注意这里的类名 `h-32` 和 `h-64` 只是为了使滚动条出现）：
 
