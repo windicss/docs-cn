@@ -1,12 +1,12 @@
-# Variant Groups
+# 可变修饰组 {#variant-groups}
 
-Apply utilities for the same variant by grouping them with parenthesis.
+通过使用括号对相同的工具类进行编组，将其应用于同一可变修饰。
 
 ```html
 <div class="hover:(bg-gray-400 font-medium) bg-white font-light"/>
 ```
 
-Play with it:
+尝试修改一下：
 
 <InlinePlayground 
   :input="'bg-blue-200 font-light p-2\nhover:(bg-gray-400 font-medium)'"
