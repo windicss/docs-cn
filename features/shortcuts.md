@@ -1,8 +1,8 @@
-# Shortcuts
+# 快捷键 {#shortcuts}
 
-It's quite common when you work on same set of utilities for multiple times. We provided this "shortcuts" feature allowing you to give the combinations of utilities names you can you use them everywhere inside your app without needing to duplicate yourself.
+当你经常使用相同的工具类合集时，会常用到快捷键。我们提供了 “快捷键” 的特性可以允许你把工具类的名字组合在一起，你可以在你应用程序的任何地方使用，而不需要重复写。
 
-By simply adding the `shortcuts` field to your configurations:
+仅需在你的配置文件中添加 `shortcuts` 字段：
 
 ```js
 // windi.config.js
@@ -17,8 +17,8 @@ export default {
 }
 ```
 
-<InlinePlayground 
-  :input="'btn btn-green'" 
+<InlinePlayground
+  :input="'btn btn-green'"
   :config="{ shortcuts: {
     btn: 'py-2 px-4 font-semibold rounded-lg shadow-md',
     'btn-green': 'text-white bg-green-500 hover:bg-green-700',
@@ -30,7 +30,7 @@ export default {
   :enableConfig="true"
 />
 
-CSS-in-JS syntax is also supported for complex utility
+对复杂的工具类也同样支持 CSS-in-JS 语法
 
 ```js
 // windi.config.js
@@ -52,8 +52,8 @@ export default {
 }
 ```
 
-<InlinePlayground 
-  :input="'btn btn-green'" 
+<InlinePlayground
+  :input="'btn btn-green'"
   :config="{ shortcuts: {
     btn: {
       color: 'white',
@@ -73,4 +73,4 @@ export default {
 />
 
 
-The utility added by this configuration can also be directly wrapped with variant, such as sm:btn. The function of this feature is similar to the @apply directive, it will merge all utilities into one style.
+通过此配置项添加的工具类，同样可以直接用可变修饰进行包装，比如 `sm:btn`。这个特性的函数与 `@apply` 指令很类似，它将把所有的工具类合并为一个样式。

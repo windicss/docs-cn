@@ -1,37 +1,37 @@
-[speed comparison]: https://twitter.com/antfu7/status/1361398324587163648
-[CSS directives]: /features/directives
-[classes utilities]: /utilities/
+[速度对比]: https://twitter.com/antfu7/status/1361398324587163648
+[CSS 指令]: /features/directives
+[classes 工具类]: /utilities/
 [migration]: /guide/migration
 
 <Logo name="vite" class="logo-float-xl"/>
 
-# Integration for [Vite](https://vitejs.dev)
+# [Vite](https://vitejs.dev) 集成 {#integration-for-vite}
 
 <PackageInfo name="vite-plugin-windicss" author="antfu" />
 
-## Features
+## 特性 {#features}
 
-- ⚡️ **It's FAST** - 20~100x times faster than Tailwind on Vite
-- 🧩 On-demand CSS utilities (Fully compatible with Tailwind CSS v2)
-- 📦 On-demand native elements style resetting (preflight)
-- 🔥 Hot module replacement (HMR)
-- 🍃 Load configurations from `tailwind.config.js`
-- 🤝 Framework-agnostic - Vue, React, Svelte and vanilla!
-- 📄 CSS `@apply` / `@screen` directives transforms (also works for Vue SFC's `<style>`)
-- 🎳 Support Variant Groups - e.g. `bg-gray-200 hover:(bg-gray-100 text-red-300)`
-- 😎 ["Design in Devtools"](#design-in-devtools) - if you work this way in the traditional Tailwind, no reason we can't!
+- ⚡️ **极速** - 在 Vite 中比 Tailwind 快20~100倍
+- 🧩 按需使用 CSS 工具类（与 Tailwind CSS v2 完全兼容）
+- 📦 按需使用原生元素样式重置（预检样式）
+- 🔥 模块热替换 (HMR)
+- 🍃 从 `tailwind.config.js` 加载配置
+- 🤝 与框架无关 - Vue、 React、Svelte and vanilla！
+- 📄 CSS `@apply` / `@screen` 指令转换（也适用于 Vue SFC 的 `<style>` ）
+- 🎳 支持变量组 - 如 `bg-gray-200 hover:(bg-gray-100 text-red-300)`
+- 😎 ["Devtools 设计"](#design-in-devtools) - 支持传统的 Tailwind 运行方式
 
-> Check out the [speed comparison] between Windi CSS and Tailwind CSS on Vite.
+> 查看 Windi CSS 与 Tailwind CSS 在 Vite 中的[速度对比]。
 
-## Install
+## 安装 {#install}
 
-Install the package:
+安装相关包：
 
 ```bash
 npm i -D vite-plugin-windicss windicss
 ```
 
-Then, install the plugin in your Vite configuration:
+然后，在你的 Vite 配置中添加插件：
 
 ```ts
 // vite.config.js
@@ -44,24 +44,24 @@ export default {
 }
 ```
 
-And finally, import `virtual:windi.css` in your Vite entries:
+最后，在你的 Vite 入口文件中导入 `virtual:windi.css`：
 
 ```js
 // main.js
 import 'virtual:windi.css'
 ```
 
-That's it! Starting using [classes utilities] or [CSS directives] in your app, and enjoy the speed! ⚡️
+现在可以在你的应用中开始使用 [classes 工具类] 或者 [CSS 指令] ，感受一下速度吧！⚡️
 
-> If you are migrating from Tailwind CSS, also check out the [_Migration_ section][migration]
+> 如果你是从 Tailwind CSS 迁移过来，也可以查看 [_迁移_ 章节][migration] 文档
 
-## Supports
+## 支持 {#supports}
 
-### TypeScript
+### TypeScript {#typeScript}
 
-Enable TypeScript for your `tailwind.config.js`? Sure, why not?
+希望在你的 `tailwind.config.js` 启用 TypeScript？当然可以。
 
-Rename it to `tailwind.config.ts` and things just work!
+将它重命名为 `tailwind.config.ts` 即可。
 
 ```ts
 // tailwind.config.ts
@@ -84,33 +84,33 @@ export default defineConfig({
 })
 ```
 
-### Pug Support
+### Pug Support {#pug-support}
 
-It will automatically enable Pug support for `.pug` and Vue SFC when dependency `pug` is found in the workspace.
+当在工作区中找到依赖项 `pug` 时，它将自动启用对 `.pug` 和 Vue SFC 的支持。
 
-### "Design in DevTools"
+### "DevTools 设计" {#design-in-devtools}
 
-It might be a common practice when you use the purge-based Tailwind where you have all the classes in your browser and you can try how things work by directly changing the classes in DevTools. While you might think this is some kind of limitation of "on-demand" where the DevTools don't know those you haven't used in your source code yet.
+当你使用基于 Purge 的 Tailwind 时，常见的情况是，你能在浏览器中查看所有的类，同时你可以通过直接改变 DevTools 中的类来了解其是如何生效的。但 DevTools 依旧不能探知那些你还没有在源码中使用的类，所以你可能认为这是“按需”的某种限制。
 
-But unfortunately, **we are here to BREAK the limitation** 😎 See the [video demo](https://twitter.com/antfu7/status/1372244287975387145).
+但幸运的是 **我们在这里打破了限制** 😎 查看 [视频示例](https://twitter.com/antfu7/status/1372244287975387145).
 
-Just add the following line to your main entry
+只需要在你的主入口文件中添加下面这行代码
 
 ```js
 import 'virtual:windi-devtools'
 ```
 
-It will be enabled automatically for you, have fun!
+它将自动帮你启用。
 
-Oh, and don't worry about the final bundle, in production build `virtual:windi-devtools` will be an empty module and you don't have to do anything about it :)
+不用担心最后的打包，在生产版本中 `virtual:windi-devtools` 将是一个空模块，所以你无需专门处理它。
 
-> ⚠️ Please use it with caution, under the hood we use [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) to detect the class changes. Which means not only your manual changes but also the changes made by your scripts will be detected and included in the stylesheet. This could cause some misalignment between dev and the production build when **using dynamically constructed classes** (false-positive). We recommended adding your dynamic parts to the `safelist` or setup UI regression tests for your production build if possible.
+> ⚠️ 请谨慎使用它，因为我们在底层使用了 [MutationObserver](https://developer.mozilla.org/en-US/docs/Web/API/MutationObserver) 来检测类的改变。这意味着你的手动更改和脚本所做的更改都将被检测到并包含在样式表中。**使用动态构造类**（不一定）时，这可能会导致开发和生产版本之间产生一些不一致。我们建议你将动态部分添加到 `safelist` 中，或者如果可以的话，为你的生产环境设置 UI 回归测试。
 
-## Configuration
+## 配置 {#configuration}
 
-### Preflight (style reseting)
+### 预检样式 (样式重置) {#preflight}
 
-Preflight is enabled on-demanded. If you'd like to completely disable it, you can configure it as below
+在按需使用下预检是启用的。如果需要禁用，可以按以下方式配置
 
 ```ts
 // windi.config.ts
@@ -121,16 +121,16 @@ export default defineConfig({
 })
 ```
 
-### Safelist
+### 白名单 {#safelist}
 
-By default, we scan your source code statically and find all the usages of the utilities then generated corresponding CSS on-demand. However, there is some limitation that utilities that decided in the runtime can not be matched efficiently, for example
+默认情况下，我们会静态扫描你的源码，并查找所有使用的工具类，然后按需生成相应的 CSS。但存在一些局限性：在 runtime 时工具类无法有效匹配，例如
 
 ```html
-<!-- will not be detected -->
+<!-- 不会被检测到 -->
 <div className={`p-${size}`}>
 ```
 
-For that, you will need to specify the possible combinations in the `safelist` options of `vite.config.js`.
+因此，你需要在 `vite.config.js` 的 `safelist` 选项中指定可能的组合
 
 ```ts
 // windi.config.ts
@@ -141,7 +141,7 @@ export default defineConfig({
 })
 ```
 
-Or you can do it this way
+或者，也可以这样做
 
 ```ts
 // windi.config.ts
@@ -153,16 +153,15 @@ function range(size, startAt = 1) {
 
 export default defineConfig({
   safelist: [
-    range(30).map(i => `p-${i}`), // p-1 to p-3
-    range(10).map(i => `mt-${i}`), // mt-1 to mt-10
+    range(30).map(i => `p-${i}`), // 从 p-1 到 p-3
+    range(10).map(i => `mt-${i}`), // 从 mt-1 到 mt-10
   ],
 })
 ```
 
-### Scanning
+### 扫描 {#scanning}
 
-On server start, `vite-plugin-windicss` will scan your source code and extract the utility usages. By default,
-only files under `src/` with extensions `vue, html, mdx, pug, jsx, tsx` will be included. If you want to enable scanning for other file types of locations, you can configure it via:
+在服务启动时，`vite-plugin-windicss` 将扫描你的源码并提取使用的工具类。默认情况下，只有 `src/` 下带有 `vue、html、mdx、pug、jsx、tsx` 扩展名的文件被包含。如果你想扫描其他位置的文件类型，则可以通过以下方式进行配置：
 
 ```ts
 // windi.config.js
@@ -176,7 +175,7 @@ export default defineConfig({
 })
 ```
 
-Or in plugin options:
+或者在插件选项中：
 
 ```ts
 // vite.config.js
@@ -186,8 +185,8 @@ export default defineConfig({
   plugins: [
     WindiCSS({
       scan: {
-        dirs: ['.'], // all files in the cwd
-        fileExtensions: ['vue', 'js', 'ts'], // also enabled scanning for js/ts
+        dirs: ['.'], // 当前目录下所有文件
+        fileExtensions: ['vue', 'js', 'ts'], // 同时启用扫描vue/js/ts
       },
     }),
   ],
@@ -195,9 +194,9 @@ export default defineConfig({
 ```
 
 
-### [Attributify Mode](https://windicss.org/posts/v30.html#attributify-mode)
+### [属性模式](https://windicss.org/posts/v30.html#attributify-mode) {#attributify-mode}
 
-Enabled it by 
+通过以下配置启用
 
 ```ts
 // windi.config.ts
@@ -206,7 +205,7 @@ export default {
 }
 ```
 
-And use them as you would like:
+然后这样使用：
 
 ```html
 <button 
@@ -220,9 +219,9 @@ And use them as you would like:
 </button>
 ```
 
-#### Prefix
+#### 前缀 {#prefix}
 
-If you are concerned about naming confliction, you can add custom prefix to attributify mode by:
+如果担心命名冲突，可以通过以下方式给属性模式添加自定义前缀：
 
 ```ts
 // windi.config.ts
@@ -245,7 +244,7 @@ export default {
 </button>
 ```
 
-### [Alias Config](https://windicss.org/posts/v30.html#alias-config)
+### [别名配置](https://windicss.org/posts/v30.html#alias-config) {#alias-config}
 
 ```ts
 // windi.config.ts
@@ -260,11 +259,11 @@ export default {
 }
 ```
 
-### Layers Ordering
+### 层顺序 {#layers-ordering}
 
-> Supported from v0.14.x
+> 从 v0.14.x 开始支持
 
-By default, importing `virtual:windi.css` will import all the three layers with the order `base - components - utilities`. If you want to have better controls over the orders, you can separate them by:
+默认情况下，导入 `virtual:windi.css` 将会按顺序导入全部三个层 `base - components - utilities` 。如果你想更好地控制顺序，可以通过以下方法将它们分开：
 
 ```diff
 - import 'virtual:windi.css'
@@ -273,7 +272,7 @@ By default, importing `virtual:windi.css` will import all the three layers with 
 + import 'virtual:windi-utilities.css'
 ```
 
-You can also make your custom css been able to be overridden by certain layers:
+你还可以使自定义的 css 能够被某些层覆盖：
 
 ```diff
   import 'virtual:windi-base.css'
@@ -282,27 +281,27 @@ You can also make your custom css been able to be overridden by certain layers:
   import 'virtual:windi-utilities.css'
 ```
 
-### More
+### 更多 {#more}
 
-See [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts) for more configuration reference.
+有关更多配置参考，请参阅 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts) 。
 
-## Caveats
+## 注意事项 {#caveats}
 
-### Scoped Style
+### Scoped Style {#scoped-style}
 
-You will need to **set `transformCSS: 'pre'` to get Scoped Style work**.
+需要 **设置 `transformCSS:'pre'` 才能使 Scoped Style 工作**。
 
-`@media` directive with scoped style can **only works** with `css` `postcss` `scss` but not `sass`, `less` nor `stylus`
+带有 scoped style 的 `@media` 指令 **只在** `css` `postcss` `scss` 中有效 ，而在 `sass` `less` `stylus` 中无效。
 
-## Example
+## 示例 {#example}
 
-See [examples](https://github.com/windicss/vite-plugin-windicss/blob/main/examples) for *react*, *vue* and *vue with pug* sample projects, or [`Vitesse`](https://github.com/antfu/vitesse)
+请参阅 [示例](https://github.com/windicss/vite-plugin-windicss/blob/main/examples) 中的 *react* 、*vue* 和 *vue with pug* 示例项目，或 [`Vitesse`](https://github.com/antfu/vitesse)
 
 ---
 
-## SvelteKit (as of 1.0.0-next.100)
+## SvelteKit (从 1.0.0-next.100 开始) {#sveltekit-as-of-1-0-0-next-100}
 
-Install plugin with `npm i -D vite-plugin-windicss` and adapt the svelte config:
+通过 `npm i -D vite-plugin-windicss` 安装插件并修改 svelte 配置：
 
 ```js
 // svelte.config.js
@@ -324,17 +323,17 @@ const config = {
 export default config
 ```
 
-Add `import "virtual:windi.css"` to the top of your $layout.svelte file:
+在 $layout.svelte 文件的顶部添加 `import "virtual:windi.css"` ：
 
 ```html
 <!-- $layout.svelte -->
 <script>
   import "virtual:windi.css"
 
-  // if you want to enable windi devtools
+  // 如果你想要启用 windi devtools
   import { browser } from "$app/env";
   if (browser) import("virtual:windi-devtools")
   // ...
 </script>
-<!-- ...rest of $layout.svelte -->
+<!-- ...其他的 $layout.svelte 代码 -->
 ```

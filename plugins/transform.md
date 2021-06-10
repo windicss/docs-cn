@@ -1,6 +1,6 @@
-# Transform API
+# Transform API {#transform-api}
 
-For tailwind plugins, we generally use Transform API to support them. You can import them to your config like below:
+对于 Tailwind 的插件，我们通常使用 Transform API 来支持。你可以像下面这样将它们引入你的配置文件：
 
 ```js
 // windi.config.js
@@ -12,7 +12,7 @@ export default {
     // ...
   },
   plugins: [
-    transform('plugin-name'), // replace require with transform
+    transform('plugin-name'), // 把 require 替换成 transform
   ],
 }
 ```

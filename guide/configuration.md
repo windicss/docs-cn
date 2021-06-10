@@ -52,7 +52,7 @@ export default {
 
 你可以使用编辑器的自动补全功能，来查看可用的配置字段。对功能配置的描述将在对应页面中进行展示。
 
-## 配置实例 {#example-configuration}
+## 配置示例 {#example-configuration}
 
 ```js
 import { defineConfig } from 'windicss/helpers'
