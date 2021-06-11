@@ -2,13 +2,13 @@
 [tailwind css]: https://tailwindcss.com/docs
 [svelte]: /guide/svelte.html#additional-features-in-svelte-⚡%EF%B8%8F
 
-# Features
+# 特性 {#features}
 
-[Windi CSS] is fully compatible with [Tailwind CSS] v2. On top of that, we have many additional features that boost your workflow further and open up much more possibilities.
+[Windi CSS] 与 [Tailwind CSS] 的 v2 完全兼容。在此基础上，我们新增了许多额外的特性，进一步提升你的工作体验，并给于更多可能性。
 
-### Value Auto-infer
+### 自动值推导 {#value-auto-infer}
 
-Use arbitrary values in your classes and generate corresponding styles.
+在你的类名中使用任意值，然后生成相应的样式。
 
 ```html
 <!-- sizes and positions -->
@@ -24,9 +24,9 @@ Use arbitrary values in your classes and generate corresponding styles.
 
 <LearnMore to="/features/value-auto-infer" />
 
-### Variant Groups
+### 可变修饰组 {#variant-groups}
 
-Apply utilities for the same variant by grouping them with parenthesis.
+通过编组的方式可以将同样的可变修饰用在不同的工具类上。
 
 ```html
 <div class="bg-white dark:hover:(bg-gray-800 font-medium text-white)"/>
@@ -38,9 +38,9 @@ Apply utilities for the same variant by grouping them with parenthesis.
 
 <LearnMore to="/features/variant-groups" />
 
-### Responsive Design
+### 响应式设计 {#responsive-design}
 
-Extended responsive breakpoints control.
+拓展响应式断点控制。
 
 ```html
 <div class="p-1 md:p-2 <lg:p-3"></div>
@@ -48,9 +48,9 @@ Extended responsive breakpoints control.
 
 <LearnMore to="/features/responsive-design" />
 
-### Important Prefix
+### Important 前缀 {#important-prefix}
 
-Prefix any utility classes with `!` to make them as `!important`.
+在任意工具类前加上 `!` 前缀，可使它们变为 `!important`。
 
 ```html
 <div class="text-red-400 !text-green-300">Green</div>
@@ -58,9 +58,9 @@ Prefix any utility classes with `!` to make them as `!important`.
 
 <LearnMore to="/features/important-prefix" />
 
-### Shortcuts
+### 快捷键 {#shortcuts}
 
-Create components and utilities quickly and reusable.
+快速创建可复用的组件和工具类。
 
 ```js
 // windi.config.js
@@ -82,7 +82,7 @@ export default {
 <LearnMore to="/features/shortcuts" />
 
 
-### Dark Mode
+### 暗色模式 {#dark-mode}
 
 ```html
 <div class="text-black dark:text-white"></div>
@@ -90,9 +90,9 @@ export default {
 
 <LearnMore to="/features/dark-mode" />
 
-### Directives
+### 指令 {#directives}
 
-Tailwind-like `@apply`, `@screen` directives are fully supported.
+完全兼容 Tailwind 风格的指令 `@apply`, `@screen`。
 
 ```css
 .btn {
@@ -106,8 +106,8 @@ Tailwind-like `@apply`, `@screen` directives are fully supported.
 
 <LearnMore to="/features/directives" />
 
-### Visual Analyzer
+### 可视化分析器 {#visual-analyzer}
 
-We provided a visual analyzer for you to have an overview of your utility usage and design system.
+我们为你提供了可视化分析器，可以让你对工具类的使用情况和设计系统的有大致的了解。
 
 <LearnMore to="/features/analyzer" />
