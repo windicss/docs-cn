@@ -1,6 +1,6 @@
 # @windicss/plugin-interaction-variants
 
-增加了交互状态下的缺失的可变修饰。此插件是基于 [tailwindcss-interaction-variants](https://github.com/benface/tailwindcss-interaction-variants) 修改来适配 Windi CSS 的。
+增加了交互状态下缺失的可变修饰。此插件是基于 [tailwindcss-interaction-variants](https://github.com/benface/tailwindcss-interaction-variants) 修改来适配 Windi CSS 的。
 
 ## 安装 {#installation}
 
