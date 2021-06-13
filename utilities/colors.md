@@ -1,23 +1,23 @@
-# Colors
+# 颜色 {#colors}
 
 <ColorsPalette />
 
-## Customization 
+## 自定义 {#customization}
 
 ```ts
 // windi.config.js
 export default {
   theme: {
     colors: {
-      // Configure your color palette here
+      // 在这里配置你的调色板
     },
   },
 }
 ```
 
-### Reuse Colors
+### 颜色复用 {#reuse-colors}
 
-All the colors from the palette are enabled by default. If you want to set alias or reuse some colors from the palette, you can import them from `windicss/colors` module.
+默认情况下，调色板中的所有颜色都是可用的。如果你想从调色板中设置别名或复用一些颜色，你可以从 `windicss/colors` 模块中导入它们。
 
 ```ts
 import colors from 'windicss/colors'
