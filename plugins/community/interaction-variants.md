@@ -27,7 +27,7 @@ export default {
 }
 ```
 
-上面的配置会生成如下所示的 CSS 样式：
+上述配置会生成如下所示的 CSS 样式：
 
 ```css
 .bg-black {
