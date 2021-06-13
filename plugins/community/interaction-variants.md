@@ -1,14 +1,14 @@
 # @windicss/plugin-interaction-variants
 
-Add some missing interaction state variants. This plugin is modified based on [tailwindcss-interaction-variants](https://github.com/benface/tailwindcss-interaction-variants) to adapt to Windi CSS.
+增加了交互状态下缺失的可变修饰。此插件是基于 [tailwindcss-interaction-variants](https://github.com/benface/tailwindcss-interaction-variants) 修改来适配 Windi CSS 的。
 
-## Installation
+## 安装 {#installation}
 
 ```bash
 npm install --save-dev @windicss/plugin-interaction-variants
 ```
 
-## Usage
+## 用法 {#usage}
 
 ```js
 // windi.config.js
@@ -27,7 +27,7 @@ export default {
 }
 ```
 
-The above configuration would generate the following CSS:
+上述配置会生成如下所示的 CSS 样式：
 
 ```css
 .bg-black {
