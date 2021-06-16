@@ -172,6 +172,28 @@ export default {
 }
 ```
 
+### 层级排序 {#layers-ordering}
+
+> 自 v1.1.x 起可用
+
+默认情况下，引入 `windi.css` 或 `virtual:windi.css` 将按照 `base - components - utilities` 的顺序对层级进行排序。如果你想对顺序进行控制，你可以通过如下方式将它们分开引入：
+
+```diff
+- import 'virtual:windi.css'
++ import 'virtual:windi-base.css'
++ import 'virtual:windi-components.css'
++ import 'virtual:windi-utilities.css'
+```
+
+你也可以使用自定义 css 来针对某些层级进行覆盖。
+
+```diff
+  import 'virtual:windi-base.css'
+  import 'virtual:windi-components.css'
++ import './my-style.css'
+  import 'virtual:windi-utilities.css'
+```
+
 ## 配置文件 {#configuration-2}
 
 欲了解更多，请参考 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
