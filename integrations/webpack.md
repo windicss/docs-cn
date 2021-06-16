@@ -172,14 +172,11 @@ export default {
 }
 ```
 
-<<<<<<< HEAD
-## 配置文件 {#configuration-2}
-=======
-### Layers Ordering
+### 层级排序 {#layers-ordering}
 
-> Supported from v1.1.x
+> 自 v1.1.x 起可用
 
-By default, importing `windi.css` or `virtual:windi.css` will import all the three layers with the order `base - components - utilities`. If you want to have better controls over the orders, you can separate them by:
+默认情况下，引入 `windi.css` 或 `virtual:windi.css` 将按照 `base - components - utilities` 的顺序对层级进行排序。如果你想对顺序进行控制，你可以通过如下方式将它们分开引入：
 
 ```diff
 - import 'virtual:windi.css'
@@ -188,7 +185,7 @@ By default, importing `windi.css` or `virtual:windi.css` will import all the thr
 + import 'virtual:windi-utilities.css'
 ```
 
-You can also make your custom css be able to be overridden by certain layers:
+你也可以使用自定义 css 来针对某些层级进行覆盖。
 
 ```diff
   import 'virtual:windi-base.css'
@@ -197,8 +194,7 @@ You can also make your custom css be able to be overridden by certain layers:
   import 'virtual:windi-utilities.css'
 ```
 
-## Configuration
->>>>>>> 1e2a48d413db9800e7170f0bc13a53997db16d43
+## 配置文件 {#configuration-2}
 
 欲了解更多，请参考 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
