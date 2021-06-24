@@ -1,11 +1,11 @@
-# Container
+# 容器 {#container}
 
-## Container
+## 容器 {#container}
 
-A component for fixing an element's width to the current breakpoint.
+根据当前断点固定元素宽度的组件。
 
-| Class     | Breakpoint     | Properties         |
-| :----     | :------------- | :----------------- |
+| 类名      | 断点           | 属性               |
+| :-------- | :------------- | :----------------- |
 | container | *None*         | width: 100%;       |
 |           | sm *(640px)*   | max-width: 640px;  |
 |           | md *(768px)*   | max-width: 768px;  |
@@ -13,9 +13,9 @@ A component for fixing an element's width to the current breakpoint.
 |           | xl *(1280px)*  | max-width: 1280px; |
 |           | 2xl *(1536px)* | max-width: 1536px; |
 
-### Usage
+### 用法 {#usage}
 
-To center a container, use the mx-auto utility:
+要使一个容器居中，请使用 `mx-auto` 工具类：
 
 ```html
 <div class="container mx-auto">
@@ -23,7 +23,7 @@ To center a container, use the mx-auto utility:
 </div>
 ```
 
-To add horizontal padding, use the `px-{size}` utilities:
+要添加水平内边距，请使用 `px-{size}` 工具类：
 
 ```html
 <div class="container mx-auto px-4">
@@ -31,10 +31,10 @@ To add horizontal padding, use the `px-{size}` utilities:
 </div>
 ```
 
-To use a container at only a certain breakpoint and up:
+要只把某个断点及上层元素当作容器，请使用如下方法：
 
 ```html
-<!-- Full-width fluid until the `lg` breakpoint, then lock to container -->
+<!-- 在达到 `lg` 断点前保持全幅宽，在达到后锁定容器 -->
 <div class="md:container md:mx-auto">
   <!-- ... -->
 </div>
@@ -42,7 +42,7 @@ To use a container at only a certain breakpoint and up:
 
 <Customizing>
 
-#### Centering by default
+#### 默认居中 {#centering-by-default}
 
 ```js
 // windi.config.js
@@ -55,7 +55,7 @@ export default {
 }
 ```
 
-#### Horizontal padding
+#### 水平内边距 {#horizontal-padding}
 
 ```js
 // windi.config.js
@@ -68,7 +68,7 @@ export default {
 }
 ```
 
-Specify a different padding amount for each breakpoint
+为每个断点指定不同的内边距大小
 
 ```js
 // windi.config.js
