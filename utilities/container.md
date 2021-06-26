@@ -23,7 +23,7 @@
 </div>
 ```
 
-要添加水平内边距，请使用 `px-{size}` 工具类：
+使用 `px-{size}` 工具类添加水平内边距:
 
 ```html
 <div class="container mx-auto px-4">
