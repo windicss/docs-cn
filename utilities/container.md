@@ -15,7 +15,7 @@
 
 ### 用法 {#usage}
 
-要使一个容器居中，请使用 `mx-auto` 工具类：
+使用 `mx-auto` 工具类来使容器居中:
 
 ```html
 <div class="container mx-auto">
