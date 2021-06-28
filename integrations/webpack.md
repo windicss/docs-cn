@@ -17,6 +17,7 @@ Windi CSS 的 webpack 插件通过与语言和框架无关的方式来实现 Win
 | <Logo name="gridsome" class="inline"/> Gridsome | [✅ 插件](/integrations/gridsome.html) |
 | <Logo name="svelte" class="inline"/> Svelte | [✅ 插件](/integrations/svelte.html) |
 | Umi.js | [✅ 配置示例](https://github.com/windicss/windicss-webpack-plugin/tree/master/example/umijs) |
+| Storybook | [✅ 配置示例](#storybook) |
 | Next.js - webpack 4 | ✅ [配置示例](https://github.com/windicss/windicss-webpack-plugin/blob/master/example/next/next.config.js) |
 | Next.js - webpack 5 | ❌ 不支持 HMR (需要帮助) |
 | Angular | ❌ 不支持 (需要帮助) |
@@ -46,9 +47,9 @@ export default {
 }
 ```
 
-带有一个入口文件或者一些只加载一次的东西，添加 `windi.css` 的导入。
+注意：如果你的 webpack 配置与之不同，请查看 [示例](#code-examples)。
 
-:warn: 为了实现此效果，你需要使用 [style-loader](https://webpack.js.org/loaders/style-loader/#modules) 并关闭 `modules` 设置选项。
+带有一个入口文件或者一些只加载一次的东西，添加 `windi.css` 的导入。
 
 ```ts
 // main.js
@@ -108,7 +109,7 @@ export default defineConfig({
 <div className={`p-${size}`}>
 ```
 
-为了实现这个，你需要在 `webpack.config.js` 中的 `safelist` 选项中指定可能的组合。
+为了实现这个，你需要在 `windi.config.ts` 中的 `safelist` 选项中指定可能的组合。
 
 ```ts
 // windi.config.ts
@@ -199,5 +200,30 @@ export default {
 欲了解更多，请参考 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
 ## 示例 {#examples}
+
+### Storybook {#storybook}
+
+```js
+// .storybook/main.js
+const WindiCSS = require('windicss-webpack-plugin')
+
+module.exports = {
+  // ...
+  webpackFinal: (config) => {
+    config.plugins.push(new WindiCSS())
+    return config
+  },
+}
+```
+
+```js
+// .storybook/preview.js
+
+import 'windi.css'
+```
+
+注意：CSS 预处理器不能与 `@apply` 一起使用，请使用通用的 CSS。
+
+### 代码示例 {#code-examples}
 
 参考 [示例](https://github.com/windicss/windicss-webpack-plugin/tree/master/example) 的样例工程。
