@@ -406,7 +406,7 @@ export default {
 
 </Customizing>
 
-## 环绕轮廓偏移厚度 {#ring-offset-width}
+## 轮廓环偏移宽度 {#ring-offset-width}
 
 当添加环绕轮廓时，用于模拟偏移的工具类。
 
