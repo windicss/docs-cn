@@ -1,8 +1,8 @@
-# SVG
+# SVG {#svg}
 
-## Fill Color
+## 填充颜色 {#fill-color}
 
-Utilities for styling the fill of SVG elements.
+用于设置 SVG 元素填充样式的工具类。
 
 <PlaygroundWithVariants
   variant='current'
@@ -30,9 +30,9 @@ export default {
 
 </Customizing>
 
-## Stroke Color
+## Stroke Color {#stroke-color}
 
-Utilities for styling the stroke of SVG elements.
+用于设置 SVG 元素画笔样式的工具类。
 
 <PlaygroundWithVariants
   variant='current'
@@ -61,9 +61,9 @@ export default {
 
 </Customizing>
 
-## Stroke DashArray
+## Stroke DashArray {#stroke-dasharray}
 
-The `stroke-dash` utility is a presentation utility defining the pattern of dashes and gaps used to paint the outline of the shape;
+`stroke-dash` 是一个定义虚线和间距图形的图像工具类, 被用于轮廓描边;
 
 <PlaygroundWithVariants
   variant='2'
@@ -77,9 +77,9 @@ The `stroke-dash` utility is a presentation utility defining the pattern of dash
   &lt;/svg&gt;'
 />
 
-## Stroke DashOffset
+## Stroke DashOffset {#stroke-dashoffset}
 
-The `stroke-offset` utility is a presentation utility defining an offset on the rendering of the associated dash array.
+`stroke-offset` 是一个定义渲染相关 dash array 偏移的图像工具类。
 
 <PlaygroundWithVariants
   variant='2'
@@ -93,9 +93,9 @@ The `stroke-offset` utility is a presentation utility defining an offset on the 
   &lt;/svg&gt;'
 />
 
-## Stroke LineCap
+## Stroke LineCap {#stroke-linecap}
 
-The `stroke-cap` utility is a presentation utility defining the shape to be used at the end of open subpaths when they are stroked.
+`stroke-cap` 是一个在开放子路径被设置描边的情况下, 定义开放自路径两端形状的图像工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -111,9 +111,9 @@ The `stroke-cap` utility is a presentation utility defining the shape to be used
     &lt;/svg&gt;'
 />
 
-## Stroke LineJoin
+## Stroke LineJoin {#stroke-linejoin}
 
-The `stroke-join` utility is a presentation utility defining the shape to be used at the corners of paths when they are stroked.
+`stroke-join` 是一个在路径绘制被设置描边的情况下, 定义路径转角处形状的图像工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -129,9 +129,9 @@ The `stroke-join` utility is a presentation utility defining the shape to be use
     &lt;/svg&gt;'
 />
 
-## Stroke Width
+## Stroke Width {#stroke-width}
 
-Utilities for styling the stroke width of SVG elements.
+用于设置 SVG 元素画笔宽度样式的工具类。
 
 <PlaygroundWithVariants
   variant='1'
