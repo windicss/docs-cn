@@ -444,7 +444,7 @@ export default {
 
 ## 环绕轮廓偏移颜色 {#ring-offset-color}
 
-用于设置环绕轮廓偏移颜色的工具类。
+用于设置轮廓环偏移颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
