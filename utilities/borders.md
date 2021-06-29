@@ -337,7 +337,7 @@ export default {
 
 </Customizing>
 
-## 环绕轮廓颜色 {#ring-color}
+## 轮廓环颜色 {#ring-color}
 
 用于设置环绕轮廓的颜色的工具类。
 
