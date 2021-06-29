@@ -136,7 +136,7 @@ export default {
 
 用于控制元素之间分割线厚度的工具类。
 
-#### 适用于纵向排列的元素的分割线 {#divide-y}
+#### 纵向分割线 {#divide-y}
 
 <PlaygroundWithVariants
   variant=''
