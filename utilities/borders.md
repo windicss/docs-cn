@@ -371,7 +371,7 @@ export default {
 
 </Customizing>
 
-## 环绕轮廓不透明度 {#ring-opacity}
+## 轮廓环不透明度 {#ring-opacity}
 
 用于设置轮廓环不透明度的工具类。
 
