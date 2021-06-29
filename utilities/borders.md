@@ -373,7 +373,7 @@ export default {
 
 ## 环绕轮廓不透明度 {#ring-opacity}
 
-用于设置环绕轮廓的不透明度的工具类。
+用于设置轮廓环不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
