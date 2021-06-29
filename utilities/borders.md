@@ -152,7 +152,7 @@ export default {
 &lt;/div&gt;'
 />
 
-#### 适用于横向排列的元素分割线 {#divide-x}
+#### 分割横向 {#divide-x}
 
 <PlaygroundWithVariants
   variant=''
