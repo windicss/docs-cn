@@ -170,7 +170,7 @@ export default {
 
 <Customizing>
 
-分割线厚度的值默认继承了 `borderWidth` 的值，所以如果你希望同时自定义边框宽度和分割线厚度的值，请尝试更改 `windi.config.js` 文件的 `theme.borderWidth` 部分。
+分割线宽度大小默认继承了 `borderWidth` 的大小，所以如果你希望同时自定义边框宽度和分割线宽度的值，修改 `windi.config.js` 文件中 `theme.borderWidth` 部分。
 
 ```js
 // windi.config.js
