@@ -442,7 +442,7 @@ export default {
 
 </Customizing>
 
-## 环绕轮廓偏移颜色 {#ring-offset-color}
+## 轮廓环偏移颜色 {#ring-offset-color}
 
 用于设置轮廓环偏移颜色的工具类。
 
