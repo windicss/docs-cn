@@ -32,7 +32,7 @@ export default {
 
 ## Stroke Color {#stroke-color}
 
-设置 SVG 元素画笔样式的工具类。
+用于设置 SVG 元素画笔样式的工具类。
 
 <PlaygroundWithVariants
   variant='current'
@@ -131,7 +131,7 @@ export default {
 
 ## Stroke Width {#stroke-width}
 
-设置 SVG 元素画笔宽度样式的工具类。
+用于设置 SVG 元素画笔宽度样式的工具类。
 
 <PlaygroundWithVariants
   variant='1'
