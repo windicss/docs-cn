@@ -74,7 +74,7 @@ export default {
 
 <Customizing>
 
-你可以通过编辑 `windi.config.js` 文件的 `theme.Colors` 部分来自定义调色板，或使用 `theme.borderColor` 部分仅自定义边框颜色。
+你可以通过编辑 `windi.config.js` 文件 `theme.colors` 的部分来自定义调色板，或仅使用 `theme.borderColor` 部分自定义边框颜色。
 
 ```js
 // windi.config.js
