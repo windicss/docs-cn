@@ -302,7 +302,7 @@ export default {
 &lt;/div&gt;'
 />
 
-## 环绕轮廓厚度 {#ring-width}
+## 轮廓环宽度 {#ring-width}
 
 用于创建带盒状阴影的环绕轮廓的工具类。
 
