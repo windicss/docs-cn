@@ -34,7 +34,7 @@ export default {
 
 ## 边框宽度 {#border-width}
 
-用于控制元素边框厚度的工具类。
+用于控制元素边框宽度的工具类。
 
 <PlaygroundWithBox
   mode='edges'
