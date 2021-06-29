@@ -408,7 +408,7 @@ export default {
 
 ## 轮廓环偏移宽度 {#ring-offset-width}
 
-当添加环绕轮廓时，用于模拟偏移的工具类。
+用于添加轮廓环时, 模拟偏移的工具类。
 
 <PlaygroundWithVariants
   variant='2'
