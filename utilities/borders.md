@@ -132,7 +132,7 @@ export default {
   fixed='bg-gray-500 bg-opacity-5 border-3 border-teal-500 m-auto mt-6 mb-2 w-30 h-30 text-transparent transition-all'
 />
 
-## 分割线厚度 {#divide-width}
+## 分割线宽度 {#divide-width}
 
 用于控制元素之间分割线厚度的工具类。
 
