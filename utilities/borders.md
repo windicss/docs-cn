@@ -32,7 +32,7 @@ export default {
 
 </Customizing>
 
-## 边框厚度 {#border-width}
+## 边框宽度 {#border-width}
 
 用于控制元素边框厚度的工具类。
 
