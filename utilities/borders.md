@@ -189,7 +189,7 @@ export default {
 }
 ```
 
-如果仅需要自定义分割线的宽度值，请尝试更改 `windi.config.js` 文件的 `theme.divideWidth` 部分。
+如果仅需要自定义分割线的宽度值，修改 `windi.config.js` 文件中 `theme.divideWidth` 部分。
 
 ```js
 // windi.config.js
