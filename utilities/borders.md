@@ -2,7 +2,7 @@
 
 ## 边框圆角 {#border-radius}
 
-用于控制元素边框圆角半径的功能类。
+用于控制元素边框圆角半径的工具类。
 
 <PlaygroundWithBox
   variant='3xl'
@@ -34,7 +34,7 @@ export default {
 
 ## 边框厚度 {#border-width}
 
-用于控制元素边框厚度的功能类。
+用于控制元素边框厚度的工具类。
 
 <PlaygroundWithBox
   mode='edges'
@@ -63,7 +63,7 @@ export default {
 
 ## 边框颜色 {#border-color}
 
-用于控制元素边框颜色的功能类。
+用于控制元素边框颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -95,7 +95,7 @@ export default {
 
 ## 边框不透明度 {#border-opacity}
 
-用于控制元素边框颜色不透明度的功能类。
+用于控制元素边框颜色不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -123,7 +123,7 @@ export default {
 
 ## 边框样式 {#border-style}
 
-用于控制元素边框样式的功能类。
+用于控制元素边框样式的工具类。
 
 <PlaygroundWithVariants
   variant='solid'
@@ -134,7 +134,7 @@ export default {
 
 ## 分割线厚度 {#divide-width}
 
-用于控制元素之间分割线厚度的功能类。
+用于控制元素之间分割线厚度的工具类。
 
 #### 适用于纵向排列的元素的分割线 {#divide-y}
 
@@ -212,7 +212,7 @@ export default {
 
 ## 分割线颜色 {#divide-color}
 
-用于控制元素之间分割线颜色的功能类。
+用于控制元素之间分割线颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -248,7 +248,7 @@ export default {
 
 ## 分割线不透明度 {#divide-opacity}
 
-用于控制元素之间分割线不透明度的功能类。
+用于控制元素之间分割线不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -286,7 +286,7 @@ export default {
 
 ## 分割线样式 {#divide-style}
 
-用于控制元素之间分割线样式的功能类。
+用于控制元素之间分割线样式的工具类。
 
 <PlaygroundWithVariants
   variant='dashed'
@@ -304,7 +304,7 @@ export default {
 
 ## 环绕轮廓厚度 {#ring-width}
 
-用于创建带盒状阴影的环绕轮廓的功能类。
+用于创建带盒状阴影的环绕轮廓的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -339,7 +339,7 @@ export default {
 
 ## 环绕轮廓颜色 {#ring-color}
 
-用于设置环绕轮廓的颜色的功能类。
+用于设置环绕轮廓的颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -373,7 +373,7 @@ export default {
 
 ## 环绕轮廓不透明度 {#ring-opacity}
 
-用于设置环绕轮廓的不透明度的功能类。
+用于设置环绕轮廓的不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -408,7 +408,7 @@ export default {
 
 ## 环绕轮廓偏移厚度 {#ring-offset-width}
 
-当添加环绕轮廓时，用于模拟偏移的功能类。
+当添加环绕轮廓时，用于模拟偏移的工具类。
 
 <PlaygroundWithVariants
   variant='2'
@@ -444,7 +444,7 @@ export default {
 
 ## 环绕轮廓偏移颜色 {#ring-offset-color}
 
-用于设置环绕轮廓偏移颜色的功能类。
+用于设置环绕轮廓偏移颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
