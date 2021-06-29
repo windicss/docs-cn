@@ -2,7 +2,7 @@
 
 ## 填充颜色 {#fill-color}
 
-设置 SVG 元素填充样式的工具类。
+用于设置 SVG 元素填充样式的工具类。
 
 <PlaygroundWithVariants
   variant='current'
