@@ -339,7 +339,7 @@ export default {
 
 ## 轮廓环颜色 {#ring-color}
 
-用于设置环绕轮廓的颜色的工具类。
+用于设置轮廓环颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
