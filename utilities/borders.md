@@ -304,7 +304,7 @@ export default {
 
 ## 轮廓环宽度 {#ring-width}
 
-用于创建伴随 `box-shadows` 的轮廓环工具类。
+用于创建带有 `box-shadows` 的轮廓环工具类。
 
 <PlaygroundWithVariants
   variant=''
