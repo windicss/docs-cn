@@ -1,6 +1,6 @@
 <Logo name="webpack" class="logo-float-xl"/>
 
-# [Webpack](https://webpack.js.org/) 集成 {##integration-for-webpack}
+# [Webpack](https://webpack.js.org/) 集成 {#integration-for-webpack}
 
 <PackageInfo name="windicss-webpack-plugin" author="harlan-zw" />
 
