@@ -1,8 +1,8 @@
-# Borders
+# 边框 {#border}
 
-## Border Radius
+## 边框圆角 {#border-radius}
 
-Utilities for controlling the border radius of an element.
+用于控制元素边框圆角半径的工具类。
 
 <PlaygroundWithBox
   variant='3xl'
@@ -32,9 +32,9 @@ export default {
 
 </Customizing>
 
-## Border Width
+## 边框宽度 {#border-width}
 
-Utilities for controlling the width of an element's borders.
+用于控制元素边框宽度的工具类。
 
 <PlaygroundWithBox
   mode='edges'
@@ -61,9 +61,9 @@ export default {
 
 </Customizing>
 
-## Border Color
+## 边框颜色 {#border-color}
 
-Utilities for controlling the color of an element's borders.
+用于控制元素边框颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -74,7 +74,7 @@ Utilities for controlling the color of an element's borders.
 
 <Customizing>
 
-You can customize your color palette by editing the `theme.colors` section of your `windi.config.js` file, or customize just your border colors using the theme.borderColor section.
+你可以通过编辑 `windi.config.js` 文件 `theme.colors` 的部分来自定义调色板，或仅使用 `theme.borderColor` 部分自定义边框颜色。
 
 ```js
 // windi.config.js
@@ -93,9 +93,9 @@ export default {
 
 </Customizing>
 
-## Border Opacity
+## 边框不透明度 {#border-opacity}
 
-Utilities for controlling the opacity of an element's border color.
+用于控制元素边框颜色不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -121,9 +121,9 @@ export default {
 
 </Customizing>
 
-## Border Style
+## 边框样式 {#border-style}
 
-Utilities for controlling the style of an element's borders.
+用于控制元素边框样式的工具类。
 
 <PlaygroundWithVariants
   variant='solid'
@@ -132,11 +132,11 @@ Utilities for controlling the style of an element's borders.
   fixed='bg-gray-500 bg-opacity-5 border-3 border-teal-500 m-auto mt-6 mb-2 w-30 h-30 text-transparent transition-all'
 />
 
-## Divide Width
+## 分割线宽度 {#divide-width}
 
-Utilities for controlling the border width between elements.
+用于控制元素之间分割线宽度的工具类。
 
-#### Divide Y
+#### 纵向分割线 {#divide-y}
 
 <PlaygroundWithVariants
   variant=''
@@ -152,7 +152,7 @@ Utilities for controlling the border width between elements.
 &lt;/div&gt;'
 />
 
-#### Divide X
+#### 分割横向 {#divide-x}
 
 <PlaygroundWithVariants
   variant=''
@@ -170,7 +170,7 @@ Utilities for controlling the border width between elements.
 
 <Customizing>
 
-The divide width scale inherits its values from the `borderWidth` scale by default, so if you'd like to customize your values for both border width and divide width together, use the `theme.borderWidth` section of your `windi.config.js` file.
+分割线宽度大小默认继承了 `borderWidth` 的大小，所以如果你希望同时自定义边框宽度和分割线宽度的值，修改 `windi.config.js` 文件中 `theme.borderWidth` 部分。
 
 ```js
 // windi.config.js
@@ -189,7 +189,7 @@ export default {
 }
 ```
 
-To customize only the divide width values, use the theme.divideWidth section of your windi.config.js file.
+如果仅需要自定义分割线的宽度值，修改 `windi.config.js` 文件中 `theme.divideWidth` 部分。
 
 ```js
 // windi.config.js
@@ -210,9 +210,9 @@ export default {
 
 </Customizing>
 
-## Divide Color
+## 分割线颜色 {#divide-color}
 
-Utilities for controlling the border color between elements.
+用于控制元素之间分割线颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -246,9 +246,9 @@ export default {
 
 </Customizing>
 
-## Divide Opacity
+## 分割线不透明度 {#divide-opacity}
 
-Utilities for controlling the opacity borders between elements.
+用于控制元素之间分割线不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -284,9 +284,9 @@ export default {
 
 </Customizing>
 
-## Divide Style
+## 分割线样式 {#divide-style}
 
-Utilities for controlling the border style between elements.
+用于控制元素之间分割线样式的工具类。
 
 <PlaygroundWithVariants
   variant='dashed'
@@ -302,9 +302,9 @@ Utilities for controlling the border style between elements.
 &lt;/div&gt;'
 />
 
-## Ring Width
+## 轮廓环宽度 {#ring-width}
 
-Utilities for creating outline rings with box-shadows.
+用于创建带有 `box-shadows` 的轮廓环工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -337,9 +337,9 @@ export default {
 
 </Customizing>
 
-## Ring Color
+## 轮廓环颜色 {#ring-color}
 
-Utilities for setting the color of outline rings.
+用于设置轮廓环颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -371,9 +371,9 @@ export default {
 
 </Customizing>
 
-## Ring Opacity
+## 轮廓环不透明度 {#ring-opacity}
 
-Utilities for setting the opacity of outline rings.
+用于设置轮廓环不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -406,9 +406,9 @@ export default {
 
 </Customizing>
 
-## Ring Offset Width
+## 轮廓环偏移宽度 {#ring-offset-width}
 
-Utilities for simulating an offset when adding outline rings.
+用于添加轮廓环时, 模拟偏移的工具类。
 
 <PlaygroundWithVariants
   variant='2'
@@ -442,9 +442,9 @@ export default {
 
 </Customizing>
 
-## Ring Offset Color
+## 轮廓环偏移颜色 {#ring-offset-color}
 
-Utilities for setting the color of outline ring offsets.
+用于设置轮廓环偏移颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
