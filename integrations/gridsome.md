@@ -1,6 +1,6 @@
 <Logo name="gridsome" class="logo-float-xl"/>
 
-# 集成 [Gridsome](https://gridsome.org/) {#integration-for-gridsome}
+# [Gridsome](https://gridsome.org/) 集成 {#integration-for-gridsome}
 
 <PackageInfo name="gridsome-plugin-windicss" author="harlan-zw" />
 

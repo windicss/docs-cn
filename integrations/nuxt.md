@@ -1,6 +1,6 @@
 <Logo name="nuxt" class="logo-float-xl"/>
 
-# [Nuxt.js](https://nuxtjs.org) 集成 {#integration-for-nuxt.js}
+# [Nuxt.js](https://nuxtjs.org) 集成 {#integration-for-nuxt-js}
 
 <PackageInfo name="nuxt-windicss-module" author="harlan-zw" />
 
