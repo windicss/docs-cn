@@ -5,10 +5,10 @@ title: ''
 
 heroText: Windi CSS
 
-actionText: Get Started
+actionText: 起步
 actionLink: /guide/
 
-altActionText: Learn More
+altActionText: 了解更多
 altActionLink: /features/
 
 heroImage: /assets/logo.svg
@@ -23,7 +23,7 @@ features:
     details: Infers number, sizes, and colors from your classes
 footer: MIT Licensed | Copyright © 2020-2021 Windi CSS Contributors
 
-newsTitle: 🎉 v3.0 is now out with a bunch of exciting new features!
+newsTitle: 🎉 v3.0 现已新鲜出炉，大量令人激动的新功能等着你！
 newsLink: /posts/v30.html
 ---
 
