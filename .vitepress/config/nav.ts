@@ -4,7 +4,7 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: '指引',
     items: [
-      { text: '起步', link: '/guide/' },
+      { text: '开始', link: '/guide/' },
       { text: '安装', link: '/guide/installation' },
       { text: '配置', link: '/guide/configuration' },
       { text: '迁移', link: '/guide/migration' },
@@ -38,7 +38,7 @@ export const nav: DefaultTheme.Config['nav'] = [
 
       { text: 'separator', link: 'separator' },
 
-      { text: '过滤器', link: '/utilities/filters' },
+      { text: '滤镜', link: '/utilities/filters' },
       { text: '特效', link: '/utilities/effects' },
       { text: '行为', link: '/utilities/behaviors' },
       { text: '过渡', link: '/utilities/transitions' },
