@@ -242,4 +242,14 @@ export default {
 
 在传递给 webpack 插件之前，修改 Windi 的 CSS 选项。
 
+<<<<<<< HEAD
 对于在扫描路径中添加运行时目录很有用。
+=======
+Useful for adding runtime directories to the scan path.
+
+`windicss:utils`
+- Arguments: Windi CSS utils
+
+Exposes the Windi CSS utils as an object. Use this to implement your own custom utilities without
+creating duplicate util instances.
+>>>>>>> be082b76fad33a602366387e2281187d133bfbcd
