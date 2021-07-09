@@ -4,36 +4,15 @@
 
 <PackageInfo name="windicss-webpack-plugin" author="harlan-zw" />
 
-<<<<<<< HEAD
-## 我应该使用吗? {#should-i-use-this}
+## 选择合适的插件 {#choosing-the-right-plugin}
 
 Windi CSS 的 webpack 插件通过与语言和框架无关的方式来实现 Windi CSS。
 
-如果你使用 webpack，且**未使用**下面的框架，则可以使用此插件：
+### 支持的第一类框架 {#first-class-framework-support}
 
-| 语言 / 框架 |   示例 |
-| :-------- | :----- |
-| <Logo name="vue" class="inline"/> Vue CLI | [✅ 插件](/integrations/vue-cli.html) |
-| <Logo name="nuxt" class="inline"/> Nuxt.js | [✅ 插件](/integrations/nuxt.html) |
-| <Logo name="gridsome" class="inline"/> Gridsome | [✅ 插件](/integrations/gridsome.html) |
-| <Logo name="svelte" class="inline"/> Svelte | [✅ 插件](/integrations/svelte.html) |
-| Umi.js | [✅ 配置示例](https://github.com/windicss/windicss-webpack-plugin/tree/master/example/umijs) |
-| Storybook | [✅ 配置示例](#storybook) |
-| Next.js - webpack 4 | ✅ [配置示例](https://github.com/windicss/windicss-webpack-plugin/blob/master/example/next/next.config.js) |
-| Next.js - webpack 5 | ❌ 不支持 HMR (需要帮助) |
-| Angular | ❌ 不支持 (需要帮助) |
+如果你的框架包含在如下列表中，请使用专门为你的框架建立的插件。
 
-## 安装 {#install}
-=======
-## Choosing the right plugin
-
-Windi CSS Webpack Plugin is a language and framework agnostic way to implement Windi CSS in webpack apps.
-
-### First Class Framework Support
-
-If it's below, please use the plugin specifically built for your framework.
-
-| Framework |   |
+| 框架 |   |
 | :-------- | :----- |
 | <Logo name="nuxt" class="inline"/> Nuxt.js | [nuxt-windicss](/integrations/nuxt.html) |
 | <Logo name="svelte" class="inline"/> Svelte | [svelte-windicss-preprocess](/integrations/svelte.html) |
@@ -41,27 +20,26 @@ If it's below, please use the plugin specifically built for your framework.
 | <Logo name="gridsome" class="inline"/> Gridsome | [gridsome-plugin-windicss](/integrations/gridsome.html) |
 
 
-### Second Class Framework Support
+### 支持的第二类框架{#second-class-framework-support}
 
-Frameworks that have been successfully setup and documented to work with Windi.
+这些框架已经可以成功设置并有文档记录，完全适配 Windi。
 
-| Framework |    |
+| 框架 |    |
 | :-------- | :----- |
-| Next.js | [Install](#next-js) - [Example](https://github.com/windicss/windicss-webpack-plugin/blob/master/example/next/) |
-| CRACO | [Install](#create-react-app-craco) - [Example](https://github.com/windicss/windicss-webpack-plugin/blob/master/example/craco/)|
-| Storybook | [Install](#storybook) - [Example](https://github.com/windicss/windicss-webpack-plugin/tree/master/example/vue3-storybook) |
-| Umi.js | [Example](https://github.com/windicss/windicss-webpack-plugin/tree/master/example/umijs) |
+| Next.js | [安装](#next-js) - [示例](https://github.com/windicss/windicss-webpack-plugin/blob/master/example/next/) |
+| CRACO | [安装](#create-react-app-craco) - [示例](https://github.com/windicss/windicss-webpack-plugin/blob/master/example/craco/)|
+| Storybook | [安装](#storybook) - [示例](https://github.com/windicss/windicss-webpack-plugin/tree/master/example/vue3-storybook) |
+| Umi.js | [示例](https://github.com/windicss/windicss-webpack-plugin/tree/master/example/umijs) |
 
-### Non Supported Frameworks
+### 不支持的框架 {#non-supported-frameworks}
 
-Frameworks which have been tested with this package and did not work.
+这些框架已经用此包测试过，但无法正常工作。
 
 - ❌ Angular
 
-## Install
->>>>>>> be082b76fad33a602366387e2281187d133bfbcd
+## 安装{#install}
 
-If you are proceeding setup with a custom webpack build, then please report any issues you find.
+如果你正在使用自定义的 webpack 设置进行构建，那么请反馈你发现的任何问题。
 
 ```bash
 yarn add windicss-webpack-plugin -D
@@ -70,15 +48,9 @@ yarn add windicss-webpack-plugin -D
 
 如果你之前使用的是 Tailwind，请阅读 [迁移指南](/guide/migration.html)。
 
-<<<<<<< HEAD
-### 添加插件 {#add-the-plugin}
+### 配置 {#configure-webpack}
 
 你需要把插件添加到你的 webpack 配置文件。如果你有直接修改 `webpack.config.js` 的权限，可以如下面这样做：
-=======
-### Configure webpack
-
-You will need to add the plugin to your webpack configuration. If you have access to modify the `webpack.config.js` directly, then you can do the following.
->>>>>>> be082b76fad33a602366387e2281187d133bfbcd
 
 ```js
 // webpack.config.js
@@ -92,15 +64,10 @@ export default {
 }
 ```
 
-<<<<<<< HEAD
-注意：如果你的 webpack 配置与之不同，请查看 [示例](#code-examples)。
 
-带有一个入口文件或者一些只加载一次的东西，添加 `windi.css` 的导入。
-=======
+#### 非 ES 模块安装 {#non-es-modules-install}
 
-#### Non ES Modules Install
-
-For webpack configurations which don't support the es module import syntax, you can try the following.
+对于不支持 es 模块导入语法的 webpack 配置，你可以尝试以下方法。
 
 ```js
 // webpack.config.js
@@ -114,10 +81,9 @@ export default {
 }
 ```
 
-### Include the virtual module
+### 引入虚拟模块 {#include-the-virtual-module}
 
-Within an entry point file or something only loaded once, add the import of `windi.css`.
->>>>>>> be082b76fad33a602366387e2281187d133bfbcd
+在一个入口文件或只加载一次的文件中，添加`windi.css`的导入。
 
 ```ts
 // main.js
@@ -125,26 +91,16 @@ import 'windi.css'
 // require('windi.css')
 ```
 
-<<<<<<< HEAD
-## 支持 {#supports}
+### Windi 配置 {#windi-config}
 
-### TypeScript {#typescript}
+如果你还没有配置文件的话，在你的项目根目录下添加一个名为`windi.config.ts`的文件。
 
-为你的 `windi.config.js` 启用 TypeScript
+#### 扫描{#scanning}
 
-修改文件名为 `windi.config.ts`
-=======
-### Windi Config
+如果你在启动 Windi 时有问题，你的类没有被选中，你可能需要
+修改扫描。
 
-Add a file called `windi.config.ts` to your project root if you don't have it already.
-
-#### Scanning
-
-If you have issues when you start Windi that your classes aren't being picked up, you may need
-to modify the scanning.
-
-On server start, Windi will scan your code and extract the utility usages. By default, only files under `src/` with extensions `"html", "vue", "md", "mdx", "pug", "jsx", "tsx", "svelte", "ts", "js", "css", "postcss"` will be included.
->>>>>>> be082b76fad33a602366387e2281187d133bfbcd
+在服务器启动时，Windi 将扫描你的代码，并提取工具类使用。默认情况下，只有 "src/"下的扩展名为 `"html", "vue", "md", "mdx", "pug", "jsx", "tsx", "svelte", "ts", "js", "css", "postcss"` 的文件会被收录。
 
 ```ts
 // windi.config.ts
@@ -213,15 +169,10 @@ export default defineConfig({
 })
 ```
 
-<<<<<<< HEAD
-### 扫描 {#scanning}
 
-当服务启动后，`vite-plugin-windicss` 将扫描你的源代码，并把使用到的工具类提取出来。默认情况下，只有 `src/` 且后缀为 `vue, html, mdx, pug, jsx, tsx` 的文件才会被扫描。如果你想扫描本地的其他文件，你可以进行配置如下：
-=======
+### 层级排序 {#layers-ordering}
 
-### Layers Ordering
-
-By default, importing `windi.css` or `virtual:windi.css` will import all the three layers with the order `base - components - utilities`. If you want to have better controls over the orders, you can separate them by:
+默认情况下，导入 `windi.css` 或 `virtual:windi.css` 将以 `base - components - utilities` 的顺序导入全部三个层。如果你想对这些顺序有更好的控制，你可以通过以下方式分开它们：
 
 ```diff
 - import 'virtual:windi.css'
@@ -239,11 +190,11 @@ You can also make your custom css be able to be overridden by certain layers:
   import 'virtual:windi-utilities.css'
 ```
 
-### Full Configuration
+### 完整配置 {#full-configuration}
 
-See [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts) for full configuration details.
+完整的配置细节见 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
-## Install Examples
+## 安装示例 {#install-examples}
 
 ### Next.js
 
@@ -264,7 +215,6 @@ module.exports = {
 ```js
 import 'windi.css'
 ```
->>>>>>> be082b76fad33a602366387e2281187d133bfbcd
 
 **windi.config.ts**
 ```ts
@@ -278,11 +228,7 @@ export default defineConfig({
 })
 ```
 
-<<<<<<< HEAD
-或者在插件的配置选项：
-=======
-Note: JSX usage is experimental. Please report any issues you find.
->>>>>>> be082b76fad33a602366387e2281187d133bfbcd
+注意：JSX的使用处于实验阶段。请反馈你发现的任何问题。
 
 
 ### Create React App - CRACO
@@ -305,13 +251,6 @@ module.exports = {
 }
 ```
 
-<<<<<<< HEAD
-### 层级排序 {#layers-ordering}
-
-> 自 v1.1.x 起可用
-
-默认情况下，引入 `windi.css` 或 `virtual:windi.css` 将按照 `base - components - utilities` 的顺序对层级进行排序。如果你想对顺序进行控制，你可以通过如下方式将它们分开引入：
-=======
 **src/index.js**
 ```js
 import './virtual:windi.css'
@@ -320,7 +259,6 @@ import './virtual:windi.css'
 **windi.config.ts**
 ```ts
 import { defineConfig } from 'windicss/helpers'
->>>>>>> be082b76fad33a602366387e2281187d133bfbcd
 
 export default defineConfig({
   extract: {
@@ -330,22 +268,11 @@ export default defineConfig({
 })
 ```
 
-<<<<<<< HEAD
-你也可以使用自定义 css 来针对某些层级进行覆盖。
-=======
-Note: JSX usage is experimental. Please report any issues you find.
->>>>>>> be082b76fad33a602366387e2281187d133bfbcd
+注意：JSX的使用处于实验阶段。请反馈你发现的任何问题。
 
-### Non ES Modules
+### 非 es 模块 {#non-es-modules}
 
-<<<<<<< HEAD
-## 配置文件 {#configuration-2}
-
-欲了解更多，请参考 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
-
-## 示例 {#examples}
-=======
-For webpack configurations which don't support the es module import syntax, you can try the following.
+对于不支持es模块导入语法的webpack配置，你可以尝试以下方法。
 
 ```js
 // webpack.config.js
@@ -363,7 +290,6 @@ export default {
 // main.js
 require('windi.css')
 ```
->>>>>>> be082b76fad33a602366387e2281187d133bfbcd
 
 ### Storybook {#storybook}
 
@@ -385,11 +311,7 @@ module.exports = {
 import 'windi.css'
 ```
 
-<<<<<<< HEAD
-注意：CSS 预处理器不能与 `@apply` 一起使用，请使用通用的 CSS。
-=======
-Warning: CSS pre-processors (like SCSS, LESS) will not work with `@apply`, use plain css.
->>>>>>> be082b76fad33a602366387e2281187d133bfbcd
+注意：CSS 预处理器（如 SCSS，LESS）不能与 `@apply` 一起使用，请使用通用的 CSS。
 
 ### 代码示例 {#code-examples}
 
