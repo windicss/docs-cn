@@ -81,8 +81,12 @@ export default {
 
 <LearnMore to="/features/shortcuts" />
 
+<<<<<<< HEAD
 
 ### 暗色模式 {#dark-mode}
+=======
+### Dark Mode
+>>>>>>> 5842b69882b7b40f61af7358be5f7e4131a4a492
 
 ```html
 <div class="text-black dark:text-white"></div>
@@ -90,7 +94,19 @@ export default {
 
 <LearnMore to="/features/dark-mode" />
 
+<<<<<<< HEAD
 ### 指令 {#directives}
+=======
+### RTL
+
+```html
+<div class="text-green-400 rtl:(text-red-400 text-right)"></div>
+```
+
+<LearnMore to="/features/rtl" />
+
+### Directives
+>>>>>>> 5842b69882b7b40f61af7358be5f7e4131a4a492
 
 完全兼容 Tailwind 风格的指令 `@apply`, `@screen`。
 
