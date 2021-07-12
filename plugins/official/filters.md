@@ -1,6 +1,6 @@
-## Filters
+## 过滤器
 
-### Utilities
+### 工具 {#utilities}
 
 | Class | Properties |
 | :---- | :--------- |
@@ -9,7 +9,7 @@
 | `filter-${key}` | filter: `${value};` |
 | `backdrop-${key}` | backdrop-filter: `${value};` |
 
-### Usage
+### 用法 {#usage}
 
 ```js
 // windi.config.js
