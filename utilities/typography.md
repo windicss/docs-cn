@@ -1,8 +1,8 @@
-# Typography
+# 排版
 
-## Font Family
+## 字体序列 {#font-family}
 
-Utilities for controlling the font family of an element.
+控制元素字体序列的功能类。
 
 <PlaygroundWithVariants
   variant='sans'
@@ -30,7 +30,7 @@ export default {
 }
 ```
 
-Font families can be specified as an array or as a simple comma-delimited string:
+字体序列可以是一个数组或者逗号分隔的字符串:
 
 ```json5
 {
@@ -41,7 +41,7 @@ Font families can be specified as an array or as a simple comma-delimited string
 }
 ```
 
-Note that Windi CSS does not automatically escape font names for you. If you're using a font that contains an invalid identifier, wrap it in quotes or escape the invalid characters.
+注意：Windi CSS不会为你自动转义字体序列名称，如果你使用的字体序列包含无效标识符，请使用引号包裹或者转义它。
 
 ```json5
 {
@@ -54,9 +54,9 @@ Note that Windi CSS does not automatically escape font names for you. If you're 
 
 </Customizing>
 
-## Font Size
+## 字体大小 {#font-size}
 
-Utilities for controlling the font size of an element.
+用来控制元素字体大小的功能类。
 
 <PlaygroundWithVariants
   variant='base'
@@ -90,7 +90,7 @@ export default {
 }
 ```
 
-You can provide a default line-height for each of your font-sizes using a tuple of the form [fontSize, lineHeight] in your windi.config.js file.
+你可以在 `windi.config.js` 文件中设置 `[fontSize, lineHeight]` 的选项。
 
 ```js
 // windi.config.js
@@ -106,7 +106,7 @@ export default {
 }
 ```
 
-If you also want to provide a default letter-spacing value for a font size, you can do so using a tuple of the form `[fontSize, { letterSpacing, lineHeight }]` in your windi.config.js file.
+也可以在 `windi.config.js` 文件中设置 `[fontSize, { letterSpacing, lineHeight }]` 的选项。
 
 ```js
 // windi.config.js
@@ -128,9 +128,9 @@ export default {
 
 </Customizing>
 
-## Font Smoothing
+## 字体平滑度 {#font-smoothing}
 
-Utilities for controlling the font smoothing of an element.
+用来控制字体平滑度的功能类。
 
 <PlaygroundWithVariants
   variant='antialiased'
@@ -139,9 +139,9 @@ Utilities for controlling the font smoothing of an element.
   html="The quick brown fox jumps over the lazy dog"
 />
 
-## Font Style
+## 字体样式 {#font-style}
 
-Utilities for controlling the style of text.
+用来控制字体样式的功能类。
 
 <PlaygroundWithVariants
   variant='italic'
@@ -150,9 +150,9 @@ Utilities for controlling the style of text.
   html="The quick brown fox jumps over the lazy dog"
 />
 
-## Font Weight
+## 字体粗细 {#font-weight}
 
-Utilities for controlling the font weight of an element.
+用来控制字体粗细的功能类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -187,9 +187,9 @@ export default {
 
 </Customizing>
 
-## Font Variant Numeric
+## 字体数字变形 {#font-variant-numeric}
 
-Utilities for controlling the variant of numbers.
+用来控制数字变形的功能类。
 
 <PlaygroundWithVariants
   variant='ordinal'
@@ -199,9 +199,9 @@ Utilities for controlling the variant of numbers.
   html="0123456789&lt;br&gt;1/2 3/4&lt;br&gt;1st 2nd"
 />
 
-## Hyphens
+## 连字符 {#hyphens}
 
-The hyphens utilities specifies how words should be hyphenated when text wraps across multiple lines. It can prevent hyphenation entirely, hyphenate at manually-specified points within the text, or let the browser automatically insert hyphens where appropriate.
+`hyphens` 可以指定文本在多行换行时应如何断字。它可以完全防止断字，在文本中手动指定的点断字，或者让浏览器在适当的地方自动插入断字。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -213,9 +213,9 @@ The hyphens utilities specifies how words should be hyphenated when text wraps a
   html="&lt;p class='{class} border p-2 border-blue-300 border-dashed'&gt;An extra&shy;ordinarily long English word!&lt;/&gt;"
 />
 
-## Letter Spacing
+## 字母间距 {#letter-spacing} 
 
-Utilities for controlling the tracking (letter spacing) of an element.
+用于控制元素的字距（字母间距）的功能类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -246,9 +246,9 @@ export default {
 
 </Customizing>
 
-## Line Height
+## 行高 {#line-height}
 
-Utilities for controlling the leading (line height) of an element.
+用于控制元素的前行距（行高）的功能类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -275,9 +275,9 @@ export default {
 
 </Customizing>
 
-## Tab Size
+## 制表符宽度 {#tab-size}
 
-The tab-size utilities are used to customize the width of tab characters (U+0009).
+用于自定义制表符字符（U+0009）的宽度的功能类。
 
 <PlaygroundWithVariants
   variant=''
@@ -309,9 +309,9 @@ export default {
 
 </Customizing>
 
-## Text Alignment
+## 文本对齐 {#text-alignment}
 
-Utilities for controlling the alignment of text.
+用来控制文本对齐的功能类。
 
 <PlaygroundWithVariants
   variant='left'
@@ -322,9 +322,9 @@ Utilities for controlling the alignment of text.
   html="&lt;p class='{class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
 
-## Text Color
+## 文本颜色 {#text-color}
 
-Utilities for controlling the text color of an element.
+用于控制元素的文字颜色的功能类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -352,13 +352,13 @@ export default {
 
 </Customizing>
 
-## Text Decoration
+## 文本装饰 {#text-decoration} 
 
-Utilities for controlling the decoration of text.
+用于控制文本装饰的实用功能类。
 
-### Text Decoration Type
+### 文本装饰类型 {#text-decoration-type}
 
-Utilities for controlling the type of text decoration.
+用于控制文本装饰类型的实用功能类。
 
 <PlaygroundWithVariants
   variant='underline'
@@ -367,9 +367,9 @@ Utilities for controlling the type of text decoration.
   html="The quick brown fox jumps over the lazy dog"
 />
 
-### Text Decoration Style
+### 文本装饰样式 {#text-decoration-style}
 
-Utilities for controlling the style of text decoration.
+用于控制文本装饰样式的实用功能类。
 
 <PlaygroundWithVariants
   variant='solid'
@@ -379,9 +379,9 @@ Utilities for controlling the style of text decoration.
   html="The quick brown fox jumps over the lazy dog"
 />
 
-### Text Decoration Color
+### 文本装饰颜色 {#text-decoration-color}
 
-Utilities for controlling the color of text decoration.
+用于控制文本装饰颜色的实用功能类。
 
 <PlaygroundWithVariants
   variant='green-500'
@@ -408,9 +408,9 @@ export default {
 
 </Customizing>
 
-### Text Decoration Opacity
+### 文本装饰不透明度 {#text-decoration-opacity}
 
-Utilities for controlling the opacity of an element's decoration color.
+用于控制文本装饰颜色的不透明度的实用功能类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -441,9 +441,9 @@ export default {
 
 </Customizing>
 
-### Text Decoration Length
+### 文本装饰长度 {#text-decoration-length}
 
-Utilities for controlling the length of text decoration.
+用于控制文本装饰长度的实用功能类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -474,9 +474,9 @@ export default {
 
 </Customizing>
 
-### Text Decoration Offset
+### 文本装饰偏移量 {#text-decoration-offset}
 
-Utilities for controlling the offset of text decoration.
+用于控制文本装饰偏移量的实用功能类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -503,9 +503,9 @@ export default {
 
 </Customizing>
 
-## Text Indent
+## 文本缩进 {#text-indent}
 
-Utilities for controlling the indentation of text.
+用于控制文本缩进的实用功能类。
 
 <PlaygroundWithVariants
   variant=''
@@ -533,9 +533,9 @@ export default {
 
 </Customizing>
 
-## Text Opacity
+## 文本颜色不透明度 {#text-opacity}
 
-Utilities for controlling the opacity of an element's text color.
+用于控制文本颜色不透明度的实用功能类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -566,9 +566,9 @@ export default {
 
 </Customizing>
 
-## Text Shadow
+## 文本阴影 {#text-shadow}
 
-Utilities for controlling the shadow of a text element.
+用于控制文本阴影的实用功能类。
 
 <PlaygroundWithVariants
   variant='lg'
@@ -595,13 +595,13 @@ export default {
 
 </Customizing>
 
-## Text Stroke
+## 文本描边 {#text-stroke}
 
-Utilities for controlling the stroke of a text element.
+用于控制文本描边的实用功能类。
 
-### Text Stroke Width
+### 文本描边宽度 {#text-stroke-width}
 
-Utilities for controlling the width of text stroke.
+用于控制文本描边宽度的实用功能类。
 
 <PlaygroundWithVariants
   variant='md'
@@ -629,9 +629,9 @@ export default {
 
 </Customizing>
 
-### Text Stroke Color
+### 文本描边颜色 {#text-stroke-color}
 
-Utilities for controlling the color of text stroke.
+用于控制文本描边颜色的实用功能类。
 
 <PlaygroundWithVariants
   variant='blue-500'
@@ -658,9 +658,9 @@ export default {
 
 </Customizing>
 
-## Text Transform
+## 文本转换 {#text-transform}
 
-Utilities for controlling the transformation of text.
+用于控制文本转换的实用功能类。
 
 <PlaygroundWithVariants
   variant='uppercase'
@@ -669,9 +669,9 @@ Utilities for controlling the transformation of text.
   html="The quick brown fox jumps over the lazy dog"
 />
 
-## Text Overflow
+## 文本溢出 {#text-overflow}
 
-Utilities for controlling text overflow in an element.
+用于控制文本溢出的实用功能类。
 
 <PlaygroundWithVariants
   variant='truncate'
@@ -681,9 +681,9 @@ Utilities for controlling text overflow in an element.
   html="&lt;p class='{class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
 
-## Vertical Alignment
+## 垂直对齐 {#vertical-alignment}
 
-Utilities for controlling the vertical alignment of an inline or table-cell box.
+用于控制内联或表格单元格的垂直对齐的功能类。
 
 <PlaygroundWithVariants
   variant='baseline'
@@ -701,9 +701,9 @@ Utilities for controlling the vertical alignment of an inline or table-cell box.
   &lt;/div&gt;'
 />
 
-## Whitespace
+## 空格 {#whitespace}
 
-Utilities for controlling an element's white-space property.
+用于控制元素的空格属性的功能类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -718,9 +718,9 @@ Utilities for controlling an element's white-space property.
   Last Line&lt;/&gt;"
 />
 
-## Word Break
+## 文本换行 {#word-break} 
 
-Utilities for controlling word breaks in an element.
+用于控制元素中的换行符的功能类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -733,9 +733,9 @@ Utilities for controlling word breaks in an element.
   abcdefghijklmnopqrstuvw&lt;/&gt;&lt;/div&gt;"
 />
 
-## Writing Mode
+## 书写模式 {#writing-mode}
 
-The `writing-mode` utility sets whether lines of text are laid out horizontally or vertically, as well as the direction in which blocks progress. When set for an entire document, it should be set on the root element (html element for HTML documents).
+`writing-mode` 可以设置文本的书写方向是水平还是垂直排列，以及块的截断方式。如果应用到整个文档时，需要设置在 `HTML` 根元素上。
 
 <PlaygroundWithVariants
   variant='vertical-right'
@@ -745,9 +745,9 @@ The `writing-mode` utility sets whether lines of text are laid out horizontally 
   html="The quick brown fox jumps over the lazy dog"
 />
 
-## Writing Orientation
+## 书写方向 {#writing-orientation}
 
-The `writing-orientation` utility sets the orientation of the text characters in a line. It only affects text in vertical mode (when `writing-mode` is not `horizontal-tb`). It is useful for controlling the display of languages that use vertical script, and also for making vertical table headers.
+`writing-orientation` 可以设置文本字符的方向。它只影响垂直模式下的文本（当写入模式不是水平方向时）。它对于垂直方向语言的文本非常有用，当然也可以设置垂直方向的表格标题。
 
 <PlaygroundWithVariants
   variant='mixed'
