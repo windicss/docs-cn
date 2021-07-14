@@ -130,20 +130,12 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '自动值推导', link: '/features/value-auto-infer' },
         { text: '可变修饰组', link: '/features/variant-groups' },
         { text: 'Shortcuts', link: '/features/shortcuts' },
-<<<<<<< HEAD
         { text: '响应式设计', link: '/features/responsive-design' },
         { text: '暗色模式', link: '/features/dark-mode' },
+        { text: 'RTL', link: '/features/rtl' },
         { text: 'important 前缀', link: '/features/important-prefix' },
         { text: '指令', link: '/features/directives' },
         { text: '可视化分析器', link: '/features/analyzer' },
-=======
-        { text: 'Responsive Design', link: '/features/responsive-design' },
-        { text: 'Dark Mode', link: '/features/dark-mode' },
-        { text: 'RTL', link: '/features/rtl' },
-        { text: 'Important Prefix', link: '/features/important-prefix' },
-        { text: 'Directives', link: '/features/directives' },
-        { text: 'Visual Analyzer', link: '/features/analyzer' },
->>>>>>> 5842b69882b7b40f61af7358be5f7e4131a4a492
         // { text: 'Nesting CSS', link: '/features/nesting' },
       ],
     },
