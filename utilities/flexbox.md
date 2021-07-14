@@ -1,8 +1,8 @@
-# Flexbox
+# Flexbox {#flexbox}
 
-## Flex
+## Flex {#flex}
 
-Use `flex` to create a block-level flex container.
+使用 `flex` 创建一个块级 flex 容器。
 
 <PlaygroundWithVariants
   variant='flex'
@@ -17,9 +17,9 @@ Use `flex` to create a block-level flex container.
 &lt;/div&gt;'
 />
 
-## Inline Flex
+## Inline Flex {#inline-flex}
 
-Use `inline-flex` to create an inline flex container.
+使用 `inline-flex` 创建一个行内 flex 容器。
 
 <PlaygroundWithVariants
   variant='inline-flex'
@@ -34,9 +34,9 @@ Use `inline-flex` to create an inline flex container.
 &lt;/div&gt;'
 />
 
-## Flex Direction
+## Flex 方向 {#flex-direction}
 
-Utilities for controlling the direction of flex items.
+用于控制 flex 子项排列方向的工具类。
 
 <PlaygroundWithVariants
   variant='row'
@@ -52,9 +52,9 @@ Utilities for controlling the direction of flex items.
 &lt;/div&gt;'
 />
 
-## Flex Wrap
+## Flex Wrap {#flex-wrap}
 
-Utilities for controlling how flex items wrap.
+用于控制 flex 行的堆叠方向的工具类。
 
 <PlaygroundWithVariants
   variant='wrap'
@@ -73,9 +73,9 @@ Utilities for controlling how flex items wrap.
 &lt;/div&gt;'
 />
 
-## Flex Stretch
+## Flex Stretch {#flex-stretch}
 
-Utilities for controlling how flex items both grow and shrink.
+用于同时控制 flex 子项如何伸缩的工具类。
 
 <PlaygroundWithVariants
   variant='1'
@@ -111,9 +111,9 @@ export default {
 
 </Customizing>
 
-## Flex Grow
+## Flex Grow {#flex-grow}
 
-Utilities for controlling how flex items grow.
+用于控制 flex 子项如何伸展的工具类。
 
 <PlaygroundWithVariants
   variant='grow-0'
@@ -146,9 +146,9 @@ export default {
 
 </Customizing>
 
-## Flex Shrink
+## Flex Shrink {#flex-shrink}
 
-Utilities for controlling how flex items shrink.
+用于控制 flex 子项如何收缩的工具类。
 
 <PlaygroundWithVariants
   variant='shrink-0'
