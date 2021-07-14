@@ -243,3 +243,9 @@ export default {
 在传递给 webpack 插件之前，修改 Windi 的 CSS 选项。
 
 对于在扫描路径中添加运行时目录很有用。
+
+`windicss:utils`
+- 参数：Windi CSS utils
+
+将 Windi CSS utils 作为一个对象暴露出来。使用它来实现你自定义的工具类而不需要
+创建重复的 util 实例。

@@ -58,7 +58,7 @@
 
 <LearnMore to="/features/important-prefix" />
 
-### 快捷键 {#shortcuts}
+### Shortcuts {#shortcuts}
 
 快速创建可复用的组件和工具类。
 
