@@ -86,7 +86,7 @@
   }
 }
 .normal {
-  marign-right: auto; /* components by default */
+  margin-right: auto; /* components by default */
 }`.trim()'
 />
 
