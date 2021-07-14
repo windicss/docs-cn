@@ -33,7 +33,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ],
     },
     {
-      text: 'Enhancement',
+      text: '进阶',
       children: [
         { text: '过滤器', link: '/utilities/filters' },
         { text: '特效', link: '/utilities/effects' },
@@ -63,7 +63,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ],
     },
     {
-      text: 'Community',
+      text: '社区插件',
       children: [
         { text: '动画', link: '/plugins/community/animations' },
         { text: '滚动条', link: '/plugins/community/scrollbar' },
@@ -75,7 +75,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   ],
   '/posts': [
     {
-      text: '发版',
+      text: '发布',
       children: [
         // { text: 'API', link: '/posts/api' },
         { text: 'WindiCSS 的故事', link: '/posts/story' },
@@ -116,7 +116,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     {
       text: '指引',
       children: [
-        { text: '开始', link: '/guide/' },
+        { text: '快速上手', link: '/guide/' },
         { text: '安装', link: '/guide/installation' },
         { text: '配置 Windi CSS', link: '/guide/configuration' },
         { text: '提取', link: '/guide/extractions' },
@@ -129,7 +129,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '特性', link: '/features/' },
         { text: '自动值推导', link: '/features/value-auto-infer' },
         { text: '可变修饰组', link: '/features/variant-groups' },
-        { text: '捷径', link: '/features/shortcuts' },
+        { text: 'Shortcuts', link: '/features/shortcuts' },
         { text: '响应式设计', link: '/features/responsive-design' },
         { text: '暗色模式', link: '/features/dark-mode' },
         { text: 'important 前缀', link: '/features/important-prefix' },
