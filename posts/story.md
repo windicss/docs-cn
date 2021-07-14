@@ -1,6 +1,6 @@
 [Windi CSS]: https://github.com/windicss/windicss
 
-# 故事 by @voorjaar
+# 故事： by @voorjaar {#the-story-by-voorjaar}
 
 > 经过两个月的发展，我很高兴的告诉大家 Windi CSS 已经进入了版本的稳定阶段。 从现在开始，不会再添加破坏性的改动，请放心使用。
 
