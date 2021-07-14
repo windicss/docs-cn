@@ -81,7 +81,6 @@ export default {
 
 <LearnMore to="/features/shortcuts" />
 
-
 ### 暗色模式 {#dark-mode}
 
 ```html
@@ -89,6 +88,14 @@ export default {
 ```
 
 <LearnMore to="/features/dark-mode" />
+
+### RTL
+
+```html
+<div class="text-green-400 rtl:(text-red-400 text-right)"></div>
+```
+
+<LearnMore to="/features/rtl" />
 
 ### 指令 {#directives}
 
