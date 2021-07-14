@@ -13,7 +13,7 @@
 - 支持 [指令 `@apply`,` @screen`,`@variants`](/features/directives)
 - 支持 预检样式
 - 支持 [所有 tailwind 工具类](/utilities/)
-- 很多 [新功能](/features/)
+- 很多 [新特性](/features/)
 
 ## 开始 {#Beginning}
 
