@@ -1,15 +1,15 @@
-## 过滤器
+## 滤镜 {#filters}
 
-### 工具 {#utilities}
+### 工具类 {#utilities}
 
-| Class | Properties |
+| 类名 | 属性值 |
 | :---- | :--------- |
 | `blur-none` | filter: none |
 | `blur-${key}` | filter: `blur(${value});`
 | `filter-${key}` | filter: `${value};` |
 | `backdrop-${key}` | backdrop-filter: `${value};` |
 
-### 用法 {#usage}
+### 使用方法 {#usage}
 
 ```js
 // windi.config.js
