@@ -1,8 +1,8 @@
-# 排版
+# 排版 {#typography}
 
-## 字体序列 {#font-family}
+## Font Family {#font-family}
 
-控制元素字体序列的功能类。
+控制元素Font Family的工具类。
 
 <PlaygroundWithVariants
   variant='sans'
@@ -30,7 +30,7 @@ export default {
 }
 ```
 
-字体序列可以是一个数组或者逗号分隔的字符串:
+Font Family可以是一个数组或者逗号分隔的字符串:
 
 ```json5
 {
@@ -41,7 +41,7 @@ export default {
 }
 ```
 
-注意：Windi CSS不会为你自动转义字体序列名称，如果你使用的字体序列包含无效标识符，请使用引号包裹或者转义它。
+注意：Windi CSS不会为你自动转义Font Family名称，如果你使用的Font Family包含无效标识符，请使用引号包裹或者转义它。
 
 ```json5
 {
@@ -56,7 +56,7 @@ export default {
 
 ## 字体大小 {#font-size}
 
-用来控制元素字体大小的功能类。
+用来控制元素字体大小的工具类。
 
 <PlaygroundWithVariants
   variant='base'
@@ -90,7 +90,7 @@ export default {
 }
 ```
 
-你可以在 `windi.config.js` 文件中设置 `[fontSize, lineHeight]` 的选项。
+你可以在windi.config.js文件中为每一个字体大小使用元组来配置一个[fontSize, lineHeight]。
 
 ```js
 // windi.config.js
@@ -106,8 +106,8 @@ export default {
 }
 ```
 
-也可以在 `windi.config.js` 文件中设置 `[fontSize, { letterSpacing, lineHeight }]` 的选项。
-
+你可以在windi.config.js文件中为每一个字体大小使用元组来配置一个[fontSize, { letterSpacing, lineHeight }]。
+	
 ```js
 // windi.config.js
 export default {
@@ -130,7 +130,7 @@ export default {
 
 ## 字体平滑度 {#font-smoothing}
 
-用来控制字体平滑度的功能类。
+用来控制字体平滑度的工具类。
 
 <PlaygroundWithVariants
   variant='antialiased'
@@ -141,7 +141,7 @@ export default {
 
 ## 字体样式 {#font-style}
 
-用来控制字体样式的功能类。
+用来控制字体样式的工具类。
 
 <PlaygroundWithVariants
   variant='italic'
@@ -152,7 +152,7 @@ export default {
 
 ## 字体粗细 {#font-weight}
 
-用来控制字体粗细的功能类。
+用来控制字体粗细的工具类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -187,9 +187,9 @@ export default {
 
 </Customizing>
 
-## 字体数字变形 {#font-variant-numeric}
+## 字体数字可变修饰 {#font-variant-numeric}
 
-用来控制数字变形的功能类。
+用来控制字体数字可变修饰的工具类。
 
 <PlaygroundWithVariants
   variant='ordinal'
@@ -215,7 +215,7 @@ export default {
 
 ## 字母间距 {#letter-spacing} 
 
-用于控制元素的字距（字母间距）的功能类。
+用于控制元素的字距（字母间距）的工具类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -248,7 +248,7 @@ export default {
 
 ## 行高 {#line-height}
 
-用于控制元素的前行距（行高）的功能类。
+用于控制元素的前行距（行高）的工具类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -277,7 +277,7 @@ export default {
 
 ## 制表符宽度 {#tab-size}
 
-用于自定义制表符字符（U+0009）的宽度的功能类。
+用于自定义制表符字符（U+0009）宽度的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -311,7 +311,7 @@ export default {
 
 ## 文本对齐 {#text-alignment}
 
-用来控制文本对齐的功能类。
+用来控制文本对齐的工具类。
 
 <PlaygroundWithVariants
   variant='left'
@@ -324,7 +324,7 @@ export default {
 
 ## 文本颜色 {#text-color}
 
-用于控制元素的文字颜色的功能类。
+用于控制元素的文本颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -354,7 +354,7 @@ export default {
 
 ## 文本装饰 {#text-decoration} 
 
-用于控制文本装饰的实用功能类。
+用于控制文本装饰的实用工具类。
 
 ### 文本装饰类型 {#text-decoration-type}
 
@@ -369,7 +369,7 @@ export default {
 
 ### 文本装饰样式 {#text-decoration-style}
 
-用于控制文本装饰样式的实用功能类。
+用于控制文本装饰样式的工具类。
 
 <PlaygroundWithVariants
   variant='solid'
@@ -381,7 +381,7 @@ export default {
 
 ### 文本装饰颜色 {#text-decoration-color}
 
-用于控制文本装饰颜色的实用功能类。
+用于控制文本装饰颜色的工具类。
 
 <PlaygroundWithVariants
   variant='green-500'
@@ -410,7 +410,7 @@ export default {
 
 ### 文本装饰不透明度 {#text-decoration-opacity}
 
-用于控制文本装饰颜色的不透明度的实用功能类。
+用于控制文本装饰颜色的不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -443,7 +443,7 @@ export default {
 
 ### 文本装饰长度 {#text-decoration-length}
 
-用于控制文本装饰长度的实用功能类。
+用于控制文本装饰长度的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -476,7 +476,7 @@ export default {
 
 ### 文本装饰偏移量 {#text-decoration-offset}
 
-用于控制文本装饰偏移量的实用功能类。
+用于控制文本装饰偏移量的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -505,7 +505,7 @@ export default {
 
 ## 文本缩进 {#text-indent}
 
-用于控制文本缩进的实用功能类。
+用于控制文本缩进的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -535,7 +535,7 @@ export default {
 
 ## 文本颜色不透明度 {#text-opacity}
 
-用于控制文本颜色不透明度的实用功能类。
+用于控制文本颜色不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -568,7 +568,7 @@ export default {
 
 ## 文本阴影 {#text-shadow}
 
-用于控制文本阴影的实用功能类。
+用于控制文本阴影的工具类。
 
 <PlaygroundWithVariants
   variant='lg'
@@ -597,11 +597,11 @@ export default {
 
 ## 文本描边 {#text-stroke}
 
-用于控制文本描边的实用功能类。
+用于控制文本描边的工具类。
 
 ### 文本描边宽度 {#text-stroke-width}
 
-用于控制文本描边宽度的实用功能类。
+用于控制文本描边宽度的工具类。
 
 <PlaygroundWithVariants
   variant='md'
@@ -631,7 +631,7 @@ export default {
 
 ### 文本描边颜色 {#text-stroke-color}
 
-用于控制文本描边颜色的实用功能类。
+用于控制文本描边颜色的工具类。
 
 <PlaygroundWithVariants
   variant='blue-500'
@@ -660,7 +660,7 @@ export default {
 
 ## 文本转换 {#text-transform}
 
-用于控制文本转换的实用功能类。
+用于控制文本转换的工具类。
 
 <PlaygroundWithVariants
   variant='uppercase'
@@ -671,7 +671,7 @@ export default {
 
 ## 文本溢出 {#text-overflow}
 
-用于控制文本溢出的实用功能类。
+用于控制文本溢出的工具类。
 
 <PlaygroundWithVariants
   variant='truncate'
@@ -683,7 +683,7 @@ export default {
 
 ## 垂直对齐 {#vertical-alignment}
 
-用于控制内联或表格单元格的垂直对齐的功能类。
+用于控制内联或表格单元格的垂直对齐的工具类。
 
 <PlaygroundWithVariants
   variant='baseline'
@@ -703,7 +703,7 @@ export default {
 
 ## 空格 {#whitespace}
 
-用于控制元素的空格属性的功能类。
+用于控制元素的空格属性的工具类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -720,7 +720,7 @@ export default {
 
 ## 文本换行 {#word-break} 
 
-用于控制元素中的换行符的功能类。
+用于控制元素中的换行符的工具类。
 
 <PlaygroundWithVariants
   variant='normal'
