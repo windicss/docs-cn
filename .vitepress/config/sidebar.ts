@@ -132,6 +132,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'Shortcuts', link: '/features/shortcuts' },
         { text: '响应式设计', link: '/features/responsive-design' },
         { text: '暗色模式', link: '/features/dark-mode' },
+        { text: 'RTL', link: '/features/rtl' },
         { text: 'important 前缀', link: '/features/important-prefix' },
         { text: '指令', link: '/features/directives' },
         { text: '可视化分析器', link: '/features/analyzer' },
