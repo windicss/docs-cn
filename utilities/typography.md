@@ -2,7 +2,7 @@
 
 ## Font Family {#font-family}
 
-控制元素Font Family的工具类。
+控制元素 Font Family 的工具类。
 
 <PlaygroundWithVariants
   variant='sans'
@@ -30,7 +30,7 @@ export default {
 }
 ```
 
-Font Family可以是一个数组或者逗号分隔的字符串:
+Font Family 可以是数组或者逗号分隔的字符串:
 
 ```json5
 {
@@ -41,7 +41,7 @@ Font Family可以是一个数组或者逗号分隔的字符串:
 }
 ```
 
-注意：Windi CSS不会为你自动转义Font Family名称，如果你使用的Font Family包含无效标识符，请使用引号包裹或者转义它。
+注意：Windi CSS 不会为你自动转义 Font Family 名称，如果你使用的 Font Family 包含无效标识符，请使用引号包裹或者转义它。
 
 ```json5
 {
@@ -90,7 +90,7 @@ export default {
 }
 ```
 
-你可以在windi.config.js文件中为每一个字体大小使用元组来配置一个[fontSize, lineHeight]。
+你可以在 windi.config.js 文件中为每一个字体大小, 使用元组 [fontSize, lineHeight] 的形式来配置默认行高。
 
 ```js
 // windi.config.js
@@ -106,7 +106,7 @@ export default {
 }
 ```
 
-你可以在windi.config.js文件中为每一个字体大小使用元组来配置一个[fontSize, { letterSpacing, lineHeight }]。
+你可以在 windi.config.js 文件中为每一个字体大小, 使用元组 [fontSize, {letterSpacing, lineHeight}] 的形式来配置默认行高。
 	
 ```js
 // windi.config.js
@@ -130,7 +130,7 @@ export default {
 
 ## 字体平滑度 {#font-smoothing}
 
-用来控制字体平滑度的工具类。
+用来控制元素字体平滑度的工具类。
 
 <PlaygroundWithVariants
   variant='antialiased'
@@ -141,7 +141,7 @@ export default {
 
 ## 字体样式 {#font-style}
 
-用来控制字体样式的工具类。
+用来控制文本样式的工具类。
 
 <PlaygroundWithVariants
   variant='italic'
@@ -152,7 +152,7 @@ export default {
 
 ## 字体粗细 {#font-weight}
 
-用来控制字体粗细的工具类。
+用来控制元素字体粗细的工具类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -187,9 +187,9 @@ export default {
 
 </Customizing>
 
-## 字体数字可变修饰 {#font-variant-numeric}
+## Font Variant Numeric {#font-variant-numeric}
 
-用来控制字体数字可变修饰的工具类。
+用来控制元素 Font Variant Numeric 的工具类。
 
 <PlaygroundWithVariants
   variant='ordinal'
@@ -201,7 +201,7 @@ export default {
 
 ## 连字符 {#hyphens}
 
-`hyphens` 可以指定文本在多行换行时应如何断字。它可以完全防止断字，在文本中手动指定的点断字，或者让浏览器在适当的地方自动插入断字。
+使用 `hyphens` 工具类可以指定文本在多行换行时应如何断字。它可以完全防止断字，在文本中手动指定的点断字，或者让浏览器在适当的地方自动插入断字。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -213,9 +213,9 @@ export default {
   html="&lt;p class='{class} border p-2 border-blue-300 border-dashed'&gt;An extra&shy;ordinarily long English word!&lt;/&gt;"
 />
 
-## 字母间距 {#letter-spacing} 
+## 字符间距 {#letter-spacing} 
 
-用于控制元素的字距（字母间距）的工具类。
+用于控制元素字距的工具类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -248,7 +248,7 @@ export default {
 
 ## 行高 {#line-height}
 
-用于控制元素的前行距（行高）的工具类。
+用于控制元素前行距（行高）的工具类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -277,7 +277,7 @@ export default {
 
 ## 制表符宽度 {#tab-size}
 
-用于自定义制表符字符（U+0009）宽度的工具类。
+用于自定义制表符（U+0009）宽度的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -324,7 +324,7 @@ export default {
 
 ## 文本颜色 {#text-color}
 
-用于控制元素的文本颜色的工具类。
+用于控制元素文本颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -354,11 +354,11 @@ export default {
 
 ## 文本装饰 {#text-decoration} 
 
-用于控制文本装饰的实用工具类。
+用于控制文本装饰的工具类。
 
 ### 文本装饰类型 {#text-decoration-type}
 
-用于控制文本装饰类型的实用功能类。
+用于控制文本装饰类型的工具类。
 
 <PlaygroundWithVariants
   variant='underline'
@@ -533,7 +533,7 @@ export default {
 
 </Customizing>
 
-## 文本颜色不透明度 {#text-opacity}
+## 文本不透明度 {#text-opacity}
 
 用于控制文本颜色不透明度的工具类。
 
@@ -568,7 +568,7 @@ export default {
 
 ## 文本阴影 {#text-shadow}
 
-用于控制文本阴影的工具类。
+用于控制文本元素阴影的工具类。
 
 <PlaygroundWithVariants
   variant='lg'
@@ -683,7 +683,7 @@ export default {
 
 ## 垂直对齐 {#vertical-alignment}
 
-用于控制内联或表格单元格的垂直对齐的工具类。
+用于控制 inline 或 table-cell 盒元素垂直对齐的工具类。
 
 <PlaygroundWithVariants
   variant='baseline'
@@ -718,9 +718,9 @@ export default {
   Last Line&lt;/&gt;"
 />
 
-## 文本换行 {#word-break} 
+## 断字 {#word-break} 
 
-用于控制元素中的换行符的工具类。
+用于控制元素中如何断字的工具类。
 
 <PlaygroundWithVariants
   variant='normal'
@@ -735,7 +735,7 @@ export default {
 
 ## 书写模式 {#writing-mode}
 
-`writing-mode` 可以设置文本的书写方向是水平还是垂直排列，以及块的截断方式。如果应用到整个文档时，需要设置在 `HTML` 根元素上。
+使用 `writing-mode` 工具类可以设置文本的书写方向是水平或是垂直排列，以及块的排列方向。为整个文档设置时，应设置在根元素上 (`HTML` 元素是 HTML 文档的根元素)。
 
 <PlaygroundWithVariants
   variant='vertical-right'
@@ -747,7 +747,7 @@ export default {
 
 ## 书写方向 {#writing-orientation}
 
-`writing-orientation` 可以设置文本字符的方向。它只影响垂直模式下的文本（当写入模式不是水平方向时）。它对于垂直方向语言的文本非常有用，当然也可以设置垂直方向的表格标题。
+使用 `writing-orientation` 工具类可以设置行内文本字符的方向。它只会在垂直模式对文本产生影响（当 `书写模式` 不是 `水平上下排列` 时）。它对于垂直方向的语言文本非常有用，当然也可以用于设置垂直方向的表格标题。
 
 <PlaygroundWithVariants
   variant='mixed'
