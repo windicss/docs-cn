@@ -1,8 +1,8 @@
-# Display
+# 展示 {#Display}
 
-## Block
+## 块级元素 {#block}
 
-The `block` utility generates a block element box, generating line breaks both before and after the element when in the normal flow.
+`block` 工具类生成一个块级元素, 在常规流中的该元素前后生成换行符。
 
 <PlaygroundWithVariants
   variant='block'
@@ -16,9 +16,9 @@ The `block` utility generates a block element box, generating line breaks both b
 &lt;div class="{class} rounded-md bg-blue-400 w-8 h-8"&gt;&lt;/div&gt;'
 />
 
-## Inline Block
+## 内联块级元素 {#Inline Block}
 
-The `inline-block` utility generates a block element box that will be flowed with surrounding content as if it were a single inline box (behaving much like a replaced element would).
+`inline-block` 工具类生成一个方形元素块, 该元素将和周围的内容一起浮动, 就像是一个单独的内联盒一样(它表现的更像一个被替代的元素) 。
 
 <PlaygroundWithVariants
   variant='inline-block'
@@ -33,9 +33,9 @@ The `inline-block` utility generates a block element box that will be flowed wit
 &lt;span class="text-gray-500"&gt;...&lt;/span&gt;'
 />
 
-## Inline
+## 内联元素 {#Inline}
 
-The `inline` utility generates one or more inline element boxes that do not generate line breaks before or after themselves. In normal flow, the next element will be on the same line if there is space.
+`inline` 工具类生成一个或多个内联元素盒并且不会在它们前后生成换行符, 在常规流中, 如果有空间, 下一个元素将在同一行上。
 
 <PlaygroundWithVariants
   variant='inline'
@@ -50,13 +50,13 @@ The `inline` utility generates one or more inline element boxes that do not gene
 &lt;span class="text-gray-500"&gt;...&lt;/span&gt;'
 />
 
-## Flow Root
+## 浮动修正 {#Flow Root}
 
-The `flow-root` utility generates a block element box that establishes a new [block formatting context](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context), defining where the formatting root lies.
+`flow-root` 工具类生成一个块级元素盒, 用于建立一个新的 [块级格式上下文](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context), 定义格式化的根所在的位置。
 
-| Class | Properties |
+| 类 | 属性 |
 | :---- | :--------- |
-| flow-root	| display: flow-root; |
+| flow-root | display: flow-root; |
 
 <PlaygroundWithVariants
   variant='flow-root'
@@ -76,9 +76,9 @@ The `flow-root` utility generates a block element box that establishes a new [bl
 &lt;/div&gt;'
 />
 
-## Contents
+## 内容 {#Contents}
 
-The `contents` utilities don't produce a specific box by themselves. They are replaced by their pseudo-box and their child boxes.
+`contents` 工具类不会使它们自己生成特定的盒, 它们会被自己的伪盒和子盒代替。
 
 <PlaygroundWithVariants
   variant='contents'
@@ -96,9 +96,9 @@ The `contents` utilities don't produce a specific box by themselves. They are re
 &lt;/div&gt;'
 />
 
-## Hidden
+## 隐藏 {#Hidden}
 
-Turns off the `display` of an element so that it has no effect on layout (the document is rendered as though the element did not exist). All descendant elements also have their display turned off. To have an element take up the space that it would normally take, but without actually rendering anything, use the [visibility](#visibility) property instead.
+关闭一个元素的 `display` , 使其不影响布局 (文档呈现为该元素不存在)。 所有后代元素的显示也会关闭。 如果想让元素占用它通常会占用的空间, 请使用 [visibility](#visibility) 属性代替。
 
 <PlaygroundWithVariants
   variant='hidden'
@@ -113,9 +113,9 @@ Turns off the `display` of an element so that it has no effect on layout (the do
 &lt;/div&gt;'
 />
 
-## Visibility
+## 可见性 {#Visibility}
 
-Utilities for controlling the visibility of an element. The `visibility` CSS property shows or hides an element without changing the layout of a document. The property can also hide rows or columns in a `<table>`.
+用于控制一个元素的可见性。 `visibility` CSS 属性会在不改变文档布局的情况下显示或隐藏元素。 该属性也可以隐藏位于 `<table>` 中的行和列。
 
 <PlaygroundWithVariants
   variant='visible'
@@ -130,9 +130,9 @@ Utilities for controlling the visibility of an element. The `visibility` CSS pro
 &lt;/div&gt;'
 />
 
-## Backface Visibility
+## 背面可见性 {#Backface Visibility}
 
-The `backface` utility sets whether the back face of an element is visible when turned towards the user.
+ `backface` 工具类可设置元素背面朝向用户时, 它是否可见。
 
 <PlaygroundWithVariants
   variant='hidden'
@@ -147,9 +147,9 @@ The `backface` utility sets whether the back face of an element is visible when 
 &lt;/div&gt;'
 />
 
-## List Item
+## 列表元素 {#List Item}
 
-The `list-item` utility generates a `::marker` pseudo-element with the content specified by its [list-style](/utilities/typography.html#list-style-type) properties (for example a bullet point) together with a principal box of the specified type for its own contents.
+ `list-item` 工具类生成一个 `::marker` 伪元素, 其内容由其 [list-style](/utilities/typography.html#list-style-type) 属性 (例如项目符号) 特定, 并为其自己的内容生成一个指定类型的盒子。
 
 <PlaygroundWithVariants
   variant='list-item'
