@@ -2,7 +2,7 @@
 
 ## Font Family {#font-family}
 
-控制元素 Font Family 的工具类。
+用于控制元素 Font Family 的工具类。
 
 <PlaygroundWithVariants
   variant='sans'
