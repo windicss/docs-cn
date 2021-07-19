@@ -153,13 +153,8 @@ function range(size, startAt = 1) {
 
 export default defineConfig({
   safelist: [
-<<<<<<< HEAD
-    range(30).map(i => `p-${i}`), // 从 p-1 到 p-3
-    range(10).map(i => `mt-${i}`), // 从 mt-1 到 mt-10
-=======
-    range(3).map(i => `p-${i}`), // p-1 to p-3
-    range(10).map(i => `mt-${i}`), // mt-1 to mt-10
->>>>>>> 8611d05321c1a655b3e5f3a2ac9bb9bc76edeb8e
+    range(3).map(i => `p-${i}`), // p-1 到 p-3
+    range(10).map(i => `mt-${i}`), // mt-1 到 mt-10
   ],
 })
 ```
