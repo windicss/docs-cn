@@ -15,7 +15,7 @@
 }
 ```
 
-> 在草案的第一个版本中，我们考虑使用类似于 sass 的$，例如 $width:1px，但是 sass 使用一个非常不雅观的 `#{}` 操作符，当更改变量时，仍需使用 `$` 符号，最后我们决定启用上面的版本，它的灵感来自 JavaScript 模板字符串。
+> 在草案的第一个版本中，我们考虑使用 sass 中类似的 $，例如 `$width:1px;`，但是 sass 使用一个非常不雅观的 `#{}` 操作符，当更改变量时，仍需使用 `$` 符号，最后我们决定启用上面的版本，它的灵感来自 JavaScript 模板字符串。
 
 ## **别名** {#alias}
 
@@ -239,7 +239,7 @@ colors.pop(yellow);
 @var other = base + filler; // result is 15%
 ```
 
-乘法和除法不允许转换为数字。在大多数情况下，它是没有意义的-一个长度乘以一个长度得到一个区域，css 不支持指定区域。Less 将按原样对数字进行运算，并显式指定单位类型来计算结果。
+乘法和除法不转换为数字。在大多数情况下，它是没有意义的，长度相乘得到区域，css 不支持指定区域。Less 将按原样对数字进行运算，并显式指定计算结果的单位类型。
 
 ```css
 @var base = 2cm * 3mm; // result is 6cm
@@ -264,7 +264,7 @@ range()
 
 ### **语句** {#statements}
 
-在 windi 语言中每条语句都以 `@` 开头。
+在 windi 语言中，每条语句都以 `@` 开头。
 
 #### 函数  {#function}
 
@@ -275,9 +275,9 @@ range()
 }
 ```
 
-#### 加载模块 {#loading}
+#### 加载 {#loading}
 
-import javascript module
+加载 javascript 模块
 
 ```css
 @load 'module1', 'module2', 'module3';
@@ -291,9 +291,9 @@ import javascript module
 @load defaultExport, * as name from 'module-name';
 ```
 
-#### 导入文件 {#importing}
+#### 导入 {#importing}
 
-import css files
+导入 css 文件
 
 ```css
 @import "typo.css";
@@ -302,7 +302,7 @@ import css files
 @import "src/corners.windi" as c;
 ```
 
-#### 控制台 {#console}
+#### Console {#console}
 
 ```css
 @log 4rem + 3px;
@@ -311,7 +311,7 @@ import css files
 @assert 4 in [1, 2, 4];
 ```
 
-#### Logic {#logic}
+#### 逻辑 {#logic}
 
 ##### If 语句 {#if-statement}
 
@@ -418,8 +418,8 @@ import css files
 
 ## **实现** {#implementation}
 
-目前我们把 windi 语言编译成JavaScript并运行它，就像TypeScript一样。稍后我们将拥有一个解释器，并使之成为一个独立的语言。无论如何，我们希望有一种编程语言能与 **JavaScript 和 windi 进行良好的交互**。 windi 的所有包依赖项都将使用TypeScript构建，这意味着您可以直接调用 JavaScript/TypeScript 函数或类。
+目前我们把 windi 语言编译成 JavaScript 并运行它，就像 TypeScript 一样。之后我们将拥有一个解释器，并使之成为一个独立的语言。无论如何，我们希望有一种编程语言能使 **JavaScript 和 windi 进行良好的交互**。 windi 的所有包依赖都将使用TypeScript构建，这意味着您可以直接调用 JavaScript/TypeScript 函数或类。
 
-另外，关于 css 的构建，我们从第一个版本开始就有了自己的 css 构建引擎，然后我们还实现了嵌套 css, 所以这里不做详细介绍。总之，我相信有了以上的语法， wind 将会越来越完美。
+另外，关于 css 的构建，我们从第一个版本开始就有了自己的 css 构建引擎，然后我们还实现了嵌套 css, 所以这里不做详细介绍。总之，我相信有了上面的语法，wind 将会越来越完美。
 
 目前 wind 语言处于起草阶段，**欢迎提出任何建议**。您可以在 GitHub 上进行讨论，我们会尽快回复您。
