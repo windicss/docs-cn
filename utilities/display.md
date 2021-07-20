@@ -1,4 +1,4 @@
-# 展示 {#Display}
+# 显示 {#display}
 
 ## 块级元素 {#block}
 
