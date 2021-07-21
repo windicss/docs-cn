@@ -1,36 +1,36 @@
-# Utilities
+# 工具类 {#utilities}
 
-## General
+## 通用 {#general}
 
-- [Colors](/utilities/colors)
-- [Variants](/utilities/variants)
+- [颜色](/utilities/colors)
+- [可变修饰](/utilities/variants)
 
-## Basic
+## 基础 {#basic}
 
-- [Typography](/utilities/typography)
-- [Backgrounds](/utilities/backgrounds)
-- [Borders](/utilities/borders)
+- [排版](/utilities/typography)
+- [背景](/utilities/backgrounds)
+- [边框](/utilities/borders)
 - [SVG](/utilities/svg)
 
-## Layout
+## 布局 {#layout}
 
-- [Container](/utilities/container)
-- [Spacing](/utilities/spacing)
-- [Sizing](/utilities/sizing)
+- [容器](/utilities/container)
+- [间隔](/utilities/spacing)
+- [尺寸](/utilities/sizing)
 - [Display](/utilities/display)
 - [Flexbox](/utilities/flexbox)
 - [Grid](/utilities/grid)
-- [Tables](/utilities/tables)
+- [表格](/utilities/tables)
 - [Positioning](/utilities/positioning)
 
-## Enhancement
+## 进阶 {#enhancement}
 
-- [Filters](/utilities/filters)
-- [Effects](/utilities/effects)
-- [Behaviors](/utilities/behaviors)
-- [Transitions](/utilities/transitions)
-- [Transforms](/utilities/transforms)
+- [滤镜](/utilities/filters)
+- [特效](/utilities/effects)
+- [行为](/utilities/behaviors)
+- [过渡](/utilities/transitions)
+- [变换](/utilities/transforms)
 
 ::: tip
-Use the search bar to quickly find the utilities you need.
+你可以通过搜索栏快速找到所需的工具类。
 :::
