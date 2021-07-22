@@ -1,8 +1,8 @@
-# 显示 {#display}
+# Display {#display}
 
 ## 块级元素 {#block}
 
-`block` 工具类生成一个块级元素，在常规流中的该元素前后生成换行符。
+`block` 工具类生成一个块级元素盒子，在常规流中的该元素前后生成换行符。
 
 <PlaygroundWithVariants
   variant='block'
@@ -18,7 +18,7 @@
 
 ## 行内块级元素 {#inline-block}
 
-`inline-block` 工具类生成一个块级元素，该元素将和周围的内容一起浮动，就像是一个单独的行内盒一样（它表现的更像一个被替代的元素）。
+`inline-block` 工具类生成一个块级元素盒子，该元素将和周围的内容一起浮动，就像是一个单独的行内盒子一样（它表现的更像一个被替代的元素）。
 
 <PlaygroundWithVariants
   variant='inline-block'
@@ -35,7 +35,7 @@
 
 ## 行内元素 {#inline}
 
-`inline` 工具类生成一个或多个行内元素盒并且不会在它们前后生成换行符，在常规流中，如果有空间，下一个元素将在同一行上。
+`inline` 工具类生成一个或多个行内元素盒子并且不会在它们前后生成换行符，在常规流中，如果同行内有空间，下一个元素将在同一行上。
 
 <PlaygroundWithVariants
   variant='inline'
@@ -50,11 +50,11 @@
 &lt;span class="text-gray-500"&gt;...&lt;/span&gt;'
 />
 
-## 浮动修正 {#flow-root}
+## Flow Root {#flow-root}
 
-`flow-root` 工具类生成一个块级元素盒，它用于建立一个新的 [块级格式上下文](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)，定义格式化根元素的所在位置。
+`flow-root` 工具类生成一个块级元素盒子，它用于建立一个新的 [块级格式上下文](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)，定义格式化根元素的所在位置。
 
-| 类 | 属性 |
+| Class | Properties |
 | :---- | :--------- |
 | flow-root | display: flow-root; |
 
@@ -78,7 +78,7 @@
 
 ## 内容 {#contents}
 
-`contents` 工具类不会使它们自己生成特定的盒，它们会被自己的伪盒和子盒代替。
+`contents` 工具类不会使它们自己生成特定的盒子，它们会被自己的伪盒子和次级盒子代替。
 
 <PlaygroundWithVariants
   variant='contents'
@@ -98,7 +98,7 @@
 
 ## 隐藏 {#hidden}
 
-关闭一个元素的 `display` ，使其不影响布局（文档呈现为该元素不存在）。 所有后代元素的显示也会关闭。 如果想让元素占用它通常会占用的空间，请使用 [visibility](#visibility) 属性代替。
+失效一个元素的 `display` ，布局中不产生影响（文档渲染为该元素不存在）。 所有后代元素均不会显示。 如果仍在布局中保留元素的占用空间，请使用 [visibility](#visibility) 属性代替。
 
 <PlaygroundWithVariants
   variant='hidden'
@@ -113,9 +113,9 @@
 &lt;/div&gt;'
 />
 
-## 可见性 {#visibility}
+## Visibility {#visibility}
 
-用于控制一个元素的可见性的工具。 `visibility` CSS 属性会在不改变文档布局的情况下显示或隐藏元素。 该属性也可以隐藏位于 `<table>` 中的行和列。
+用于控制一个元素的可见性的工具类。 `visibility` CSS 属性会在不改变文档布局的情况下显示或隐藏元素。 该属性也可以隐藏位于 `<table>` 中的行和列。
 
 <PlaygroundWithVariants
   variant='visible'
@@ -130,7 +130,7 @@
 &lt;/div&gt;'
 />
 
-## 背面可见性 {#backface-visibility}
+## Backface Visibility {#backface-visibility}
 
  `backface` 工具类可设置元素背面朝向用户时，它是否可见。
 
@@ -147,9 +147,9 @@
 &lt;/div&gt;'
 />
 
-## 列表元素 {#list-item}
+## List Item {#list-item}
 
- `list-item` 工具类生成一个 `::marker` 伪元素，其内容由它的 [list-style](/utilities/typography.html#list-style-type) 属性（例如项目符号）特定，并为其自己的内容生成一个指定类型的盒子。
+ `list-item` 工具类生成一个 `::marker` 伪元素，其内容由它的 [list-style](/utilities/typography.html#list-style-type) 属性（例如着重号（bullet point））指定，并为它的内容生成一个指定类型的盒子。
 
 <PlaygroundWithVariants
   variant='list-item'
