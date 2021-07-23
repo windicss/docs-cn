@@ -1,8 +1,8 @@
-# Effects
+# 特效 {#effects}
 
-## Box Shadow
+## 盒阴影 {#box-shadow}
 
-Utilities for controlling the box shadow of an element.
+用于控制元素盒阴影的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -37,7 +37,7 @@ export default {
 
 </Customizing>
 
-### Box Shadow Color
+### 盒阴影颜色 {#box-shadow-color}
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -64,9 +64,9 @@ export default {
 
 </Customizing>
 
-## Opacity
+## 不透明度 {#opacity}
 
-Utilities for controlling the opacity of an element.
+用于控制元素不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -95,9 +95,9 @@ export default {
 
 </Customizing>
 
-## Mix Blend Mode
+## Mix Blend Mode {#mix-blend-mode}
 
-Utilities for controlling how an element should blend with the background.
+用于控制元素与其背景混合的工具类。
 
 <PlaygroundWithVariants
   variant='multiply'
