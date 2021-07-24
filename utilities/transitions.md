@@ -2,7 +2,7 @@
 
 ## 过渡属性 {#transitions-property}
 
-用于控制 CSS 过渡属性的功能类。
+用于控制 CSS 过渡属性的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -36,7 +36,7 @@ export default {
 
 ## 过渡持续时间 {#transitions-duration}
 
-用于控制 CSS 过渡持续时间的功能类。
+用于控制 CSS 过渡持续时间的工具类。
 
 <PlaygroundWithVariants
   variant='150'
@@ -70,7 +70,7 @@ export default {
 
 ## 过渡计时函数 {#transitions-timing-function}
 
-用于控制 CSS 过渡缓和的功能类。
+用于控制 CSS 过渡缓和的工具类。
 
 <PlaygroundWithVariants
   variant='linear'
@@ -104,7 +104,7 @@ export default {
 
 ## 过渡延迟 {#transitions-delay}
 
-用于控制 CSS 过渡延迟的功能类。
+用于控制 CSS 过渡延迟的工具类。
 
 <PlaygroundWithVariants
   variant='150'
