@@ -36,7 +36,7 @@ export default {
 
 ## 过渡持续时间 {#transitions-duration}
 
-用于控制过渡持续时间的功能类。
+用于控制 CSS 过渡持续时间的功能类。
 
 <PlaygroundWithVariants
   variant='150'
