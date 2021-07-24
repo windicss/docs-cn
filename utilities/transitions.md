@@ -1,8 +1,8 @@
-# Transitions and Animations
+# 过渡和动画 {#transitions-and-animations}
 
-## Transition Property
+## 过渡属性 {#transitions-property}
 
-Utilities for controlling which CSS properties transition.
+用于控制 CSS 过渡属性的功能类。
 
 <PlaygroundWithVariants
   variant=''
@@ -34,9 +34,9 @@ export default {
 
 </Customizing>
 
-## Transition Duration
+## 过渡持续时间 {#transitions-duration}
 
-Utilities for controlling the duration of CSS transitions.
+用于控制过渡持续时间的功能类。
 
 <PlaygroundWithVariants
   variant='150'
@@ -68,9 +68,9 @@ export default {
 
 </Customizing>
 
-## Transition Timing Function
+## 过渡计时函数 {#transitions-timing-function}
 
-Utilities for controlling the easing of CSS transitions.
+用于控制 CSS 过渡缓和的功能类。
 
 <PlaygroundWithVariants
   variant='linear'
@@ -102,9 +102,9 @@ export default {
 
 </Customizing>
 
-## Transition Delay
+## 过渡延迟 {#transitions-delay}
 
-Utilities for controlling the delay of CSS transitions.
+用于控制 CSS 过渡延迟的功能类。
 
 <PlaygroundWithVariants
   variant='150'
