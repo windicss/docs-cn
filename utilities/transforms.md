@@ -1,8 +1,8 @@
-# Transforms
+# 变换 {#transforms}
 
-## Transform Type
+## 变换类型 {#transform-type}
 
-Utilities for controlling transform behaviour.
+用于控制元素变换行为的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -14,9 +14,9 @@ Utilities for controlling transform behaviour.
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 {class} !rotate-180"&gt;'
 />
 
-## Transform Style
+## 变换样式 {#transform-style}
 
-The transform-style utility sets whether children of an element are positioned in the 3D space or are flattened in the plane of the element.
+用于控制元素的子元素的位置是3D空间还是扁平排列的工具类。
 
 <PlaygroundWithVariants
   variant='3d'
@@ -37,9 +37,9 @@ The transform-style utility sets whether children of an element are positioned i
 &lt;/div&gt;'
 />
 
-## Transform Origin
+## Transform Origin {#transform-origin}
 
-Utilities for specifying the origin for an element's transformations.
+用于控制元素变换原点的工具类。
 
 <PlaygroundWithVariants
   variant='center'
@@ -71,9 +71,9 @@ export default {
 
 </Customizing>
 
-## Transform Rotate
+## 变换旋转 {#transform-rotate}
 
-Utilities for rotating elements with transform.
+用于控制元素旋转变换的工具类。
 
 <PlaygroundWithVariants
   variant='90'
@@ -100,7 +100,7 @@ export default {
 
 </Customizing>
 
-### Rotate X
+### X 轴旋转 {#rotate-x}
 
 <PlaygroundWithVariants
   variant='30'
@@ -112,7 +112,7 @@ export default {
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
 
-### Rotate Y
+### Y 轴旋转 {#rotate-y}
 
 <PlaygroundWithVariants
   variant='45'
@@ -124,7 +124,7 @@ export default {
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
 
-### Rotate Z
+### Z 轴旋转 {#rotate-z}
 
 <PlaygroundWithVariants
   variant='12'
@@ -145,9 +145,9 @@ export default {
 &lt;/div&gt;'
 />
 
-## Transform Scale
+## 变换缩放 {#transform-scale}
 
-Utilities for scaling elements with transform.
+用于控制元素缩放变换的工具类。
 
 <PlaygroundWithVariants
   variant='90'
@@ -159,7 +159,7 @@ Utilities for scaling elements with transform.
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
 
-### Scale X
+### X 轴缩放 {#scale-x}
 
 <PlaygroundWithVariants
   variant='90'
@@ -171,7 +171,7 @@ Utilities for scaling elements with transform.
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
 
-### Scale Y
+### Y 轴缩放 {#scale-y}
 
 <PlaygroundWithVariants
   variant='90'
@@ -183,7 +183,7 @@ Utilities for scaling elements with transform.
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
 
-### Scale Z
+### Z 轴缩放 {#scale-z}
 
 <PlaygroundWithVariants
   variant='90'
@@ -220,11 +220,11 @@ export default {
 
 </Customizing>
 
-## Transform Skew
+## 变换倾斜 {#transform-skew}
 
-Utilities for skewing elements with transform.
+用于控制元素倾斜变换的工具类。
 
-### Skew X
+### X 轴倾斜 {#skew-x}
 
 <PlaygroundWithVariants
   variant='45'
@@ -236,7 +236,7 @@ Utilities for skewing elements with transform.
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
 
-### Skew Y
+### Y 轴倾斜 {#skew-y}
 
 <PlaygroundWithVariants
   variant='45'
@@ -265,11 +265,11 @@ export default {
 
 </Customizing>
 
-## Transform Translate
+## 变换平移 {#transform-translate}
 
-Utilities for translating elements with transform.
+用于控制元素平移变换的工具类。
 
-### Translate X
+### X 轴平移 {#translate-x}
 
 <PlaygroundWithVariants
   variant='0'
@@ -281,7 +281,7 @@ Utilities for translating elements with transform.
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
 
-### Translate Y
+### Y 轴平移 {#translate-y}
 
 <PlaygroundWithVariants
   variant='0'
@@ -293,7 +293,7 @@ Utilities for translating elements with transform.
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
 
-### Translate Z
+### Z 轴平移 {#translate-z}
 
 <PlaygroundWithVariants
   variant='0'
@@ -316,7 +316,7 @@ Utilities for translating elements with transform.
 
 <Customizing>
 
-You can customize the global spacing scale in the theme.spacing or theme.extend.spacing sections of your windi.config.js file:
+你可以在 windi.config.js 文件的 theme.spacing 或者 theme.extend.spacing 部分自定义全局缩放间距：
 
 ```js
 // windi.config.js
@@ -333,7 +333,7 @@ export default {
 }
 ```
 
-To customize the translate scale separately, use the theme.translate section of your windi.config.js file.
+也可以在 windi.config.js 文件的 theme.translate 部分以分割的形式自定义平移缩放的比例。
 
 ```js
 // windi.config.js
@@ -355,9 +355,9 @@ export default {
 
 </Customizing>
 
-## Perspective
+## Perspective {#perspective}
 
-The `perspect` utility determines the distance between the z=0 plane and the user in order to give a 3D-positioned element some perspective.
+用于控制元素与 z=0 平面的距离，使具有三维位置变换并产生透视效果的工具类。
 
 <PlaygroundWithVariants
   variant='lg'
@@ -397,9 +397,9 @@ export default {
 </Customizing>
 
 
-## Perspective Origin
+## Perspective Origin {#perspective-origin}
 
-The `perspect-origin` utility determines the position at which the viewer is looking. It is used as the vanishing point by the [perspect](#perspective) utility.
+用于控制元素观察者的位置，用作 [perspect](#perspective) 属性的消失点的工具类。
 
 <PlaygroundWithVariants
    variant='center'
