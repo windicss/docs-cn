@@ -1,8 +1,8 @@
 # Transforms {#transforms}
 
-## 变换类型 {#transform-type}
+## Transform 类型 {#transform-type}
 
-用于控制元素变换行为的工具类。
+用于控制元素行为的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -14,7 +14,7 @@
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 {class} !rotate-180"&gt;'
 />
 
-## 变换样式 {#transform-style}
+## Transform 样式 {#transform-style}
 
 用于控制元素的子元素的位置是3D空间还是扁平排列的工具类。
 
@@ -39,7 +39,7 @@
 
 ## Transform Origin {#transform-origin}
 
-用于控制元素变换原点的工具类。
+用于控制元素 Transform 原点的工具类。
 
 <PlaygroundWithVariants
   variant='center'
@@ -71,9 +71,9 @@ export default {
 
 </Customizing>
 
-## 变换旋转 {#transform-rotate}
+## Transform 旋转 {#transform-rotate}
 
-用于控制元素旋转变换的工具类。
+用于控制元素旋转的工具类。
 
 <PlaygroundWithVariants
   variant='90'
@@ -145,9 +145,9 @@ export default {
 &lt;/div&gt;'
 />
 
-## 变换缩放 {#transform-scale}
+## Transform 缩放 {#transform-scale}
 
-用于控制元素缩放变换的工具类。
+用于控制元素缩放的工具类。
 
 <PlaygroundWithVariants
   variant='90'
@@ -220,9 +220,9 @@ export default {
 
 </Customizing>
 
-## 变换倾斜 {#transform-skew}
+## Transform 倾斜 {#transform-skew}
 
-用于控制元素倾斜变换的工具类。
+用于控制元素倾斜的工具类。
 
 ### X 轴倾斜 {#skew-x}
 
@@ -265,9 +265,9 @@ export default {
 
 </Customizing>
 
-## 变换平移 {#transform-translate}
+## Transform 平移 {#transform-translate}
 
-用于控制元素平移变换的工具类。
+用于控制元素平移的工具类。
 
 ### X 轴平移 {#translate-x}
 
