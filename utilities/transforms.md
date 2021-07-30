@@ -16,7 +16,7 @@
 
 ## Transform 样式 {#transform-style}
 
-用于控制元素的子元素的位置是3D空间还是扁平排列的工具类。
+用于控制元素的子元素的位置是 3D 空间还是扁平排列的工具类。
 
 <PlaygroundWithVariants
   variant='3d'
