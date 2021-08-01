@@ -357,7 +357,7 @@ export default {
 
 ## Perspective {#perspective}
 
-用于控制元素与 z=0 平面的距离，使具有三维位置变换并产生透视效果的工具类。
+用于控制元素与 z=0 平面的距离，使其具有三维位置变换效果的 `perspect` 工具类。
 
 <PlaygroundWithVariants
   variant='lg'
