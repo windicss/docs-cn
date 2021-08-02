@@ -399,7 +399,7 @@ export default {
 
 ## Perspective Origin {#perspective-origin}
 
-用于控制元素观察者的位置，用作 [perspect](#perspective) 属性的消失点的工具类。
+`perspect-origin` 用于控制元素观察者的位置，用作 [perspect](#perspective) 属性的消失点的工具类。
 
 <PlaygroundWithVariants
    variant='center'
