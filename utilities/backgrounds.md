@@ -1,8 +1,8 @@
-# Backgrounds
+# Backgrounds {#backgrounds}
 
-## Background Attachment
+## Background Attachment {#background-attachment}
 
-Utilities for controlling how a background image behaves when scrolling.
+用于控制背景图片在滚动时表现的工具类。
 
 <PlaygroundWithVariants
   variant='fixed'
@@ -15,9 +15,9 @@ Utilities for controlling how a background image behaves when scrolling.
 &gt;&lt;p&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;&lt;/div&gt;'
 />
 
-## Background Clip
+## Background Clip {#background-clip}
 
-Utilities for controlling the bounding box of an element's background.
+用于控制元素背景是否延伸到边框、内边距盒子、内容盒子下的工具类。
 
 <PlaygroundWithVariants
   variant='border'
@@ -45,9 +45,9 @@ Utilities for controlling the bounding box of an element's background.
 &lt;/div&gt;"
 />
 
-## Background Color
+## 背景颜色 {#background-color}
 
-Utilities for controlling an element's background color.
+用于控制元素背景色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -77,9 +77,9 @@ export default {
 
 </Customizing>
 
-## Background Opacity
+## 背景颜色不透明度 {#background-opacity}
 
-Utilities for controlling the opacity of an element's background color.
+用于控制元素背景色不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -108,9 +108,9 @@ export default {
 
 </Customizing>
 
-## Background Position
+## 背景图像位置 {#background-position}
 
-Utilities for controlling the position of an element's background image.
+用于控制元素背景图片位置的工具类。
 
 <PlaygroundWithVariants
   variant='bottom'
@@ -147,9 +147,9 @@ export default {
 
 </Customizing>
 
-## Background Repeat
+## 背景图像重复 {#background-repeat}
 
-Utilities for controlling the repetition of an element's background image.
+用于控制元素背景图像重复的工具类。
 
 <PlaygroundWithVariants
   variant='repeat'
@@ -162,9 +162,9 @@ Utilities for controlling the repetition of an element's background image.
   &lt;/div&gt;'
 />
 
-## Background Size
+## 背景图像大小 {#background-size}
 
-Utilities for controlling the background size of an element's background image.
+用于控制元素背景图背景大小的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -195,9 +195,9 @@ export default {
 
 </Customizing>
 
-## Background Origin
+## Background Origin {#background-origin}
 
-Utilities for controlling the background origin of an element's background image.
+用于控制元素背景图像原点的工具类。
 
 <PlaygroundWithVariants
   variant='border'
@@ -211,9 +211,9 @@ Utilities for controlling the background origin of an element's background image
     &lt;/div&gt;'
 />
 
-## Background Image
+## 背景图像 {#background-image}
 
-Utilities for controlling an element's background image.
+用于控制元素背景图像的工具类。
 
 <PlaygroundWithVariants
   variant='gradient-to-r'
@@ -243,11 +243,11 @@ export default {
 
 </Customizing>
 
-## Background Gradient
+## Background Gradient {#background-gradient}
 
-Utilities for controlling background gradients.
+用于控制元素背景渐变的工具类。
 
-### Gradient From
+### Gradient From {#gradient-from}
 
 <PlaygroundWithVariants
   variant='green-500'
@@ -259,7 +259,7 @@ Utilities for controlling background gradients.
   html="&lt;div class=&quot;h-36 w-36 rounded-md bg-gradient-to-r {class} to-blue-500&quot;&gt;&lt;/div&gt;"
 />
 
-### Gradient Via
+### Gradient Via {#gradient-via}
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -271,7 +271,7 @@ Utilities for controlling background gradients.
   html="&lt;div class=&quot;h-36 w-36 rounded-md bg-gradient-to-r from-red-500 {class} to-blue-500&quot;&gt;&lt;/div&gt;"
 />
 
-### Gradient To
+### Gradient To {#gradient-to}
 
 <PlaygroundWithVariants
   variant='yellow-500'
@@ -283,9 +283,9 @@ Utilities for controlling background gradients.
   html="&lt;div class=&quot;h-36 w-36 rounded-md bg-gradient-to-r from-green-500 {class}&quot;&gt;&lt;/div&gt;"
 />
 
-## Background Blend Mode
+## Background Blend Mode {#background-blend-mode}
 
-Utilities for controlling how an element's background image should blend with its background color.
+用于控制元素背景图像与其背景颜色混合的工具类。
 
 <PlaygroundWithVariants
   variant='normal'
