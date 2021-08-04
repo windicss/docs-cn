@@ -17,7 +17,7 @@
 &lt;/div&gt;'
 />
 
-## Inline Flex {#inline-flex}
+## 行内 Flex {#inline-flex}
 
 使用 `inline-flex` 创建一个行内 flex 容器。
 
