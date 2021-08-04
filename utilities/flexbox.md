@@ -148,7 +148,7 @@ export default {
 
 ## Flex Shrink {#flex-shrink}
 
-用于控制 flex 子项如何收缩的工具类。
+用于控制 flex 子项如何被压缩的工具类。
 
 <PlaygroundWithVariants
   variant='shrink-0'
