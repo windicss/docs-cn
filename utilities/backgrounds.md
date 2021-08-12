@@ -15,9 +15,9 @@
 &gt;&lt;p&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;&lt;/div&gt;'
 />
 
-## 背景延伸 {#background-clip}
+## 背景裁剪 {#background-clip}
 
-用于控制元素背景是否延伸到边框、内边距盒子、内容盒子下的工具类。
+用于控制元素背景是否裁剪到边框、内边距盒子、内容盒子下的工具类。
 
 <PlaygroundWithVariants
   variant='border'
@@ -247,7 +247,7 @@ export default {
 
 用于控制元素背景渐变的工具类。
 
-### Gradient From {#gradient-from}
+### 渐变起点色 {#gradient-from}
 
 <PlaygroundWithVariants
   variant='green-500'
@@ -259,7 +259,7 @@ export default {
   html="&lt;div class=&quot;h-36 w-36 rounded-md bg-gradient-to-r {class} to-blue-500&quot;&gt;&lt;/div&gt;"
 />
 
-### Gradient Via {#gradient-via}
+### 渐变中间色 {#gradient-via}
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -271,7 +271,7 @@ export default {
   html="&lt;div class=&quot;h-36 w-36 rounded-md bg-gradient-to-r from-red-500 {class} to-blue-500&quot;&gt;&lt;/div&gt;"
 />
 
-### Gradient To {#gradient-to}
+### 渐变终点色 {#gradient-to}
 
 <PlaygroundWithVariants
   variant='yellow-500'
