@@ -1,6 +1,6 @@
-# Backgrounds {#backgrounds}
+# 背景 {#backgrounds}
 
-## Background Attachment {#background-attachment}
+## 背景固定 {#background-attachment}
 
 用于控制背景图片在滚动时表现的工具类。
 
@@ -15,7 +15,7 @@
 &gt;&lt;p&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;&lt;/div&gt;'
 />
 
-## Background Clip {#background-clip}
+## 背景延伸 {#background-clip}
 
 用于控制元素背景是否延伸到边框、内边距盒子、内容盒子下的工具类。
 
@@ -195,7 +195,7 @@ export default {
 
 </Customizing>
 
-## Background Origin {#background-origin}
+## 背景图像原点 {#background-origin}
 
 用于控制元素背景图像原点的工具类。
 
@@ -243,7 +243,7 @@ export default {
 
 </Customizing>
 
-## Background Gradient {#background-gradient}
+## 背景渐变 {#background-gradient}
 
 用于控制元素背景渐变的工具类。
 
@@ -283,7 +283,7 @@ export default {
   html="&lt;div class=&quot;h-36 w-36 rounded-md bg-gradient-to-r from-green-500 {class}&quot;&gt;&lt;/div&gt;"
 />
 
-## Background Blend Mode {#background-blend-mode}
+## 背景混合模式 {#background-blend-mode}
 
 用于控制元素背景图像与其背景颜色混合的工具类。
 
