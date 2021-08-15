@@ -32,7 +32,7 @@ export function generateStyles(html) {
   const htmlClasses = new HTMLParser(html)
     .parseClasses()
     .map(i => i.result)
-    .join('')
+    .join(' ')
 
   // 基于我们传入的 html 生成预检样式
   const preflightSheet = processor.preflight(html)
