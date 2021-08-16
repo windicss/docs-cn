@@ -4,13 +4,21 @@
 
 # 配置 Windi CSS {#configuring-windi-css}
 
+<<<<<<< HEAD
 [Windi CSS] 中的配置与你在 [Tailwind CSS] 中所期望的相似，但有额外的增强和特性。
+=======
+Configuration in [Windi CSS] is similar to what you would expect in [Tailwind CSS] but with additional enhancements and features.
+>>>>>>> a2ebeb7ea3e072056202d315728283cb807c6329
 
 如果你要从 Tailwind 迁移，请先查看 [迁移指南][migration guide]。
 
 ## 配置文件 {#config-file}
 
+<<<<<<< HEAD
 默认情况下，Windi CSS 会在你的项目根目录下搜索配置文件。以下是有效的名称。
+=======
+By default, Windi CSS will search for the configuration file under your project's root. Valid filenames are:
+>>>>>>> a2ebeb7ea3e072056202d315728283cb807c6329
 
 - `windi.config.ts`
 - `windi.config.js`
@@ -19,7 +27,11 @@
 
 得益于 [sucrase](https://github.com/alangpierce/sucrase)，**支持原生 ES 模块和开箱即用的 TypeScript**。
 
+<<<<<<< HEAD
 为了获得配置的类型检查，你可以从 `windicss/helpers` 导入 `defineConfig` 函数。例如：
+=======
+To get typecheck for your configurations, you can import the `defineConfig` function from `windicss/helpers`:
+>>>>>>> a2ebeb7ea3e072056202d315728283cb807c6329
 
 ```ts
 // windi.config.ts

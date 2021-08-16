@@ -1,10 +1,18 @@
 # 安装 {#installation}
 
+<<<<<<< HEAD
 Windi CSS 为主流工具提供了**最佳的适配**，你可以选择你喜欢的工具并开始使用 Windi CSS。
+=======
+Windi CSS provides **first-class integrations** for your favorite tools. Select yours and get started.
+>>>>>>> a2ebeb7ea3e072056202d315728283cb807c6329
 
 ## 构建工具 {#build-tools}
 
+<<<<<<< HEAD
 对于构建工具的支持基本与框架无关，它们适用于大多数框架，无需进行特殊配置。
+=======
+Support for build-tools are framework-agnostic. They work for most frameworks without specific configurations.
+>>>>>>> a2ebeb7ea3e072056202d315728283cb807c6329
 
 <Integrations class="mb-5" :items="[
   {
@@ -36,7 +44,11 @@ Windi CSS 为主流工具提供了**最佳的适配**，你可以选择你喜欢
 
 ## 框架 {#frameworks}
 
+<<<<<<< HEAD
 除了对一般构建工具的支持外，我们还为以下框架提供了集成支持，开箱即用。
+=======
+In addition to general build-tools support, we also provide integrations for the following frameworks that offer out-of-the-box experience.
+>>>>>>> a2ebeb7ea3e072056202d315728283cb807c6329
 
 <Integrations class="mb-5" :items="[
   {
