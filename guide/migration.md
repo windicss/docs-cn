@@ -5,11 +5,7 @@
 
 ### `package.json` {#package-json}
 
-<<<<<<< HEAD
-一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖，你可以安全地移除它们。
-=======
-Some of your dependencies are no longer required. You can remove them if they were needed only for Tailwind CSS.
->>>>>>> a2ebeb7ea3e072056202d315728283cb807c6329
+一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖。你可以安全地移除它们。
 
 ```diff
 - "tailwindcss": "*",
@@ -28,11 +24,7 @@ Some of your dependencies are no longer required. You can remove them if they we
 - @import 'tailwindcss/utilities';
 ```
 
-<<<<<<< HEAD
 （可选）基于你所使用的集成工具，你可能需要在入口显式引入 `virtual:windi.css`。请查看工具的文档来获得更多的细节。
-=======
-(Optional) Based on the integration tools you are using, you might need to import the `virtual:windi.css` entry explicitly. Please check the docs of the tools for more details.
->>>>>>> a2ebeb7ea3e072056202d315728283cb807c6329
 
 ```js
 // main.js
@@ -45,11 +37,7 @@ import 'virtual:windi.css'
 
 `colors` 和 `plugins` 需要从 `windicss` 引入来替代。
 
-<<<<<<< HEAD
 我们同时兼容 `windi.config.js` 或 `tailwind.config.js`
-=======
-We are compatible with both `windi.config.js` and `tailwind.config.js`.
->>>>>>> a2ebeb7ea3e072056202d315728283cb807c6329
 
 ```diff
 -const colors = require('tailwindcss/colors')
