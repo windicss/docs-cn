@@ -11,7 +11,7 @@ Windi CSS 只会生成你使用的 CSS 工具类，它允许你在样式类中�
 <button class="bg-[#b2a8bb]"></button>
 <button class="bg-[hsl(211.7,81.9%,69.6%)]"></button>
 
-<!-- gird template -->
+<!-- grid template -->
 <div class="grid-cols-[auto,1fr,30px]"></div>
 ```
 
