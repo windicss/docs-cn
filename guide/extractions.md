@@ -1,14 +1,14 @@
 # 提取 {#extractions}
 
-Windi CSS 依靠对源文件进行**静态扫描和提取**来找到你使用的工具类并为你按需生成它们。类似于[Tailwind的 清除限制](https://tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html)，为了使 Windi CSS 准确地检测和生成，你将需要使用工具类的静态全名。例如：
+Windi CSS 依靠对源文件进行**静态扫描和提取**来找到你使用的工具类并为你按需生成相应的 CSS。类似于 [Tailwind 的清除限制](https://tailwindcss.com/docs/optimizing-for-production#writing-purgeable-html)，为了使 Windi CSS 准确地检测和生成，你需要使用工具类的静态全名。例如，
 
-字符串拼接的部分不能被静态地提取
+字符串拼接的部分**不能**被静态地提取：
 
 ```html
 <div class="text-${ active ? 'green' : 'orange' }-400"></div>
 ```
 
-需使用工具类的全名来代替
+需使用工具类的全名来代替：
 
 ```html
 <div class="${ active ? 'text-green-400' : 'text-orange-400' }"></div>
@@ -16,7 +16,7 @@ Windi CSS 依靠对源文件进行**静态扫描和提取**来找到你使用的
 
 ## 白名单 {#safelist}
 
-如下场景所示，你在必须使用动态拼接：
+有时，你在必须使用动态拼接：
 
 ```html
 <div class="p-${size}"></div>
@@ -53,9 +53,10 @@ export default defineConfig({
 
 ## 扫描 {#scanning}
 
-在开发环境启动时，Windi CSS 将会扫描你的源码并提取出你使用的工具类。默认情况下，它会扫描在 `src/` 目录下扩展名为 `vue, html, mdx, pug, jsx, tsx` 的文件。
+在 dev-server/build 过程开始时，Windi CSS 将会扫描你的源码并提取出你使用的工具类。
+默认情况下，它会扫描在 `src/` 目录下扩展名为 `vue, html, mdx, pug, jsx, tsx` 的文件。
 
-假如你想使其能够扫描其他位置的其他文件类型，你可以通过以下所示配置：
+如果你想启用/禁用对其他文件类型或位置的扫描，你可以使用 `include` 以及 `exclude` 选项进行配置：
 
 ```ts
 // windi.config.js
@@ -78,9 +79,9 @@ export default defineConfig({
 
 ### 预检样式 {#preflight}
 
-预检样式（style reseting) 也可以按需和扫描一起进行。
+预检样式（style reseting) 也是通过扫描按需启用的。
 
-你可以通过以下配置来完全禁用它
+你可以在配置中完全禁用它：
 
 ```ts
 // windi.config.js
@@ -91,7 +92,7 @@ export default defineConfig({
 })
 ```
 
-或者通过白名单（safelist）进行指定
+或者通过白名单（safelist）进行启用它：
 
 ```ts
 // windi.config.js

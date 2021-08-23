@@ -1,4 +1,5 @@
 [tailwind css]: https://tailwindcss.com/docs
+[tailwind css v2]: https://blog.tailwindcss.com/tailwindcss-v2
 [discussions]: https://github.com/windicss/windicss/discussions
 [GitHub Issues]: https://github.com/windicss/windicss/issues?q=is%3Aissue+is%3Aopen+sort%3Aupdated-desc
 [GitHub Discussions]: https://github.com/windicss/windicss/discussions
@@ -50,8 +51,8 @@ Windi CSS 支持 [Tailwind CSS] 的所有 [工具类][utilities]，无需任何�
 
 ## 集成 {#integrations}
 
-我们为主流工具提供了**最佳的适配**，在每一个工具上都有最好的开发体验，请参阅 [集成指南](/guide/installation)，选择你最喜欢的工具即刻体验！
+我们为主流工具提供了**最佳的适配**，在每一个工具上都有最好的开发体验。请参阅 [集成指南](/guide/installation)，选择你最喜欢的工具即刻体验！
 
 ## 特性 {#features}
 
-除了 Tailwind CSS v2 的已有特性外，我们还提供了只有 Windi CSS 才能实现的优秀特性。欲了解更多，请参考 [下一章节][features]。
+除了 [Tailwind CSS v2][tailwind css v2] 的已有特性外，我们还提供了一些伟大的功能。欲了解更多，请参考 [下一章节][features]。

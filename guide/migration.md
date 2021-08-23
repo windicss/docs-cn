@@ -5,7 +5,7 @@
 
 ### `package.json` {#package-json}
 
-一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖，你可以安全地移除它们。
+一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖。你可以安全地移除它们。
 
 ```diff
 - "tailwindcss": "*",
