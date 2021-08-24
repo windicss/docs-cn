@@ -1,3 +1,5 @@
+[pseudo-selector]: https://developer.mozilla.org/zh-CN/docs/Web/CSS/Pseudo-classes
+
 # 可变修饰 {#variants}
 
 可变修饰允许你在特定情况下启用你的工具类。
