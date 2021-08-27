@@ -15,8 +15,7 @@ yarn add nuxt-windicss -D
 
 在你的 `nuxt.config.js` 中添加如下配置：
 
-```js
-// nuxt.config.js
+```js nuxt.config.js
 export default {
   buildModules: [
     'nuxt-windicss',
@@ -45,8 +44,7 @@ buildModules: [
 
 预检样式 (Preflight) 按需启用，如果你想完全禁用它，可按照下面进行配置
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -65,8 +63,7 @@ export default defineConfig({
 
 为了解决这个限制，你需要在 `vite.config.js` 中的 `safelist` 选项中指定可能的组合。
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -76,8 +73,7 @@ export default defineConfig({
 
 或者你可以这样做
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 
 function range(size, startAt = 1) {
@@ -86,7 +82,7 @@ function range(size, startAt = 1) {
 
 export default defineConfig({
   safelist: [
-    range(30).map(i => `p-${i}`), // p-1 to p-3
+    range(30).map(i => `p-${i}`), // p-1 to p-30
     range(10).map(i => `mt-${i}`), // mt-1 to mt-10
   ],
 })
@@ -97,8 +93,7 @@ export default defineConfig({
 当服务启动后，`vite-plugin-windicss` 将扫描你的源代码，并把使用到的工具类提取出来。
 默认情况下，只有处于项目根目录下且后缀为 `vue, html, md, mdx, pug, jsx, tsx` 的文件才会被扫描。如果你想扫描本地的其他文件，你可以进行配置如下：
 
-```ts
-// windi.config.js
+```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -111,8 +106,7 @@ export default defineConfig({
 
 或者直接在 nuxt 中配置：
 
-```ts
-// nuxt.config.js
+```js nuxt.config.js
 export default {
   // ...
   windicss: {
@@ -129,8 +123,14 @@ export default {
 
 ### 其他选项 {#other-options}
 
+<<<<<<< HEAD
 这些是 nuxt 模块的默认选项。
 ```js
+=======
+These are the default options for the nuxt module.
+
+```js nuxt.config.js
+>>>>>>> 42cae07450a3a5bda02e2befffe27bf65d63d501
 export default {
   // ...
   windicss: {
@@ -173,8 +173,7 @@ nuxt 模块提供与 vite 插件相同的配置API。
 
 要选择加入这种扫描，你需要自己设置扫描选项。
 
-````js
-// nuxt.config.js
+````js nuxt.config.js
 export default {
   // ...
   hooks: {
@@ -199,7 +198,7 @@ export default {
 如果你需要从某个 node_module 文件夹中加载一个 CSS 文件，并对 @apply 进行转换，
 那么你需要使用 `extraTransformTargets` 选项。
 
-```js
+```js nuxt.config.js
 export default {
   // ...
   hooks: {

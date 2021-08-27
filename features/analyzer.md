@@ -24,8 +24,7 @@ npx windicss-analysis
 npm i -D windicss-analysis
 ```
 
-```json5
-// package.json
+```json5 package.json
 {
   "scripts": {
     "analysis": "windicss-analysis"
@@ -60,8 +59,7 @@ npx windicss-analysis --html dist
 
 你需要在 `windi.config.js` 的 `extract.include` 选项中配置，而非你的框架配置文件。这样才可以被分析器所理解，就如同其他的集成一样。例如：
 
-```ts
-// windi.config.js
+```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
 
@@ -88,8 +86,8 @@ npx windicss-analysis --json report.json
 你也可以通过下面的方式获得类型支持：
 
 ```ts
-import type { AnalysisReport } from 'windicss-analysis'
 import rawReport from './report.json'
+import type { AnalysisReport } from 'windicss-analysis'
 
 const report = rawReport as AnalysisReport
 ```

@@ -26,8 +26,7 @@ vue add windicss
 
 你可以通过修改 `./vue.config.js` 中的选项来改变该插件的行为。
 
-```js
-// vue.config.js
+```js vue.config.js
 module.exports = {
   pluginOptions: {
     windicss: {
@@ -50,7 +49,11 @@ module.exports = {
 yarn remove vue-cli-plugin-tailwind
 ```
 
+<<<<<<< HEAD
 ## 配置 {#configuration-2}
+=======
+## Options
+>>>>>>> 42cae07450a3a5bda02e2befffe27bf65d63d501
 
 - 默认:
 

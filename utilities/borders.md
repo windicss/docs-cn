@@ -8,13 +8,12 @@
   variant='3xl'
   :variants="['none', 'sm', '', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '1/2', 'full']"
   prefix='rounded'
-  fixed='bg-teal-500 m-auto mt-6 mb-2 w-30 h-30 text-transparent transition-all duration-300'
+  fixed='bg-teal-500 w-full h-full text-transparent transition-all duration-300'
 />
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     borderRadius: {
@@ -41,13 +40,12 @@ export default {
   variant=''
   :variants="['', '0', 1, 2, 3, 4, 5]"
   prefix='border'
-  fixed='bg-gray-500 bg-opacity-5 border-teal-500 m-auto mt-6 mb-2 w-30 h-30 text-transparent transition-all'
+  fixed='bg-gray-500 bg-opacity-5 border-teal-500 w-full h-full text-transparent transition-all'
 />
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     borderWidth: {
@@ -69,15 +67,14 @@ export default {
   variant='gray-500'
   type='color'
   prefix='border'
-  fixed='bg-gray-500 bg-opacity-5 border-3 border-teal-500 m-auto mt-6 mb-2 w-30 h-30 text-transparent transition-all'
+  fixed='bg-gray-500 bg-opacity-5 border-3 border-teal-500 w-full h-full text-transparent transition-all'
 />
 
 <Customizing>
 
 你可以通过编辑 `windi.config.js` 文件 `theme.colors` 的部分来自定义调色板，或仅使用 `theme.borderColor` 部分自定义边框颜色。
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     borderColor: theme => ({
@@ -101,13 +98,12 @@ export default {
   variant='50'
   type='opacity'
   prefix='border-opacity'
-  fixed='bg-gray-500 bg-opacity-5 border-3 border-teal-500 m-auto mt-6 mb-2 w-30 h-30 text-transparent transition-all'
+  fixed='bg-gray-500 bg-opacity-5 border-3 border-teal-500 w-full h-full text-transparent transition-all'
 />
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -129,7 +125,7 @@ export default {
   variant='solid'
   :variants="['solid', 'dashed', 'dotted', 'double', 'none']"
   prefix='border'
-  fixed='bg-gray-500 bg-opacity-5 border-3 border-teal-500 m-auto mt-6 mb-2 w-30 h-30 text-transparent transition-all'
+  fixed='bg-gray-500 bg-opacity-5 border-3 border-teal-500 w-full h-full text-transparent transition-all'
 />
 
 ## 分割线宽度 {#divide-width}
@@ -172,8 +168,7 @@ export default {
 
 分割线宽度大小默认继承了 `borderWidth` 的大小，所以如果你希望同时自定义边框宽度和分割线宽度的值，修改 `windi.config.js` 文件中 `theme.borderWidth` 部分。
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     borderWidth: {
@@ -191,8 +186,7 @@ export default {
 
 如果仅需要自定义分割线的宽度值，修改 `windi.config.js` 文件中 `theme.divideWidth` 部分。
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     divideWidth: {
@@ -230,8 +224,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     divideColor: theme => ({
@@ -267,8 +260,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -311,17 +303,16 @@ export default {
   :variants="['', 'inset', '0', '1', '2', '4', '6', '8']"
   prefix='ring'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  appended='focus:outline-none w-32 py-3 rounded font-bold text-white bg-blue-400 ring-blue-500'
+  appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-blue-500'
   nested=true
-  html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-32 py-3 rounded font-bold text-white bg-blue-400 {class} ring-blue-500&quot;&gt;
+  html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 {class} ring-blue-500&quot;&gt;
     Button
   &lt;/button&gt;'
 />
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -346,17 +337,16 @@ export default {
   type='color'
   prefix='ring'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  appended='focus:outline-none w-32 py-3 rounded font-bold text-white bg-blue-400 ring-4'
+  appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4'
   nested=true
-  html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-32 py-3 rounded font-bold text-white bg-blue-400 ring-4 {class}&quot;&gt;
+  html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4 {class}&quot;&gt;
     Button
   &lt;/button&gt;'
 />
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 const colors = require('windicss/colors')
 
 export default {
@@ -380,17 +370,16 @@ export default {
   type='opacity'
   prefix='ring-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  appended='focus:outline-none w-32 py-3 rounded font-bold text-white bg-blue-400 ring-blue-500 ring-4'
+  appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-blue-500 ring-4'
   nested=true
-  html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-32 py-3 rounded font-bold text-white bg-blue-400 ring-4 ring-blue-500 {class}&quot;&gt;
+  html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4 ring-blue-500 {class}&quot;&gt;
     Button
   &lt;/button&gt;'
 />
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -415,9 +404,9 @@ export default {
   :variants="['0', '1', '2', '4', '6', '8', '10', '12', '14', '16', '20']"
   prefix='ring-offset'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  appended='focus:outline-none w-32 py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 ring-offset-green-400'
+  appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 ring-offset-green-400'
   nested=true
-  html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-32 py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 {class} ring-offset-green-400&quot;&gt;
+  html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 {class} ring-offset-green-400&quot;&gt;
     Button
   &lt;/button&gt;'
 />
@@ -425,8 +414,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -451,17 +439,16 @@ export default {
   type='color'
   prefix='ring-offset'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  appended='focus:outline-none w-32 py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 ring-offset-4'
+  appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 ring-offset-4'
   nested=true
-  html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-32 py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 ring-offset-4 {class}&quot;&gt;
+  html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 ring-offset-4 {class}&quot;&gt;
     Button
   &lt;/button&gt;'
 />
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 const colors = require('windicss/colors')
 
 export default {

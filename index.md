@@ -1,8 +1,6 @@
 ---
 home: true
 
-title: ''
-
 heroText: Windi CSS
 
 actionText: 起步
@@ -14,6 +12,7 @@ altActionLink: /features/
 heroImage: /assets/logo.svg
 heroAlt: Windi CSS logo
 
+<<<<<<< HEAD
 features:
   - title: On-demand
     details: Genreate CSS only for utilities you use. With instant hot reload and minimal reproduction size.
@@ -24,17 +23,22 @@ features:
 footer: MIT Licensed | Copyright © 2020-2021 Windi CSS Contributors
 
 newsTitle: 🎉 v3.0 现已新鲜出炉，大量令人激动的新功能等着你！
+=======
+newsTitle: 🎉 v3.0 is now out with a bunch of exciting new features!
+>>>>>>> 42cae07450a3a5bda02e2befffe27bf65d63d501
 newsLink: /posts/v30.html
+
+footer: MIT Licensed | Copyright © 2020-2021 Windi CSS Contributors
 ---
 
 <Sponsors />
 
 <InlinePlayground 
-  :input="`bg-gradient-to-r from-green-400 to-blue-500
-m-4 px-4 py-3 text-white text-center italic rounded cursor-default 
-transition-all duration-400
-hover:rounded-2xl
-dark:\(from-teal-400 to-yellow-500)`"
+  :input="`bg-gradient-to-r from-green-400 to-blue-500 px-4 py-2
+    text-white text-center italic rounded cursor-default
+    transition-all duration-400
+    hover:rounded-2xl
+    dark:\(from-teal-400 to-yellow-500)`"
   :showCSS="true"
   :showMode="true"
   :showTabs="true"

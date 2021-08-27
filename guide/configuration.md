@@ -21,8 +21,7 @@
 
 为了获得配置的类型检查，你可以从 `windicss/helpers` 导入 `defineConfig` 函数：
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -30,8 +29,7 @@ export default defineConfig({
 })
 ```
 
-```js
-// windi.config.js
+```js windi.config.js
 // @ts-check - enable TS check for js file
 import { defineConfig } from 'windicss/helpers'
 
@@ -42,9 +40,7 @@ export default defineConfig({
 
 `defineConfig` 是带有类型提示的帮助函数，这意味着如果你不需要自动补全/类型检查，你也可以忽略此处。
 
-```js
-// windi.config.js
-
+```js windi.config.js
 export default {
   /* 配置项... */
 }
@@ -54,7 +50,7 @@ export default {
 
 ## 配置示例 {#example-configuration}
 
-```js
+```js windi.config.js
 import { defineConfig } from 'windicss/helpers'
 import colors from 'windicss/colors'
 import plugin from 'windicss/plugin'

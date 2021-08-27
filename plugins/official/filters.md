@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ## 滤镜 {#filters}
 
 ### 工具类 {#utilities}
@@ -10,9 +11,22 @@
 | `backdrop-${key}` | backdrop-filter: `${value};` |
 
 ### 使用方法 {#usage}
+=======
+# Filters
 
-```js
-// windi.config.js
+## Utilities
+
+| Class             | Properties                   |
+| :---------------- | :--------------------------- |
+| `blur-none`       | filter: none                 |
+| `blur-${key}`     | filter: `blur(${value});`    |
+| `filter-${key}`   | filter: `${value};`          |
+| `backdrop-${key}` | backdrop-filter: `${value};` |
+
+## Usage
+>>>>>>> 42cae07450a3a5bda02e2befffe27bf65d63d501
+
+```js windi.config.js
 export default {
   theme: {
     filter: {
