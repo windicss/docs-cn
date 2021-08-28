@@ -3,18 +3,26 @@
 
 # 从 Tailwind CSS 迁移 {#migrate-from-tailwind-css}
 
+<<<<<<< HEAD
 ### `package.json` {#package-json}
+=======
+## Package 
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖。你可以安全地移除它们。
 
-```diff
+```diff package.json
 - "tailwindcss": "*",
 - "postcss": "*",
 - "autoprefixer": "*",
 + "windicss": "*"
 ```
 
+<<<<<<< HEAD
 ### 基础样式 {#base-styles}
+=======
+## Base Styles
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 你现在可以从你的 CSS 中移除 Tailwind CSS 的入口。
 
@@ -26,12 +34,15 @@
 
 （可选）基于你所使用的集成工具，你可能需要在入口显式引入 `virtual:windi.css`。请查看工具的文档来获得更多的细节。
 
-```js
-// main.js
+```js main.js
 import 'virtual:windi.css'
 ```
 
+<<<<<<< HEAD
 ### 配置文件 {#configurations}
+=======
+## Configurations
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 所有的可变修饰 (variants) 都是 [默认启用][auto] 的，不再需要对 `variant` 和 `purge` 进行配置。
 
@@ -39,7 +50,7 @@ import 'virtual:windi.css'
 
 我们同时兼容 `windi.config.js` 或 `tailwind.config.js`
 
-```diff
+```diff windi.config.js
 -const colors = require('tailwindcss/colors')
 +const colors = require('windicss/colors')
 -const typography = require('@tailwindcss/typography')
@@ -75,7 +86,11 @@ export default {
 }
 ```
 
+<<<<<<< HEAD
 ### 清理（可选） {#cleanup-optional}
+=======
+## Cleanup (optional)
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 如果你不使用下面配置文件的其他特性，你可以删掉它。
 

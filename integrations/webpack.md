@@ -52,8 +52,7 @@ yarn add windicss-webpack-plugin -D
 
 你需要把插件添加到你的 webpack 配置文件。如果你有直接修改 `webpack.config.js` 的权限，可以如下面这样做：
 
-```js
-// webpack.config.js
+```js webpack.config.js
 import WindiCSS from 'windicss-webpack-plugin'
 
 export default {
@@ -69,8 +68,7 @@ export default {
 
 对于不支持 es 模块导入语法的 webpack 配置，你可以尝试以下方法。
 
-```js
-// webpack.config.js
+```js webpack.config.js
 const WindiCSS = require('windicss-webpack-plugin').default
 
 export default {
@@ -85,8 +83,7 @@ export default {
 
 在一个入口文件或只加载一次的文件中，添加`windi.css`的导入。
 
-```ts
-// main.js
+```ts main.js
 import 'windi.css'
 // require('windi.css')
 ```
@@ -102,8 +99,7 @@ import 'windi.css'
 
 在服务器启动时，Windi 将扫描你的代码，并提取工具类使用。默认情况下，只有 "src/"下的扩展名为 `"html", "vue", "md", "mdx", "pug", "jsx", "tsx", "svelte", "ts", "js", "css", "postcss"` 的文件会被收录。
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -122,8 +118,7 @@ export default defineConfig({
 
 预检样式 (Preflight) 随需启用，如果你想完全关掉它，可按照下面进行配置
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -142,8 +137,7 @@ export default defineConfig({
 
 为了实现这个，你需要在 `windi.config.ts` 中的 `safelist` 选项中指定可能的组合。
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -153,8 +147,7 @@ export default defineConfig({
 
 或者你可以这样做
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 
 function range(size, startAt = 1) {
@@ -198,8 +191,7 @@ You can also make your custom css be able to be overridden by certain layers:
 
 ### Next.js
 
-**next.config.js**
-```js
+```js next.config.js
 const WindiCSS = require('windicss-webpack-plugin').default
 
 module.exports = {
@@ -211,13 +203,11 @@ module.exports = {
 }
 ```
 
-**pages/_app.js**
-```js
+```js pages/_app.js
 import 'windi.css'
 ```
 
-**windi.config.ts**
-```ts
+```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -233,8 +223,7 @@ export default defineConfig({
 
 ### Create React App - CRACO
 
-**craco.config.js**
-```js
+```js craco.config.js
 const WindiCSS = require('windicss-webpack-plugin').default
 
 module.exports = {
@@ -251,13 +240,11 @@ module.exports = {
 }
 ```
 
-**src/index.js**
-```js
+```js src/index.js
 import './virtual:windi.css'
 ```
 
-**windi.config.ts**
-```ts
+```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -274,8 +261,7 @@ export default defineConfig({
 
 对于不支持es模块导入语法的webpack配置，你可以尝试以下方法。
 
-```js
-// webpack.config.js
+```js webpack.config.js
 const WindiCSS = require('windicss-webpack-plugin').default
 
 export default {
@@ -293,8 +279,7 @@ require('windi.css')
 
 ### Storybook {#storybook}
 
-**.storybook/main.js**
-```js
+```js .storybook/main.js
 const WindiCSS = require('windicss-webpack-plugin').default
 
 module.exports = {
@@ -306,8 +291,7 @@ module.exports = {
 }
 ```
 
-**.storybook/preview.js**
-```js
+```js .storybook/preview.js
 import 'windi.css'
 ```
 

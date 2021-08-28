@@ -18,8 +18,7 @@ npm i -D postcss-windicss
 
 在你的项目根目录下创建 `postcss.config.js`
 
-```js
-// postcss.config.js
+```js postcss.config.js
 module.exports = {
   plugins: {
     'postcss-windicss': { /* ... */ },
@@ -36,8 +35,7 @@ module.exports = {
 
 在你的项目根目录下创建 `windi.config.js` / `windi.config.ts` 并写入下面的配置
 
-```js
-// windi.config.js
+```js windi.config.js
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({

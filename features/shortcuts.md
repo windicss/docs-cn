@@ -4,8 +4,7 @@
 
 仅需在你的配置文件中添加 `shortcuts` 字段：
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     /* ... */
@@ -32,8 +31,7 @@ export default {
 
 对复杂的工具类也同样支持 CSS-in-JS 语法
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     /* ... */

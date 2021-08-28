@@ -17,8 +17,7 @@ yarn add gridsome-plugin-windicss -D
 
 在 `gridsome.config.js` 中添加以下内容。
 
-```js
-// gridsome.config.js
+```js gridsome.config.js
 export default {
   // ...
   plugins: [

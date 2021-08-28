@@ -4,7 +4,7 @@ Windi CSS 拥有开箱即用的暗色模式支持。
 
 通过对工具类 (utilities) 添加可变修饰前缀 `dark:`，这些工具类将仅会在暗色模式启用的时候生效。在下面的例子中，`Preview` 文本在亮色模式下是红色的，在暗色模式下是绿色的。试看看：
 
-<DarkModeSwitch />
+<ToggleDark />
 
 <InlinePlayground :input="'text-red-400 dark:text-green-400'" :showCSS="true" :showPreview="true"/>
 
@@ -14,8 +14,7 @@ Windi CSS 拥有开箱即用的暗色模式支持。
 
 Class 模式为你提供了更好的支持，控制在哪应该使用暗色模式。
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   darkMode: 'class',
   // ...
@@ -62,8 +61,7 @@ else
 
 在媒体查询模式，它使用了浏览器内置的 `@media (prefers-color-scheme: dark)` 查询，总是会与用户的系统表现相匹配。
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   darkMode: 'media',
   // ...

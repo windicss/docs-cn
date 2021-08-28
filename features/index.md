@@ -6,7 +6,11 @@
 
 [Windi CSS] 与 [Tailwind CSS] 的 v2 完全兼容。在此基础上，我们新增了许多额外的特性，进一步提升你的工作体验，并给于更多可能性。
 
+<<<<<<< HEAD
 ### 自动值推导 {#value-auto-infer}
+=======
+## Value Auto-infer
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 在你的类名中使用任意值，然后生成相应的样式。
 
@@ -24,7 +28,11 @@
 
 <LearnMore to="/features/value-auto-infer" />
 
+<<<<<<< HEAD
 ### 可变修饰组 {#variant-groups}
+=======
+## Variant Groups
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 通过编组的方式可以将同样的可变修饰用在不同的工具类上。
 
@@ -38,7 +46,11 @@
 
 <LearnMore to="/features/variant-groups" />
 
+<<<<<<< HEAD
 ### 响应式设计 {#responsive-design}
+=======
+## Responsive Design
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 拓展响应式断点控制。
 
@@ -48,7 +60,11 @@
 
 <LearnMore to="/features/responsive-design" />
 
+<<<<<<< HEAD
 ### Important 前缀 {#important-prefix}
+=======
+## Important Prefix
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 在任意工具类前加上 `!` 前缀，可使它们变为 `!important`。
 
@@ -58,12 +74,15 @@
 
 <LearnMore to="/features/important-prefix" />
 
+<<<<<<< HEAD
 ### Shortcuts {#shortcuts}
+=======
+## Shortcuts
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 快速创建可复用的组件和工具类。
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     /* ... */
@@ -81,7 +100,11 @@ export default {
 
 <LearnMore to="/features/shortcuts" />
 
+<<<<<<< HEAD
 ### 暗色模式 {#dark-mode}
+=======
+## Dark Mode
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 ```html
 <div class="text-black dark:text-white"></div>
@@ -89,7 +112,7 @@ export default {
 
 <LearnMore to="/features/dark-mode" />
 
-### RTL
+## RTL
 
 ```html
 <div class="text-green-400 rtl:(text-red-400 text-right)"></div>
@@ -97,7 +120,11 @@ export default {
 
 <LearnMore to="/features/rtl" />
 
+<<<<<<< HEAD
 ### 指令 {#directives}
+=======
+## Directives
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 完全兼容 Tailwind 风格的指令 `@apply`, `@screen`。
 
@@ -113,7 +140,11 @@ export default {
 
 <LearnMore to="/features/directives" />
 
+<<<<<<< HEAD
 ### 可视化分析器 {#visual-analyzer}
+=======
+## Visual Analyzer
+>>>>>>> 34b88aeb96d927c345dbf8311bbc3e75a11f526a
 
 我们为你提供了可视化分析器，可以让你对工具类的使用情况和设计系统的有大致的了解。
 
