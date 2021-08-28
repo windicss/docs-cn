@@ -6,7 +6,7 @@
 
 你可以使用屏幕大小，系统主题，或者任何伪选择器，比如 `:hover`。
 
-你也可以使用 `:` 操作符，也可以将它们任意组合起来，如下：
+你可以使用 `:` 操作符指定一个可变修饰，也可以将它们任意组合起来，如下：
 
 ```
 sm:bg-red-500 sm:hover:bg-green-300 dark:bg-white
@@ -46,7 +46,7 @@ sm:bg-red-500 sm:hover:bg-green-300 dark:bg-white
 
 ### 最大宽度断点 {#max-width-breakpoints}
 
-你可以通过以下配置项使用 `max-width` 或者范围来自定义断点：
+你可以使用 `max-width` 或者范围来自定义断点，配置项如下：
 
 ```ts
 export default {
@@ -153,7 +153,7 @@ export default {
 | sibling | `.${utility} + * { ... }` | 目标首个兄弟节点。 |
 
 
-### Media Query {#media-query}
+### 媒体查询 {#media-query}
 
 | 可变修饰 | 规则 | 描述 |
 | :------ | :--- | :---------- |
