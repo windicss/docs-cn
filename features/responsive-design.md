@@ -38,8 +38,7 @@ lg  => greater or equal than this breakpoint
 
 你可以在你的 `windi.config.js` 中自定义断点。
 
-```ts
-// windi.config.js
+```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({

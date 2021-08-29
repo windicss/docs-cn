@@ -4,7 +4,11 @@
 
 将元素宽度固定到当前断点的组件。
 
+<<<<<<< HEAD
 | 类名      | 断点           | 属性               |
+=======
+| Class     | Breakpoint     | Properties         |
+>>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
 | :-------- | :------------- | :----------------- |
 | container | *None*         | width: 100%;       |
 |           | sm *(640px)*   | max-width: 640px;  |
@@ -44,8 +48,7 @@
 
 #### 默认居中 {#centering-by-default}
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     container: {
@@ -57,8 +60,7 @@ export default {
 
 #### 水平内边距 {#horizontal-padding}
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     container: {
@@ -70,8 +72,7 @@ export default {
 
 为每个断点指定不同的内边距大小
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     container: {

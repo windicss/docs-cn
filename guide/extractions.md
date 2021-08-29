@@ -24,8 +24,7 @@ Windi CSS 依靠对源文件进行**静态扫描和提取**来找到你使用的
 
 为此，你将需要在 `windi.config.js` 的配置项 `safelist` 中列举可能的组合。
 
-```ts
-// windi.config.js
+```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -35,8 +34,7 @@ export default defineConfig({
 
 或者采用更加灵活的方式：
 
-```ts
-// windi.config.js
+```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
 
 function range(size, startAt = 1) {
@@ -58,8 +56,7 @@ export default defineConfig({
 
 如果你想启用/禁用对其他文件类型或位置的扫描，你可以使用 `include` 以及 `exclude` 选项进行配置：
 
-```ts
-// windi.config.js
+```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -83,8 +80,7 @@ export default defineConfig({
 
 你可以在配置中完全禁用它：
 
-```ts
-// windi.config.js
+```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -94,8 +90,7 @@ export default defineConfig({
 
 或者通过白名单（safelist）进行启用它：
 
-```ts
-// windi.config.js
+```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({

@@ -10,8 +10,7 @@ npm install --save-dev @windicss/plugin-scrollbar
 
 把它添加到配置文件的 plugins 数组中。
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     // ...

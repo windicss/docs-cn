@@ -14,8 +14,7 @@
 npm i rollup-plugin-windicss -D # yarn add rollup-plugin-windicss -D
 ```
 
-```ts
-// rollup.config.js
+```js rollup.config.js
 import WindiCSS from 'rollup-plugin-windicss'
 
 export default {
@@ -39,8 +38,7 @@ import 'virtual:windi.css'
 
 预检样式 (Preflight) 随需启用，如果你想完全关掉它，可按照下面进行配置
 
-```js
-// rollup.config.js
+```js rollup.config.js
 export default {
   plugins: [
     WindiCSS({
@@ -61,8 +59,7 @@ export default {
 
 为了实现这个，你需要在 `vite.config.js` 中的 `safelist` 选项中指定可能的组合。
 
-```js
-// rollup.config.js
+```js rollup.config.js
 export default {
   plugins: [
     WindiCSS({
@@ -96,8 +93,7 @@ export default {
 
 当服务启动后，`vite-plugin-windicss` 将扫描你的源代码，并把使用到的工具类提取出来。默认情况下，只有 `src/` 且后缀为 `vue, html, mdx, pug, jsx, tsx` 的文件才会被扫描。如果你想扫描本地的其他文件，你可以进行配置如下：
 
-```js
-// rollup.config.js
+```js rollup.config.js
 export default {
   plugins: [
     WindiCSS({
