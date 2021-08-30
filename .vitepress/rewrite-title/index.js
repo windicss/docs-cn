@@ -1,6 +1,6 @@
-const path = require('path')
-const fs = require('fs')
-const matterService = require('../utils/frontmatter-service')
+import path from 'path'
+import fs from 'fs'
+import matterService from '../utils/frontmatter-service'
 const workspacePath = path.resolve(__dirname, '..', '..')
 
 const h1MdRegExp = /^#\s+(.+)\s+(\{#([\w-]+)\})$/
@@ -37,8 +37,7 @@ const ergodicDirectory = (dirPath) => {
         if (stats.isFile()) {
           if (filePath.split('.').pop().toLowerCase() === 'md')
             rewriteMarkdownTitle(filePath)
-        }
-        else if (stats.isDirectory()) {
+        } else if (stats.isDirectory()) {
           if (articleDirs.includes(filePath.split('/').pop()))
             ergodicDirectory(filePath)
         }

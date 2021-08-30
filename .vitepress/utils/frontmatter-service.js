@@ -1,6 +1,6 @@
-const fs = require('fs')
-const matter = require('gray-matter')
-const { extend, isEmpty: _isEmpty } = require('lodash')
+import fs from 'fs'
+import matter from 'gray-matter'
+import { extend, isEmpty as _isEmpty } from 'lodash'
 // gray-matter is a dep for vitepress,
 // no need to specify that in package.json
 
@@ -49,4 +49,4 @@ class FrontMatterService {
   }
 }
 
-module.exports = new FrontMatterService()
+export default new FrontMatterService()

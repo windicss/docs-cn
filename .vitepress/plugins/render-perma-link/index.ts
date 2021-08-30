@@ -25,8 +25,7 @@ const renderPermalink = (slug: any, opts: any, state: any, permalink: any) => {
     if (opts.permalinkSpace)
       linkTokens[!opts.permalinkBefore ? 'push' : 'unshift'](space())
     state.tokens[permalink + 1].children[opts.permalinkBefore ? 'push' : 'unshift'](...linkTokens)
-  }
-  catch (e) {}
+  } catch (e) {}
 }
 
 export default renderPermalink
