@@ -2,3 +2,6 @@
 node_modules
 !/.vitepress
 **/dist
+.vitepress/rewrite-title/index.js
+.vitepress/utils/frontmatter-service.js
+

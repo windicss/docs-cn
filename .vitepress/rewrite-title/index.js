@@ -1,6 +1,6 @@
-import path from 'path'
-import fs from 'fs'
-import matterService from '../utils/frontmatter-service'
+const path = require('path')
+const fs = require('fs')
+const matterService = require('../utils/frontmatter-service')
 const workspacePath = path.resolve(__dirname, '..', '..')
 
 const h1MdRegExp = /^#\s+(.+)\s+(\{#([\w-]+)\})$/
