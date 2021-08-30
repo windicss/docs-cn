@@ -123,14 +123,9 @@ export default {
 
 ### 其他选项 {#other-options}
 
-<<<<<<< HEAD
 这些是 nuxt 模块的默认选项。
-```js
-=======
-These are the default options for the nuxt module.
 
 ```js nuxt.config.js
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
 export default {
   // ...
   windicss: {

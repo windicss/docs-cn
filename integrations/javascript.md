@@ -149,14 +149,8 @@ export function generateStyles(html) {
 
       // 将当前的值追加到累加器值
       acc[attrKey] = [...attrKeyValue, ...attrValue]
-<<<<<<< HEAD
-    }
-    else {
-      // 将属性值数组添加到累加器
-=======
     } else {
-      // else add atrribute value array to accumulator
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
+      // 将属性值数组添加到累加器
       acc[attrKey] = attrValue
     }
 

@@ -104,16 +104,9 @@ export default {
 }
 ```
 
-<<<<<<< HEAD
 你可以在 windi.config.js 文件中为每一个字体大小, 使用元组 [fontSize, {letterSpacing, lineHeight}] 的形式来配置默认行高。
-	
-```js
-// windi.config.js
-=======
-If you also want to provide a default letter-spacing value for a font size, you can do so using a tuple of the form `[fontSize, { letterSpacing, lineHeight }]` in your windi.config.js file.
 
 ```js windi.config.js
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
 export default {
   theme: {
     fontSize: {

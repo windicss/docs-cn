@@ -1,11 +1,7 @@
 import { UserConfig } from 'vitepress'
-<<<<<<< HEAD
 import MarkdownIt from 'markdown-it'
-import { DefaultTheme } from '@windicss/vitepress-theme/config'
 import renderPermalink from '../plugins/render-perma-link'
 import customAnchor from '../plugins/markdown-it-custom-anchor'
-=======
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
 import { metaData } from './constants'
 import { mdRenderFilename } from './markdown'
 import head from './head'
@@ -29,18 +25,14 @@ const config: WindicssUserConfig = {
   description: metaData.description,
   head,
   themeConfig,
-<<<<<<< HEAD
+  srcExclude: ['README.md'],
   markdown: {
     anchor: {
       renderPermalink,
     },
-    config: (md: MarkdownIt) => {
-      md.use(customAnchor)
-=======
-  srcExclude: ['README.md'],
-  markdown: {
     config(md) {
       md.use(mdRenderFilename)
+      md.use(customAnchor)
     },
   },
   vue: {
@@ -48,7 +40,6 @@ const config: WindicssUserConfig = {
       compilerOptions: {
         isCustomElement: tag => tag === 'preview-box',
       },
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
     },
   },
 }

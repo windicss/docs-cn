@@ -49,11 +49,7 @@ module.exports = {
 yarn remove vue-cli-plugin-tailwind
 ```
 
-<<<<<<< HEAD
-## 配置 {#configuration-2}
-=======
-## Options
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
+## 选项 {#options}
 
 - 默认:
 

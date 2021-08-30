@@ -17,20 +17,6 @@
 
 ### 配置选项 {#options}
 
-<<<<<<< HEAD
-```js
-import { windi } from 'svelte-windicss-preprocess'
-// ...
-windi({
-  silent?: boolean, // 默认值: false
-  mode?: 'development' | 'production', // 默认值: process.env.NODE_ENV
-  configPath?: string, // 无默认值
-  disableFormat?: boolean, // 默认值: false
-  useDevTools?: {
-    enabled?: boolean, // 默认值: false
-  },
-})
-=======
 ```ts
 interface Options {
   silent?: boolean
@@ -44,7 +30,6 @@ interface Options {
   safeList?: string
   preflights?: boolean
 }
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
 ```
 
 ### 自定义预处理信息 {#custom-pre-processing-information}
@@ -113,11 +98,7 @@ Svelte 本身就会去限制 CSS 样式的作用域，并移除没有使用的�
 
 ### 自定义样式 {#custom-styles}
 
-<<<<<<< HEAD
 你可能需要在项目里定义自定义的 CSS classes，并且决定它们是受作用域限制的还是全局的，与 Windi CSS 分开。你可以通过下面的语法来实现：
-=======
-You may have the need in your project to define custom CSS classes, and want to decide separate to Windi CSS if they are scoped or global. You can with the following syntax:
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
 
 ```html
   <!-- 所有的样式带有 :global() -->

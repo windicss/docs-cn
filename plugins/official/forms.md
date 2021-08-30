@@ -1,12 +1,6 @@
-<<<<<<< HEAD
-## 表单 {#forms}
+# 表单 {#forms}
 
-### 基础样式 {#base-styles}
-=======
-# Forms
-
-## Base Styles
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
+## 基础样式 {#base-styles}
 
 - `input[type='text']`
 - `input[type='password']`
@@ -26,11 +20,7 @@
 - `select[multiple]`
 - `textarea`
 
-<<<<<<< HEAD
-### 用法 {#usage}
-=======
-## Usage
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
+## 用法 {#usage}
 
 ```js windi.config.js
 export default {

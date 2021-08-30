@@ -311,11 +311,7 @@ const config = {
 export default config
 ```
 
-<<<<<<< HEAD
-在 $layout.svelte 文件的顶部添加 `import "virtual:windi.css"` ：
-=======
-Add `import "virtual:windi.css"` to the top of your __layout.svelte file:
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
+在 __layout.svelte 文件的顶部添加 `import "virtual:windi.css"` ：
 
 ```html __layout.svelte
 <script>

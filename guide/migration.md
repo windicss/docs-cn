@@ -3,11 +3,7 @@
 
 # 从 Tailwind CSS 迁移 {#migrate-from-tailwind-css}
 
-<<<<<<< HEAD
-### `package.json` {#package-json}
-=======
-## Package 
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
+## Package {#package}
 
 一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖。你可以安全地移除它们。
 
@@ -18,11 +14,7 @@
 + "windicss": "*"
 ```
 
-<<<<<<< HEAD
-### 基础样式 {#base-styles}
-=======
-## Base Styles
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
+## 基础样式 {#base-styles}
 
 你现在可以从你的 CSS 中移除 Tailwind CSS 的入口。
 
@@ -38,11 +30,7 @@
 import 'virtual:windi.css'
 ```
 
-<<<<<<< HEAD
-### 配置文件 {#configurations}
-=======
-## Configurations
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
+## 配置文件 {#configurations}
 
 所有的可变修饰 (variants) 都是 [默认启用][auto] 的，不再需要对 `variant` 和 `purge` 进行配置。
 
@@ -86,11 +74,7 @@ export default {
 }
 ```
 
-<<<<<<< HEAD
-### 清理（可选） {#cleanup-optional}
-=======
-## Cleanup (optional)
->>>>>>> 86307706dfd79635e02e2bbbb78062989b07c7d8
+## 清理（可选） {#cleanup-optional}
 
 如果你不使用下面配置文件的其他特性，你可以删掉它。
 
