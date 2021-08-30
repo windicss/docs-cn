@@ -22,7 +22,7 @@
 
 在阐述为什么创建 Windi CSS 时，作者曾说：
 
-> 当项目越来越大时（大约几十个组件），使用 Tailwind CSS 最初的编译时间达到了 3s，而热更新时的时间甚至超过了 1s。- [@voorjaar](https://github.com/voorjaar)
+> 当项目越来越大时（大约几十个组件），使用 Tailwind CSS 最初的编译时间达到了 3s，而热更新时的时间甚至超过了 1s。<br>- [@voorjaar](https://github.com/voorjaar)
 
 通过扫描 HTML 和 CSS 按需生成工具类（utilities），Windi CSS 致力于在开发中提供 [更快的加载体验][video comparison] 以及更快的 HMR，并且在生产环境下无需对 CSS 进行 Purge（一种在生产环境中对未使用的 CSS 进行清除而节省体积的技术）。
 

@@ -37,8 +37,7 @@ const ergodicDirectory = (dirPath) => {
         if (stats.isFile()) {
           if (filePath.split('.').pop().toLowerCase() === 'md')
             rewriteMarkdownTitle(filePath)
-        }
-        else if (stats.isDirectory()) {
+        } else if (stats.isDirectory()) {
           if (articleDirs.includes(filePath.split('/').pop()))
             ergodicDirectory(filePath)
         }

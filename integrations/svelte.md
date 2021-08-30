@@ -17,18 +17,19 @@
 
 ### 配置选项 {#options}
 
-```js
-import { windi } from 'svelte-windicss-preprocess'
-// ...
-windi({
-  silent?: boolean, // 默认值: false
-  mode?: 'development' | 'production', // 默认值: process.env.NODE_ENV
-  configPath?: string, // 无默认值
-  disableFormat?: boolean, // 默认值: false
-  useDevTools?: {
-    enabled?: boolean, // 默认值: false
-  },
-})
+```ts
+interface Options {
+  silent?: boolean
+  mode?: 'development' | 'production'
+  configPath?: string
+  disableFormat?: boolean
+  devTools?: {
+    enabled: boolean
+    completions?: boolean
+  }
+  safeList?: string
+  preflights?: boolean
+}
 ```
 
 ### 自定义预处理信息 {#custom-pre-processing-information}

@@ -8,7 +8,7 @@
   variant='block'
   :variants="[]"
   nested=true
-  fixed='!block space-y-2 pt-6 pl-12'
+  fixed='space-y-2 pt-6 pl-12'
   appended='rounded-md bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400'
   html='
 &lt;div class="{class} rounded-md bg-red-400 w-8 h-8"&gt;&lt;/div&gt;
@@ -24,7 +24,7 @@
   variant='inline-block'
   :variants="[]"
   nested=true
-  fixed='!block space-x-1 pt-12 pl-4 text-xs'
+  fixed='space-x-1 pt-12 pl-4 text-xs'
   appended='rounded-md bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 text-gray-500'
   html='
 &lt;div class="{class} rounded-md bg-red-400 w-8 h-8"&gt;&lt;/div&gt;
@@ -41,7 +41,7 @@
   variant='inline'
   :variants="['inline', 'inline-block']"
   nested=true
-  fixed='!block space-x-1 pt-12 pl-2 text-xs text-white'
+  fixed='space-x-1 pt-12 pl-2 text-xs text-white'
   appended='rounded-md bg-teal-500 bg-teal-100 py-2 px-3 bg-red-400 bg-green-400 bg-blue-400 text-gray-500'
   html='
 &lt;div class="{class} rounded-md bg-red-400 py-2 px-3"&gt;1&lt;/div&gt;
@@ -54,15 +54,15 @@
 
 `flow-root` 工具类生成一个块级元素盒子，它用于建立一个新的 [块级格式上下文](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)，定义格式化根元素的所在位置。
 
-| Class | Properties |
-| :---- | :--------- |
+| Class     | Properties          |
+| :-------- | :------------------ |
 | flow-root | display: flow-root; |
 
 <PlaygroundWithVariants
   variant='flow-root'
   :variants="[]"
   nested=true
-  fixed='!block space-y-2 pt-2'
+  fixed='space-y-2 pt-2'
   appended='rounded-md bg-teal-500 bg-teal-100 w-8 h-8 m-1 bg-red-400 bg-green-400 bg-blue-400 bg-teal-100'
   html='
 &lt;div class="{class} bg-teal-100 rounded-md"&gt;
@@ -84,7 +84,7 @@
   variant='contents'
   :variants="['block', 'contents']"
   nested=true
-  fixed='!block pt-10'
+  fixed='pt-10'
   appended='flex items-center rounded-md flex-1 bg-teal-500 bg-teal-100 h-6 bg-red-400 bg-yellow-400 bg-green-400 bg-blue-400 bg-indigo-100 w-10 m-1 p-1'
   html='&lt;div class="flex items-center bg-teal-100 rounded-md p-1"&gt;
 &lt;div class="flex-1 rounded-md bg-red-400 h-6 m-1"&gt;&lt;/div&gt;
@@ -104,7 +104,7 @@
   variant='hidden'
   :variants="['block', 'hidden']"
   nested=true
-  fixed='!block pt-20'
+  fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center bg-teal-100 rounded-md p-1"&gt;
 &lt;div class="rounded-md bg-red-400 w-8 h-8 m-1"&gt;&lt;/div&gt;
@@ -121,7 +121,7 @@
   variant='visible'
   :variants="['visible', 'invisible']"
   nested=true
-  fixed='!block pt-20'
+  fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center bg-teal-100 rounded-md p-1"&gt;
 &lt;div class="rounded-md bg-red-400 w-8 h-8 m-1"&gt;&lt;/div&gt;

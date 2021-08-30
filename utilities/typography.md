@@ -68,8 +68,7 @@ Font Family 可以是数组或者逗号分隔的字符串:
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     fontSize: {
@@ -92,8 +91,7 @@ export default {
 
 你可以在 windi.config.js 文件中为每一个字体大小, 使用元组 [fontSize, lineHeight] 的形式来配置默认行高。
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     fontSize: {
@@ -107,9 +105,8 @@ export default {
 ```
 
 你可以在 windi.config.js 文件中为每一个字体大小, 使用元组 [fontSize, {letterSpacing, lineHeight}] 的形式来配置默认行高。
-	
-```js
-// windi.config.js
+
+```js windi.config.js
 export default {
   theme: {
     fontSize: {
@@ -164,8 +161,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     fontWeight: {
@@ -227,8 +223,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     letterSpacing: {
@@ -260,8 +255,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -294,8 +288,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     tabSize: {
@@ -337,8 +330,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     textColor: {
@@ -393,8 +385,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     textDecorationColor: {
@@ -424,8 +415,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -457,8 +447,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -488,8 +477,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     textDecorationOffset: {
@@ -517,8 +505,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -541,7 +528,7 @@ export default {
   variant='50'
   type='opacity'
   prefix='text-opacity'
-  fixed='p-2 dark:text-white opacity-85 overflow-hidden'
+  fixed='p-2 opacity-85 overflow-hidden'
   appended='text-black'
   nested=true
   html="&lt;p class='text-black {class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
@@ -549,8 +536,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -580,8 +566,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     textShadow: {
@@ -613,8 +598,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     extend: {
@@ -643,8 +627,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     textStrokeColor: {

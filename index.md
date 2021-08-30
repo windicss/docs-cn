@@ -1,8 +1,6 @@
 ---
 home: true
 
-title: ''
-
 heroText: Windi CSS
 
 actionText: 起步
@@ -14,24 +12,18 @@ altActionLink: /features/
 heroImage: /assets/logo.svg
 heroAlt: Windi CSS logo
 
-features:
-  - title: On-demand
-    details: Genreate CSS only for utilities you use. With instant hot reload and minimal reproduction size.
-  - title: First-class Integrations
-    details: Provides first-class integrations and best DX for the tools you love. Including Vite, Webpack, Nuxt, Svelte and more!
-  - title: Auto-utilities
-    details: Infers number, sizes, and colors from your classes
-footer: MIT Licensed | Copyright © 2020-2021 Windi CSS Contributors
+newsTitle: 👉 v3.1 现已发布，大量令人激动的新功能等着你！
+newsLink: /posts/v31.html
 
-newsTitle: 🎉 v3.0 现已新鲜出炉，大量令人激动的新功能等着你！
-newsLink: /posts/v30.html
+footer: MIT Licensed | Copyright © 2020-2021 Windi CSS Contributors
 ---
 
 <Sponsors />
 
 <InlinePlayground 
   :input="`bg-gradient-to-r from-green-400 to-blue-500
-m-4 px-4 py-3 text-white text-center italic rounded cursor-default 
+text-white text-center italic
+px-4 py-2 rounded cursor-default
 transition-all duration-400
 hover:rounded-2xl
 dark:\(from-teal-400 to-yellow-500)`"

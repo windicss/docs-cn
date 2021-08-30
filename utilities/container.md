@@ -44,8 +44,7 @@
 
 #### 默认居中 {#centering-by-default}
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     container: {
@@ -57,8 +56,7 @@ export default {
 
 #### 水平内边距 {#horizontal-padding}
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     container: {
@@ -70,8 +68,7 @@ export default {
 
 为每个断点指定不同的内边距大小
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     container: {

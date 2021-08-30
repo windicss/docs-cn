@@ -1,11 +1,12 @@
 import { UserConfig } from 'vitepress'
 import MarkdownIt from 'markdown-it'
-import { DefaultTheme } from '@windicss/vitepress-theme/config'
 import renderPermalink from '../plugins/render-perma-link'
 import customAnchor from '../plugins/markdown-it-custom-anchor'
 import { metaData } from './constants'
+import { mdRenderFilename } from './markdown'
 import head from './head'
 import themeConfig from './theme'
+import { DefaultTheme } from '@/config'
 
 interface WindicssUserConfig extends UserConfig<DefaultTheme.Config> {
   markdown: {
@@ -24,12 +25,21 @@ const config: WindicssUserConfig = {
   description: metaData.description,
   head,
   themeConfig,
+  srcExclude: ['README.md'],
   markdown: {
     anchor: {
       renderPermalink,
     },
-    config: (md: MarkdownIt) => {
+    config(md) {
+      md.use(mdRenderFilename)
       md.use(customAnchor)
+    },
+  },
+  vue: {
+    template: {
+      compilerOptions: {
+        isCustomElement: tag => tag === 'preview-box',
+      },
     },
   },
 }

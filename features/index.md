@@ -6,7 +6,7 @@
 
 [Windi CSS] 与 [Tailwind CSS] 的 v2 完全兼容。在此基础上，我们新增了许多额外的特性，进一步提升你的工作体验，并给于更多可能性。
 
-### 自动值推导 {#value-auto-infer}
+## 自动值推导 {#value-auto-infer}
 
 在你的类名中使用任意值，然后生成相应的样式。
 
@@ -24,7 +24,7 @@
 
 <LearnMore to="/features/value-auto-infer" />
 
-### 可变修饰组 {#variant-groups}
+## 可变修饰组 {#variant-groups}
 
 通过编组的方式可以将同样的可变修饰用在不同的工具类上。
 
@@ -38,7 +38,7 @@
 
 <LearnMore to="/features/variant-groups" />
 
-### 响应式设计 {#responsive-design}
+## 响应式设计 {#responsive-design}
 
 拓展响应式断点控制。
 
@@ -48,7 +48,7 @@
 
 <LearnMore to="/features/responsive-design" />
 
-### Important 前缀 {#important-prefix}
+## Important 前缀 {#important-prefix}
 
 在任意工具类前加上 `!` 前缀，可使它们变为 `!important`。
 
@@ -58,12 +58,11 @@
 
 <LearnMore to="/features/important-prefix" />
 
-### Shortcuts {#shortcuts}
+## Shortcuts {#shortcuts}
 
 快速创建可复用的组件和工具类。
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     /* ... */
@@ -81,7 +80,7 @@ export default {
 
 <LearnMore to="/features/shortcuts" />
 
-### 暗色模式 {#dark-mode}
+## 暗色模式 {#dark-mode}
 
 ```html
 <div class="text-black dark:text-white"></div>
@@ -89,7 +88,7 @@ export default {
 
 <LearnMore to="/features/dark-mode" />
 
-### RTL
+## RTL
 
 ```html
 <div class="text-green-400 rtl:(text-red-400 text-right)"></div>
@@ -97,7 +96,7 @@ export default {
 
 <LearnMore to="/features/rtl" />
 
-### 指令 {#directives}
+## 指令 {#directives}
 
 完全兼容 Tailwind 风格的指令 `@apply`, `@screen`。
 
@@ -113,7 +112,7 @@ export default {
 
 <LearnMore to="/features/directives" />
 
-### 可视化分析器 {#visual-analyzer}
+## 可视化分析器 {#visual-analyzer}
 
 我们为你提供了可视化分析器，可以让你对工具类的使用情况和设计系统的有大致的了解。
 

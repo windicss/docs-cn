@@ -8,7 +8,7 @@
   variant='flex'
   :variants="[]"
   nested=true
-  fixed='!block pt-20'
+  fixed='pt-20'
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 space-x-2 w-6 h-6'
   html='&lt;div class="{class} bg-teal-100 rounded-md p-2 space-x-2"&gt;
 &lt;div class="rounded-md bg-teal-500 w-6 h-6"&gt;&lt;/div&gt;
@@ -24,7 +24,7 @@
 <PlaygroundWithVariants
   variant='inline-flex'
   :variants="[]"
-  fixed='!block pt-20'
+  fixed='pt-20'
   nested=true
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 space-x-2 w-6 h-6'
   html='&lt;div class="{class} bg-teal-100 rounded-md p-2 space-x-2"&gt;
@@ -43,7 +43,7 @@
   :variants="['row', 'row-reverse', 'col', 'col-reverse']"
   prefix='flex'
   nested=true
-  fixed='!block pt-20'
+  fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center {class} bg-teal-100 rounded-md p-1"&gt;
 &lt;div class="rounded-md bg-red-400 w-6 h-6 m-1"&gt;&lt;/div&gt;
@@ -61,7 +61,7 @@
   :variants="['wrap', 'wrap-reverse', 'nowrap']"
   prefix='flex'
   nested=true
-  fixed='!block pt-20'
+  fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-teal-400 bg-yellow-400 bg-green-400 bg-blue-400 bg-purple-400 m-1 p-1'
   html='&lt;div class="flex items-center {class} bg-teal-100 rounded-md p-1"&gt;
 &lt;div class="rounded-md bg-red-400 w-6 h-6 m-1"&gt;&lt;/div&gt;
@@ -82,7 +82,7 @@
   :variants="['1', 'auto', 'initial', 'none']"
   prefix='flex'
   nested=true
-  fixed='!block pt-20'
+  fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center bg-teal-100 rounded-md p-1"&gt;
 &lt;div class="rounded-md bg-red-400 w-6 h-6 m-1"&gt;&lt;/div&gt;
@@ -93,8 +93,7 @@
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     flex: {
@@ -120,7 +119,7 @@ export default {
   :variants="['grow-0', 'grow']"
   prefix='flex'
   nested=true
-  fixed='!block pt-20'
+  fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center bg-teal-100 rounded-md p-1"&gt;
 &lt;div class="rounded-md bg-red-400 w-6 h-6 m-1"&gt;&lt;/div&gt;
@@ -131,8 +130,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     flexGrow: {
@@ -155,7 +153,7 @@ export default {
   :variants="['shrink-0', 'shrink']"
   prefix='flex'
   nested=true
-  fixed='!block pt-20'
+  fixed='pt-20'
   appended='flex items-center flex-nowrap rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-teal-400 bg-yellow-400 bg-green-400 bg-blue-400 bg-purple-400 m-1 p-1'
   html='&lt;div class="flex items-center flex-nowrap bg-teal-100 rounded-md p-1"&gt;
 &lt;div class="rounded-md bg-red-400 w-6 h-6 m-1"&gt;&lt;/div&gt;
@@ -169,8 +167,7 @@ export default {
 
 <Customizing>
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     flexShrink: {

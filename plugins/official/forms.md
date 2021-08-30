@@ -1,6 +1,6 @@
-## 表单 {#forms}
+# 表单 {#forms}
 
-### 基础样式 {#base-styles}
+## 基础样式 {#base-styles}
 
 - `input[type='text']`
 - `input[type='password']`
@@ -20,10 +20,9 @@
 - `select[multiple]`
 - `textarea`
 
-### 用法 {#usage}
+## 用法 {#usage}
 
-```js
-// windi.config.js
+```js windi.config.js
 export default {
   theme: {
     // ...

@@ -1,5 +1,7 @@
-.git/
-node_modules/
-!.vitepress
-!.shared-components
+.git
+node_modules
+!/.vitepress
 **/dist
+.vitepress/rewrite-title/index.js
+.vitepress/utils/frontmatter-service.js
+

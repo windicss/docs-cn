@@ -33,8 +33,7 @@ npm i -D vite-plugin-windicss windicss
 
 然后，在你的 Vite 配置中添加插件：
 
-```ts
-// vite.config.js
+```ts vite.config.js
 import WindiCSS from 'vite-plugin-windicss'
 
 export default {
@@ -46,8 +45,7 @@ export default {
 
 最后，在你的 Vite 入口文件中导入 `virtual:windi.css`：
 
-```js
-// main.js
+```js main.js
 import 'virtual:windi.css'
 ```
 
@@ -63,8 +61,7 @@ import 'virtual:windi.css'
 
 将它重命名为 `tailwind.config.ts` 即可。
 
-```ts
-// tailwind.config.ts
+```ts tailwind.config.ts
 import { defineConfig } from 'windicss/helpers'
 import formsPlugin from 'windicss/plugin/forms'
 
@@ -112,8 +109,7 @@ import 'virtual:windi-devtools'
 
 在按需使用下预检是启用的。如果需要禁用，可以按以下方式配置
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'vite-plugin-windicss'
 
 export default defineConfig({
@@ -132,8 +128,7 @@ export default defineConfig({
 
 因此，你需要在 `vite.config.js` 的 `safelist` 选项中指定可能的组合
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'vite-plugin-windicss'
 
 export default defineConfig({
@@ -143,8 +138,7 @@ export default defineConfig({
 
 或者，也可以这样做
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 import { defineConfig } from 'vite-plugin-windicss'
 
 function range(size, startAt = 1) {
@@ -163,8 +157,7 @@ export default defineConfig({
 
 在服务启动时，`vite-plugin-windicss` 将扫描你的源码并提取使用的工具类。默认情况下，只有 `src/` 下带有 `vue、html、mdx、pug、jsx、tsx` 扩展名的文件被包含。如果你想扫描其他位置的文件类型，则可以通过以下方式进行配置：
 
-```ts
-// windi.config.js
+```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
 
 export default defineConfig({
@@ -177,8 +170,7 @@ export default defineConfig({
 
 或者在插件选项中：
 
-```ts
-// vite.config.js
+```ts vite.config.js
 import { defineConfig } from 'vite'
 
 export default defineConfig({
@@ -198,8 +190,7 @@ export default defineConfig({
 
 通过以下配置启用
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 export default {
   attributify: true,
 }
@@ -223,8 +214,7 @@ export default {
 
 如果担心命名冲突，可以通过以下方式给属性模式添加自定义前缀：
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 export default {
   attributify: {
     prefix: 'w:',
@@ -246,8 +236,7 @@ export default {
 
 ### [别名配置](https://windicss.org/posts/v30.html#alias-config) {#alias-config}
 
-```ts
-// windi.config.ts
+```ts windi.config.ts
 export default {
   alias: {
     'hstack': 'flex items-center',
@@ -303,8 +292,7 @@ export default {
 
 通过 `npm i -D vite-plugin-windicss` 安装插件并修改 svelte 配置：
 
-```js
-// svelte.config.js
+```js svelte.config.js
 import preprocess from 'svelte-preprocess'
 import WindiCSS from 'vite-plugin-windicss'
 
@@ -323,10 +311,9 @@ const config = {
 export default config
 ```
 
-在 $layout.svelte 文件的顶部添加 `import "virtual:windi.css"` ：
+在 __layout.svelte 文件的顶部添加 `import "virtual:windi.css"` ：
 
-```html
-<!-- $layout.svelte -->
+```html __layout.svelte
 <script>
   import "virtual:windi.css"
 

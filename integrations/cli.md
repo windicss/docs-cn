@@ -71,7 +71,6 @@ windicss './hello.html' './world.html'
 windicss './**/*.html'
 windicss './src/**/*.html'
 windicss './hello.html' './world.html', './src/**/*.svelte'
-...
 ```
 
 ### 编译 CSS 文件 {#compile-css-file}
@@ -85,7 +84,6 @@ windicss './**/*.html'
 windicss './**/*.html' -to windi.css
 windicss './test.html' -to windi.css
 windicss './test.html' --preflight --output windi.css
-
 ```
 
 #### 最小化构建 {#minimize-build}
@@ -164,8 +162,7 @@ windicss './**/*.html' -to windi.css --config windi.config.js
 
 举个例子
 
-```js
-// windi.config.js
+```js windi.config.js
 module.exports = {
   // ...
   theme: {
@@ -199,8 +196,7 @@ windicss './**/*.html' -to windi.css --dev --fuzzy
 
 你也可以为特定类型的文件配置 `extractors`
 
-```js
-// windi.config.js
+```js windi.config.js
 module.exports = {
   // ...
   extract: {
