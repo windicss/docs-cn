@@ -1,6 +1,6 @@
 # 间隔 {#spacing}
 
-## 内边距 {#padding}
+## Padding {#padding}
 
 用于控制元素内边距的工具类。
 
@@ -33,7 +33,7 @@ export default {
 
 </Customizing>
 
-## Y轴内边距 {#padding-y}
+## Padding Y {#padding-y}
 
 用于控制元素垂直内边距的工具类。
 
@@ -49,7 +49,7 @@ export default {
 &lt;/div&gt;'
 />
 
-## X轴内边距 {#padding-x}
+## Padding X {#padding-x}
 
 用于控制元素水平内边距的工具类。
 
@@ -129,7 +129,7 @@ export default {
 &lt;/div&gt;'
 />
 
-## 外边距 {#margin}
+## Margin {#margin}
 
 用于控制元素外边距的工具类。
 
@@ -162,7 +162,7 @@ export default {
 
 </Customizing>
 
-## Y轴外边距 {#margin-y}
+## Margin Y {#margin-y}
 
 用于控制元素垂直外边距的工具类。
 
@@ -178,7 +178,7 @@ export default {
 &lt;/div&gt;'
 />
 
-## X轴外边距 {#margin-x}
+## Margin X {#margin-x}
 
 用于控制元素水平外边距的工具类。
 
@@ -258,7 +258,7 @@ export default {
 &lt;/div&gt;'
 />
 
-## Y轴间隔 {#space-between-y}
+## Space Between Y {#space-between-y}
 
 用于控制元素垂直方向与其子元素的间隔的工具类。
 
@@ -293,7 +293,7 @@ export default {
 
 </Customizing>
 
-## Y轴反向间隔 {#space-between-y-reverse}
+## Space Between Y Reverse {#space-between-y-reverse}
 
 如果你的元素倒序（使用 `flex-col-reverse`），请使用 `space-y-reverse` 间隔来确保每个元素被添加到正确的一侧的工具类。
 
@@ -311,7 +311,7 @@ export default {
 &lt;/div&gt;'
 />
 
-## X轴间隔 {#space-between-x}
+## Space Between X {#space-between-x}
 
 用于控制元素水平方向与其子元素的间隔的工具类。
 
@@ -346,7 +346,7 @@ export default {
 
 </Customizing>
 
-## X轴反向间隔 {#space-between-x-reverse}
+## Space Between X Reverse {#space-between-x-reverse}
 
 如果你的元素倒序（使用 `flex-row-reverse`），请使用 `space-x-reverse` 间隔来确保每个元素被添加到正确的一侧的工具类。
 
