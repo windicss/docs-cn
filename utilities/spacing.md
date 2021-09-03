@@ -67,7 +67,7 @@ export default {
 
 ## Padding Top {#padding-top}
 
-用于控制元素内边距区域中上方高度的工具类。
+用于控制元素内边距区域中距顶部高度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -83,7 +83,7 @@ export default {
 
 ## Padding Left {#padding-left}
 
-用于控制元素内边距区域中左边高度的工具类。
+用于控制元素内边距区域中距左侧宽度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -99,7 +99,7 @@ export default {
 
 ## Padding Bottom {#padding-bottom}
 
-用于控制元素内边距区域中下方高度的工具类。
+用于控制元素内边距区域中距底部高度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -115,7 +115,7 @@ export default {
 
 ## Padding Right {#padding-right}
 
-用于控制元素内边距区域中右边高度的工具类。
+用于控制元素内边距区域中距右侧宽度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -196,7 +196,7 @@ export default {
 
 ## Margin Top {#margin-top}
 
-用于控制元素外边距区域中上方高度的工具类。
+用于控制元素外边距区域中距顶部高度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -212,7 +212,7 @@ export default {
 
 ## Margin Left {#margin-left}
 
-用于控制元素外边距区域中左边高度的工具类。
+用于控制元素外边距区域中距左侧宽度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -228,7 +228,7 @@ export default {
 
 ## Margin Bottom {#margin-bottom}
 
-用于控制元素外边距区域中下方高度的工具类。
+用于控制元素外边距区域中距底部高度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -244,7 +244,7 @@ export default {
 
 ## Margin Right {#margin-right}
 
-用于控制元素外边距区域中右边高度的工具类。
+用于控制元素外边距区域中距右侧宽度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
