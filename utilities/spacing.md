@@ -1,8 +1,8 @@
-# Spacing
+# 间隔 {#spacing}
 
-## Padding
+## Padding {#padding}
 
-Utilities for controlling an element's padding.
+用于控制元素内边距的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -33,9 +33,9 @@ export default {
 
 </Customizing>
 
-## Padding Y
+## Padding Y {#padding-y}
 
-Utilities for controlling an element's vertical padding.
+用于控制元素垂直内边距的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -49,9 +49,9 @@ Utilities for controlling an element's vertical padding.
 &lt;/div&gt;'
 />
 
-## Padding X
+## Padding X {#padding-x}
 
-Utilities for controlling an element's horizontal padding.
+用于控制元素水平内边距的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -65,9 +65,9 @@ Utilities for controlling an element's horizontal padding.
 &lt;/div&gt;'
 />
 
-## Padding Top
+## Padding Top {#padding-top}
 
-Utilities for controlling an element's top padding.
+用于控制元素内边距区域中距顶部高度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -81,9 +81,9 @@ Utilities for controlling an element's top padding.
 &lt;/div&gt;'
 />
 
-## Padding Left
+## Padding Left {#padding-left}
 
-Utilities for controlling an element's left padding.
+用于控制元素内边距区域中距左侧宽度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -97,9 +97,9 @@ Utilities for controlling an element's left padding.
 &lt;/div&gt;'
 />
 
-## Padding Bottom
+## Padding Bottom {#padding-bottom}
 
-Utilities for controlling an element's bottom padding.
+用于控制元素内边距区域中距底部高度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -113,9 +113,9 @@ Utilities for controlling an element's bottom padding.
 &lt;/div&gt;'
 />
 
-## Padding Right
+## Padding Right {#padding-right}
 
-Utilities for controlling an element's right padding.
+用于控制元素内边距区域中距右侧宽度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -129,9 +129,9 @@ Utilities for controlling an element's right padding.
 &lt;/div&gt;'
 />
 
-## Margin
+## Margin {#margin}
 
-Utilities for controlling an element's margin.
+用于控制元素外边距的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -162,9 +162,9 @@ export default {
 
 </Customizing>
 
-## Margin Y
+## Margin Y {#margin-y}
 
-Utilities for controlling an element's vertical margin.
+用于控制元素垂直外边距的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -178,9 +178,9 @@ Utilities for controlling an element's vertical margin.
 &lt;/div&gt;'
 />
 
-## Margin X
+## Margin X {#margin-x}
 
-Utilities for controlling an element's horizontal margin.
+用于控制元素水平外边距的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -194,9 +194,9 @@ Utilities for controlling an element's horizontal margin.
 &lt;/div&gt;'
 />
 
-## Margin Top
+## Margin Top {#margin-top}
 
-Utilities for controlling an element's top margin.
+用于控制元素外边距区域中距顶部高度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -210,9 +210,9 @@ Utilities for controlling an element's top margin.
 &lt;/div&gt;'
 />
 
-## Margin Left
+## Margin Left {#margin-left}
 
-Utilities for controlling an element's left margin.
+用于控制元素外边距区域中距左侧宽度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -226,9 +226,9 @@ Utilities for controlling an element's left margin.
 &lt;/div&gt;'
 />
 
-## Margin Bottom
+## Margin Bottom {#margin-bottom}
 
-Utilities for controlling an element's bottom margin.
+用于控制元素外边距区域中距底部高度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -242,9 +242,9 @@ Utilities for controlling an element's bottom margin.
 &lt;/div&gt;'
 />
 
-## Margin Right
+## Margin Right {#margin-right}
 
-Utilities for controlling an element's right margin.
+用于控制元素外边距区域中距右侧宽度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -258,9 +258,9 @@ Utilities for controlling an element's right margin.
 &lt;/div&gt;'
 />
 
-## Space Between Y
+## Space Between Y {#space-between-y}
 
-Utilities for controlling the space between vertical align child elements.
+用于控制元素垂直方向与其子元素的间隔的工具类。
 
 <PlaygroundWithVariants
   variant='2'
@@ -293,9 +293,9 @@ export default {
 
 </Customizing>
 
-## Space Between Y Reverse
+## Space Between Y Reverse {#space-between-y-reverse}
 
-If your elements are in reverse order (using say `flex-col-reverse`), use the `space-y-reverse` utilities to ensure the space is added to the correct side of each element.
+如果你的元素倒序（使用 `flex-col-reverse`），请使用 `space-y-reverse` 间隔来确保每个元素被添加到正确的一侧的工具类。
 
 <PlaygroundWithVariants
   variant='reverse'
@@ -311,9 +311,9 @@ If your elements are in reverse order (using say `flex-col-reverse`), use the `s
 &lt;/div&gt;'
 />
 
-## Space Between X
+## Space Between X {#space-between-x}
 
-Utilities for controlling the space between horizontal align child elements.
+用于控制元素水平方向与其子元素的间隔的工具类。
 
 <PlaygroundWithVariants
   variant='2'
@@ -346,9 +346,9 @@ export default {
 
 </Customizing>
 
-## Space Between X Reverse
+## Space Between X Reverse {#space-between-x-reverse}
 
-If your elements are in reverse order (using say `flex-row-reverse`), use the `space-x-reverse` utilities to ensure the space is added to the correct side of each element.
+如果你的元素倒序（使用 `flex-row-reverse`），请使用 `space-x-reverse` 间隔来确保每个元素被添加到正确的一侧的工具类。
 
 <PlaygroundWithVariants
   variant='reverse'
