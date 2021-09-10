@@ -25,6 +25,7 @@ specifiers:
   eslint-plugin-markdown: ^2.2.0
   json5: ^2.2.0
   lz-string: ^1.4.4
+  markdown-it-attrs: ^4.0.0
   mitt: ^3.0.0
   prism-theme-vars: ^0.2.2
   prismjs: ^1.24.1
@@ -51,6 +52,7 @@ dependencies:
   codemirror-theme-vars: 0.1.1
   json5: 2.2.0
   lz-string: 1.4.4
+  markdown-it-attrs: 4.0.0
   mitt: 3.0.0
   prism-theme-vars: 0.2.2
   prismjs: 1.24.1
@@ -2846,6 +2848,13 @@ packages:
     dependencies:
       markdown-it: 12.2.0
     dev: true
+
+  /markdown-it-attrs/4.0.0:
+    resolution: {integrity: sha512-uLjtdCmhhmL3BuZsReYkFxk74qKjj5ahe34teBpOCJ4hYZZl7/ftLyXWLowngC2moRkbLEvKwN/7TMwbhbHE/A==}
+    engines: {node: '>=6'}
+    peerDependencies:
+      markdown-it: '>= 9.0.0 < 13.0.0'
+    dev: false
 
   /markdown-it-container/3.0.0:
     resolution: {integrity: sha512-y6oKTq4BB9OQuY/KLfk/O3ysFhB3IMYoIWhGJEidXt1NQFocFK2sA2t0NYZAMyMShAGL6x5OPIbrmXPIqaN9rw==}
