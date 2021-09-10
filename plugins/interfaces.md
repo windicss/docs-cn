@@ -30,7 +30,7 @@ plugin(({ addUtilities }) => {
 
 ## 添加动态工具类 {#add-dynamic-utilities}
 
-### 基本用法 {#basic-usage}
+### 基本用法 {#basic-usage-1}
 
 ```js
 addDynamic('filter', ({ Utility, Style }) => {
