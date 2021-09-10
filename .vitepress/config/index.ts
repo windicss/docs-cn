@@ -1,5 +1,6 @@
 import { UserConfig } from 'vitepress'
 import MarkdownIt from 'markdown-it'
+import markdownItAttrs from 'markdown-it-attrs'
 import { DefaultTheme } from '@/config'
 import renderPermalink from '../plugins/render-perma-link'
 import customAnchor from '../plugins/markdown-it-custom-anchor'
@@ -33,6 +34,7 @@ const config: WindicssUserConfig = {
     config(md) {
       md.use(mdRenderFilename)
       md.use(customAnchor)
+      md.use(markdownItAttrs)
     },
   },
   vue: {

@@ -132,7 +132,7 @@ export default {
 | first-line | `.{utility}::first-line { ... }` | 首行伪元素的目标元素。 |
 | selection | `.{utility}::selection { ... }` | 选择伪元素的目标元素。 |
 
-### 父选择器 {#pseudo-selectors}
+### 父选择器 {#pseudo-selectors-1}
 
 | 可变修饰 | 规则 | 描述 |
 | :------ | :--- | :---------- |
@@ -142,7 +142,7 @@ export default {
 | group-visited | `.group:visited .${utility} { ... }` | 当标记的父类与已访问伪类匹配时的目标元素。 |
 
 
-### 子选择器 {#pseudo-selectors}
+### 子选择器 {#pseudo-selectors-2}
 
 | 可变修饰 | 规则 | 描述 |
 | :------ | :--- | :---------- |

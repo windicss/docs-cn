@@ -1,6 +1,6 @@
 # 容器 {#container}
 
-## 容器 {#container}
+## 容器 {#container-1}
 
 将元素宽度固定到当前断点的组件。
 

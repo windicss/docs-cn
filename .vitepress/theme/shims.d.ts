@@ -1,3 +1,5 @@
+declare module 'markdown-it-attrs'
+
 declare module '@docsearch/js' {
   import type { DocSearchProps as DocSearchComponentProps } from '@docsearch/react'
   interface DocSearchProps extends DocSearchComponentProps {
