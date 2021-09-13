@@ -19,7 +19,11 @@
 
 那么，我认为现在应该谈谈我为什么正在做这个项目。
 
+<<<<<<< HEAD
 使用 Tailwind 进行前端开发的体验一直很好。我尝试过其他前端框架，但我遇到 Tailwind 之后，我便没再换过它。 Tailwind 的组件化是最吸引我的部分。你可以轻松实现 HTML 组件，并与其他组件共享，你懂的。
+=======
+It is always a pleasant experience to use Tailwind to develop the front-end. I tried other front-end frameworks, but when I met Tailwind, I never looked back. Componentization is the most attractive part for me. You know, you can easily implement an html component and share it with others.
+>>>>>>> 3b685b0627a684ad4ebdc17b0ceee26ba04abb64
 
 但是当我把 sapper 和 Tailwind 一起使用时， 问题出现了，首先，是关于速度的问题。当我的项目变得很大并且有若干组件时，初始编译速度接近 3s，并且热更新的速度也超过了 1s。这对开发的体验非常不友好。当你作出了改动但实际上有延迟的时候，我相信你会和我一样抓狂。
 
@@ -37,7 +41,11 @@
 
 ## 未来{#Future}
 
+<<<<<<< HEAD
 我从未想过替换 Tailwind CSS。除了我的个人兴趣，该项目的发展也是个人需求。tailwindcss 现在几乎可以被视为巨人，它有超过 3,000 条提交记录和超过 100 个贡献者。但是，当实现这样的成就时，改变轨道就不是一件容易的事情。tailwindcss 使用像 lodash 和 postcss 等库，我认为这不会改变。切换到  typescript？不能确定，我认为他们仍然喜欢他们的工作流程。
+=======
+I never thought about replacing Tailwind CSS. In addition to my personal interest, the development of this project is also a personal need. Tailwind CSS can almost be regarded as a giant now as it has more than 3,000 commits with 100+ contributors. But when such an achievement is achieved, changing the track is not an easy thing to do. Tailwind CSS uses libraries like lodash and postcss and I think this will not change. Switch to typescript? Not sure, I think they should still like their workflow.
+>>>>>>> 3b685b0627a684ad4ebdc17b0ceee26ba04abb64
 
 无论如何，我要感谢开发 Tailwind 的开发者开发出这么好用的前端工具。但我也希望如果你遇到速度的瓶颈时，或者想要体验一些新特性，试一下 Windi CSS。
 
