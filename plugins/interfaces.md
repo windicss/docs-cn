@@ -70,11 +70,13 @@ plugin(({ addComponents }) => {
 ```js
 import plugin from 'windicss/plugin'
 
-plugin(addVariant('pointer-group-hover', ({ modifySelectors }) => {
-  return modifySelectors(({ className }) => {
-    return `.no-touch .group:hover .${className}`
+plugin(({ addVariant }) => {
+  addVariant('pointer-group-hover', ({ modifySelectors }) => {
+    return modifySelectors(({ className }) => {
+      return `.no-touch .group:hover .${className}`
+    })
   })
-}))
+})
 ```
 
 ## 添加基础样式 {#add-base-styles}
