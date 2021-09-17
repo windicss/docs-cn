@@ -61,7 +61,6 @@ npx windicss-analysis --html dist
 
 ```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
-import colors from 'windicss/colors'
 
 export default defineConfig({
   extract: {
