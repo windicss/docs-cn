@@ -227,7 +227,7 @@ export default {
 
 ## Grid Column Start
 
-用于控制网格元素开始跨列的工具类。该工具类通过 [col-start](#grid-column-start) 或者 [col-span](#grid-column-span) 来指定跨列的数量。
+用于控制网格元素开始跨列的工具类。该工具类通过 [col-end](#grid-column-end) 或者 [col-span](#grid-column-span) 来指定跨列的数量。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -315,7 +315,7 @@ export default {
 
 ## Grid Row Start
 
-用于控制网格元素开始跨行的工具类。该工具类通过 [row-start](#grid-row-start) 或者 [row-span](#grid-row-span) 来指定跨行的数量。
+用于控制网格元素开始跨行的工具类。该工具类通过 [row-end](#grid-row-end) 或者 [row-span](#grid-row-span) 来指定跨行的数量。
 
 <PlaygroundWithVariants
   variant='auto'
