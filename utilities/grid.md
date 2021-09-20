@@ -2,7 +2,7 @@
 
 ## Grid
 
-Use `grid` to create a grid container.
+使用 `grid` 创建一个网格容器。
 
 <PlaygroundWithVariants
   variant='grid'
@@ -28,7 +28,7 @@ Use `grid` to create a grid container.
 
 ## Inline Grid
 
-Use `inline-grid` to create an inline grid container.
+使用 `inline-grid` 创建一个行内网格容器。
 
 <PlaygroundWithVariants
   variant='inline-grid'
@@ -54,7 +54,7 @@ Use `inline-grid` to create an inline grid container.
 
 ## Grid Template Columns
 
-Utilities for specifying the columns in a grid layout.
+用于控制一个网格布局中网格列维度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -98,7 +98,7 @@ export default {
 
 ## Grid Template Rows
 
-Utilities for specifying the rows in a grid layout.
+用于控制一个网格布局中网格行维度的工具类。
 
 <PlaygroundWithVariants
   variant='4'
@@ -141,7 +141,7 @@ export default {
 
 ## Grid Column Span
 
-Utilities for specifying the column size of an element in a grid layout.
+用于控制一个网格布局中元素行宽的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -184,7 +184,7 @@ export default {
 
 ## Grid Row Span
 
-Utilities for specifying the row size of an element in a grid layout.
+用于控制一个网格布局中元素列高的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -227,7 +227,7 @@ export default {
 
 ## Grid Column Start
 
-Utilities to make an element start at the nth grid line. These utilities should be combined with the [col-end](#grid-column-end) or [col-span](#grid-column-span) utilities to span a specific number of columns.
+用于控制网格元素开始跨列的工具类。该工具类通过 [col-end](#grid-column-end) 或者 [col-span](#grid-column-span) 来指定跨列的数量。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -271,7 +271,7 @@ export default {
 
 ## Grid Column End
 
-Utilities to make an element end at the nth grid line. These utilities should be combined with the [col-start](#grid-column-start) or [col-span](#grid-column-span) utilities to span a specific number of columns.
+用于控制网格元素结束跨列的工具类。该工具类通过 [col-start](#grid-column-start) 或者 [col-span](#grid-column-span) 来指定跨列的数量。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -315,7 +315,7 @@ export default {
 
 ## Grid Row Start
 
-Utilities to make an element start at the nth grid line. These utilities should be combined with the [row-end](#grid-row-end) or [row-span](#grid-row-span) utilities to span a specific number of rows.
+用于控制网格元素开始跨行的工具类。该工具类通过 [row-end](#grid-row-end) 或者 [row-span](#grid-row-span) 来指定跨行的数量。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -359,7 +359,7 @@ export default {
 
 ## Grid Row End
 
-Utilities to make an element end at the nth grid line. These utilities should be combined with the [row-start](#grid-row-start) or [row-span](#grid-row-span) utilities to span a specific number of rows.
+用于控制网格元素结束跨行的工具类。该工具类通过 [row-start](#grid-row-start) 或者 [row-span](#grid-row-span) 来指定跨行的数量。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -403,7 +403,7 @@ export default {
 
 ## Grid Auto Flow
 
-Utilities for controlling how elements in a grid are auto-placed.
+用于控制网格元素自动布局的工具类。
 
 <PlaygroundWithVariants
   variant='row'
@@ -430,7 +430,7 @@ Utilities for controlling how elements in a grid are auto-placed.
 
 ## Grid Auto Columns
 
-Utilities for controlling the size of implicitly-created grid columns.
+用于控制网格隐式创建列宽的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -466,7 +466,7 @@ export default {
 
 ## Grid Auto Rows
 
-Utilities for controlling the size of implicitly-created grid rows.
+用于控制网格隐式创建行高的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -505,7 +505,7 @@ export default {
 
 ## Gap
 
-Utilities for controlling gutters between grid rows and columns.
+用于控制网格行列间隔的工具类。
 
 <PlaygroundWithVariants
   variant='2'
@@ -532,7 +532,7 @@ Utilities for controlling gutters between grid rows and columns.
 
 <Customizing>
 
-You can customize the global spacing scale in the theme.spacing or theme.extend.spacing sections of your windi.config.js file:
+你可以使用 theme.spacing 或者 theme.extend.spacing 来自定义全局间隔比例，配置项如下：
 
 ```js windi.config.js
 export default {
@@ -546,7 +546,7 @@ export default {
 }
 ```
 
-To customize the gap scale separately, use the gap section of your Tailwind theme config.
+在 Tailwind 主题配置中使用 gap 来自定义间隔，配置如下。
 
 ```js windi.config.js
 export default {
@@ -564,7 +564,7 @@ export default {
 
 ## Gap X
 
-Utilities for controlling gutters between grid columns.
+用于控制网格列间隔的工具类。
 
 <PlaygroundWithVariants
   variant='2'
@@ -591,7 +591,7 @@ Utilities for controlling gutters between grid columns.
 
 ## Gap Y
 
-Utilities for controlling gutters between grid rows.
+用于控制网格行间隔的工具类。
 
 <PlaygroundWithVariants
   variant='2'
