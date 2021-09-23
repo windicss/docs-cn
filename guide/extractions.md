@@ -32,11 +32,7 @@ export default defineConfig({
 })
 ```
 
-<<<<<<< HEAD
 或者采用更加灵活的方式：
-=======
-Or to be more flexible:
->>>>>>> 2bba4e8ede6159b45626bc1238cd56b618461c70
 
 ```ts windi.config.js
 import { defineConfig } from 'windicss/helpers'
