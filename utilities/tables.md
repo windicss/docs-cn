@@ -1,8 +1,8 @@
-# Tables
+# Tables {#tables}
 
-## Table
+## Table {#table}
 
-The `table` utility behaves like HTML `<table>` element. It defines a block-level box. Table element represents tabular data — that is, information presented in a two-dimensional table comprised of rows and columns of cells containing data.
+`table` 工具类的行为类似于 HTML `<table>` 元素。它定义了一个块级盒子，表格元素渲染表格数据——也就是说它是渲染包含数据的单元格的行和列组成的二维表格。
 
 <PlaygroundWithVariants
   variant='table'
@@ -37,9 +37,9 @@ The `table` utility behaves like HTML `<table>` element. It defines a block-leve
 &lt;/div&gt;'
 />
 
-## Inline Table
+## Inline Table {#inline-table}
 
-The `inline-table` utility does not have a direct mapping in HTML. It behaves like an HTML `<table>` element, but as an inline box, rather than a block-level box. Inside the table box is a block-level context.
+`inline-table` 工具类无法在 HTML 中直接映射。它类似于 HTML `<table>` 元素，但它是一个行内盒子，而不是块级盒子。在表格内部，它拥有一个块级上下文。
 
 <PlaygroundWithVariants
   variant='inline-table'
@@ -76,9 +76,9 @@ The `inline-table` utility does not have a direct mapping in HTML. It behaves li
 
 | inline-table	| display: inline-table; |
 
-## Table Caption
+## Table Caption {#table-caption}
 
-The `table-caption` utility behaves like `<caption>` HTML element. The HTML `<caption>` element specifies the caption (or title) of a table.
+`table-caption` 工具类的行为类似于 HTML `<caption>` 元素。HTML `<caption>` 元素用于指定表格的标题。
 
 <PlaygroundWithVariants
   variant='table-caption'
@@ -113,9 +113,9 @@ The `table-caption` utility behaves like `<caption>` HTML element. The HTML `<ca
 &lt;/div&gt;'
 />
 
-## Table Cell
+## Table Cell {#table-cell}
 
-The `table-cell` utility behaves like `<td>` HTML element. The HTML `<td>` element defines a cell of a table that contains data. It participates in the table model.
+`table-cell` 工具类的行为类似于 HTML `<td>` 元素。HTML `<td>` 定义了表格中的一行包含的数据。它参与了表格模型。
 
 <PlaygroundWithVariants
   variant='table-cell'
@@ -150,9 +150,9 @@ The `table-cell` utility behaves like `<td>` HTML element. The HTML `<td>` eleme
 &lt;/div&gt;'
 />
 
-## Table Row
+## Table Row {#table-row}
 
-The `table-row` utility behaves like `<tr>` HTML element. The HTML `<tr>` element defines a row of cells in a table. The row's cells can then be established using a mix of `<td>` (data cell) and `<th>` (header cell) elements.
+`table-row` 工具类的行为类似于 HTML `<tr>`。HTML `<tr>` 元素定义了表格中一行的单元格，通过混合使用 `<td>` （数据单元）和 `<th>` （标题单元）来组成表格行。
 
 <PlaygroundWithVariants
   variant='table-row'
@@ -187,9 +187,9 @@ The `table-row` utility behaves like `<tr>` HTML element. The HTML `<tr>` elemen
 &lt;/div&gt;'
 />
 
-## Table Column
+## Table Column {#table-column}
 
-The `table-column` utility behaves like `<col>` HTML element. The HTML `<col>` element defines a column within a table and is used for defining common semantics on all common cells. It is generally found within a `<colgroup>` element.
+`table-column` 工具类的行为类似于 HTML `<col>` 元素。HTML `<col>` 定义了表格中的一列，它用于定义所有公共单元格的公共语义。它通常被 `<colgroup>` 元素包裹。
 
 <PlaygroundWithVariants
   variant='table-column'
@@ -216,9 +216,9 @@ The `table-column` utility behaves like `<col>` HTML element. The HTML `<col>` e
     &lt;/div&gt;
 &lt;/div&gt;'
 />
-## Table Row Group
+## Table Row Group {#table-row-group}
 
-The `table-row-group` utility behaves like `<tbody>` HTML element. The HTML Table Body element (`<tbody>`) encapsulates a set of table rows (`<tr>` elements), indicating that they comprise the body of the table (`<table>`).
+`table-row-group` 工具类的行为类似于 HTML `<tbody>` 元素。`<tbody>` 封装了所有表格行（`tr` 元素），它们构成了表格主体元素   （`<table>`）。
 
 <PlaygroundWithVariants
   variant='table-row-group'
@@ -253,9 +253,9 @@ The `table-row-group` utility behaves like `<tbody>` HTML element. The HTML Tabl
 &lt;/div&gt;'
 />
 
-## Table Column Group
+## Table Column Group {#table-column-group}
 
-The `table-column-group` utility behaves like `<colgroup>` HTML element. The HTML `<colgroup>` element defines a group of columns within a table.
+`table-column-group` 工具类的行为类似于 HTML `<colgroup>` 元素。HTML `<colgroup>` 元素定义了表格中的一组列。
 
 <PlaygroundWithVariants
   variant='table-column-group'
@@ -283,9 +283,9 @@ The `table-column-group` utility behaves like `<colgroup>` HTML element. The HTM
 &lt;/div&gt;'
 />
 
-## Table Header Group
+## Table Header Group {#table-header-group}
 
-The `table-header-group` utility behaves like `<thead>` HTML element. The HTML `<thead>` element defines a set of rows defining the head of the columns of the table.
+`table-header-group` 工具类的行为类似于 HTML `<thead>` 元素。HTML `<thead>` 元素定义了一组表示表格表头标题的行。
 
 <PlaygroundWithVariants
   variant='table-header-group'
@@ -320,9 +320,9 @@ The `table-header-group` utility behaves like `<thead>` HTML element. The HTML `
 &lt;/div&gt;'
 />
 
-## Table Footer Group
+## Table Footer Group {#table-footer-group}
 
-The `table-footer-group` utility behaves like `<tfoot>` HTML element. The HTML `<tfoot>` element defines a set of rows summarizing the columns of the table.
+`table-footer-group` 工具类的行为类似于 HTML `<tfoot>` 元素。HTML `<tfoot>` 元素定义了一组汇总表格列的行。
 
 <PlaygroundWithVariants
   variant='table-footer-group'
@@ -357,9 +357,9 @@ The `table-footer-group` utility behaves like `<tfoot>` HTML element. The HTML `
 &lt;/div&gt;'
 />
 
-## Table Layout
+## Table Layout {#table-layout}
 
-Utilities for controlling the table layout algorithm.
+用于控制表格布局算法的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -395,9 +395,9 @@ Utilities for controlling the table layout algorithm.
 &lt;/table&gt;'
 />
 
-## Table Border Collapse
+## Table Border Collapse {#table-border-collapse}
 
-Utilities for controlling whether table borders should collapse or be separated.
+用于控制表格边框折叠或分离的工具类。
 
 <PlaygroundWithVariants
   variant='collapse'
@@ -433,9 +433,9 @@ Utilities for controlling whether table borders should collapse or be separated.
 &lt;/div&gt;'
 />
 
-## Table Caption Side
+## Table Caption Side {#table-caption-side}
 
-The `caption` utility puts the content of a table's `<caption>` on the specified side. The values are relative to the writing-mode of the table.
+`caption` 工具类用于指定 `<caption>` 元素在表格中的位置。这些值与表格的写入模式有关。
 
 <PlaygroundWithVariants
   variant='top'
@@ -471,9 +471,9 @@ The `caption` utility puts the content of a table's `<caption>` on the specified
 &lt;/div&gt;'
 />
 
-## Table Empty Cells
+## Table Empty Cells {#table-empty-cells}
 
-The `empty-cells` utility sets whether borders and backgrounds appear around `<table>`cells that have no visible content. A good use case for empty-cells could be a situation where you may not know whether a table will or will not contain empty data points and you decide to hide them. 
+`empty-cells` 工具类用于指定在无可见内容的情况下表格边框和背景的渲染方式。空单元格的一个很好的用例可能是，你可能不知道一个表是否包含空数据，并且决定隐藏它们。
 
 <PlaygroundWithVariants
   variant='visible'
@@ -505,11 +505,11 @@ The `empty-cells` utility sets whether borders and backgrounds appear around `<t
 &lt;/table&gt;'
 />
 
-## Example Of Table Utilities
+## 表格工具类示例 {#example-of-table-utilities}
 
-Use above utilities to create elements that behave like their respective table elements.
+使用以下工具类来创建表格行为类似的元素。
 
-#### Raw Html Tags
+#### Raw Html Tags {#raw-html-tags}
 
 ```html
 <table>
@@ -539,7 +539,7 @@ Use above utilities to create elements that behave like their respective table e
 </table>
 ```
 
-#### With Windi Utilities
+#### 使用 Windi 工具类 {#with-windi-utilities}
 
 ```html
 <div class="table">
