@@ -1,8 +1,8 @@
-# Sizing
+# Sizing {#sizing}
 
-## Width
+## Width {#width}
 
-Utilities for setting the width of an element
+用于控制元素宽度的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -33,9 +33,9 @@ export default {
 
 </Customizing>
 
-## Min-Width
+## Min-Width {#min-width}
 
-Utilities for setting the minimum width of an element
+用于控制元素最小宽度的工具类。
 
 <PlaygroundWithVariants
   variant='none'
@@ -65,9 +65,9 @@ export default {
 
 </Customizing>
 
-## Max-Width
+## Max-Width {#max-width}
 
-Utilities for setting the maximum width of an element
+用于控制元素最大宽度的工具类。
 
 <PlaygroundWithVariants
   variant='none'
@@ -98,9 +98,9 @@ export default {
 
 </Customizing>
 
-## Height
+## Height {#height}
 
-Utilities for setting the height of an element
+用于控制元素高度的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -132,9 +132,9 @@ export default {
 
 </Customizing>
 
-## Min-Height
+## Min-Height {#min-height}
 
-Utilities for setting the minimum height of an element
+用于控制元素最小高度的工具类。
 
 <PlaygroundWithVariants
   variant='none'
@@ -167,9 +167,9 @@ export default {
 
 </Customizing>
 
-## Max-Height
+## Max-Height {#max-height}
 
-Utilities for setting the maximum height of an element
+用于控制元素最大高度的工具类。
 
 <PlaygroundWithVariants
   variant='none'
@@ -202,13 +202,13 @@ export default {
 
 </Customizing>
 
-## Box Sizing
+## Box Sizing {#box-sizing}
 
-Utilities for controlling how the browser should calculate an element's total size.
+用于控制浏览器如何计算元素尺寸的工具类。
 
-- Use `box-border` to tell the browser to **include the element's borders and padding when you give it a height or width**. This means a **100px × 100px** element with a **2px border and 4px of padding** on all sides will be rendered as **100px × 100px**, with an internal content area of 88px × 88px. Windi makes this the default for all elements in our preflight base styles.
+- 使用 `box-border` 用于告知浏览器**当你设置元素高度或宽度时，包含元素边框和内边距**，这意味着一个 **100px × 100px** 元素带有 **2px 的边框和 4px 的内边距**将被渲染为 **100px × 100px**，它的内部内容区域为 88px × 88px。Windi 将在预设样式中设置默认值。
 
-- Use `box-content` to tell the browser to **add borders and padding on top of the element's specified width or height**. This means a 100px × 100px element with a **2px border and 4px of padding** on all sides will actually be rendered as **112px × 112px**, with an internal content area of 100px × 100px.
+- 使用 `box-content` 用于告知浏览器**在元素的添加边框和内边距到顶部高度**，这意味着一个 100px × 100px 元素带有 **2px 的边框和 4px 的内边距**将被渲染成 **112px × 112px**，它的内部内容区域为 100px × 100px。
 
 <PlaygroundWithVariants
   variant='border'
