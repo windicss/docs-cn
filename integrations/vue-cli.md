@@ -24,7 +24,11 @@ vue add windicss
 
 ## 配置 {#configuration}
 
+<<<<<<< HEAD
 你可以通过修改 `./vue.config.js` 中的选项来改变该插件的行为。
+=======
+You can change the behavior of the plugin by modifying the options in `./vue.config.js`.
+>>>>>>> 3f17e707027cc990f36892a818ea868fd5fcc380
 
 ```js vue.config.js
 module.exports = {

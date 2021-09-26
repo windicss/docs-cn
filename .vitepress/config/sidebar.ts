@@ -133,9 +133,16 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '响应式设计', link: '/features/responsive-design' },
         { text: '暗色模式', link: '/features/dark-mode' },
         { text: 'RTL', link: '/features/rtl' },
+<<<<<<< HEAD
         { text: 'important 前缀', link: '/features/important-prefix' },
         { text: '指令', link: '/features/directives' },
         { text: '可视化分析器', link: '/features/analyzer' },
+=======
+        { text: 'Important Prefix', link: '/features/important-prefix' },
+        { text: 'Directives', link: '/features/directives' },
+        { text: 'Attributify Mode', link: '/features/attributify' },
+        { text: 'Visual Analyzer', link: '/features/analyzer' },
+>>>>>>> 3f17e707027cc990f36892a818ea868fd5fcc380
         // { text: 'Nesting CSS', link: '/features/nesting' },
       ],
     },
