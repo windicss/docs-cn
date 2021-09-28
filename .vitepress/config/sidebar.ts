@@ -135,6 +135,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: 'RTL', link: '/features/rtl' },
         { text: 'important 前缀', link: '/features/important-prefix' },
         { text: '指令', link: '/features/directives' },
+        { text: '属性化模式', link: '/features/attributify' },
         { text: '可视化分析器', link: '/features/analyzer' },
         // { text: 'Nesting CSS', link: '/features/nesting' },
       ],

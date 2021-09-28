@@ -126,7 +126,7 @@ export default defineConfig({
 <div className={`p-${size}`}>
 ```
 
-因此，你需要在 `vite.config.js` 的 `safelist` 选项中指定可能的组合
+因此，你需要在 `windi.config.ts` 的 `safelist` 选项中指定可能的组合
 
 ```ts windi.config.ts
 import { defineConfig } from 'vite-plugin-windicss'
