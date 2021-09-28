@@ -1,8 +1,8 @@
-# Behaviors
+# 行为 {#behaviors}
 
-## Animation
+## Animation {#animation}
 
-Utilities for animating elements with CSS animations.
+用于控制元素动画如何使用 CSS 动画的工具类。
 
 <PlaygroundWithVariants
   variant='bounce'
@@ -30,7 +30,7 @@ export default {
 }
 ```
 
-To add new animation @keyframes, use the keyframes section of your theme configuration:
+为了添加新动画 @keyframes, 可以在主题配置的 keyframes 部分进行定义：
 
 ```js windi.config.js
 export default {
@@ -49,9 +49,9 @@ export default {
 
 </Customizing>
 
-## Appearance
+## Appearance {#appearance}
 
-Utilities for suppressing native form control styling.
+用于控制原生表单样式的工具类。
 
 <PlaygroundWithVariants
   variant='none'
@@ -71,9 +71,9 @@ Utilities for suppressing native form control styling.
 &lt;/select&gt;'
 />
 
-## Box Decoration Break
+## Box Decoration Break {#box-decoration-break}
 
-Utilities for controlling how element fragments should be rendered across multiple lines, columns, or pages.
+用于控制元素跨多行、多列或多页时如何渲染的工具类。
 
 <PlaygroundWithVariants
   variant='slice'
@@ -88,9 +88,9 @@ Utilities for controlling how element fragments should be rendered across multip
 &lt;/div&gt;"
 />
 
-## Caret Color
+## Caret Color {#caret-color}
 
-Utilities for controlling the color of insertion text.
+用于控制输入光标颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -118,9 +118,9 @@ export default {
 
 </Customizing>
 
-## Caret Opacity
+## Caret Opacity {#caret-opacity}
 
-Utilities for controlling the opacity of an element's caret color.
+用于控制输入光标颜色不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -148,9 +148,9 @@ export default {
 
 </Customizing>
 
-## Cursor
+## Cursor {#cursor}
 
-Utilities for controlling the cursor style when hovering over an element.
+用于控制元素悬停时光标样式的工具类。
 
 <PlaygroundWithVariants
   variant='pointer'
@@ -186,9 +186,9 @@ export default {
 
 </Customizing>
 
-## Image Rendering
+## Image Rendering {#image-rendering}
 
-The `image-render` utility defines how the browser should render an image if it is scaled up or down from its original dimensions. By default, each browser will attempt to apply aliasing to this scaled image in order to prevent distortion, but this can sometimes be a problem if we want the image to preserve its original pixelated form.
+`image-render` 工具类定义了当原始图像尺寸放大或缩小时，浏览器是如何渲染图像的。默认情况下，每个浏览器都会尝试使用锯齿来缩放图像，以防止失真，但如何我们希望保留其原始像素化方式，这可能会成为一个问题。
 
 <PlaygroundWithVariants
   variant='pixel'
@@ -200,9 +200,9 @@ The `image-render` utility defines how the browser should render an image if it 
   html="&lt;img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAACdJREFUCB1j9Pf3/88ABMmMjCCKgQlMIhGMu3btAquY9mMDWBhDBQAutwfDrUlKzQAAAABJRU5ErkJggg==' class='{class} w-full h-32'&gt;"
 />
 
-## List Style Type
+## List Style Type {#list-style-type}
 
-Utilities for controlling the bullet/number style of a list.
+用于控制列表元素样式的工具类。
 
 <PlaygroundWithVariants
   variant='disc'
@@ -235,9 +235,9 @@ export default {
 
 </Customizing>
 
-## List Style Position
+## List Style Position {#list-style-position}
 
-Utilities for controlling the position of bullets/numbers in lists.
+用于控制列表元素位置的工具类。
 
 <PlaygroundWithVariants
   variant='inside'
@@ -253,9 +253,9 @@ Utilities for controlling the position of bullets/numbers in lists.
 &lt;/ul&gt;"
 />
 
-## Outline
+## Outline {#outline}
 
-Utilities for controlling an element's outline.
+用于控制元素轮廓的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -269,7 +269,7 @@ Utilities for controlling an element's outline.
   &lt;/button&gt;'
 />
 
-#### Outline Solid
+#### Outline Solid {#outline-solid}
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -283,7 +283,7 @@ Utilities for controlling an element's outline.
   &lt;/button&gt;'
 />
 
-#### Outline Dotted
+#### Outline Dotted {#outline-dotted}
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -311,7 +311,7 @@ export default {
 }
 ```
 
-You can also provide an outline-offset value for any custom outline utilities using a tuple of the form [outline, outlineOffset]:
+你也可以提供一个 outline-offset 值，使用元组 [outline, outlineOffset] 的形式来自定义轮廓工具类：
 
 ```js windi.config.js
 export default {
@@ -327,9 +327,9 @@ export default {
 
 </Customizing>
 
-## Overflow
+## Overflow {#overflow}
 
-Utilities for controlling how an element handles content that is too large for the container.
+用于控制元素如何处理对于容器来说太大的内容的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -346,15 +346,15 @@ The value of Pi is
 &lt;/div&gt;'
 />
 
-## Overscroll Behavior
+## Overscroll Behavior {#overscroll-behavior}
 
-Utilities for controlling how the browser behaves when reaching the boundary of a scrolling area.
+用于控制浏览器在到达滚动区域边界时行为方式的工具类。
 
-- Use `auto` to make it possible for the user to continue scrolling a parent scroll area when they reach the boundary of the primary scroll area.
+- 使用 `auto` 可以使户可以在到达主滚动区域的边界时继续滚动父滚动区域。
 
-- Use `none` to prevent scrolling in the target area from triggering scrolling in the parent element, and also prevent "bounce" effects when scrolling past the end of the container.
+- 使用 `none` 可以防止在目标区域中滚动触发父元素中的滚动，并且还可以防止滚动超过容器末尾时的“弹跳”效果。
 
-- Use `contain` to prevent scrolling in the target area from triggering scrolling in the parent element, but preserve "bounce" effects when scrolling past the end of the container in operating systems that support it.
+- 使用 `contain` 来防止在目标区域中滚动触发父元素中的滚动，但在支持它的操作系统中滚动超过容器末尾时保留“弹跳”效果。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -371,9 +371,9 @@ The value of Pi is
 &lt;/div&gt;'
 />
 
-## Placeholder Color
+## Placeholder Color {#placeholder-color}
 
-Utilities for controlling the color of placeholder text.
+用于控制占位符文本颜色的工具类。
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -401,9 +401,9 @@ export default {
 
 </Customizing>
 
-## Placeholder Opacity
+## Placeholder Opacity {#placeholder-opacity}
 
-Utilities for controlling the opacity of an element's placeholder color.
+用于控制占位符文本颜色不透明度的工具类。
 
 <PlaygroundWithVariants
   variant='50'
@@ -431,9 +431,9 @@ export default {
 
 </Customizing>
 
-## Pointer Events
+## Pointer Events {#pointer-events}
 
-Utilities for controlling whether an element responds to pointer events.
+用于控制元素响应鼠标事件的工具类。
 
 <PlaygroundWithVariants
   variant='none'
@@ -447,9 +447,9 @@ Utilities for controlling whether an element responds to pointer events.
   &lt;/a&gt;'
 />
 
-## Resize
+## Resize {#resize}
 
-Utilities for controlling how an element can be resized.
+用于控制元素调整大小的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -461,9 +461,9 @@ Utilities for controlling how an element can be resized.
   html='&lt;textarea class=&quot;{class} focus:outline-none border rounded-md m-0 w-30 h-30 bg-blue-300&quot;&gt;&lt;/textarea&gt;'
 />
 
-## User Select
+## User Select {#user-select}
 
-Utilities for controlling whether the user can select text in an element.
+用于控制用户允许选择元素文本的工具类。
 
 <PlaygroundWithVariants
   variant='none'
@@ -473,18 +473,18 @@ Utilities for controlling whether the user can select text in an element.
   html="The quick brown fox jumps over the lazy dog"
 />
 
-## Screen Readers Access
+## Screen Readers Access {#screen-readers-access}
 
-Utilities for improving accessibility with screen readers.
+用于控制提升屏幕阅读器可访问性的工具类。
 
 | Class       | Properties                                                                                                                                                                     |
 | :---------- | :----------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | sr-only     | position: absolute;<br>width: 1px;<br>height: 1px;<br>padding: 0;<br>margin: -1px;<br>overflow: hidden;<br>clip: rect(0, 0, 0, 0);<br>white-space: nowrap;<br>border-width: 0; |
 | not-sr-only | position: static;<br>width: auto;<br>height: auto;<br>padding: 0;<br>margin: 0;<br>overflow: visible;<br>clip: auto;<br>white-space: normal;                                   |
 
-### Usage
+### Usage {#usage}
 
-Use sr-only to hide an element visually without hiding it from screen readers:
+使用 sr-only 以视觉方式隐藏元素，而不会将其隐藏在屏幕阅读器中：
 
 ```html
 <a href="#">
@@ -493,7 +493,7 @@ Use sr-only to hide an element visually without hiding it from screen readers:
 </a>
 ```
 
-Use not-sr-only to undo sr-only, making an element visible to sighted users as well as screen readers. This can be useful when you want to visually hide something on small screens but show it on larger screens for example:
+使用 not-sr-only 撤消 sr-only，使元素对视力正常的用户和屏幕阅读器可见。当你想在小屏幕上直观地隐藏某些内容但在大屏幕上显示它时，这会很有用，例如：
 
 ```html
 <a href="#">
@@ -502,7 +502,7 @@ Use not-sr-only to undo sr-only, making an element visible to sighted users as w
 </a>
 ```
 
-By default, responsive and focus variants are generated for these utilities. You can use focus:not-sr-only to make an element visually hidden by default but visible when the user tabs to it — useful for "skip to content" links:
+默认情况下，会为这些工具类生成响应式和焦点可变修饰。你可以使用 focus:not-sr-only 使元素在默认情况下在视觉上隐藏，但在用户使用 Tab 键时可见——对于“跳转到内容”链接很有用：
 
 ```html
 <a href="#" class="sr-only focus:not-sr-only">
