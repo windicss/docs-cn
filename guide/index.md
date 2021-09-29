@@ -16,13 +16,22 @@
 
 **Windi CSS** 是下一代工具优先的 CSS 框架。
 
+<<<<<<< HEAD
 如果你已经熟悉了 [Tailwind CSS]，可以把 Windi CSS 看作是**按需供应的** Tailwind 替代方案，它为你提供了更快的加载体验，**完美兼容 Tailwind v2.0**，并且拥有很多额外的酷炫功能。
+=======
+If you are already familiar with [Tailwind CSS], think about Windi CSS as an **on-demand** alternative to Tailwind, which provides faster load times, **full compatibility with Tailwind v2.0**, and a bunch of additional cool features.
+>>>>>>> d3ce0063cbbf71245e1fd28202aa945ff37b6baf
 
 ## 为什么选择 Windi CSS？{#why-windi-css}
 
 在阐述为什么创建 Windi CSS 时，作者曾说：
 
+<<<<<<< HEAD
 > 当项目越来越大时（大约几十个组件），使用 Tailwind CSS 最初的编译时间达到了 3s，而热更新时的时间甚至超过了 1s。<br>- [@voorjaar](https://github.com/voorjaar)
+=======
+> When my project became larger and there were about dozens of components, the initial compilation time reached 3s, and hot updates took more than 1s with Tailwind CSS.    
+> \- [@voorjaar](https://github.com/voorjaar)
+>>>>>>> d3ce0063cbbf71245e1fd28202aa945ff37b6baf
 
 通过扫描 HTML 和 CSS 按需生成工具类（utilities），Windi CSS 致力于在开发中提供 [更快的加载体验][video comparison] 以及更快的 HMR，并且在生产环境下无需对 CSS 进行 Purge（一种在生产环境中对未使用的 CSS 进行清除而节省体积的技术）。
 
