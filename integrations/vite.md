@@ -288,26 +288,31 @@ export default {
 
 ---
 
-## SvelteKit (从 1.0.0-next.100 开始) {#sveltekit-as-of-1-0-0-next-100}
+## SvelteKit (从 1.0.0-next.102 开始) {#sveltekit-as-of-1-0-0-next-102}
 
 通过 `npm i -D vite-plugin-windicss` 安装插件并修改 svelte 配置：
 
-```js svelte.config.js
+```diff
 import preprocess from 'svelte-preprocess'
-import WindiCSS from 'vite-plugin-windicss'
++ import WindiCSS from 'vite-plugin-windicss'
 
 /** @type {import('@sveltejs/kit').Config} */
 const config = {
+  // Consult https://github.com/sveltejs/svelte-preprocess
+  // for more information about preprocessors
   preprocess: preprocess(),
+
   kit: {
+    // hydrate the <div id="svelte"> element in src/app.html
     target: '#svelte',
-    vite: () => ({
-      plugins: [
-        WindiCSS.default(),
-      ],
-    }),
++   vite: {
++     plugins: [
++       WindiCSS(),
++     ],
++   },
   },
-}
+};
+
 export default config
 ```
 
@@ -322,5 +327,5 @@ export default config
   if (browser) import("virtual:windi-devtools")
   // ...
 </script>
-<!-- ...其他的 $layout.svelte 代码 -->
+<!-- ...其他的 __layout.svelte 代码 -->
 ```
