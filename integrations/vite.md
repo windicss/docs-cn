@@ -288,11 +288,7 @@ export default {
 
 ---
 
-<<<<<<< HEAD
-## SvelteKit (从 1.0.0-next.100 开始) {#sveltekit-as-of-1-0-0-next-100}
-=======
-## SvelteKit (as of 1.0.0-next.102)
->>>>>>> eec5e2280a865057a6276c7833a4abc147f4a52c
+## SvelteKit (从 1.0.0-next.102 开始) {#sveltekit-as-of-1-0-0-next-102}
 
 通过 `npm i -D vite-plugin-windicss` 安装插件并修改 svelte 配置：
 
@@ -331,9 +327,5 @@ export default config
   if (browser) import("virtual:windi-devtools")
   // ...
 </script>
-<<<<<<< HEAD
-<!-- ...其他的 $layout.svelte 代码 -->
-=======
-<!-- ...rest of __layout.svelte -->
->>>>>>> eec5e2280a865057a6276c7833a4abc147f4a52c
+<!-- ...其他的 __layout.svelte 代码 -->
 ```
