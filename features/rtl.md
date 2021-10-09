@@ -8,7 +8,7 @@
 
 <!-- <InlinePlayground :input="'text-green-400 rtl:(text-right text-red-400)'" :showCSS="true" :showPreview="true" /> -->
 
-开启RTL很简单，只需要在`html`标签上增加`dir="rtl"`属性就可使其生效。
+开启 RTL 很简单，只需要在 `html` 标签上增加 `dir="rtl"` 属性就可使其生效。
 
 ```html
 <html>
