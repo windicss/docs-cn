@@ -2,7 +2,7 @@
 
 自 `v2.5.4` 起可用，Windi CSS 拥有开箱即用的从右到左（RTL）书写方式支持，且无需任何配置。
 
-通过向工具类前方增加`rtl:`可变修饰即可，这只会在RTL启用时生效。
+通过向工具类前方增加 `rtl:` 可变修饰即可，仅在 RTL 启用时生效。
 
 <!-- With the following example, the `Preview` text will be `text-right` and `text-red-400` on the RTL. Try play with it: -->
 
