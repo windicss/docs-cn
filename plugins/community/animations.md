@@ -5,7 +5,7 @@
 ## 安装 {#installation}
 
 ```bash
-npm install --save-dev @windicss/animations
+npm install --save-dev @windicss/plugin-animations
 ```
 
 ## 用法 {#usage}
@@ -16,8 +16,13 @@ export default {
     // ...
   },
   plugins: [
+<<<<<<< HEAD
     // 其他插件
     require('@windicss/animations')({
+=======
+    // Other plugins
+    require('@windicss/plugin-animations')({
+>>>>>>> b7dc3e2fa804109a46d4cd7f6047578d125fa040
       settings: {
         animatedSpeed: 1000,
         heartBeatSpeed: 1000,
