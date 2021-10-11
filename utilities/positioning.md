@@ -1,8 +1,8 @@
-# Positioning
+# Positioning {#positioning}
 
-## Order
+## Order {#order}
 
-Utilities for controlling the order of flex and grid items.
+用于控制 flex 和 grid 子条目顺序的工具类。
 
 <PlaygroundWithVariants
   variant='5'
@@ -44,9 +44,9 @@ export default {
 
 </Customizing>
 
-## Justify Content
+## Justify Content {#justify-content}
 
-Utilities for controlling how flex and grid items are positioned along a container's main axis.
+用于控制 flex 和 grid 子条目如何沿容器主轴定位的工具类。
 
 <PlaygroundWithVariants
   variant='start'
@@ -62,9 +62,9 @@ Utilities for controlling how flex and grid items are positioned along a contain
 &lt;/div&gt;'
 />
 
-## Justify Items
+## Justify Items {#justify-items}
 
-Utilities for controlling how grid items are aligned along their inline axis.
+用于控制网格子条目沿其行内轴对齐的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -85,9 +85,9 @@ Utilities for controlling how grid items are aligned along their inline axis.
 &lt;/div&gt;'
 />
 
-## Justify Self
+## Justify Self {#justify-self}
 
-Utilities for controlling how an individual grid item is aligned along its inline axis.
+用于控制单个网格子条目沿其行内轴对齐的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -108,9 +108,9 @@ Utilities for controlling how an individual grid item is aligned along its inlin
 &lt;/div&gt;'
 />
 
-## Align Content
+## Align Content {#align-content}
 
-Utilities for controlling how rows are positioned in multi-row flex and grid containers.
+用于控制行在多行 flex 和 grid 容器中定位的工具类。
 
 <PlaygroundWithVariants
   variant='center'
@@ -129,9 +129,9 @@ Utilities for controlling how rows are positioned in multi-row flex and grid con
 &lt;/div&gt;'
 />
 
-## Align Items
+## Align Items {#align-items}
 
-Utilities for controlling how flex and grid items are positioned along a container's cross axis.
+用于控制 flex 和 grid 子条目沿容器的交叉轴定位的工具类。
 
 <PlaygroundWithVariants
   variant='start'
@@ -147,9 +147,9 @@ Utilities for controlling how flex and grid items are positioned along a contain
 &lt;/div&gt;'
 />
 
-## Align Self
+## Align Self {#align-self}
 
-Utilities for controlling how an individual flex or grid item is positioned along its container's cross axis.
+用于控制单个 flex 和 grid 子条目沿其容器的交叉轴定位的工具类。
 
 <PlaygroundWithVariants
   variant='center'
@@ -165,9 +165,9 @@ Utilities for controlling how an individual flex or grid item is positioned alon
 &lt;/div&gt;'
 />
 
-## Place Content
+## Place Content {#place-content}
 
-Utilities for controlling how content is justified and aligned at the same time.
+用于控制内容同时有序对齐的工具类。
 
 <PlaygroundWithVariants
   variant='center'
@@ -186,9 +186,9 @@ Utilities for controlling how content is justified and aligned at the same time.
 &lt;/div&gt;'
 />
 
-## Place Items
+## Place Items {#place-items}
 
-Utilities for controlling how items are justified and aligned at the same time.
+用于控制子条目同时有序对齐的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -207,9 +207,9 @@ Utilities for controlling how items are justified and aligned at the same time.
 &lt;/div&gt;'
 />
 
-## Place Self
+## Place Self {#place-self}
 
-Utilities for controlling how an individual item is justified and aligned at the same time.
+用于控制单独条目同时有序对齐的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -228,9 +228,9 @@ Utilities for controlling how an individual item is justified and aligned at the
 &lt;/div&gt;'
 />
 
-## Position
+## Position {#position}
 
-Utilities for controlling how an element is positioned in the DOM.
+用于控制元素在 DOM 中位置的工具类。
 
 <PlaygroundWithVariants
   variant='static'
@@ -249,11 +249,11 @@ Utilities for controlling how an element is positioned in the DOM.
 &lt;p&gt;Far out in the uncharted backwaters of the unfashionable end of the western spiral arm of the Galaxy lies a small unregarded yellow sun. Orbiting this at a distance of roughly ninety-two million miles is an utterly insignificant little blue green planet whose ape-descended life forms are so amazingly primitive that they still think digital watches are a pretty neat idea.&lt;/p&gt; '
 />
 
-## Top / Right / Bottom / Left
+## Top / Right / Bottom / Left {#top-right-bottom-left}
 
-Utilities for controlling the placement of positioned elements.
+用于控制元素位置的工具类。
 
-### Inset
+### Inset {#inset}
 
 <PlaygroundWithVariants
   variant='4'
@@ -280,7 +280,7 @@ export default {
 
 </Customizing>
 
-### Inset Y
+### Inset Y {#inset-y}
 
 <PlaygroundWithVariants
   variant='4'
@@ -292,7 +292,7 @@ export default {
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
 />
 
-### Inset X
+### Inset X {#inset-x}
 
 <PlaygroundWithVariants
   variant='4'
@@ -305,7 +305,7 @@ export default {
 />
 
 
-### Top
+### Top {#top}
 
 <PlaygroundWithVariants
   variant='4'
@@ -318,7 +318,7 @@ export default {
 />
 
 
-### Right
+### Right {#right}
 
 <PlaygroundWithVariants
   variant='4'
@@ -330,7 +330,7 @@ export default {
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
 />
 
-### Bottom
+### Bottom {#bottom}
 
 <PlaygroundWithVariants
   variant='4'
@@ -342,7 +342,7 @@ export default {
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
 />
 
-### Left
+### Left {#left}
 
 <PlaygroundWithVariants
   variant='4'
@@ -354,9 +354,9 @@ export default {
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
 />
 
-## Floats
+## Floats {#floats}
 
-Utilities for controlling the wrapping of content around an element.
+用于控制元素浮动的工具类。
 
 <PlaygroundWithVariants
   variant='left'
@@ -369,9 +369,9 @@ Utilities for controlling the wrapping of content around an element.
 As much mud in the streets as if the waters had but newly retired from the face of the earth, and it would not be wonderful to meet a Megalosaurus, forty feet long or so, waddling like an elephantine lizard up Holborn Hill.'
 />
 
-## Clear
+## Clear {#clear}
 
-Utilities for controlling the wrapping of content around an element.
+用于控制元素取消浮动的工具类。
 
 <PlaygroundWithVariants
   variant='left'
@@ -387,9 +387,9 @@ As much mud in the streets as if the waters had but newly retired from the face 
 &lt;/div&gt;'
 />
 
-## Isolation
+## Isolation {#isolation}
 
-Utilities for controlling whether an element should explicitly create a new stacking context. These utilities are especially helpful when used in conjunction with [mix-blend-mode](/utilities/effects#mix-blend-mode) and [z-index](#z-index).
+用于控制元素是否显式创建新上下文的工具类。这些工具类与 [mix-blend-mode](/utilities/effects#mix-blend-mode) 和 [z-index](#z-index) 结合使用时特别有用。
 
 <PlaygroundWithVariants
   variant='isolate'
@@ -404,9 +404,9 @@ Utilities for controlling whether an element should explicitly create a new stac
 &lt;/div&gt;'
 />
 
-## Object Fit
+## Object Fit {#object-fit}
 
-Utilities for controlling how a replaced element's content should be resized.
+用于控制替换元素内容如何调整大小的工具类。
 
 <PlaygroundWithVariants
   variant='cover'
@@ -418,9 +418,9 @@ Utilities for controlling how a replaced element's content should be resized.
   &lt;/img&gt;'
 />
 
-## Object Position
+## Object Position {#object-position}
 
-Utilities for controlling how a replaced element's content should be positioned within its container.
+用于控制替换元素在其容器中如何定位的工具类。
 
 <PlaygroundWithVariants
   variant='bottom'
@@ -456,9 +456,9 @@ export default {
 
 </Customizing>
 
-## Z-Index
+## Z-Index {#z-index}
 
-Utilities for controlling the stack order of an element.
+用于控制元素在堆栈顺序的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
