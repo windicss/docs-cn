@@ -5,19 +5,24 @@
 ## 安装 {#installation}
 
 ```bash
-npm install --save-dev @windicss/animations
+npm install --save-dev @windicss/plugin-animations
 ```
 
 ## 用法 {#usage}
 
-```js tailwind.config.js
+```js windi.config.js
 export default {
   theme: {
     // ...
   },
   plugins: [
+<<<<<<< HEAD
     // 其他插件
     require('@windicss/animations')({
+=======
+    // Other plugins
+    require('@windicss/plugin-animations')({
+>>>>>>> 5d715aec835ce49c42335f0f65bda9739b76ffec
       settings: {
         animatedSpeed: 1000,
         heartBeatSpeed: 1000,
