@@ -209,7 +209,7 @@ export default {
 
 ## Place Self {#place-self}
 
-用于控制单独条目同时有序对齐的工具类。
+用于控制单个条目同时有序对齐的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -230,7 +230,7 @@ export default {
 
 ## Position {#position}
 
-用于控制元素在 DOM 中位置的工具类。
+用于控制元素在 DOM 中如何定位的工具类。
 
 <PlaygroundWithVariants
   variant='static'
@@ -251,7 +251,7 @@ export default {
 
 ## Top / Right / Bottom / Left {#top-right-bottom-left}
 
-用于控制元素位置的工具类。
+用于控制定位元素位置的工具类。
 
 ### Inset {#inset}
 
