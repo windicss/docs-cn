@@ -2,7 +2,7 @@
 
 # [Nuxt.js](https://nuxtjs.org) 集成 {#integration-for-nuxt-js}
 
-<PackageInfo name="nuxt-windicss-module" author="harlan-zw" />
+<PackageInfo name="nuxt-windicss" author="harlan-zw" />
 
 ## 安装 {#install}
 
@@ -23,7 +23,23 @@ export default {
 }
 ```
 
+<<<<<<< HEAD
 ## 从 tailwind 迁移 {#migrating-from-tailwind}
+=======
+### Nuxt 3
+
+```js nuxt.config.js
+import { defineNuxtConfig } from 'nuxt3'
+
+export default defineNuxtConfig({
+  buildModules: [
+    'nuxt-windicss',
+  ],
+})
+```
+
+## Migrating from tailwind
+>>>>>>> e569e969c8ec6b2af01c41da2dee18831ffbefdf
 
 此模块不支持 `@nuxtjs/tailwindcss`，你需要移除它。
 
