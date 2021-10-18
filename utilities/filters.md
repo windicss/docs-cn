@@ -1,8 +1,8 @@
-# Filters
+# Filters {#filters}
 
-## Filter
+## Filter {#filter}
 
-Utilities for enabling and disabling filters on an element.
+用于控制元素是否启用滤镜的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -14,7 +14,7 @@ Utilities for enabling and disabling filters on an element.
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 {class} !hue-rotate-30"&gt;'
 />
 
-## Filter Blur
+## Filter Blur {#filter-blur}
 
 <PlaygroundWithVariants
   variant='sm'
@@ -42,7 +42,7 @@ export default {
 
 </Customizing>
 
-## Filter Brightness
+## Filter Brightness {#filter-brightness}
 
 <PlaygroundWithVariants
   variant='100'
@@ -70,7 +70,7 @@ export default {
 
 </Customizing>
 
-## Filter Contrast
+## Filter Contrast {#filter-contrast}
 
 <PlaygroundWithVariants
   variant='100'
@@ -98,7 +98,7 @@ export default {
 
 </Customizing>
 
-## Filter Drop Shadow
+## Filter Drop Shadow {#filter-drop-shadow}
 
 <PlaygroundWithVariants
   variant='md'
@@ -125,7 +125,7 @@ export default {
 
 </Customizing>
 
-## Filter Grayscale
+## Filter Grayscale {#filter-grayscale}
 
 <PlaygroundWithVariants
   variant=''
@@ -152,7 +152,7 @@ export default {
 
 </Customizing>
 
-## Filter Hue Rotate
+## Filter Hue Rotate {#filter-hue-rotate}
 
 <PlaygroundWithVariants
   variant='45'
@@ -180,7 +180,7 @@ export default {
 
 </Customizing>
 
-## Filter Invert
+## Filter Invert {#filter-invert}
 
 <PlaygroundWithVariants
   variant=''
@@ -207,7 +207,7 @@ export default {
 
 </Customizing>
 
-## Filter Saturate
+## Filter Saturate {#filter-saturate}
 
 <PlaygroundWithVariants
   variant='0'
@@ -235,7 +235,7 @@ export default {
 
 </Customizing>
 
-## Filter Sepia
+## Filter Sepia {#filter-sepia}
 
 <PlaygroundWithVariants
   variant=''
@@ -262,9 +262,9 @@ export default {
 
 </Customizing>
 
-## Backdrop Filter
+## Backdrop Filter {#backdrop-filter}
 
-Utilities for enabling and disabling backdrop filters on an element.
+用于控制元素是否启用背景滤镜的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -283,7 +283,7 @@ Utilities for enabling and disabling backdrop filters on an element.
 
 
 
-## Backdrop Blur
+## Backdrop Blur {#backdrop-blur}
 
 <PlaygroundWithVariants
   variant='sm'
@@ -316,7 +316,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Brightness
+## Backdrop Brightness {#backdrop-brightness}
 
 <PlaygroundWithVariants
   variant='100'
@@ -349,7 +349,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Contrast
+## Backdrop Contrast {#backdrop-contrast}
 
 <PlaygroundWithVariants
   variant='100'
@@ -382,7 +382,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Grayscale
+## Backdrop Grayscale {#backdrop-grayscale}
 
 <PlaygroundWithVariants
   variant=''
@@ -414,7 +414,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Hue Rotate
+## Backdrop Hue Rotate {#backdrop-hue-rotate}
 
 <PlaygroundWithVariants
   variant='45'
@@ -447,7 +447,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Invert
+## Backdrop Invert {#backdrop-invert}
 
 <PlaygroundWithVariants
   variant=''
@@ -479,7 +479,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Opacity
+## Backdrop Opacity {#backdrop-opacity}
 
 <PlaygroundWithVariants
   variant='50'
@@ -512,7 +512,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Saturate
+## Backdrop Saturate {#backdrop-saturate}
 
 <PlaygroundWithVariants
   variant='0'
@@ -545,7 +545,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Sepia
+## Backdrop Sepia {#backdrop-sepia}
 
 <PlaygroundWithVariants
   variant=''
