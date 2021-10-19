@@ -23,9 +23,6 @@ export default {
 }
 ```
 
-<<<<<<< HEAD
-## 从 tailwind 迁移 {#migrating-from-tailwind}
-=======
 ### Nuxt 3
 
 ```js nuxt.config.js
@@ -38,8 +35,7 @@ export default defineNuxtConfig({
 })
 ```
 
-## Migrating from tailwind
->>>>>>> 45fae21cb0e879bc98574a2b19e00f01534e6958
+## 从 tailwind 迁移 {#migrating-from-tailwind}
 
 此模块不支持 `@nuxtjs/tailwindcss`，你需要移除它。
 
