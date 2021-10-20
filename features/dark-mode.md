@@ -8,7 +8,11 @@ Windi CSS 拥有开箱即用的暗色模式支持。
 
 <InlinePlayground :input="'text-red-400 dark:text-green-400'" :showCSS="true" :showPreview="true"/>
 
+<<<<<<< HEAD
 我们提供了两种启用暗色模式的方式，[class 模式](#class-mode) 和 [媒体查询模式](#media-query-mode)。默认情况下，启用的是 `class` 模式。
+=======
+We have two modes for enabling dark mode, [class mode](#class-mode) and [media query mode](#media-query-mode). By default, `class` mode is enabled.
+>>>>>>> 49c8e4559d49bb2075c2b9df64522b5b939bcd39
 
 ## Class 模式 {#class-mode}
 
