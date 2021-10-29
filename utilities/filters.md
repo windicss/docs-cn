@@ -1,8 +1,8 @@
-# Filters
+# 滤镜 {#filters}
 
-## Filter
+## 滤镜(filter) {#filter}
 
-Utilities for enabling and disabling filters on an element.
+用于控制元素是否启用滤镜的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -14,7 +14,7 @@ Utilities for enabling and disabling filters on an element.
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 {class} !hue-rotate-30"&gt;'
 />
 
-## Filter Blur
+## 模糊滤镜(blur) {#filter-blur}
 
 <PlaygroundWithVariants
   variant='sm'
@@ -42,7 +42,7 @@ export default {
 
 </Customizing>
 
-## Filter Brightness
+## 亮度滤镜(brightness) {#filter-brightness}
 
 <PlaygroundWithVariants
   variant='100'
@@ -70,7 +70,7 @@ export default {
 
 </Customizing>
 
-## Filter Contrast
+## 对比度滤镜(contrast) {#filter-contrast}
 
 <PlaygroundWithVariants
   variant='100'
@@ -98,7 +98,7 @@ export default {
 
 </Customizing>
 
-## Filter Drop Shadow
+## 投影滤镜(dropshadow) {#filter-drop-shadow}
 
 <PlaygroundWithVariants
   variant='md'
@@ -125,7 +125,7 @@ export default {
 
 </Customizing>
 
-## Filter Grayscale
+## 灰度滤镜(grayscale) {#filter-grayscale}
 
 <PlaygroundWithVariants
   variant=''
@@ -152,7 +152,7 @@ export default {
 
 </Customizing>
 
-## Filter Hue Rotate
+## 色调滤镜(huerotate) {#filter-hue-rotate}
 
 <PlaygroundWithVariants
   variant='45'
@@ -180,7 +180,7 @@ export default {
 
 </Customizing>
 
-## Filter Invert
+## 反转滤镜(invert) {#filter-invert}
 
 <PlaygroundWithVariants
   variant=''
@@ -207,7 +207,7 @@ export default {
 
 </Customizing>
 
-## Filter Saturate
+## 饱和度滤镜(saturate) {#filter-saturate}
 
 <PlaygroundWithVariants
   variant='0'
@@ -235,7 +235,7 @@ export default {
 
 </Customizing>
 
-## Filter Sepia
+## 棕褐色滤镜(sepia) {#filter-sepia}
 
 <PlaygroundWithVariants
   variant=''
@@ -262,9 +262,9 @@ export default {
 
 </Customizing>
 
-## Backdrop Filter
+## 背景(backdrop) {#backdrop-filter}
 
-Utilities for enabling and disabling backdrop filters on an element.
+用于控制元素是否启用背景滤镜的工具类。
 
 <PlaygroundWithVariants
   variant=''
@@ -283,7 +283,7 @@ Utilities for enabling and disabling backdrop filters on an element.
 
 
 
-## Backdrop Blur
+## 模糊背景(blur) {#backdrop-blur}
 
 <PlaygroundWithVariants
   variant='sm'
@@ -316,7 +316,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Brightness
+## 亮度背景(brightness) {#backdrop-brightness}
 
 <PlaygroundWithVariants
   variant='100'
@@ -349,7 +349,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Contrast
+## 对比度背景(contrast) {#backdrop-contrast}
 
 <PlaygroundWithVariants
   variant='100'
@@ -382,7 +382,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Grayscale
+## 灰度背景(grayscale) {#backdrop-grayscale}
 
 <PlaygroundWithVariants
   variant=''
@@ -414,7 +414,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Hue Rotate
+## 色调背景(huerotate) {#backdrop-hue-rotate}
 
 <PlaygroundWithVariants
   variant='45'
@@ -447,7 +447,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Invert
+## 反转背景(invert) {#backdrop-invert}
 
 <PlaygroundWithVariants
   variant=''
@@ -479,7 +479,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Opacity
+## 不透明度背景(opacity) {#backdrop-opacity}
 
 <PlaygroundWithVariants
   variant='50'
@@ -512,7 +512,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Saturate
+## 饱和度背景(saturate) {#backdrop-saturate}
 
 <PlaygroundWithVariants
   variant='0'
@@ -545,7 +545,7 @@ export default {
 
 </Customizing>
 
-## Backdrop Sepia
+## 棕褐色背景(sepia) {#backdrop-sepia}
 
 <PlaygroundWithVariants
   variant=''
