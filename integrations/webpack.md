@@ -53,12 +53,12 @@ yarn add windicss-webpack-plugin -D
 你需要把插件添加到你的 webpack 配置文件。如果你有直接修改 `webpack.config.js` 的权限，可以如下面这样做：
 
 ```js webpack.config.js
-import WindiCSS from 'windicss-webpack-plugin'
+import WindiCSSWebpackPlugin from 'windicss-webpack-plugin'
 
 export default {
   // ...
   plugins: [
-    new WindiCSS(),
+    new WindiCSSWebpackPlugin(),
   ],
 }
 ```
@@ -69,26 +69,40 @@ export default {
 对于不支持 es 模块导入语法的 webpack 配置，你可以尝试以下方法。
 
 ```js webpack.config.js
-const WindiCSS = require('windicss-webpack-plugin').default
+const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
 
 export default {
   // ...
   plugins: [
-    new WindiCSS(),
+    new WindiCSSWebpackPlugin(),
   ],
 }
 ```
 
 ### 引入虚拟模块 {#include-the-virtual-module}
 
+<<<<<<< HEAD
 在一个入口文件或只加载一次的文件中，添加`windi.css`的导入。
+=======
+Within an entry point file or something only loaded once, add the import.
+>>>>>>> 3505726c768d4255b70106306620733645f0deb0
 
+ESM
 ```ts main.js
 import 'windi.css'
-// require('windi.css')
 ```
 
+<<<<<<< HEAD
 ### Windi 配置 {#windi-config}
+=======
+CJS
+```ts main.js
+require('windi.css')
+```
+
+
+### Windi Config
+>>>>>>> 3505726c768d4255b70106306620733645f0deb0
 
 如果你还没有配置文件的话，在你的项目根目录下添加一个名为`windi.config.ts`的文件。
 
@@ -192,12 +206,12 @@ You can also make your custom css be able to be overridden by certain layers:
 ### Next.js
 
 ```js next.config.js
-const WindiCSS = require('windicss-webpack-plugin').default
+const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
 
 module.exports = {
   // ...
   webpack(config) {
-    config.plugins.push(new WindiCSS())
+    config.plugins.push(new WindiCSSWebpackPlugin())
     return config
   },
 }
@@ -224,14 +238,14 @@ export default defineConfig({
 ### Create React App - CRACO
 
 ```js craco.config.js
-const WindiCSS = require('windicss-webpack-plugin').default
+const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
 
 module.exports = {
   // ...
   webpack: {
     plugins: {
       add: [
-        new WindiCSS({
+        new WindiCSSWebpackPlugin({
           virtualModulePath: 'src',
         }),
       ],
@@ -241,7 +255,7 @@ module.exports = {
 ```
 
 ```js src/index.js
-import './virtual:windi.css'
+import './windi.css'
 ```
 
 ```ts windi.config.ts
@@ -262,12 +276,12 @@ export default defineConfig({
 对于不支持es模块导入语法的webpack配置，你可以尝试以下方法。
 
 ```js webpack.config.js
-const WindiCSS = require('windicss-webpack-plugin').default
+const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
 
 export default {
   // ...
   plugins: [
-    new WindiCSS(),
+    new WindiCSSWebpackPlugin(),
   ],
 }
 ```
@@ -280,12 +294,12 @@ require('windi.css')
 ### Storybook {#storybook}
 
 ```js .storybook/main.js
-const WindiCSS = require('windicss-webpack-plugin').default
+const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
 
 module.exports = {
   // ...
   webpackFinal: (config) => {
-    config.plugins.push(new WindiCSS())
+    config.plugins.push(new WindiCSSWebpackPlugin())
     return config
   },
 }
