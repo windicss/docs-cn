@@ -2,7 +2,7 @@
 [svelte-windicss-preprocess]: https://github.com/windicss/svelte-windicss-preprocess
 [vite-plugin-windicss]: https://github.com/windicss/vite-plugin-windicss
 [vite]: /integrations/vite
-[Vite SvelteKit guide]: /integrations/vite#sveltekit-as-of-1-0-0-next-100
+[Vite SvelteKit guide]: /integrations/vite#sveltekit-as-of-1-0-0-next-102
 [migration]: /guide/migration
 
 <Logo name="svelte" class="logo-float-xl"/>
@@ -13,131 +13,7 @@
 
 我们的 Svelte 集成使用了 Svelte 预处理器的 API，因此在编译之前运行。这对动态可变的 classes 带来了一些限制。
 
-## 文档 {#documentation}
-
-### 配置选项 {#options}
-
-```ts
-interface Options {
-  silent?: boolean
-  mode?: 'development' | 'production'
-  configPath?: string
-  disableFormat?: boolean
-  devTools?: {
-    enabled: boolean
-    completions?: boolean
-  }
-  safeList?: string
-  preflights?: boolean
-}
-```
-
-### 自定义预处理信息 {#custom-pre-processing-information}
-
-在 v4 我们介绍了一个为 svelte 样式标签设置自定义属性的新特性，无需设置即可轻松进行集成。非作用域限制的样式在 svelte 中处理， 根据 svelte 的文档 `:globals()` 标记 classes，`-global-` 标记 keyframes。
-
-### 预检样式（Preflights） {#preflights}
-
-Svelte 本身就会去限制 CSS 样式的作用域，并移除没有使用的样式。如果你把预检样式添加到布局包装器，并且想让那些样式也作用在其他的 `.svelte` 文件中，这会导致一些问题。另一方面，如果编译为自定义元素，则不能使用 `:global()` 样式。
-
-为了能允许用户自己去决定放置预检样式的位置，以及决定样式是全局的还是作用域内的，我们需要遵循下面的语法：
-
-```html
-<!-- Layout.svelte -->
-<script>
-</script>
-
-<slot />
-
-<!-- 作用域受限样式使用预检样式（preflights） -->
-<style windi:preflights>
-</style>
-
-<!-- 全局预检样式（preflights）使用 -->
-<style windi:preflights:global>
-</style>
-```
-
-### 白名单 {#safe-list}
-
-有时候你可能想基于 script 标签中的一些逻辑去用动态的 classes。从 [svelte-windicss-preprocess] 在 svelte 编译这一步之前启动开始，它就无法可以理解这个动态值了。这里有些办法解决这个情况：要不就在运行时使用 windi，要不使用一个打包器设置取代这个预处理器。或者，如果你一开始就知道所有可能的 classes，把它们加到白名单里面去。
-
-跟预检样式很像，白名单也是在你想用的地方生效，也分受作用域限制的和全局的。
-
-```html
-<!-- Layout.svelte -->
-<script>
-  let shade = 100;
-</script>
-
-<div class="bg-red-{shade}">
-  我是动态的！
-</div>
-
-<!-- 为受作用域限制的白名单 classes 使用这个 -->
-<style windi:safelist>
-</style>
-
-<!-- 为全局白名单 classes 使用这个 -->
-<style windi:safelist:global>
-</style>
-```
-
-### Windi CSS classes {#windi-css-classes}
-
-默认情况下，所有行内使用的 Windi CSS 的 classes 在原生 svelte 逻辑里面都是受作用域限制的。这有它本身的优势（你可以找到一些在线的讨论）。然而，使用基于 CSS 框架的工具类并不需要确定是不是被覆盖了。举个例子，`bg-gray-600` 之后总会有一些相同的 CSS 代码，并不需要关心哪一个 `.svelte` 文件用到了。
-
-你可能想让文件的大小更安全，以及使用 Windi CSS classes 是不受作用域限制的，但也可能想逐个文件进行选择。
-
-为了使所有的 Windi CSS classes 在一个 `.svelte` 文件的全局样式中，你可以借助 `:global()` 修改或者添加下面的样式标签来实现。
-
-```html
-<style windi:global>
-</style>
-```
-
-### 自定义样式 {#custom-styles}
-
-你可能需要在项目里定义自定义的 CSS classes，并且决定它们是受作用域限制的还是全局的，与 Windi CSS 分开。你可以通过下面的语法来实现：
-
-```html
-  <!-- 所有的样式带有 :global() -->
-  <style global>
-    .btn {
-      background: green;
-    }
-  </style>
-
-  <!-- 可选或者全部受作用域限制 -->
-  <style>
-    :global(.btn) {
-      background: green;
-    }
-    .btnTwo {
-      background: red;
-    }
-  </style>
-```
-
-你可以把这些属性任意组合，完整的样式标签是下面这样：
-
-```html
-  <style global windi:global windi:preflights:global windi:safelist:global>
-    .custom{
-      background: black;
-    }
-  </style>
-```
-
-### VS Code 扩展 {#vs-code-extension}
-
-使用特殊的 CSS 标签语法以及上面的属性，会破坏 VS Code 的 CSS 推断。请确保禁用它们。如果你是使用 [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)，把下面的设置加到你的 VS Code 配置文件中。
-
-```json
-{
-  "svelte.plugin.css.diagnostics.enable": false
-}
-```
+> 如果你使用 SvelteKit，请参考 [Vite SvelteKit Guide]。
 
 ## 设置指南 {#setup-guides}
 
@@ -148,7 +24,6 @@ Svelte 本身就会去限制 CSS 样式的作用域，并移除没有使用的�
 获取起步模板，从 NPM 安装包
 
 ```bash
-npx degit sveltejs/template svelte-project
 npm i -D svelte-windicss-preprocess
 ```
 
@@ -304,12 +179,11 @@ npm i -D svelte-windicss-preprocess
 
 ### SvelteKit {#sveltekit}
 
-> 如果你使用 [Vite] 作为打包工具，请阅读 [Vite SvelteKit guide]
+> 如果你使用 [Vite] 作为打包工具，请参考 [Vite SvelteKit Guide]。
 
 获取起步模板，从 npm 中安装包
 
 ```bash
-npm init svelte@next sveltekit-project
 npm i -D svelte-windicss-preprocess
 ```
 
@@ -347,4 +221,130 @@ export default config;
 + <slot></slot>
 + <style windi:preflights:global windi:safelist:global>
 + </style>
+```
+
+## 文档 {#documentation}
+
+### 配置选项 {#options}
+
+```ts
+interface Options {
+  silent?: boolean
+  mode?: 'development' | 'production'
+  configPath?: string
+  disableFormat?: boolean
+  devTools?: {
+    enabled: boolean
+    completions?: boolean
+  }
+  safeList?: string
+  preflights?: boolean
+}
+```
+
+### 自定义预处理信息 {#custom-pre-processing-information}
+
+在 v4 我们介绍了一个为 svelte 样式标签设置自定义属性的新特性，无需设置即可轻松进行集成。非作用域限制的样式在 svelte 中处理， 根据 svelte 的文档 `:globals()` 标记 classes，`-global-` 标记 keyframes。
+
+### 预检样式（Preflights） {#preflights}
+
+Svelte 本身就会去限制 CSS 样式的作用域，并移除没有使用的样式。如果你把预检样式添加到布局包装器，并且想让那些样式也作用在其他的 `.svelte` 文件中，这会导致一些问题。另一方面，如果编译为自定义元素，则不能使用 `:global()` 样式。
+
+为了能允许用户自己去决定放置预检样式的位置，以及决定样式是全局的还是作用域内的，我们需要遵循下面的语法：
+
+```html
+<!-- Layout.svelte -->
+<script>
+</script>
+
+<slot />
+
+<!-- 作用域受限样式使用预检样式（preflights） -->
+<style windi:preflights>
+</style>
+
+<!-- 全局预检样式（preflights）使用 -->
+<style windi:preflights:global>
+</style>
+```
+
+### 白名单 {#safe-list}
+
+有时候你可能想基于 script 标签中的一些逻辑去用动态的 classes。从 [svelte-windicss-preprocess] 在 svelte 编译这一步之前启动开始，它就无法可以理解这个动态值了。这里有些办法解决这个情况：要不就在运行时使用 windi，要不使用一个打包器设置取代这个预处理器。或者，如果你一开始就知道所有可能的 classes，把它们加到白名单里面去。
+
+跟预检样式很像，白名单也是在你想用的地方生效，也分受作用域限制的和全局的。
+
+```html
+<!-- Layout.svelte -->
+<script>
+  let shade = 100;
+</script>
+
+<div class="bg-red-{shade}">
+  我是动态的！
+</div>
+
+<!-- 为受作用域限制的白名单 classes 使用这个 -->
+<style windi:safelist>
+</style>
+
+<!-- 为全局白名单 classes 使用这个 -->
+<style windi:safelist:global>
+</style>
+```
+
+### Windi CSS classes {#windi-css-classes}
+
+默认情况下，所有行内使用的 Windi CSS 的 classes 在原生 svelte 逻辑里面都是受作用域限制的。这有它本身的优势（你可以找到一些在线的讨论）。然而，使用基于 CSS 框架的工具类并不需要确定是不是被覆盖了。举个例子，`bg-gray-600` 之后总会有一些相同的 CSS 代码，并不需要关心哪一个 `.svelte` 文件用到了。
+
+你可能想让文件的大小更安全，以及使用 Windi CSS classes 是不受作用域限制的，但也可能想逐个文件进行选择。
+
+为了使所有的 Windi CSS classes 在一个 `.svelte` 文件的全局样式中，你可以借助 `:global()` 修改或者添加下面的样式标签来实现。
+
+```html
+<style windi:global>
+</style>
+```
+
+### 自定义样式 {#custom-styles}
+
+你可能需要在项目里定义自定义的 CSS classes，并且决定它们是受作用域限制的还是全局的，与 Windi CSS 分开。你可以通过下面的语法来实现：
+
+```html
+  <!-- 所有的样式带有 :global() -->
+  <style global>
+    .btn {
+      background: green;
+    }
+  </style>
+
+  <!-- 可选或者全部受作用域限制 -->
+  <style>
+    :global(.btn) {
+      background: green;
+    }
+    .btnTwo {
+      background: red;
+    }
+  </style>
+```
+
+你可以把这些属性任意组合，完整的样式标签是下面这样：
+
+```html
+  <style global windi:global windi:preflights:global windi:safelist:global>
+    .custom{
+      background: black;
+    }
+  </style>
+```
+
+### VS Code 扩展 {#vs-code-extension}
+
+使用特殊的 CSS 标签语法以及上面的属性，会破坏 VS Code 的 CSS 推断。请确保禁用它们。如果你是使用 [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)，把下面的设置加到你的 VS Code 配置文件中。
+
+```json
+{
+  "svelte.plugin.css.diagnostics.enable": false
+}
 ```
