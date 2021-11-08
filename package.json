@@ -3,12 +3,8 @@
   "license": "MIT",
   "scripts": {
     "dev": "vitepress dev",
-<<<<<<< HEAD
-    "build": "node ./.vitepress/rewrite-title/ && vue-tsc --noEmit && vitepress build",
-=======
     "functions": "netlify dev",
     "build": "vue-tsc --noEmit && vitepress build",
->>>>>>> 3505726c768d4255b70106306620733645f0deb0
     "serve": "vitepress serve",
     "crawl": "docker run --rm -it --env-file=.algolia/.env -e \"CONFIG=$(cat .algolia/config.json | jq -r tostring)\" algolia/docsearch-scraper",
     "lint": "eslint --ext .js,.ts,.md,.vue ./",

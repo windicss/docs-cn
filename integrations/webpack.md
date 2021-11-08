@@ -37,7 +37,7 @@ Windi CSS 的 webpack 插件通过与语言和框架无关的方式来实现 Win
 
 - ❌ Angular
 
-## 安装{#install}
+## 安装 {#install}
 
 如果你正在使用自定义的 webpack 设置进行构建，那么请反馈你发现的任何问题。
 
@@ -46,7 +46,7 @@ yarn add windicss-webpack-plugin -D
 # npm i windicss-webpack-plugin -D
 ```
 
-如果你之前使用的是 Tailwind，请阅读 [迁移指南](/guide/migration.html)。
+如果你之前使用的是 Tailwind，请阅读[迁移指南](/guide/migration.html)。
 
 ### 配置 {#configure-webpack}
 
@@ -81,37 +81,27 @@ export default {
 
 ### 引入虚拟模块 {#include-the-virtual-module}
 
-<<<<<<< HEAD
-在一个入口文件或只加载一次的文件中，添加`windi.css`的导入。
-=======
-Within an entry point file or something only loaded once, add the import.
->>>>>>> 3505726c768d4255b70106306620733645f0deb0
+在一个入口文件或只加载一次的文件中，添加 `windi.css` 的导入。
 
 ESM
 ```ts main.js
 import 'windi.css'
 ```
 
-<<<<<<< HEAD
-### Windi 配置 {#windi-config}
-=======
 CJS
 ```ts main.js
 require('windi.css')
 ```
 
+### Windi 配置 {#windi-config}
 
-### Windi Config
->>>>>>> 3505726c768d4255b70106306620733645f0deb0
+如果你还没有配置文件的话，在你的项目根目录下添加一个名为 `windi.config.ts` 的文件。
 
-如果你还没有配置文件的话，在你的项目根目录下添加一个名为`windi.config.ts`的文件。
+#### 扫描 {#scanning}
 
-#### 扫描{#scanning}
+如果你在启动 Windi 时有问题，你的类没有被选中，你可能需要修改扫描。
 
-如果你在启动 Windi 时有问题，你的类没有被选中，你可能需要
-修改扫描。
-
-在服务器启动时，Windi 将扫描你的代码，并提取工具类使用。默认情况下，只有 "src/"下的扩展名为 `"html", "vue", "md", "mdx", "pug", "jsx", "tsx", "svelte", "ts", "js", "css", "postcss"` 的文件会被收录。
+在服务器启动时，Windi 将扫描你的代码，并提取工具类使用。默认情况下，只有 “src/” 下的扩展名为 `"html", "vue", "md", "mdx", "pug", "jsx", "tsx", "svelte", "ts", "js", "css", "postcss"` 的文件会被收录。
 
 ```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
@@ -176,7 +166,6 @@ export default defineConfig({
 })
 ```
 
-
 ### 层级排序 {#layers-ordering}
 
 默认情况下，导入 `windi.css` 或 `virtual:windi.css` 将以 `base - components - utilities` 的顺序导入全部三个层。如果你想对这些顺序有更好的控制，你可以通过以下方式分开它们：
@@ -188,7 +177,7 @@ export default defineConfig({
 + import 'virtual:windi-utilities.css'
 ```
 
-You can also make your custom css be able to be overridden by certain layers:
+你可以自定义 css 来覆盖确定的层级样式：
 
 ```diff
   import 'virtual:windi-base.css'
@@ -234,8 +223,7 @@ export default defineConfig({
 
 注意：JSX的使用处于实验阶段。请反馈你发现的任何问题。
 
-
-### Create React App - CRACO
+### Create React App - CRACO {#create-react-app-craco}
 
 ```js craco.config.js
 const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
@@ -271,9 +259,9 @@ export default defineConfig({
 
 注意：JSX的使用处于实验阶段。请反馈你发现的任何问题。
 
-### 非 es 模块 {#non-es-modules}
+### 非 ES 模块 {#non-es-modules}
 
-对于不支持es模块导入语法的webpack配置，你可以尝试以下方法。
+对于不支持 es 模块导入语法的webpack配置，你可以尝试以下方法。
 
 ```js webpack.config.js
 const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')
