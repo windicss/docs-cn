@@ -3,9 +3,15 @@
 
 # 从 Tailwind CSS 迁移 {#migrate-from-tailwind-css}
 
+<<<<<<< HEAD
 ## Package {#package}
 
 一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖。你可以安全地移除它们。
+=======
+## Packages 
+
+Some of your dependencies are no longer required. You can remove them from your `package.json` if they were only needed for Tailwind CSS.
+>>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```diff package.json
 - "tailwindcss": "*",
@@ -16,7 +22,11 @@
 
 ## 基础样式 {#base-styles}
 
+<<<<<<< HEAD
 你现在可以从你的 CSS 中移除 Tailwind CSS 的入口。
+=======
+You can now remove the Tailwind CSS imports from your CSS entry.
+>>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```diff
 - @import 'tailwindcss/base';

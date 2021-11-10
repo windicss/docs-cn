@@ -1,8 +1,14 @@
 # Shortcuts {#shortcuts}
 
+<<<<<<< HEAD
 当你经常使用相同的工具类合集时，会常用到 Shortcuts。我们提供了 Shortcuts 特性允许你把工具类的名字组合在一起，在你应用程序的任何地方使用，而不需要重复写。
 
 仅需在你的配置文件中添加 `shortcuts` 字段：
+=======
+It's quite common to get repetitive when you work on similar utility sets. We provide this "shortcuts" feature allowing you to give the combinations of utility names which you can reuse everywhere inside your app without needing to repeat yourself.
+
+Simply add the `shortcuts` field to your configuration:
+>>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```js windi.config.js
 export default {
@@ -29,7 +35,11 @@ export default {
   :enableConfig="true"
 />
 
+<<<<<<< HEAD
 对复杂的工具类也同样支持 CSS-in-JS 语法
+=======
+CSS-in-JS syntax is also supported for complex utilities:
+>>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```js windi.config.js
 export default {
@@ -71,4 +81,8 @@ export default {
 />
 
 
+<<<<<<< HEAD
 通过此配置项添加的工具类，同样可以直接用可变修饰进行包装，比如 `sm:btn`。这个特性的函数与 `@apply` 指令很类似，它将把所有的工具类合并为一个样式。
+=======
+The utility added by this configuration can also be directly wrapped in variants, such as sm:btn. The purpose of this feature is similar to the `@apply` directive, it will merge all utilities into one style.
+>>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d

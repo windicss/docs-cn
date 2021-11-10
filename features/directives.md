@@ -66,7 +66,11 @@
 
 ## @layer {#layer}
 
+<<<<<<< HEAD
 `@layer` 指令用来确认每个 class 的排序。合法的层级为 `基础 (base)`, `组件 (components)` 和 `工具类 (utilities)`。
+=======
+The `@layer` directive sets the order of how each class is applied. Valid layers are `base`, `components`, and `utilities`.
+>>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 <DirectivesPlayground
 :input='`
