@@ -1,8 +1,8 @@
-# Aspect Ratio
+# 纵横比 {#aspect-ratio}
 
-## Utilities
+## 工具类 {#utilities}
 
-| Class                | Properties                                                                                                                                                                                                                               |
+| 类                | 属性值                                                                                                                                                                                                                               |
 | :------------------- | :--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | `aspect-none`        | position: 'static';<br>paddingBottom: '0';<br>'> *': {<br>&emsp;position: 'static';<br>&emsp;height: 'auto';<br>&emsp;width: 'auto';<br>&emsp;top: 'auto';<br>&emsp;right: 'auto';<br>&emsp;bottom: 'auto';<br>&emsp;left: 'auto';<br>}  |
 | `aspect-w-${float}`  | --tw-aspect-w: `${float};`                                                                                                                                                                                                               |
@@ -12,7 +12,7 @@
 
 ***
 
-`aspect-w-${float}` will add the following base styles:
+`aspect-w-${float}` 将添加以下基础样式：
 
 ```css
 .aspect-w-${float} {
@@ -31,7 +31,7 @@
 }
 ```
 
-## Usage
+## 使用 {#usage}
 
 ```js windi.config.js
 export default {
