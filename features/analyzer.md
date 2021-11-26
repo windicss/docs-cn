@@ -91,9 +91,15 @@ import type { AnalysisReport } from 'windicss-analysis'
 const report = rawReport as AnalysisReport
 ```
 
-### 在程序中使用 {#programmatic-use}
+<<<<<<< HEAD
+### 我能否在程序中使用 Windi CSS？ {#programmatic-use}
 
 当然可以。就如同普通的 Node 包一样：
+=======
+### Can I use Windi CSS programmatically?
+
+Yes, just like a normal Node package:
+>>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```ts
 import { startServer } from 'windicss-analysis'

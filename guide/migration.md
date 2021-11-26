@@ -3,9 +3,7 @@
 
 # 从 Tailwind CSS 迁移 {#migrate-from-tailwind-css}
 
-## Package {#package}
-
-一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖。你可以安全地移除它们。
+一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖。你可以在 `package.json` 中移除它们。
 
 ```diff package.json
 - "tailwindcss": "*",
@@ -16,7 +14,7 @@
 
 ## 基础样式 {#base-styles}
 
-你现在可以从你的 CSS 中移除 Tailwind CSS 的入口。
+你现在可以从你的 CSS 入口中移除 Tailwind CSS。
 
 ```diff
 - @import 'tailwindcss/base';
