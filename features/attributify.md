@@ -1,13 +1,13 @@
 
-# Attributify Mode
+# 属性化模式 {#attributify-mode}
 
-:warning: Attributify is not available with [svelte-windicss-preprocess](https://github.com/windicss/svelte-windicss-preprocess).
+:warning: 属性化在 [svelte-windicss-preprocess](https://github.com/windicss/svelte-windicss-preprocess) 中不可用。
 
-With this feature, you can write windi classes in html attributes.
+基于这个特性，你可以在 html 属性中编写 windi 类。
 
-> Regarding the issue of css size, the css size may be slightly increased, but under gzip compression, the impact is minimal.
+> 有关 css 大小的问题，css 大小可能会略有增加，但是在 gzip 压缩下，它的影响很小。
 
-Attributify is opt-in by default, start by enabling it in your windi config.
+属性化默认情况下是可选的，可以在你的 windi 配置中开启。
 
 ```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
@@ -17,7 +17,7 @@ export default defineConfig({
 })
 ```
 
-And use them as you would like:
+并根据需要这样使用它们：
 
 ```html
 <button 
@@ -31,13 +31,13 @@ And use them as you would like:
 </button>
 ```
 
-## Syntax
+## 语法 {#syntax}
 
 ```
 (variant[:-]{1})*key? = "((variant:)*value)*"
 ```
 
-### Examples
+### 例子 {#examples}
 
 ```
 sm = "bg-blue-200 hover:bg-blue-300"
@@ -49,9 +49,9 @@ md:bg = "blue-300 dark:blue-400"
 md-bg = "blue-300 dark:blue-400"
 ```
 
-## Prefix
+## 前缀 {#prefix}
 
-If you are concerned about naming conflicts, you can add a custom prefix to the `attributify` mode by:
+如果你担心命名冲突，可以通过属性化方式添加自定义前缀：
 
 ```js windi.config.js
 export default {
@@ -73,11 +73,11 @@ export default {
 </button>
 ```
 
-## Normalization
+## 正常化 {#normalization}
 
-You actually have two **programming paradigms** to choose from:
+实际上你可以有两种**编程范式**来选择：
 
-1. Grouping based on **utilities**
+1. 基于**工具类**分组
 
    ```html
    class=...
@@ -86,7 +86,7 @@ You actually have two **programming paradigms** to choose from:
    border=...
    ```
 
-2. Grouping based on **variants**
+2. 基于**可变修饰**分组
 
    ```html
    class=...
@@ -95,8 +95,8 @@ You actually have two **programming paradigms** to choose from:
    dark=...
    ```
 
-> And of course, you can also **mix them**, but I personally **don't recommend**. Just choose one and stick to it. You will find your code becomes clearer.
+> 当然，你也可以**将它们混合使用**，但我个人**不推荐**。只需要选择一个并持续下去。你会发现你的代码变得更加清晰了。
 
-## Utilities
+## 工具类 {#utilities}
 
-Reference: [Attributify Utilities](/posts/attributify.html#utilities)
+参考：[属性化工具类](/posts/attributify.html#utilities)

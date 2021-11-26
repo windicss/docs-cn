@@ -1,8 +1,8 @@
-# Typography
+# 排版 {#typography}
 
-## Utilities
+## 工具类 {#utilities}
 
-| Class       | Body font size  |
+| Class       | Body 字体大小  |
 | :---------- | :-------------- |
 | `prose-sm`  | 0.875rem (14px) |
 | `prose`     | 1rem (16px)     |
@@ -10,7 +10,7 @@
 | `prose-xl`  | 1.25rem (20px)  |
 | `prose-2xl` | 1.5rem (24px)   |
 
-| Class          | Link color   |
+| Class          | 链接颜色   |
 | :------------- | :----------- |
 | `prose-red`    | `red.600`    |
 | `prose-yellow` | `yellow.600` |
@@ -20,7 +20,7 @@
 | `prose-purple` | `purple.600` |
 | `prose-pink`   | `pink.600`   |
 
-## Basic Usage
+## 基本用法 {#basic-usage}
 
 ```js windi.config.js
 export default {
@@ -34,7 +34,7 @@ export default {
 }
 ```
 
-Now you can use the `prose` utility class (or one of the variants) on the wrapping element to style the HTML elements contained:
+现在你可以使用 `prose` 工具类 (或者其中一种可变修饰) 来设置包裹 HTML 元素的样式：
 
 ```html
 <article class="prose">
@@ -43,7 +43,7 @@ Now you can use the `prose` utility class (or one of the variants) on the wrappi
 </article>
 ```
 
-## Disabling size modifiers
+## 禁用大小调节器 {#disabling-size-modifiers}
 
 ```js windi.config.js
 export default {
@@ -59,7 +59,7 @@ export default {
 }
 ```
 
-## Customization
+## 自定义配置 {#customization}
 
 ```js windi.config.js
 export default {

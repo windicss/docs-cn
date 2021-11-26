@@ -1,13 +1,13 @@
-# Line Clamp
+# Line Clamp {#line-clamp}
 
-## Utilities
+## 工具类 {#utilities}
 
-| Class | Properties |
+| 类 | 属性值 |
 | :---- | :--------- |
 | `line-clamp-${int}` | overflow: hidden;<br>display: -webkit-box;<br>-webkit-box-orient: vertical;<br>-webkit-line-clamp: `${int};` |
 | `line-clamp-none` | -webkit-line-clamp: unset; |
 
-## Usage
+## 用法 {#usage}
 
 ```js windi.config.js
 export default {
