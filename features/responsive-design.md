@@ -1,10 +1,6 @@
 # 响应式设计 {#responsive-design}
 
-<<<<<<< HEAD
 在 Windi CSS 中，可以很轻松实现 [响应式设计](https://en.wikipedia.org/wiki/Responsive_web_design)。只需要将可变修饰（variant）的前缀加到对应的工具类前，比如 `md:`、`lg:`。对应的媒体查询会自动生成。实现方式如下：
-=======
-Doing [Responsive Design](https://en.wikipedia.org/wiki/Responsive_web_design) in Windi CSS is effortless. By simply adding variant prefixes like `md:` or `lg:` to the utility you want to use, the corresponding media query will be generated automatically. Try it yourself using the playground below:
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 <InlinePlayground :input="'p-1 lg:p-2'" :showCSS="true" :showPreview="false"/>
 
@@ -14,19 +10,11 @@ Doing [Responsive Design](https://en.wikipedia.org/wiki/Responsive_web_design) i
 
 ## 自定义范围 {#custom-range}
 
-<<<<<<< HEAD
 默认情况下，Windi CSS 的断点被设计为移动端优先。
-=======
-By default, Windi CSS's breakpoints are designed as Mobile First. 
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 这就意味着没有前缀的工具类（比如：`p-1`） 作用在所有尺寸的屏幕上，而带有前缀的工具类（比如：`md:p-2`）只在**指定断点及以上尺寸**起作用。
 
-<<<<<<< HEAD
 我们还添加通过 `<` 和 `@` 前缀的方式，提供了超过查询范围的情况下的更多控制能力。
-=======
-We also provided the ability to have more control over the query range by adding the `<` and `@` prefixes:
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```bash
 lg  => greater or equal than this breakpoint

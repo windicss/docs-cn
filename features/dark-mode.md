@@ -2,29 +2,17 @@
 
 Windi CSS 拥有开箱即用的暗色模式支持。
 
-<<<<<<< HEAD
 通过对工具类 (utilities) 添加可变修饰前缀 `dark:`，这些工具类将仅会在暗色模式启用的时候生效。在下面的例子中，`Preview` 文本在亮色模式下是红色的，在暗色模式下是绿色的。试看看：
-=======
-By prefixing the `dark:` variant to utilities, they will only apply when dark mode is enabled. With the following example, the `Preview` text will be red on the light mode, and green on the dark mode. Try to play with it: 
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 <ToggleDark />
 
 <InlinePlayground :input="'text-red-400 dark:text-green-400'" :showCSS="true" :showPreview="true"/>
 
-<<<<<<< HEAD
 我们提供了两种启用暗色模式的方式，[class 模式](#class-mode) 和 [媒体查询模式](#media-query-mode)。默认情况下，启用的是 `class` 模式。
-=======
-We have two modes for enabling dark mode, [class mode](#class-mode) and [media query mode](#media-query-mode). By default, `class` mode is enabled.
->>>>>>> 49c8e4559d49bb2075c2b9df64522b5b939bcd39
 
 ## Class 模式 {#class-mode}
 
-<<<<<<< HEAD
 Class 模式为你提供了更好的支持，控制在哪应该使用暗色模式。
-=======
-Class mode gives you better control over when dark mode should enable.
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```js windi.config.js
 export default {
@@ -33,11 +21,7 @@ export default {
 }
 ```
 
-<<<<<<< HEAD
 它将会侦测父元素的 `class="dark"`，通常你可以将它放置在 `html` 元素上面，这样就可以全局生效了。
-=======
-It detects the parent element's `class="dark"`, and usually you can apply it on the `html` element to make it work globally.
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```html
 <html>
@@ -53,11 +37,7 @@ It detects the parent element's `class="dark"`, and usually you can apply it on 
 </html>
 ```
 
-<<<<<<< HEAD
 你可以使用下面的代码片段使 CSS 方案与用户系统表现相匹配，或者你可以自己写逻辑来进行管理。
-=======
-You can use the following snippet to make the color scheme match with the user's system preference, or write your own logic to manage it.
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```js
 if (window.matchMedia('(prefers-color-scheme: dark)').matches)
@@ -79,11 +59,7 @@ else
 
 ## 媒体查询模式 {#media-query-mode}
 
-<<<<<<< HEAD
 在媒体查询模式，它使用了浏览器内置的 `@media (prefers-color-scheme: dark)` 查询，总是会与用户的系统表现相匹配。
-=======
-In media query mode, it uses the built-in `@media (prefers-color-scheme: dark)` query from the browser that always matches with the user's system preference. 
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```js windi.config.js
 export default {

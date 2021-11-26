@@ -1,10 +1,6 @@
 # 自动值推导 {#value-auto-infer}
 
-<<<<<<< HEAD
 Windi CSS 只会生成你使用的 CSS 工具类，它允许你在样式类中编写任意值，同时会根据适当的语义生成相应的样式。
-=======
-Since Windi CSS will only generate the CSS utilities you use, it enables you to use arbitrary values in your classes and generate corresponding styles based on the appropriate semantics.
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```html
 <!-- 尺寸和定位 -->
@@ -19,15 +15,9 @@ Since Windi CSS will only generate the CSS utilities you use, it enables you to 
 <div class="grid-cols-[auto,1fr,30px]"></div>
 ```
 
-<<<<<<< HEAD
 当你想有意忽略你的设计系统，并且对特定的组件有一定的粒度控制时，这是非常有用的。直接的 `p-5px` 和 显示转义的 `p-[5px]` 都是被支持的。
 
 我们提供了一个 [可视化分析器](/features/analyzer)，可以让你对你项目中所有工具类的使用情况有一个概览，轻松标记出你设计系统中不符合预期的值转义。
-=======
-This is useful when you want to opt-out of your design system and have some fine-grain controls over some specific components. Both direct `p-5px` and explicitly escaping `p-[5px]` are supported.
-
-We also provided [an visual analyser](/features/analyzer) to give you an overview of all the utility usages in your project and to spot unwanted value escaping of your design system with ease. 
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ## 数字 {#numbers}
 
@@ -73,11 +63,7 @@ border-hex-{hex} -> border-color: rgba(...);
 
 ## 变量 {#variables}
 
-<<<<<<< HEAD
 你甚至可以传递变量名称，在与 css 变量结合时非常有用。
-=======
-You can even pass variable names, which is very useful in combination with CSS variables.
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```css
 bg-${variableName}

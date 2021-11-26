@@ -4,11 +4,7 @@
 
 # 特性 {#features}
 
-<<<<<<< HEAD
 [Windi CSS] 与 [Tailwind CSS] 的 v2 完全兼容。在此基础上，我们新增了许多额外的特性，进一步提升你的工作体验，并给于更多可能性。
-=======
-[Windi CSS] is fully compatible with [Tailwind CSS] v2. On top of that, we have many additional features that boost your workflow further and open up many more possibilities.
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ## 自动值推导 {#value-auto-infer}
 
@@ -30,11 +26,7 @@
 
 ## 可变修饰组 {#variant-groups}
 
-<<<<<<< HEAD
 通过编组的方式可以将同样的可变修饰用在不同的工具类上。
-=======
-Apply utilities to the same variant by grouping them with parentheses.
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```html
 <div class="bg-white dark:hover:(bg-gray-800 font-medium text-white)"/>
@@ -48,11 +40,7 @@ Apply utilities to the same variant by grouping them with parentheses.
 
 ## 响应式设计 {#responsive-design}
 
-<<<<<<< HEAD
 拓展响应式断点控制。
-=======
-Extended responsive breakpoint control.
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```html
 <div class="p-1 md:p-2 <lg:p-3"></div>
@@ -62,11 +50,7 @@ Extended responsive breakpoint control.
 
 ## Important 前缀 {#important-prefix}
 
-<<<<<<< HEAD
 在任意工具类前加上 `!` 前缀，可使它们变为 `!important`。
-=======
-Prefix any utility classes with `!` to set them as `!important`.
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```html
 <div class="text-red-400 !text-green-300">Green</div>
@@ -76,11 +60,7 @@ Prefix any utility classes with `!` to set them as `!important`.
 
 ## Shortcuts {#shortcuts}
 
-<<<<<<< HEAD
 快速创建可复用的组件和工具类。
-=======
-Quickly combine utilities to create reusable components.
->>>>>>> 0b74e0eddcab63746370b4cc1efda9ca87db0a6d
 
 ```js windi.config.js
 export default {
