@@ -22,9 +22,16 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     {
       text: '布局',
       children: [
+<<<<<<< HEAD
         { text: '容器', link: '/utilities/container' },
         { text: '间隔', link: '/utilities/spacing' },
         { text: '尺寸', link: '/utilities/sizing' },
+=======
+        { text: 'Container', link: '/utilities/container' },
+        { text: 'Columns', link: '/utilities/columns' },
+        { text: 'Spacing', link: '/utilities/spacing' },
+        { text: 'Sizing', link: '/utilities/sizing' },
+>>>>>>> 008ab68ba03ad079f7846a58a749c145acd92399
         { text: 'Display', link: '/utilities/display' },
         { text: 'Flexbox', link: '/utilities/flexbox' },
         { text: 'Grid', link: '/utilities/grid' },
