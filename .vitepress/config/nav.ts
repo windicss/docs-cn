@@ -27,9 +27,16 @@ export const nav: DefaultTheme.Config['nav'] = [
 
       { text: 'separator', link: 'separator' },
 
+<<<<<<< HEAD
       { text: '容器', link: '/utilities/container' },
       { text: '间隔', link: '/utilities/spacing' },
       { text: '尺寸', link: '/utilities/sizing' },
+=======
+      { text: 'Container', link: '/utilities/container' },
+      { text: 'Columns', link: '/utilities/columns' },
+      { text: 'Spacing', link: '/utilities/spacing' },
+      { text: 'Sizing', link: '/utilities/sizing' },
+>>>>>>> 02ac4eda71977ca4253ee688382657a3cda67810
       { text: 'Display', link: '/utilities/display' },
       { text: 'Flexbox', link: '/utilities/flexbox' },
       { text: 'Grid', link: '/utilities/grid' },

@@ -180,5 +180,17 @@ export default {
 
 | 可变修饰 | 规则 | 描述 |
 | :------ | :--- | :---------- |
+<<<<<<< HEAD
 | .dark | `.dark .{utility} { ... }` | 基于亮色模式下启用工具 |
 | .light | `.light .{utility} { ... }` | 基于暗色模式下启用工具 |
+=======
+| .dark | `.dark .{utility} { ... }` | Enable utility base on application dark mode |
+| .light | `.light .{utility} { ... }` | Enable utility base on application light mode |
+
+## Orientation Variants
+
+| Variant   | Rule                                      | Description                                                |
+| :-------- | :---------------------------------------- | :--------------------------------------------------------- |
+| portrait  | `@media (orientation: portrait) { ... }`  | Enable utility when the device is in portrait orientation  |
+| landscape | `@media (orientation: landscape) { ... }` | Enable utility when the device is in landscape orientation |
+>>>>>>> 02ac4eda71977ca4253ee688382657a3cda67810

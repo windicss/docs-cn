@@ -461,17 +461,30 @@ export default {
   html='&lt;textarea class=&quot;{class} focus:outline-none border rounded-md m-0 w-30 h-30 bg-blue-300&quot;&gt;&lt;/textarea&gt;'
 />
 
+<<<<<<< HEAD
 ## User Select {#user-select}
 
 用于控制用户允许选择元素文本的工具类。
+=======
+## Scroll Behavior
 
-<PlaygroundWithVariants
-  variant='none'
-  :variants="['none', 'text', 'all', 'auto']"
-  prefix='select'
-  fixed='p-2 dark:text-white opacity-85'
-  html="The quick brown fox jumps over the lazy dog"
-/>
+Utilities for controlling the scroll behavior of an element.
+>>>>>>> 02ac4eda71977ca4253ee688382657a3cda67810
+
+| Class         | Properties               |
+| :------------ | :----------------------- |
+| scroll-auto   | scroll-behavior: auto;   |
+| scroll-smooth | scroll-behavior: smooth; |
+
+### Usage
+
+Use the `scroll-smooth` utilities to enable smooth scrolling within an element.
+
+```html
+<html class="scroll-smooth">
+  <!-- ... -->
+</html>
+```
 
 ## Screen Readers Access {#screen-readers-access}
 
@@ -493,7 +506,12 @@ export default {
 </a>
 ```
 
+<<<<<<< HEAD
 使用 not-sr-only 撤消 sr-only，使元素对视力正常的用户和屏幕阅读器可见。当你想在小屏幕上直观地隐藏某些内容但在大屏幕上显示它时，这会很有用，例如：
+=======
+Use not-sr-only to undo sr-only, making an element visible to sighted users as well as screen readers. This can be 
+useful when you want to visually hide something on small screens but show it on larger screens for example:
+>>>>>>> 02ac4eda71977ca4253ee688382657a3cda67810
 
 ```html
 <a href="#">
@@ -502,7 +520,12 @@ export default {
 </a>
 ```
 
+<<<<<<< HEAD
 默认情况下，会为这些工具类生成响应式和焦点可变修饰。你可以使用 focus:not-sr-only 使元素在默认情况下在视觉上隐藏，但在用户使用 Tab 键时可见——对于“跳转到内容”链接很有用：
+=======
+By default, responsive and focus variants are generated for these utilities. You can use focus:not-sr-only to make an 
+element visually hidden by default but visible when the user tabs to it — useful for "skip to content" links:
+>>>>>>> 02ac4eda71977ca4253ee688382657a3cda67810
 
 ```html
 <a href="#" class="sr-only focus:not-sr-only">
@@ -510,3 +533,62 @@ export default {
 </a>
 ```
 
+## Touch Action
+
+Utilities for controlling how an element can be scrolled and zoomed on touchscreens.
+
+| Class             | Properties                  |
+| :---------------- | :-------------------------- |
+| touch-auto        | touch-action: auto;         |
+| touch-none        | touch-action: none;         |
+| touch-pan-x       | touch-action: pan-x;        |
+| touch-pan-left    | touch-action: pan-left;     |
+| touch-pan-right   | touch-action: pan-right;    |
+| touch-pan-y       | touch-action: pan-y;        |
+| touch-pan-up      | touch-action: pan-up;       |
+| touch-pan-down    | touch-action: pan-down;     |
+| touch-pinch-zoom  | touch-action: pinch-zoom;   |
+| touch-manipulation| touch-action: manipulation; |
+
+### Usage
+
+Use the `touch-{action}` utilities to control how an element can be scrolled (panned) and zoomed (pinched) on `
+touchscreens.
+
+```html
+<div class="w-full h-48 overflow-auto touch-auto ...">
+  <!-- ... -->
+</div>
+<div class="w-full h-48 overflow-auto touch-none ...">
+  <!-- ... -->
+</div>
+<div class="w-full h-48 overflow-auto touch-pan-x ...">
+  <!-- ... -->
+</div>
+<div class="w-full h-48 overflow-auto touch-pan-y ...">
+  <!-- ... -->
+</div>
+```
+
+## User Select
+
+Utilities for controlling whether the user can select text in an element.
+
+<PlaygroundWithVariants
+  variant='none'
+  :variants="['none', 'text', 'all', 'auto']"
+  prefix='select'
+  fixed='p-2 dark:text-white opacity-85'
+  html="The quick brown fox jumps over the lazy dog"
+/>
+
+## Will Change
+
+Utilities for optimizing upcoming animations of elements that are expected to change.
+
+| Class                 | Properties                    |
+| :-------------------- | :---------------------------- |
+| will-change-auto      | will-change: auto;            |
+| will-change-scroll    | will-change: scroll-position; |
+| will-change-contents  | will-change: contents;        |
+| will-change-transform | will-change: transform;       |
