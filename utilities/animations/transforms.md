@@ -2,7 +2,11 @@
 
 ## Transform 类型 {#transform-type}
 
+<<<<<<< HEAD:utilities/transforms.md
 用于控制元素行为的工具类。
+=======
+Utilities for controlling transform behavior.
+>>>>>>> 33e85d42c6d4786a7132681d0d4764207ce2dbf8:utilities/animations/transforms.md
 
 <PlaygroundWithVariants
   variant=''
