@@ -1,3 +1,4 @@
+<<<<<<< HEAD:utilities/filters.md
 # 滤镜 {#filters}
 
 ## 滤镜(filter) {#filter}
@@ -263,6 +264,9 @@ export default {
 </Customizing>
 
 ## 背景(backdrop) {#backdrop-filter}
+=======
+# Backdrop Filter
+>>>>>>> b3d5a3d37f74122c370ff72419abe847674c9247:utilities/filters/backdrop-filter.md
 
 用于控制元素是否启用背景滤镜的工具类。
 

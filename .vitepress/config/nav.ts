@@ -14,19 +14,33 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: '工具类',
     items: [
+<<<<<<< HEAD
       { text: '颜色', link: '/utilities/colors' },
       { text: '可变修饰', link: '/utilities/variants' },
+=======
+      // General
+      { text: 'Colors', link: '/utilities/general/colors' },
+      { text: 'Typography', link: '/utilities/general/typography' },
+      { text: 'SVG', link: '/utilities/general/svg' },
+      { text: 'Variants', link: '/utilities/general/variants' },
+>>>>>>> b3d5a3d37f74122c370ff72419abe847674c9247
       // { text: 'Variables', link: '/utilities/variables' },
 
-      { text: 'separator', link: 'separator' },
+      { text: 'Accessibility', link: 'separator' },
 
+<<<<<<< HEAD
       { text: '排版', link: '/utilities/typography' },
       { text: '背景', link: '/utilities/backgrounds' },
       { text: '边框', link: '/utilities/borders' },
       { text: 'SVG', link: '/utilities/svg' },
+=======
+      // Accessibility
+      { text: 'Screen Readers', link: '/utilities/accessibility/screen-readers' },
+>>>>>>> b3d5a3d37f74122c370ff72419abe847674c9247
 
-      { text: 'separator', link: 'separator' },
+      { text: 'Animations', link: 'separator' },
 
+<<<<<<< HEAD
       { text: '容器', link: '/utilities/container' },
       { text: '间隔', link: '/utilities/spacing' },
       { text: '尺寸', link: '/utilities/sizing' },
@@ -35,14 +49,87 @@ export const nav: DefaultTheme.Config['nav'] = [
       { text: 'Grid', link: '/utilities/grid' },
       { text: '表格', link: '/utilities/tables' },
       { text: 'Position', link: '/utilities/positioning' },
+=======
+      // Animations
+      { text: 'Animation', link: '/utilities/animations/animation' },
+      { text: 'Transforms', link: '/utilities/animations/transforms' },
+      { text: 'Transitions', link: '/utilities/animations/transitions' },
+>>>>>>> b3d5a3d37f74122c370ff72419abe847674c9247
 
-      { text: 'separator', link: 'separator' },
+      { text: 'Backgrounds', link: 'separator' },
 
+<<<<<<< HEAD
       { text: '滤镜', link: '/utilities/filters' },
       { text: '特效', link: '/utilities/effects' },
       { text: '行为', link: '/utilities/behaviors' },
       { text: '过渡', link: '/utilities/transitions' },
       { text: '变换', link: '/utilities/transforms' },
+=======
+      // Backrounds
+      { text: 'Background', link: '/utilities/backgrounds/background' },
+      { text: 'Gradients', link: '/utilities/backgrounds/gradients' },
+      { text: 'Background Blend Mode', link: '/utilities/backgrounds/background-blend-mode' },
+
+      { text: 'Behaviors', link: 'separator' },
+
+      // Behaviors
+      { text: 'Box Decoration Break', link: '/utilities/behaviors/box-decoration-break' },
+      { text: 'Image Rendering', link: '/utilities/behaviors/image-rendering' },
+      { text: 'Listings', link: '/utilities/behaviors/listings' },
+      { text: 'Overflow', link: '/utilities/behaviors/overflow' },
+      { text: 'Overscroll Behavior', link: '/utilities/behaviors/overscroll-behavior' },
+      { text: 'Placeholder', link: '/utilities/behaviors/placeholder' },
+
+      { text: 'Borders', link: 'separator' },
+
+      // Borders
+      { text: 'Border', link: '/utilities/borders/border' },
+      { text: 'Divider', link: '/utilities/borders/divider' },
+      { text: 'Outline', link: '/utilities/borders/outline' },
+      { text: 'Ring', link: '/utilities/borders/ring' },
+
+      { text: 'Effects', link: 'separator' },
+
+      // Effects
+      { text: 'Box Shadow', link: '/utilities/effects/box-shadow' },
+      { text: 'Opacity', link: '/utilities/effects/opacity' },
+      { text: 'Mix Blend Mode', link: '/utilities/effects/mix-blend-mode' },
+
+      { text: 'Filters', link: 'separator' },
+
+      // Filters
+      { text: 'Filter', link: '/utilities/filters/filter' },
+      { text: 'Backdrop Filter', link: '/utilities/filters/backdrop-filter' },
+
+      { text: 'Interactivity', link: 'separator' },
+
+      // Interactivity
+      { text: 'Accent Color', link: '/utilities/interactivity/accent-color' },
+      { text: 'Appearance', link: '/utilities/interactivity/appearence' },
+      { text: 'Cursor', link: '/utilities/interactivity/cursor' },
+      { text: 'Caret', link: '/utilities/interactivity/caret' },
+      { text: 'Pointer Events', link: '/utilities/interactivity/pointer-events' },
+      { text: 'Resize', link: '/utilities/interactivity/resize' },
+      { text: 'Scroll Behavior', link: '/utilities/interactivity/scroll-behavior' },
+      // { text: 'Scroll Snap', link: '/utilities/interactivity/scroll-snap' },
+      { text: 'Touch Action', link: '/utilities/interactivity/touch-action' },
+      { text: 'User Select', link: '/utilities/interactivity/user-select' },
+      { text: 'Will Change', link: '/utilities/interactivity/will-change' },
+
+      { text: 'Layout', link: 'separator' },
+
+      // Layout
+      // { text: 'Aspect Ratio', link: '/utilities/layout/aspect-ratio' },
+      { text: 'Columns', link: '/utilities/layout/columns' },
+      { text: 'Container', link: '/utilities/layout/container' },
+      { text: 'Display', link: '/utilities/layout/display' },
+      { text: 'Flexbox', link: '/utilities/layout/flexbox' },
+      { text: 'Grid', link: '/utilities/layout/grid' },
+      { text: 'Positioning', link: '/utilities/layout/positioning' },
+      { text: 'Sizing', link: '/utilities/layout/sizing' },
+      { text: 'Spacing', link: '/utilities/layout/spacing' },
+      { text: 'Tables', link: '/utilities/layout/tables' },
+>>>>>>> b3d5a3d37f74122c370ff72419abe847674c9247
     ],
   },
   {
@@ -51,7 +138,7 @@ export const nav: DefaultTheme.Config['nav'] = [
       { text: 'Plugin 接口', link: '/plugins/interfaces' },
       { text: 'Transform API', link: '/plugins/transform' },
 
-      { text: 'separator', link: 'separator' },
+      { text: 'Official', link: 'separator' },
 
       { text: '纵横比', link: '/plugins/official/aspect-ratio' },
       { text: '表单', link: '/plugins/official/forms' },
@@ -60,7 +147,7 @@ export const nav: DefaultTheme.Config['nav'] = [
       { text: 'Scroll Snap', link: '/plugins/official/scroll-snap' },
       { text: '排版', link: '/plugins/official/typography' },
 
-      { text: 'separator', link: 'separator' },
+      { text: 'Community', link: 'separator' },
 
       { text: '动画', link: '/plugins/community/animations' },
       { text: '滚动条', link: '/plugins/community/scrollbar' },

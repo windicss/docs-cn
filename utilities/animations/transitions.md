@@ -1,4 +1,8 @@
+<<<<<<< HEAD:utilities/transitions.md
 # 过渡和动画 {#transitions-and-animations}
+=======
+# Transitions
+>>>>>>> b3d5a3d37f74122c370ff72419abe847674c9247:utilities/animations/transitions.md
 
 ## 过渡属性 {#transitions-property}
 

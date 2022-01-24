@@ -2,6 +2,10 @@
 node_modules
 !/.vitepress
 **/dist
+<<<<<<< HEAD
 .vitepress/rewrite-title/index.js
 .vitepress/utils/frontmatter-service.js
 
+=======
+pnpm-lock.yaml
+>>>>>>> b3d5a3d37f74122c370ff72419abe847674c9247
