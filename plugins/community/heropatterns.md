@@ -1,18 +1,18 @@
-# @windicss/plugin-heropatterns
+# @windicss/plugin-heropatterns {#windicss-plugin-heropatterns}
 
-Streamlined integration between windicss and heropatterns. This plugin is modified based on [tailwind-heropatterns](https://github.com/AndreaMinato/tailwind-heropatterns) to adapt to Windi CSS.
+优化 windicss 和 heropatterns 之间的集成。该插件基于 [tailwind-heropatterns](https://github.com/AndreaMinato/tailwind-heropatterns) 修改而来以适配 Windi CSS。
 
-## Installation
+## 安装 {#installation}
 
-Add this plugin to your project:
+将此插件添加到你的项目：
 
 ```bash
 npm install --save-dev @windicss/plugin-heropatterns
 ```
 
-## Usage
+## 用法 {#usage}
 
-The heropatterns plugin exposes some options to configure the generated classes. Here is the example for adding it to your project plugins
+heropatterns 插件通过暴露选项来配置生成的类。下面是将其添加到项目插件的示例。
 
 ```js
 require('@windicss/plugin-heropatterns')({
@@ -35,7 +35,7 @@ require('@windicss/plugin-heropatterns')({
 })
 ```
 
-This configuration would create the following classes:
+该配置将创建下面的类：
 
 ```css
 .bg-hero-polka-dots-100 {
@@ -71,9 +71,9 @@ This configuration would create the following classes:
 }
 ```
 
-As you can see when you use the `default` key for colors or opacity it is omitted in the class name.
+正如你所见，当你对颜色或者不透明度使用 `default` 时，它在类中会被省略。
 
-So the following configuration:
+因此如下配置：
 
 ```js
 require('@windicss/plugin-heropatterns')({
@@ -87,7 +87,7 @@ require('@windicss/plugin-heropatterns')({
 })
 ```
 
-Will generate only the following classes
+将生成如下的类
 
 ```css
 .bg-hero-polka-dots {
@@ -98,10 +98,9 @@ Will generate only the following classes
 }
 ```
 
-## Defaults
+## 默认值 {#defaults}
 
-The default configuration is the following.
-And it will generate all the patterns with the default color of [heropatterns.com](https://www.heropatterns.com/)
+默认配置如下。它将生成 [heropatterns.com](https://www.heropatterns.com/) 默认颜色的所有模式。
 
 ```js
 config = {
@@ -115,7 +114,7 @@ config = {
 }
 ```
 
-## Pattern names list:
+## 模式名称列表：{#pattern-names-list}
 
 1. anchors-away
 1. architect
