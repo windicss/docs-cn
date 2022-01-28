@@ -1,8 +1,8 @@
-# Utilities
+# 工具类 {#utilities}
 
-- [Typography](/plugins/official/typography)
+- [排版](/plugins/official/typography)
 
 
 ::: tip
-Use the search bar to quickly find the utilities you need.
+你可以通过搜索栏快速找到所需的工具类。
 :::
