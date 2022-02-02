@@ -2,6 +2,7 @@
 
 ## 通用 {#general}
 
+<<<<<<< HEAD
 - [颜色](/utilities/colors)
 - [可变修饰](/utilities/variants)
 
@@ -11,9 +12,72 @@
 - [背景](/utilities/backgrounds)
 - [边框](/utilities/borders)
 - [SVG](/utilities/svg)
+=======
+- [Colors](/utilities/general/colors)
+- [Typography](/utilities/general/typography)
+- [SVG](/utilities/general/svg)
+- [Variants](/utilities/general/variants)
+
+## Accessibility
+
+- [Screen Readers](/utilities/accessibility/screen-readers)
+
+## Animations
+
+- [Animation](/utilities/animations/animation)
+- [Transforms](/utilities/animations/transforms)
+- [Transitions](/utilities/animations/transitions)
+
+## Backgrounds
+
+- [Background](/utilities/backgrounds/background)
+- [Gradients](/utilities/backgrounds/gradients)
+- [Background Blend Mode](/utilities/backgrounds/background-blend-mode)
+
+## Behaviors
+
+- [Box Decoration Break](/utilities/behaviors/box-decoration-break)
+- [Image Rendering](/utilities/behaviors/image-rendering)
+- [Listings](/utilities/behaviors/listings)
+- [Overflow](/utilities/behaviors/overflow)
+- [Overscroll Behavior](/utilities/behaviors/overscroll-behavior)
+- [Placeholder](/utilities/behaviors/placeholder)
+
+## Borders
+
+- [Border](/utilities/borders/border)
+- [Divider](/utilities/borders/divider)
+- [Outline](/utilities/borders/outline)
+- [Ring](/utilities/borders/ring)
+
+## Effects
+
+- [Box Shadow](/utilities/effects/box-shadow)
+- [Opacity](/utilities/effects/opacity)
+- [Mix Blend Mode](/utilities/effects/mix-blend-mode)
+
+## Filters
+
+- [Filter](/utilities/filters/filter)
+- [Backdrop Filter](/utilities/filters/backdrop-filter)
+
+## Interactivity
+
+- [Accent Color](/utilities/interactivity/accent-color)
+- [Appearance](/utilities/interactivity/appearance)
+- [Cursor](/utilities/interactivity/cursor)
+- [Caret](/utilities/interactivity/caret)
+- [Pointer Events](/utilities/interactivity/pointer-events)
+- [Resize](/utilities/interactivity/resize)
+- [Scroll Behavior](/utilities/interactivity/scroll-behavior)
+- [Touch Action](/utilities/interactivity/touch-action)
+- [User Select](/utilities/interactivity/user-select)
+- [Will Change](/utilities/interactivity/will-change)
+>>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb
 
 ## 布局 {#layout}
 
+<<<<<<< HEAD
 - [容器](/utilities/container)
 - [间隔](/utilities/spacing)
 - [尺寸](/utilities/sizing)
@@ -30,6 +94,17 @@
 - [行为](/utilities/behaviors)
 - [过渡](/utilities/transitions)
 - [变换](/utilities/transforms)
+=======
+- [Columns](/utilities/layout/columns)
+- [Container](/utilities/layout/container)
+- [Display](/utilities/layout/display)
+- [Flexbox](/utilities/layout/flexbox)
+- [Grid](/utilities/layout/grid)
+- [Positioning](/utilities/layout/positioning)
+- [Sizing](/utilities/layout/sizing)
+- [Spacing](/utilities/layout/spacing)
+- [Tables](/utilities/layout/tables)
+>>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb
 
 ::: tip
 你可以通过搜索栏快速找到所需的工具类。
