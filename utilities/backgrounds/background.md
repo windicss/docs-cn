@@ -1,4 +1,8 @@
+<<<<<<< HEAD:utilities/backgrounds.md
 # 背景 {#backgrounds}
+=======
+# Background
+>>>>>>> a25e42f4330c0888387d7a692c40254f50e9c6b6:utilities/backgrounds/background.md
 
 ## 背景固定 {#background-attachment}
 
@@ -206,6 +210,7 @@ export default {
   html='&lt;div class="{class} bg-no-repeat p-6 rounded-md border-4 border-blue-400 border-dashed font-extrabold text-white flex justify-center items-center" style="background-image: url(/assets/bg-shop.jpg);"&gt;
       &lt;span&gt;Hello World&lt;/span&gt;
     &lt;/div&gt;'
+<<<<<<< HEAD:utilities/backgrounds.md
 />
 
 ## 背景图像 {#background-image}
@@ -293,3 +298,6 @@ export default {
   html="&lt;div class=&quot;w-full h-full bg-no-repeat bg-green-300 rounded-md bg-contain bg-center {class}&quot; style=&quot;background-image:url(&#39;/assets/bg-blue.svg&#39;);&quot;&gt;
   &lt;/div&gt;"
 />
+=======
+/>
+>>>>>>> a25e42f4330c0888387d7a692c40254f50e9c6b6:utilities/backgrounds/background.md

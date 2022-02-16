@@ -44,7 +44,9 @@ function toggle() {
       "
     >
       <li v-for="nav in item.items" :key="nav.text">
-        <div v-if="nav.text === 'separator'" class="border-b border-$windi-bc my-1 mx-3" />
+        <div v-if="nav.link === 'separator'" class="border-t border-$windi-bc py-1 mt-2">
+          <span v-if="nav.text !== 'separator'" class="text-gray-300 dark:text-gray-600 font-bold text-xs px-2">{{ nav.text }}</span>
+        </div>
         <NavLink v-else :item="nav" :dropdown="true" />
       </li>
     </ul>
