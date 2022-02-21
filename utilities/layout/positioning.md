@@ -389,7 +389,11 @@ As much mud in the streets as if the waters had but newly retired from the face 
 
 ## Isolation {#isolation}
 
+<<<<<<< HEAD:utilities/positioning.md
 用于控制元素是否显式创建新上下文的工具类。这些工具类与 [mix-blend-mode](/utilities/effects#mix-blend-mode) 和 [z-index](#z-index) 结合使用时特别有用。
+=======
+Utilities for controlling whether an element should explicitly create a new stacking context. These utilities are especially helpful when used in conjunction with [mix-blend-mode](/utilities/effects/mix-blend-mode) and [z-index](#z-index).
+>>>>>>> f9d68dfb7affa265de6e95d384fbade968f47c1b:utilities/layout/positioning.md
 
 <PlaygroundWithVariants
   variant='isolate'

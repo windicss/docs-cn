@@ -1,13 +1,18 @@
+<<<<<<< HEAD
 import { UserConfig } from 'vitepress'
 import MarkdownIt from 'markdown-it'
 import markdownItAttrs from 'markdown-it-attrs'
 import { DefaultTheme } from '@/config'
 import renderPermalink from '../plugins/render-perma-link'
 import customAnchor from '../plugins/markdown-it-custom-anchor'
+=======
+>>>>>>> f9d68dfb7affa265de6e95d384fbade968f47c1b
 import { metaData } from './constants'
 import { mdRenderFilename } from './markdown'
 import head from './head'
 import themeConfig from './theme'
+import type { DefaultTheme } from '@/config'
+import type { UserConfig } from 'vitepress'
 
 interface WindicssUserConfig extends UserConfig<DefaultTheme.Config> {
   markdown: {

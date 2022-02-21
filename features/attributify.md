@@ -95,7 +95,11 @@ export default {
    dark=...
    ```
 
+<<<<<<< HEAD
 > 当然，你也可以**将它们混合使用**，但我个人**不推荐**。只需要选择一个并持续下去。你会发现你的代码变得更加清晰了。
+=======
+> And of course, you can **mix them** together, but we **don't recommend** it because it reduces the clarity of your code.
+>>>>>>> f9d68dfb7affa265de6e95d384fbade968f47c1b
 
 ## 工具类 {#utilities}
 
