@@ -43,7 +43,12 @@ npm i -D windicss-analysis
 
 ### 在线预览 {#online-preview}
 
+<<<<<<< HEAD
 你可以在分析器里看到分析报告的预览
+=======
+You can preview the report of the analyser itself at
+[analysis-demo.windicss.org](http://analysis-demo.windicss.org)
+>>>>>>> 3967dfbeff35ba1d6b556e37ba926bef55685b1c
 
 [分析报告示例](http://analysis-demo.windicss.org)
 

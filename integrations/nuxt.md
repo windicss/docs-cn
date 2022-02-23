@@ -169,7 +169,7 @@ export default {
     },
   },
 }
-```  
+```
 
 - 配置参考见 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
@@ -238,7 +238,11 @@ export default {
 
 ## 钩子 {#hooks}
 
+<<<<<<< HEAD
 你可以使用以下 nuxt 钩子来修改代码的行为。
+=======
+You can use the following nuxt hooks to modify the behavior of the code.
+>>>>>>> 3967dfbeff35ba1d6b556e37ba926bef55685b1c
 
 `windicss:config`
 - 参数：FullConfig

@@ -19,8 +19,12 @@ Windi CSS 的 webpack 插件通过与语言和框架无关的方式来实现 Win
 | <Logo name="vue" class="inline"/> Vue CLI | [vue-cli-plugin-windicss](/integrations/vue-cli.html) |
 | <Logo name="gridsome" class="inline"/> Gridsome | [gridsome-plugin-windicss](/integrations/gridsome.html) |
 
+<<<<<<< HEAD
 
 ### 支持的第二类框架{#second-class-framework-support}
+=======
+### Second Class Framework Support
+>>>>>>> 3967dfbeff35ba1d6b556e37ba926bef55685b1c
 
 这些框架已经可以成功设置并有文档记录，完全适配 Windi。
 
@@ -63,8 +67,12 @@ export default {
 }
 ```
 
+<<<<<<< HEAD
 
 #### 非 ES 模块安装 {#non-es-modules-install}
+=======
+#### Non ES Modules Install
+>>>>>>> 3967dfbeff35ba1d6b556e37ba926bef55685b1c
 
 对于不支持 es 模块导入语法的 webpack 配置，你可以尝试以下方法。
 
@@ -84,18 +92,24 @@ export default {
 在一个入口文件或只加载一次的文件中，添加 `windi.css` 的导入。
 
 ESM
+
 ```ts main.js
 import 'windi.css'
 ```
 
 CJS
+
 ```ts main.js
 require('windi.css')
 ```
 
+<<<<<<< HEAD
 ### Windi 配置 {#windi-config}
 
 如果你还没有配置文件的话，在你的项目根目录下添加一个名为 `windi.config.ts` 的文件。
+=======
+### Windi Config
+>>>>>>> 3967dfbeff35ba1d6b556e37ba926bef55685b1c
 
 #### 扫描 {#scanning}
 
@@ -166,9 +180,15 @@ export default defineConfig({
 })
 ```
 
+<<<<<<< HEAD
 ### 层级排序 {#layers-ordering}
 
 默认情况下，导入 `windi.css` 或 `virtual:windi.css` 将以 `base - components - utilities` 的顺序导入全部三个层。如果你想对这些顺序有更好的控制，你可以通过以下方式分开它们：
+=======
+### Layers Ordering
+
+By default, importing `windi.css` or `virtual:windi.css` will import all the three layers with the order `base - components - utilities`. If you want to have better controls over the orders, you can separate them by:
+>>>>>>> 3967dfbeff35ba1d6b556e37ba926bef55685b1c
 
 ```diff
 - import 'virtual:windi.css'
@@ -177,7 +197,11 @@ export default defineConfig({
 + import 'virtual:windi-utilities.css'
 ```
 
+<<<<<<< HEAD
 你可以自定义 css 来覆盖确定的层级样式：
+=======
+You can also make your custom CSS be able to be overridden by certain layers:
+>>>>>>> 3967dfbeff35ba1d6b556e37ba926bef55685b1c
 
 ```diff
   import 'virtual:windi-base.css'
@@ -223,7 +247,11 @@ export default defineConfig({
 
 注意：JSX的使用处于实验阶段。请反馈你发现的任何问题。
 
+<<<<<<< HEAD
 ### Create React App - CRACO {#create-react-app-craco}
+=======
+### Create React App - CRACO
+>>>>>>> 3967dfbeff35ba1d6b556e37ba926bef55685b1c
 
 ```js craco.config.js
 const WindiCSSWebpackPlugin = require('windicss-webpack-plugin')

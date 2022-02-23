@@ -54,12 +54,12 @@ Windi CSS 为主流工具提供了**最佳的适配**。你可以选择你喜欢
     link: '/integrations/gridsome',
     logo: 'gridsome',
   },
-  /* 
+  /*
   {
     title: 'Next.js',
     link: '/integrations/nextjs',
     logo: 'nextjs',
-  }, 
+  },
   */
   {
     title: 'Svelte',
