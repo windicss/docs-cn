@@ -79,7 +79,7 @@ export default {
     },
   },
 }
-```  
+```
 
 - 有关配置参考，请查看[options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
