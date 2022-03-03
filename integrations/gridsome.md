@@ -48,14 +48,23 @@ export default {
 
 有关配置详细信息，请在[此处](https://windicss.netlify.app/guide/configuration.html)查看。
 
+<<<<<<< HEAD
 
 ## 迁移 {#migrating}
+=======
+## Migrating
+>>>>>>> f6fb5db6ca9ba44af0445a3cbb2f693cdc46565a
 
 如果你以前使用过 `gridsome-plugin-tailwindcss`，请参考有关迁移的[文档](https://windicss.netlify.app/guide/migration.html)。
 
 ## 配置 {#configuration}
 
+<<<<<<< HEAD
 - 默认:
+=======
+- Default:
+
+>>>>>>> f6fb5db6ca9ba44af0445a3cbb2f693cdc46565a
 ```js
 export default {
   scan: {
@@ -79,7 +88,7 @@ export default {
     },
   },
 }
-```  
+```
 
 - 有关配置参考，请查看[options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
@@ -88,6 +97,7 @@ export default {
 #### 禁用预检样式{#disable-preflight}
 
 _gridsome.config.js_
+
 ```js
 export default {
   // ...

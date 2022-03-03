@@ -56,7 +56,7 @@
 
 ```css
 .btn {
-	@attr[bg] red-500 opacity-30 lg:red-600;
+  @attr[bg] red-500 opacity-30 lg:red-600;
 }
 
 @attr[bg] red-500 opacity-30 lg:red-600; /* global attributify */
@@ -106,9 +106,9 @@ and /* this is multi line comment */
 ```css
 /* only works in the scope */
 @config local {
-	colors: {
-		...
-	}
+  colors: {
+    ...
+  }
 }
 
 /* set global config */
@@ -159,7 +159,12 @@ and /* this is multi line comment */
 @var close = False;
 @var none = None;
 ```
+<<<<<<< HEAD
 > 参考 python ，首字母大写更容易识别。
+=======
+
+> Refer to python, the initial capital letters are easier to identify.
+>>>>>>> f6fb5db6ca9ba44af0445a3cbb2f693cdc46565a
 
 ### **string** {#string}
 
@@ -404,8 +409,12 @@ range()
 @var c = add(1, 2);
 ```
 
+<<<<<<< HEAD
 
 #### 其他 {#others}
+=======
+#### Others
+>>>>>>> f6fb5db6ca9ba44af0445a3cbb2f693cdc46565a
 
 ```css
 @break;
@@ -420,6 +429,10 @@ range()
 
 目前我们把 windi 语言编译成 JavaScript 并运行它，就像 TypeScript 一样。之后我们将拥有一个解释器，并使之成为一个独立的语言。无论如何，我们希望有一种编程语言能使 **JavaScript 和 windi 进行良好的交互**。 windi 的所有包依赖都将使用TypeScript构建，这意味着您可以直接调用 JavaScript/TypeScript 函数或类。
 
+<<<<<<< HEAD
 另外，关于 css 的构建，我们从第一个版本开始就有了自己的 css 构建引擎，然后我们还实现了嵌套 css, 所以这里不做详细介绍。总之，我相信有了上面的语法，wind 将会越来越完美。
+=======
+In addition, regarding the construction of CSS, we have our own CSS build engine since the windi v1 version, and then we have also implemented nested CSS, so I won't go into details here. In short, I believe that with the above grammar, windi will become more perfect.
+>>>>>>> f6fb5db6ca9ba44af0445a3cbb2f693cdc46565a
 
 目前 wind 语言处于起草阶段，**欢迎提出任何建议**。您可以在 GitHub 上进行讨论，我们会尽快回复您。
