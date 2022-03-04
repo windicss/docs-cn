@@ -30,7 +30,11 @@
 
 ## @variants {#variants}
 
+<<<<<<< HEAD
 你可以通过把自己的工具类定义包装在 `@variants`中，以此来生成带有 [屏幕可变修饰，状态可变修饰，主题可变修饰](/utilities/variants) 的工具类。
+=======
+You can generate [screen variants, state variants, theme variants](/utilities/general/variants) of your own utilities by wrapping their definitions in the `@variants` directive.
+>>>>>>> 42d86e94bd5f67798ec248d5c83c2778dbaba0e5
 
 <DirectivesPlayground
 :input='`

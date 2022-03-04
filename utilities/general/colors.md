@@ -2,7 +2,11 @@
 
 <ColorsPalette />
 
+<<<<<<< HEAD:utilities/colors.md
 ## 自定义 {#customization}
+=======
+## Customization
+>>>>>>> 42d86e94bd5f67798ec248d5c83c2778dbaba0e5:utilities/general/colors.md
 
 ```ts windi.config.js
 export default {

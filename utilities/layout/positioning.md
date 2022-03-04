@@ -304,8 +304,12 @@ export default {
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
 />
 
+<<<<<<< HEAD:utilities/positioning.md
 
 ### Top {#top}
+=======
+### Top
+>>>>>>> 42d86e94bd5f67798ec248d5c83c2778dbaba0e5:utilities/layout/positioning.md
 
 <PlaygroundWithVariants
   variant='4'
@@ -317,8 +321,12 @@ export default {
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
 />
 
+<<<<<<< HEAD:utilities/positioning.md
 
 ### Right {#right}
+=======
+### Right
+>>>>>>> 42d86e94bd5f67798ec248d5c83c2778dbaba0e5:utilities/layout/positioning.md
 
 <PlaygroundWithVariants
   variant='4'
@@ -389,7 +397,11 @@ As much mud in the streets as if the waters had but newly retired from the face 
 
 ## Isolation {#isolation}
 
+<<<<<<< HEAD:utilities/positioning.md
 用于控制元素是否显式创建新上下文的工具类。这些工具类与 [mix-blend-mode](/utilities/effects#mix-blend-mode) 和 [z-index](#z-index) 结合使用时特别有用。
+=======
+Utilities for controlling whether an element should explicitly create a new stacking context. These utilities are especially helpful when used in conjunction with [mix-blend-mode](/utilities/effects/mix-blend-mode) and [z-index](#z-index).
+>>>>>>> 42d86e94bd5f67798ec248d5c83c2778dbaba0e5:utilities/layout/positioning.md
 
 <PlaygroundWithVariants
   variant='isolate'

@@ -1,6 +1,12 @@
+<<<<<<< HEAD:utilities/effects.md
 # 特效 {#effects}
 
 ## 盒阴影 {#box-shadow}
+=======
+# Box Shadow
+
+## Box Shadow Size
+>>>>>>> 42d86e94bd5f67798ec248d5c83c2778dbaba0e5:utilities/effects/box-shadow.md
 
 用于控制元素盒阴影的工具类。
 
@@ -36,7 +42,11 @@ export default {
 
 </Customizing>
 
+<<<<<<< HEAD:utilities/effects.md
 ### 盒阴影颜色 {#box-shadow-color}
+=======
+## Box Shadow Color
+>>>>>>> 42d86e94bd5f67798ec248d5c83c2778dbaba0e5:utilities/effects/box-shadow.md
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -61,6 +71,7 @@ export default {
 ```
 
 </Customizing>
+<<<<<<< HEAD:utilities/effects.md
 
 ## 不透明度 {#opacity}
 
@@ -109,3 +120,5 @@ export default {
     &lt;/div&gt;
   &lt;/div&gt;'
 />
+=======
+>>>>>>> 42d86e94bd5f67798ec248d5c83c2778dbaba0e5:utilities/effects/box-shadow.md
