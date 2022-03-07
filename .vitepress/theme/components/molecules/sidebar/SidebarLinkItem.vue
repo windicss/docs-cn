@@ -1,15 +1,15 @@
 <script setup lang="ts">
 import { computed } from 'vue'
-import { useRoute, useData } from 'vitepress'
+import { useData, useRoute } from 'vitepress'
 
-import { joinUrl, isActive } from '@/utils'
+import { isActive, joinUrl } from '@/utils'
 
 import type { DefaultTheme } from '@/config'
 import type { PropType } from 'vue'
 
 const props = defineProps({
   item: {
-    type: Object as PropType<Partial<DefaultTheme.SideBarItem>>,
+    type: Object as PropType<DefaultTheme.SideBarItem>,
     required: true,
   },
   header: {
@@ -38,6 +38,8 @@ function resolveLink(base: string, path?: string): string | undefined {
 
 const active = computed(() => isActive(route, props.item.link))
 const link = resolveLink(site.value.base, props.item.link)
+// @ts-ignore
+const isChildActive = props.item.children && props.item.children.map(child => isActive(route, child.link)).some(Boolean)
 
 const style = computed(() => ([
   'transition duration-100',
@@ -61,8 +63,9 @@ const style = computed(() => ([
       dark:text-gray-400
       hover:(text-primary dark:text-primary)`,
   {
-    '!border-primary dark:border-primary !text-primary dark:text-primary': active.value,
+    'active !border-primary dark:border-primary !text-primary dark:text-primary': active.value,
   },
+  { 'parent-active': isChildActive },
 ]))
 
 </script>

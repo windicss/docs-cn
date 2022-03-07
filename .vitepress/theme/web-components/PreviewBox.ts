@@ -30,7 +30,7 @@ template.innerHTML = `
     }
     *::-webkit-scrollbar-corner {
       background-color: transparent;
-    }  
+    }
 
     :host {
       width: 100%;
@@ -145,3 +145,5 @@ class Play extends HTMLElement {
 }
 
 window.customElements.define('preview-box', Play)
+
+export {}

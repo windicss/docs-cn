@@ -1,5 +1,5 @@
 <script setup lang="ts">
-import { ref, watch, toRef } from 'vue'
+import { ref, toRef, watch } from 'vue'
 
 const props = withDefaults(defineProps<{
   modelValue: string
@@ -50,6 +50,6 @@ watch(() => props.modelValue, v => variant.value = v)
          text-sm cursor-pointer select-none;
 }
 .item.active {
-  @apply border-light-blue-500 text-light-blue-500;
+  @apply border-sky-500 text-sky-500;
 }
 </style>

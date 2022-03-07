@@ -268,7 +268,6 @@ export default {
 
 </Customizing>
 
-
 ## Grid Column End
 
 用于控制网格元素结束跨列的工具类。该工具类通过 [col-start](#grid-column-start) 或者 [col-span](#grid-column-span) 来指定跨列的数量。
@@ -295,7 +294,6 @@ export default {
 &lt;div class="rounded-md bg-teal-500 w-6 h-6 flex flex-col justify-center"&gt;12&lt;/div&gt;
 &lt;/div&gt;'
 />
-
 
 <Customizing>
 
@@ -356,7 +354,6 @@ export default {
 
 </Customizing>
 
-
 ## Grid Row End
 
 用于控制网格元素结束跨行的工具类。该工具类通过 [row-start](#grid-row-start) 或者 [row-span](#grid-row-span) 来指定跨行的数量。
@@ -383,7 +380,6 @@ export default {
 &lt;div class="rounded-md bg-teal-500 w-6 flex flex-col justify-center"&gt;12&lt;/div&gt;
 &lt;/div&gt;'
 />
-
 
 <Customizing>
 
