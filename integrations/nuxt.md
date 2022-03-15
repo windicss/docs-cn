@@ -66,11 +66,7 @@ export default defineConfig({
 
 ### 白名单 {#safelist}
 
-<<<<<<< HEAD
 默认情况下，我们会静态扫描你的源码，并找出所有用到的工具类 (utilities)，然后按需生成响应的 CSS。然而，这存在一定限制，运行时生成的工具类并不能被高效地匹配。例如：
-=======
-By default, we scan your source code statically and find all the usages of the utilities then generate corresponding CSS on-demand. However, there is some limitation that utilities that decided in the runtime can not be matched efficiently, for example
->>>>>>> 49c8e4559d49bb2075c2b9df64522b5b939bcd39
 
 ```vue
 <!-- 不会被侦测到  -->
