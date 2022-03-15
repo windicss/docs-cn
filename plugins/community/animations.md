@@ -31,7 +31,12 @@ export default {
 }
 ```
 
+<<<<<<< HEAD
 ### 可用的 Animate CSS 类 {#available-animate-css-classes}
+=======
+### Available Animate CSS classes
+
+>>>>>>> 36ddd282425a2ab357dc0bd7339dc52590f6f026
 * .animate-animated
 * .animate-infinite
 * .animate-delay

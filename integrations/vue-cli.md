@@ -1,3 +1,6 @@
+[CSS directives]: /features/directives
+[classes utilities]: /utilities/
+
 <Logo name="vue" class="logo-float-xl"/>
 
 # [Vue CLI](https://cli.vuejs.org) 集成 {#integration-for-vue-cli}
@@ -12,7 +15,11 @@
 - 📄 CSS `@apply` / `@screen` 指令转换
 - 🎳 支持公共组 - 例如： `bg-gray-200 hover:(bg-gray-100 text-red-300)`
 
+<<<<<<< HEAD
 ## 安装 {#setup}
+=======
+## Install
+>>>>>>> 36ddd282425a2ab357dc0bd7339dc52590f6f026
 
 使用 Vue CLI 进行安装。(建议使用 Vue CLI 4+)
 
@@ -22,9 +29,13 @@ vue add windicss
 
 :warning: 本模块为预发布版本，请报告你发现的任何 [问题](https://github.com/windicss/vue-cli-plugin-windicss/issues)。
 
+<<<<<<< HEAD
 ## 配置 {#configuration}
 
 你可以通过修改 `./vue.config.js` 中的选项来改变该插件的行为。
+=======
+Then, add the configuartion
+>>>>>>> 36ddd282425a2ab357dc0bd7339dc52590f6f026
 
 ```js vue.config.js
 module.exports = {
@@ -36,10 +47,19 @@ module.exports = {
 }
 ```
 
+<<<<<<< HEAD
 如果你有一个 `tailwind.config.js`，请把它重命名为 `windi.config.js` 或 `windi.config.ts`。
 
 配置细节见 [这里](https://windicss.netlify.app/guide/configuration.html)。
+=======
+And finally, import `windi.css` in your entry
 
+```js main.js
+import 'windi.css'
+```
+>>>>>>> 36ddd282425a2ab357dc0bd7339dc52590f6f026
+
+That's it! Starting using [classes utilities] or [CSS directives] in your app, and enjoy the speed! ⚡️
 
 ## 迁移 {#migrating}
 

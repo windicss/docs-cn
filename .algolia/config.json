@@ -3,19 +3,31 @@
   "start_urls": [
     {
       "url": "https://windicss.org/utilities/",
-      "selectors_key": "utilities",
-      "tags": ["utilities"],
-      "page_rank": 3
+      "tags": ["utilities"]
     },
     {
       "url": "https://windicss.org/plugins/",
-      "tags": ["plugins"],
-      "page_rank": 2
+      "tags": ["plugins"]
     },
     {
       "url": "https://windicss.org/guide/",
-      "tags": ["guide"],
-      "page_rank": 1
+      "selectors_key": "overview",
+      "tags": ["guide"]
+    },
+    {
+      "url": "https://windicss.org/features/",
+      "selectors_key": "overview",
+      "tags": ["features"]
+    },
+    {
+      "url": "https://windicss.org/editors/",
+      "selectors_key": "overview",
+      "tags": ["editors"]
+    },
+    {
+      "url": "https://windicss.org/integrations/",
+      "selectors_key": "overview",
+      "tags": ["integrations"]
     }
   ],
   "stop_urls": [
@@ -24,15 +36,14 @@
   "selectors": {
     "default": {
       "lvl0": {
-        "selector": "p.sidebar-heading.open",
+        "selector": ".sidebar a.active",
         "global": true,
-        "default_value": "Guide"
+        "default_value": "Documentation"
       },
-      "lvl1": ".content h1",
-      "lvl2": ".content h2",
-      "lvl3": ".content h3, .content li kbd",
-      "lvl4": ".content h4",
-      "lvl5": ".content h5",
+      "lvl1": ".content h2",
+      "lvl2": ".content h3, .content li kbd",
+      "lvl3": ".content h4, .content tbody tr td:nth-child(1)",
+      "lvl4": ".content h5",
       "text": ".content p, .content li",
       "lang": {
         "selector": "/html/@lang",
@@ -40,16 +51,17 @@
         "global": true
       }
     },
-    "utilities": {
+    "overview": {
       "lvl0": {
-        "selector": "p.sidebar-heading.open",
+        "selector": ".sidebar h5.parent-active",
         "global": true,
-        "default_value": "Utilities"
+        "default_value": "Overview"
       },
       "lvl1": ".content h1",
       "lvl2": ".content h2",
-      "lvl3": ".content h3",
+      "lvl3": ".content h3, .content li kbd",
       "lvl4": ".content h4, .content tbody tr td:nth-child(1)",
+      "lvl5": ".content h5",
       "text": ".content p, .content li",
       "lang": {
         "selector": "/html/@lang",

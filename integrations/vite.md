@@ -188,7 +188,11 @@ export default defineConfig({
 
 ### [属性模式](https://windicss.org/posts/v30.html#attributify-mode) {#attributify-mode}
 
+<<<<<<< HEAD
 通过以下配置启用
+=======
+Enabled it by
+>>>>>>> 36ddd282425a2ab357dc0bd7339dc52590f6f026
 
 ```ts windi.config.ts
 export default {
@@ -199,7 +203,7 @@ export default {
 然后这样使用：
 
 ```html
-<button 
+<button
   bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600"
   text="sm white"
   font="mono light"
@@ -223,7 +227,7 @@ export default {
 ```
 
 ```html
-<button 
+<button
   w:bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600"
   w:text="sm white"
   w:font="mono light"
@@ -234,7 +238,17 @@ export default {
 </button>
 ```
 
+<<<<<<< HEAD
 ### [别名配置](https://windicss.org/posts/v30.html#alias-config) {#alias-config}
+=======
+### Alias Config
+
+Be aware, alias entries need to be prefixed with * when used, eg:
+```html
+<div class="*hstack">
+```
+See [this release post](https://windicss.org/posts/v30.html#alias-config) for the difference between shortcuts and alias.
+>>>>>>> 36ddd282425a2ab357dc0bd7339dc52590f6f026
 
 ```ts windi.config.ts
 export default {

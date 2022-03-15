@@ -114,7 +114,11 @@ config = {
 }
 ```
 
+<<<<<<< HEAD
 ## 模式名称列表：{#pattern-names-list}
+=======
+## Pattern names list
+>>>>>>> 36ddd282425a2ab357dc0bd7339dc52590f6f026
 
 1. anchors-away
 1. architect

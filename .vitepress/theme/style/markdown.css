@@ -122,8 +122,7 @@ h6:focus .header-anchor {
   line-height: 1.5rem;
   padding: 0.6rem 1.2rem;
   opacity: 0.8;
-  margin-left: 1rem;
-  @apply ml-1 lg:ml-4 mr-2 lg:mr-6;
+  @apply ml-0 mr-2 lg:mr-6;
 }
 
 .prose blockquote > :first-child {
@@ -155,9 +154,9 @@ div[class*='language-'][class*='with-filename'] {
 }
 
 div[class*='language-'] .code-block-filename {
-  @apply absolute top-0 left-0 py-1 px-2 text-xs text-cool-gray-500 dark:text-cool-gray-400 bg-gray-200 dark:bg-dark-300 rounded-br;
+  @apply absolute top-0 left-0 py-1 px-2 text-xs text-gray-500 dark:text-gray-400 bg-gray-200 dark:bg-dark-300 rounded-br;
 }
 
 div[class*='language-'] {
-  @apply shadow-sm shadow-gray-500;
+  @apply shadow-sm shadow-gray-200 dark:shadow-dark-500;
 }

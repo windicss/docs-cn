@@ -1,5 +1,5 @@
-import { Route } from 'vitepress'
-import { DefaultTheme } from './config'
+import type { Route } from 'vitepress'
+import type { DefaultTheme } from './config'
 
 export const hashRE = /#.*$/
 export const extRE = /(index)?\.(md|html)$/
@@ -137,7 +137,7 @@ export function getFlatSideBarLinks(
       links.push({ text: item.text, link: removeExtension(item.link) })
 
     if (isSideBarGroup(item))
-      links = [...links, ...getFlatSideBarLinks(item.children)]
+      links = [...links, ...getFlatSideBarLinks(item.children || [])]
 
     return links
   }, [])

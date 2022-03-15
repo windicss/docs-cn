@@ -1,3 +1,4 @@
+<<<<<<< HEAD:utilities/filters.md
 # 滤镜 {#filters}
 
 ## 滤镜(filter) {#filter}
@@ -263,6 +264,9 @@ export default {
 </Customizing>
 
 ## 背景(backdrop) {#backdrop-filter}
+=======
+# Backdrop Filter
+>>>>>>> 36ddd282425a2ab357dc0bd7339dc52590f6f026:utilities/filters/backdrop-filter.md
 
 用于控制元素是否启用背景滤镜的工具类。
 
@@ -281,9 +285,13 @@ export default {
   &lt;/div&gt;'
 />
 
+<<<<<<< HEAD:utilities/filters.md
 
 
 ## 模糊背景(blur) {#backdrop-blur}
+=======
+## Backdrop Blur
+>>>>>>> 36ddd282425a2ab357dc0bd7339dc52590f6f026:utilities/filters/backdrop-filter.md
 
 <PlaygroundWithVariants
   variant='sm'
@@ -574,4 +582,5 @@ export default {
   },
 }
 ```
+
 </Customizing>
