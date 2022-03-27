@@ -124,25 +124,15 @@ export default {
 
 ### 伪元素 {#pseudo-elements}
 
-<<<<<<< HEAD:utilities/variants.md
-| 可变修饰 | 规则 | 描述 |
-| :------ | :--- | :---------- |
-| before | `.{utility}::before { ... }` | before 伪元素的目标元素。|
-| after | `.{utility}::after { ... }` | after 伪元素的目标元素。|
-| first-letter | `.{utility}::first-letter { ... }` | 首字母伪元素的目标元素。|
-| first-line | `.{utility}::first-line { ... }` | 首行伪元素的目标元素。 |
-| selection | `.{utility}::selection { ... }` | 选择伪元素的目标元素。 |
-=======
-| Variant                     | Rule                                      | Description                                                 |
-| :-------------------------- | :---------------------------------------- | :---------------------------------------------------------- |
-| before                      | `.{utility}::before { ... }`              | Targets the before pseudo-element.                          |
-| after                       | `.{utility}::after { ... }`               | Targets the after pseudo-element.                           |
-| file / file-selector-button | `.{utility}::file-selector-button`        | Targets the file-selector-button pseudo-element.            |
-| first-letter                | `.{utility}::first-letter { ... }`        | Targets the first-letter pseudo-element.                    |
-| first-line                  | `.{utility}::first-line { ... }`          | Targets the first-line pseudo-element.                      |
-| marker                      | `.{utility} *::marker, {utility}::marker` | Targets the marker pseudo-element. Can be used inheritable. |
-| selection                   | `.{utility}::selection { ... }`           | Targets the selection pseudo-element.                       |
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb:utilities/general/variants.md
+| 可变修饰                        | 规则                                        | 描述                      |
+|:----------------------------|:------------------------------------------|:------------------------|
+| before                      | `.{utility}::before { ... }`              | before 伪元素的目标元素。        |
+| after                       | `.{utility}::after { ... }`               | after 伪元素的目标元素。         |
+| file / file-selector-button | `.{utility}::file-selector-button`        | 上传按钮伪元素的目标元素。           |
+| first-letter                | `.{utility}::first-letter { ... }`        | 首字母伪元素的目标元素。            |
+| first-line                  | `.{utility}::first-line { ... }`          | 首行伪元素的目标元素。             |
+| marker                      | `.{utility} *::marker, {utility}::marker` | marker 伪元素的目标元素。 能被继承。  |
+| selection                   | `.{utility}::selection { ... }`           | 选择伪元素的目标元素。             |
 
 ### 父选择器 {#pseudo-selectors-1}
 
@@ -192,12 +182,8 @@ export default {
 
 | 可变修饰 | 规则 | 描述 |
 | :------ | :--- | :---------- |
-<<<<<<< HEAD:utilities/variants.md
 | .dark | `.dark .{utility} { ... }` | 基于亮色模式下启用工具 |
 | .light | `.light .{utility} { ... }` | 基于暗色模式下启用工具 |
-=======
-| .dark | `.dark .{utility} { ... }` | Enable utility base on application dark mode |
-| .light | `.light .{utility} { ... }` | Enable utility base on application light mode |
 
 ## Orientation Variants
 
@@ -205,4 +191,3 @@ export default {
 | :-------- | :---------------------------------------- | :--------------------------------------------------------- |
 | portrait  | `@media (orientation: portrait) { ... }`  | Enable utility when the device is in portrait orientation  |
 | landscape | `@media (orientation: landscape) { ... }` | Enable utility when the device is in landscape orientation |
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb:utilities/general/variants.md

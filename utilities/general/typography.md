@@ -359,23 +359,7 @@ export default {
   html="The quick brown fox jumps over the lazy dog"
 />
 
-<<<<<<< HEAD:utilities/typography.md
-### 文本装饰样式 {#text-decoration-style}
-
-用于控制文本装饰样式的工具类。
-
-<PlaygroundWithVariants
-  variant='solid'
-  prefix='underline'
-  :variants="['solid', 'double', 'dotted', 'dashed']"
-  fixed='p-2 dark:text-white opacity-85 underline'
-  html="The quick brown fox jumps over the lazy dog"
-/>
-
 ### 文本装饰颜色 {#text-decoration-color}
-=======
-### Text Decoration Color
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb:utilities/general/typography.md
 
 用于控制文本装饰颜色的工具类。
 
@@ -403,15 +387,9 @@ export default {
 
 </Customizing>
 
-<<<<<<< HEAD:utilities/typography.md
-### 文本装饰不透明度 {#text-decoration-opacity}
+### 文本装饰样式 {#text-decoration-style}
 
-用于控制文本装饰颜色的不透明度的工具类。
-=======
-### Text Decoration Style
-
-Utilities for controlling the style of text decoration.
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb:utilities/general/typography.md
+用于控制文本装饰样式的工具类。
 
 <PlaygroundWithVariants
   variant='solid'
@@ -421,31 +399,9 @@ Utilities for controlling the style of text decoration.
   html="The quick brown fox jumps over the lazy dog"
 />
 
-### Text Decoration Thickness
+### 文本装饰线粗细 {#text-decoration-thickness}
 
-<<<<<<< HEAD:utilities/typography.md
-```js windi.config.js
-export default {
-  theme: {
-    extend: {
-      textDecorationOpacity: {
-        10: '0.1',
-        20: '0.2',
-        95: '0.95',
-      },
-    },
-  },
-}
-```
-
-</Customizing>
-
-### 文本装饰长度 {#text-decoration-length}
-
-用于控制文本装饰长度的工具类。
-=======
-Utilities for controlling the thickness of text decorations.
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb:utilities/general/typography.md
+用于控制文本装饰线粗细的工具类。
 
 <PlaygroundWithVariants
   variant='auto'
@@ -503,13 +459,9 @@ export default {
 
 </Customizing>
 
-<<<<<<< HEAD:utilities/typography.md
-## 文本缩进 {#text-indent}
-=======
-### Text Decoration Opacity
+### 文本装饰不透明度 {#text-decoration-opacity}
 
-Utilities for controlling the opacity of an element's decoration color. This is a fallback of 
-[Text Decoration Color](#text-decoration-color) beginning with WindiCSS v3.4.0. 
+用于控制文本装饰颜色的不透明度的工具类。从 WindiCSS v3.4.0 开始作为 [文本装饰颜色](#text-decoration-color) 的备用选项。
 
 <PlaygroundWithVariants
   variant='50'
@@ -539,8 +491,7 @@ export default {
 
 </Customizing>
 
-## Text Indent
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb:utilities/general/typography.md
+## 文本缩进 {#text-indent}
 
 用于控制文本缩进的工具类。
 
