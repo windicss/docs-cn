@@ -1,12 +1,6 @@
-<<<<<<< HEAD:utilities/effects.md
-# 特效 {#effects}
+# 盒阴影 {#box-shadow}
 
-## 盒阴影 {#box-shadow}
-=======
-# Box Shadow
-
-## Box Shadow Size
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb:utilities/effects/box-shadow.md
+## 盒阴影大小 {#box-shadow-size}
 
 用于控制元素盒阴影的工具类。
 
@@ -42,11 +36,7 @@ export default {
 
 </Customizing>
 
-<<<<<<< HEAD:utilities/effects.md
 ### 盒阴影颜色 {#box-shadow-color}
-=======
-## Box Shadow Color
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb:utilities/effects/box-shadow.md
 
 <PlaygroundWithVariants
   variant='gray-500'
@@ -70,56 +60,4 @@ export default {
 }
 ```
 
-<<<<<<< HEAD:utilities/effects.md
 </Customizing>
-
-## 不透明度 {#opacity}
-
-用于控制元素不透明度的工具类。
-
-<PlaygroundWithVariants
-  variant='50'
-  type='opacity'
-  prefix='opacity'
-  fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  appended='bg-teal-400 w-full h-32 rounded-md'
-  nested=true
-  html='&lt;div class=&quot;bg-teal-400 w-full h-32 rounded-md {class}&quot;&gt;&lt;/div&gt;'
-/>
-
-
-<Customizing>
-
-```js windi.config.js
-export default {
-  theme: {
-    opacity: {
-      light: '0.25',
-      full: '1',
-    },
-  },
-}
-```
-
-</Customizing>
-
-## Mix Blend Mode {#mix-blend-mode}
-
-用于控制元素与其背景混合的工具类。
-
-<PlaygroundWithVariants
-  variant='multiply'
-  :variants="['normal', 'multiply', 'screen', 'overlay', 'darken', 'lighten', 'color-dodge', 'color-burn', 'hard-light', 'soft-light', 'difference', 'exclusion', 'hue', 'saturation', 'color', 'luminosity']"
-  prefix='mix-blend'
-  fixed='dark:text-white opacity-85 overflow-hidden h-full'
-  appended='flex justify-center items-center bg-teal-300 bg-yellow-300 w-36 h-36 w-24 h-24 rounded-md'
-  nested=true
-  html='&lt;div class=&quot;flex justify-center&quot;&gt;
-    &lt;div class=&quot;flex items-center justify-center rounded-md bg-teal-300 h-24 w-36&quot;&gt;
-      &lt;div class=&quot;{class} rounded-md h-36 w-24 bg-yellow-300&quot;&gt;&lt;/div&gt;
-    &lt;/div&gt;
-  &lt;/div&gt;'
-/>
-=======
-</Customizing>
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb:utilities/effects/box-shadow.md
