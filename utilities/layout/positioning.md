@@ -389,7 +389,7 @@ As much mud in the streets as if the waters had but newly retired from the face 
 
 ## Isolation {#isolation}
 
-用于控制元素是否显式创建新上下文的工具类。这些工具类与 [mix-blend-mode](/utilities/effects#mix-blend-mode) 和 [z-index](#z-index) 结合使用时特别有用。
+用于控制元素是否显式创建新上下文的工具类。这些工具类与 [mix-blend-mode](/utilities/effects/mix-blend-mode.html) 和 [z-index](#z-index) 结合使用时特别有用。
 
 <PlaygroundWithVariants
   variant='isolate'

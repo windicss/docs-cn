@@ -185,7 +185,7 @@ export default {
 | .dark | `.dark .{utility} { ... }` | 基于亮色模式下启用工具 |
 | .light | `.light .{utility} { ... }` | 基于暗色模式下启用工具 |
 
-## Orientation Variants
+## Orientation Variants {#orientation-variants}
 
 | Variant   | Rule                                      | Description                                                |
 | :-------- | :---------------------------------------- | :--------------------------------------------------------- |

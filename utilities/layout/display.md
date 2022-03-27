@@ -149,7 +149,7 @@
 
 ## List Item {#list-item}
 
- `list-item` 工具类生成一个 `::marker` 伪元素，其内容由它的 [list-style](/utilities/typography.html#list-style-type) 属性（例如着重号（bullet point））指定，并为它的内容生成一个指定类型的盒子。
+ `list-item` 工具类生成一个 `::marker` 伪元素，其内容由它的 [list-style](/utilities/behaviors/listings.html#list-style-type) 属性（例如着重号（bullet point））指定，并为它的内容生成一个指定类型的盒子。
 
 <PlaygroundWithVariants
   variant='list-item'

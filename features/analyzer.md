@@ -14,7 +14,7 @@
 npx windicss-analysis
 ```
 
-分析报告将可在 http://localhost:8113/ 获取
+分析报告将可在 `http://localhost:8113/` 获取
 
 ### NPM {#npm}
 
