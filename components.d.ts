@@ -38,7 +38,6 @@ declare module 'vue' {
     LastUpdated: typeof import('./.vitepress/theme/components/molecules/LastUpdated.vue')['default']
     LearnMore: typeof import('./.vitepress/theme/components/global/LearnMore.vue')['default']
     Logo: typeof import('./.vitepress/theme/components/atoms/logos/Logo.vue')['default']
-    'Logos:nuxt': typeof import('~icons/logos/nuxt')['default']
     NavLink: typeof import('./.vitepress/theme/components/molecules/NavLink.vue')['default']
     NextAndPrevLinks: typeof import('./.vitepress/theme/components/molecules/NextAndPrevLinks.vue')['default']
     NuxtJs: typeof import('./.vitepress/theme/components/atoms/logos/NuxtJs.vue')['default']
