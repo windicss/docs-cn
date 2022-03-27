@@ -1,4 +1,4 @@
-import MarkdownIt from 'markdown-it'
+import type MarkdownIt from 'markdown-it'
 
 const anchorMatch = /^.+(\s*\{#([a-z0-9\-_]+?)\}\s*)$/
 
