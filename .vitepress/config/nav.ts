@@ -4,11 +4,11 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: '指引',
     items: [
-      { text: '快速上手', link: '/guide/' },
+      { text: '开始', link: '/guide/' },
       { text: '安装', link: '/guide/installation' },
-      { text: '配置 Windi CSS', link: '/guide/configuration' },
+      { text: '配置', link: '/guide/configuration' },
       { text: '提取', link: '/guide/extractions' },
-      { text: '从 Tailwind CSS 迁移', link: '/guide/migration' },
+      { text: '迁移', link: '/guide/migration' },
 
       { text: '功能', link: 'separator' },
 
@@ -104,7 +104,7 @@ export const nav: DefaultTheme.Config['nav'] = [
 
       // Interactivity
       { text: 'Accent Color', link: '/utilities/interactivity/accent-color' },
-      { text: 'Appearance', link: '/utilities/interactivity/appearence' },
+      { text: 'Appearance', link: '/utilities/interactivity/appearance' },
       { text: 'Cursor', link: '/utilities/interactivity/cursor' },
       { text: '插入符号', link: '/utilities/interactivity/caret' },
       { text: '指针事件', link: '/utilities/interactivity/pointer-events' },

@@ -5,35 +5,21 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
     {
       text: '通用',
       children: [
-<<<<<<< HEAD
-        { text: '颜色', link: '/utilities/colors' },
-        { text: '可变修饰', link: '/utilities/variants' },
+        { text: '颜色', link: '/utilities/general/colors' },
+        { text: '排版', link: '/utilities/general/typography' },
+        { text: 'SVG', link: '/utilities/general/svg' },
+        { text: '可变修饰', link: '/utilities/general/variants' },
         // { text: 'Variables', link: '/utilities/variables' },
       ],
     },
     {
-      text: '基础',
+      text: '可访问性',
       children: [
-        { text: '排版', link: '/utilities/typography' },
-        { text: '背景', link: '/utilities/backgrounds' },
-        { text: '边框', link: '/utilities/borders' },
-        { text: 'SVG', link: '/utilities/svg' },
-=======
-        { text: 'Colors', link: '/utilities/general/colors' },
-        { text: 'Typography', link: '/utilities/general/typography' },
-        { text: 'SVG', link: '/utilities/general/svg' },
-        { text: 'Variants', link: '/utilities/general/variants' },
-        // { text: 'Variables', link: '/utilities/general/variables' },
+        { text: '屏幕阅读器', link: '/utilities/accessibility/screen-readers' },
       ],
     },
     {
-      text: 'Accessibility',
-      children: [
-        { text: 'Screen Readers', link: '/utilities/accessibility/screen-readers' },
-      ],
-    },
-    {
-      text: 'Animations',
+      text: '动画',
       children: [
         { text: 'Animation', link: '/utilities/animations/animation' },
         { text: 'Transforms', link: '/utilities/animations/transforms' },
@@ -41,7 +27,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ],
     },
     {
-      text: 'Backgrounds',
+      text: '背景',
       children: [
         { text: 'Background', link: '/utilities/backgrounds/background' },
         { text: 'Gradients', link: '/utilities/backgrounds/gradients' },
@@ -49,7 +35,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ],
     },
     {
-      text: 'Behaviors',
+      text: '行为',
       children: [
         { text: 'Box Decoration Break', link: '/utilities/behaviors/box-decoration-break' },
         { text: 'Image Rendering', link: '/utilities/behaviors/image-rendering' },
@@ -60,16 +46,16 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ],
     },
     {
-      text: 'Borders',
+      text: '边框',
       children: [
         { text: 'Border', link: '/utilities/borders/border' },
-        { text: 'Divider', link: '/utilities/borders/divider' },
+        { text: '分割线', link: '/utilities/borders/divider' },
         { text: 'Outline', link: '/utilities/borders/outline' },
-        { text: 'Ring', link: '/utilities/borders/ring' },
+        { text: '轮廓环', link: '/utilities/borders/ring' },
       ],
     },
     {
-      text: 'Effects',
+      text: '特效',
       children: [
         { text: 'Box Shadow', link: '/utilities/effects/box-shadow' },
         { text: 'Opacity', link: '/utilities/effects/opacity' },
@@ -77,63 +63,41 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       ],
     },
     {
-      text: 'Filters',
+      text: '过滤器',
       children: [
         { text: 'Filter', link: '/utilities/filters/filter' },
         { text: 'Backdrop Filter', link: '/utilities/filters/backdrop-filter' },
       ],
     },
     {
-      text: 'Interactivity',
+      text: '互动',
       children: [
         { text: 'Accent Color', link: '/utilities/interactivity/accent-color' },
-        { text: 'Appearance', link: '/utilities/interactivity/appearence' },
+        { text: 'Appearance', link: '/utilities/interactivity/appearance' },
         { text: 'Cursor', link: '/utilities/interactivity/cursor' },
-        { text: 'Caret', link: '/utilities/interactivity/caret' },
-        { text: 'Pointer Events', link: '/utilities/interactivity/pointer-events' },
+        { text: '插入符号', link: '/utilities/interactivity/caret' },
+        { text: '指针事件', link: '/utilities/interactivity/pointer-events' },
         { text: 'Resize', link: '/utilities/interactivity/resize' },
-        { text: 'Scroll Behavior', link: '/utilities/interactivity/scroll-behavior' },
+        { text: '滚动行为', link: '/utilities/interactivity/scroll-behavior' },
         // { text: 'Scroll Snap', link: '/utilities/interactivity/scroll-snap' },
-        { text: 'Touch Action', link: '/utilities/interactivity/touch-action' },
+        { text: '触摸操作', link: '/utilities/interactivity/touch-action' },
         { text: 'User Select', link: '/utilities/interactivity/user-select' },
         { text: 'Will Change', link: '/utilities/interactivity/will-change' },
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb
       ],
     },
     {
       text: '布局',
       children: [
-<<<<<<< HEAD
-        { text: '容器', link: '/utilities/container' },
-        { text: '间隔', link: '/utilities/spacing' },
-        { text: '尺寸', link: '/utilities/sizing' },
-        { text: 'Display', link: '/utilities/display' },
-        { text: 'Flexbox', link: '/utilities/flexbox' },
-        { text: 'Grid', link: '/utilities/grid' },
-        { text: '表格', link: '/utilities/tables' },
-        { text: 'Positioning', link: '/utilities/positioning' },
-      ],
-    },
-    {
-      text: '进阶',
-      children: [
-        { text: '过滤器', link: '/utilities/filters' },
-        { text: '特效', link: '/utilities/effects' },
-        { text: '行为', link: '/utilities/behaviors' },
-        { text: '过渡', link: '/utilities/transitions' },
-        { text: '变换', link: '/utilities/transforms' },
-=======
         // { text: 'Aspect Ratio', link: '/utilities/layout/aspect-ratio' },
         { text: 'Columns', link: '/utilities/layout/columns' },
-        { text: 'Container', link: '/utilities/layout/container' },
+        { text: '容器', link: '/utilities/layout/container' },
         { text: 'Display', link: '/utilities/layout/display' },
         { text: 'Flexbox', link: '/utilities/layout/flexbox' },
         { text: 'Grid', link: '/utilities/layout/grid' },
         { text: 'Positioning', link: '/utilities/layout/positioning' },
-        { text: 'Sizing', link: '/utilities/layout/sizing' },
-        { text: 'Spacing', link: '/utilities/layout/spacing' },
-        { text: 'Tables', link: '/utilities/layout/tables' },
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb
+        { text: '尺寸', link: '/utilities/layout/sizing' },
+        { text: '间隔', link: '/utilities/layout/spacing' },
+        { text: '表格', link: '/utilities/layout/tables' },
       ],
     },
   ],
@@ -172,7 +136,6 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
       text: '发布',
       children: [
         // { text: 'API', link: '/posts/api' },
-<<<<<<< HEAD
         { text: 'WindiCSS 的故事', link: '/posts/story' },
         { text: 'WindiCSS v2.2 现已推出', link: '/posts/v22' },
         { text: '从 v2.2 到 v2.4', link: '/posts/v24' },
@@ -180,16 +143,7 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
         { text: '最新变更 (v30-v35)', link: '/posts/v30-5' },
         { text: '扩展中的新特性', link: '/posts/extension-updates' },
         { text: 'v3.1 带来的新功能', link: '/posts/v31' },
-=======
-        { text: 'The Story of WindiCSS', link: '/posts/story' },
-        { text: 'Windi CSS v2.2 is here', link: '/posts/v22' },
-        { text: 'From v2.2 to v2.4', link: '/posts/v24' },
-        { text: 'WindiCSS v3 now in beta', link: '/posts/v30' },
-        { text: 'Recent changes (v30-v35)', link: '/posts/v30-5' },
-        { text: 'What\'s new in extension?', link: '/posts/extension-updates' },
-        { text: 'New Features In v3.1', link: '/posts/v31' },
-        { text: 'New Features In v3.4', link: '/posts/v34' },
->>>>>>> 1eed937f873df65cd9b7c00ca7a8a1f59110f8fb
+        { text: 'v3.4 带来的新功能', link: '/posts/v34' },
       ],
     },
     {
