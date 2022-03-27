@@ -106,7 +106,7 @@ export const nav: DefaultTheme.Config['nav'] = [
       { text: 'Accent Color', link: '/utilities/interactivity/accent-color' },
       { text: 'Appearance', link: '/utilities/interactivity/appearance' },
       { text: 'Cursor', link: '/utilities/interactivity/cursor' },
-      { text: '插入符号', link: '/utilities/interactivity/caret' },
+      { text: '插入符', link: '/utilities/interactivity/caret' },
       { text: '指针事件', link: '/utilities/interactivity/pointer-events' },
       { text: 'Resize', link: '/utilities/interactivity/resize' },
       { text: '滚动行为', link: '/utilities/interactivity/scroll-behavior' },
