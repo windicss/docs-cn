@@ -124,13 +124,15 @@ export default {
 
 ### 伪元素 {#pseudo-elements}
 
-| 可变修饰 | 规则 | 描述 |
-| :------ | :--- | :---------- |
-| before | `.{utility}::before { ... }` | before 伪元素的目标元素。|
-| after | `.{utility}::after { ... }` | after 伪元素的目标元素。|
-| first-letter | `.{utility}::first-letter { ... }` | 首字母伪元素的目标元素。|
-| first-line | `.{utility}::first-line { ... }` | 首行伪元素的目标元素。 |
-| selection | `.{utility}::selection { ... }` | 选择伪元素的目标元素。 |
+| 可变修饰                        | 规则                                        | 描述                      |
+|:----------------------------|:------------------------------------------|:------------------------|
+| before                      | `.{utility}::before { ... }`              | before 伪元素的目标元素。        |
+| after                       | `.{utility}::after { ... }`               | after 伪元素的目标元素。         |
+| file / file-selector-button | `.{utility}::file-selector-button`        | 上传按钮伪元素的目标元素。           |
+| first-letter                | `.{utility}::first-letter { ... }`        | 首字母伪元素的目标元素。            |
+| first-line                  | `.{utility}::first-line { ... }`          | 首行伪元素的目标元素。             |
+| marker                      | `.{utility} *::marker, {utility}::marker` | marker 伪元素的目标元素。 能被继承。  |
+| selection                   | `.{utility}::selection { ... }`           | 选择伪元素的目标元素。             |
 
 ### 父选择器 {#pseudo-selectors-1}
 
@@ -182,3 +184,10 @@ export default {
 | :------ | :--- | :---------- |
 | .dark | `.dark .{utility} { ... }` | 基于亮色模式下启用工具 |
 | .light | `.light .{utility} { ... }` | 基于暗色模式下启用工具 |
+
+## Orientation Variants {#orientation-variants}
+
+| Variant   | Rule                                      | Description                                                |
+| :-------- | :---------------------------------------- | :--------------------------------------------------------- |
+| portrait  | `@media (orientation: portrait) { ... }`  | Enable utility when the device is in portrait orientation  |
+| landscape | `@media (orientation: landscape) { ... }` | Enable utility when the device is in landscape orientation |

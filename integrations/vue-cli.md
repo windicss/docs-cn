@@ -1,3 +1,6 @@
+[CSS directives]: /features/directives
+[classes utilities]: /utilities/
+
 <Logo name="vue" class="logo-float-xl"/>
 
 # [Vue CLI](https://cli.vuejs.org) 集成 {#integration-for-vue-cli}
@@ -12,34 +15,35 @@
 - 📄 CSS `@apply` / `@screen` 指令转换
 - 🎳 支持公共组 - 例如： `bg-gray-200 hover:(bg-gray-100 text-red-300)`
 
-## 安装 {#setup}
+## 安装 {#install}
 
 使用 Vue CLI 进行安装。(建议使用 Vue CLI 4+)
 
-```bash
+```
 vue add windicss
 ```
 
 :warning: 本模块为预发布版本，请报告你发现的任何 [问题](https://github.com/windicss/vue-cli-plugin-windicss/issues)。
 
-## 配置 {#configuration}
-
-你可以通过修改 `./vue.config.js` 中的选项来改变该插件的行为。
+然后，进行配置
 
 ```js vue.config.js
 module.exports = {
   pluginOptions: {
     windicss: {
-      // see https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts
+      // 具体配置请查看 https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts
     },
   },
 }
 ```
 
-如果你有一个 `tailwind.config.js`，请把它重命名为 `windi.config.js` 或 `windi.config.ts`。
+最后，在你的入口文件中引入 `windi.css`
 
-配置细节见 [这里](https://windicss.netlify.app/guide/configuration.html)。
+```js main.js
+import 'windi.css'
+```
 
+现在，开始在你的项目中使用 [类实用程序] 或 [CSS 指令]，并享受它们的便利！⚡️
 
 ## 迁移 {#migrating}
 

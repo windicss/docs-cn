@@ -30,7 +30,7 @@
 
 ## @variants {#variants}
 
-你可以通过把自己的工具类定义包装在 `@variants`中，以此来生成带有 [屏幕可变修饰，状态可变修饰，主题可变修饰](/utilities/variants) 的工具类。
+你可以通过把自己的工具类定义包装在 `@variants`中，以此来生成带有 [屏幕可变修饰，状态可变修饰，主题可变修饰](/utilities/general/variants) 的工具类。
 
 <DirectivesPlayground
 :input='`

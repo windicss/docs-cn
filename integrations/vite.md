@@ -234,7 +234,13 @@ export default {
 </button>
 ```
 
-### [别名配置](https://windicss.org/posts/v30.html#alias-config) {#alias-config}
+### 别名配置 {#alias-config}
+
+请注意，在使用别名时需要加上前缀 * ，例如：
+```html
+<div class="*hstack">
+```
+有关快捷方式和别名之间的区别，请阅读 [这篇文章](https://cn.windicss.org/posts/v30.html#alias-config)。
 
 ```ts windi.config.ts
 export default {
