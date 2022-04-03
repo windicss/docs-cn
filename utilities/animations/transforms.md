@@ -9,7 +9,7 @@
   :variants="['', 'gpu', 'none']"
   prefix='transform'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='!rotate-180 w-24 h-24'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 {class} !rotate-180"&gt;'
 />
@@ -23,7 +23,7 @@
   :variants="['flat', '3d']"
   prefix='preserve'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible perspect-650 perspect-origin-[150%_150%] absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center perspect-650 perspect-origin-[150%_150%]"&gt;
   &lt;div class="w-full h-full backface-visible {class}"&gt;
@@ -46,7 +46,7 @@
   :variants="['center', 'top', 'top-right', 'right', 'bottom-right', 'bottom', 'bottom-left', 'left', 'top-left']"
   prefix='origin'
   fixed='p-2 dark:text-white opacity-85 w-full h-full'
-  nested=true
+  :nested='true'
   appended='mx-auto transform rotate-90 w-16 h-16 bg-teal-300 rounded-full'
   html='&lt;div class="mx-auto w-16 h-16 bg-teal-300 rounded-full"&gt;
       &lt;img class="h-16 w-16 {class} transform rotate-90" src="/assets/logo.svg"&gt;
@@ -79,7 +79,7 @@ export default {
   :variants="['0', '6', '12', '45', '72.5', '90', '180', '-180', '-90', '-72.5', '-45', '-12', '-6']"
   prefix='rotate'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -105,7 +105,7 @@ export default {
   :variants="['0', '6', '12', '30', '45', '72.5', '90', '180', '-180', '-90', '-72.5', '-45', '-12', '-6']"
   prefix='rotate-x'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -117,7 +117,7 @@ export default {
   :variants="['0', '6', '12', '30', '45', '72.5', '90', '180', '-180', '-90', '-72.5', '-45', '-12', '-6']"
   prefix='rotate-y'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -129,7 +129,7 @@ export default {
   :variants="['0', '6', '12', '30', '45', '72.5', '90', '180', '-180', '-90', '-72.5', '-45', '-12', '-6']"
   prefix='rotate-z'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible preserve-3d perspect-650 perspect-origin-[150%_150%] absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center perspect-650 perspect-origin-[150%_150%]"&gt;
   &lt;div class="w-full h-full backface-visible preserve-3d transform {class}"&gt;
@@ -152,7 +152,7 @@ export default {
   :variants="['0', '25', '50', '75', '90', '95', '100', '105', '110', '125', '150']"
   prefix='scale'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -164,7 +164,7 @@ export default {
   :variants="['0', '25', '50', '75', '90', '95', '100', '105', '110', '125', '150']"
   prefix='scale-x'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -176,7 +176,7 @@ export default {
   :variants="['0', '25', '50', '75', '90', '95', '100', '105', '110', '125', '150']"
   prefix='scale-y'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -188,7 +188,7 @@ export default {
   :variants="['0', '25', '50', '75', '90', '95', '100', '105', '110', '125', '150']"
   prefix='scale-z'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible preserve-3d perspect-650 perspect-origin-[150%_150%] absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center perspect-650 perspect-origin-[150%_150%]"&gt;
   &lt;div class="w-full h-full backface-visible preserve-3d transform {class}"&gt;
@@ -228,7 +228,7 @@ export default {
   :variants="['0', '6', '12', '45', '72.5', '90', '180', '-180', '-90', '-72.5', '-45', '-12', '-6']"
   prefix='skew-x'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -240,7 +240,7 @@ export default {
   :variants="['0', '6', '12', '45', '72.5', '90', '180', '-180', '-90', '-72.5', '-45', '-12', '-6']"
   prefix='skew-y'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -272,7 +272,7 @@ export default {
   :variants="['0', 'px', 'full', '6', '12', '7.5', '1/2', '2/3', '3/4', '3/5', '3.5rem', '42px', '6em', '-px', '-full', '-6', '-12', '-7.5', '-1/2', '-2/3', '-3/4', '-3/5', '-3.5rem', '-42px']"
   prefix='translate-x'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -284,7 +284,7 @@ export default {
   :variants="['0', 'px', 'full', '6', '12', '7.5', '1/2', '2/3', '3/4', '3/5', '3.5rem', '42px', '6em', '-px', '-full', '-6', '-12', '-7.5', '-1/2', '-2/3', '-3/4', '-3/5', '-3.5rem', '-42px']"
   prefix='translate-y'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -296,7 +296,7 @@ export default {
   :variants="['0', 'px', 'full', '6', '12', '7.5', '1/2', '2/3', '3/4', '3/5', '3.5rem', '42px', '6em', '-px', '-full', '-6', '-12', '-7.5', '-1/2', '-2/3', '-3/4', '-3/5', '-3.5rem', '-42px']"
   prefix='translate-z'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible preserve-3d perspect-650 perspect-origin-[150%_150%] absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center perspect-650 perspect-origin-[150%_150%]"&gt;
   &lt;div class="w-full h-full backface-visible preserve-3d transform {class}"&gt;
@@ -358,7 +358,7 @@ export default {
   :variants="['none', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl', '100', '200', '300', '400', '500', '600', '700', '800px', '23rem']"
   prefix='perspect'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible preserve-3d perspect-650 perspect-origin-[150%_150%] absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center {class} perspect-origin-[150%_150%]"&gt;
   &lt;div class="w-full h-full backface-visible preserve-3d"&gt;
@@ -399,7 +399,7 @@ export default {
   :variants="['center', 'top', 'top-right', 'right', 'bottom-right', 'bottom', 'bottom-left', 'left', 'top-left', '[150%]', '[-150%]', '[150%_150%]']"
   prefix='perspect-origin'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible preserve-3d perspect-650 absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center perspect-650 {class}"&gt;
   &lt;div class="w-full h-full backface-visible preserve-3d"&gt;

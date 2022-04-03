@@ -7,7 +7,7 @@
 <PlaygroundWithVariants
   variant='grid'
   :variants="[]"
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 grid-cols-3 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="{class} gap-2 grid-cols-3 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -33,7 +33,7 @@
 <PlaygroundWithVariants
   variant='inline-grid'
   :variants="[]"
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 grid-cols-3 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="{class} gap-2 grid-cols-3 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -60,7 +60,7 @@
   variant='4'
   :variants="['1', '2', '3', '4', '5', '6', '9', '12', 'none', '[1fr,2fr]', '[100px,1fr,min-content]']"
   prefix='grid-cols'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid {class} gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -104,7 +104,7 @@ export default {
   variant='4'
   :variants="['1', '2', '3', '4', '5', '6', '9', '12', 'none', '[1fr,2fr]', '[100px,1fr,min-content]']"
   prefix='grid-rows'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid grid-flow-col rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid {class} grid-flow-col gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -147,7 +147,7 @@ export default {
   variant='auto'
   :variants="['auto', 'span-full', 'span-1', 'span-2', 'span-3', 'span-4', 'span-5', 'span-6', 'span-7', 'span-8', 'span-9', 'span-10', 'span-11', 'span-12', 'span-13', 'span-14', 'span-15']"
   prefix='col'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid grid-cols-4 rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid grid-cols-4 gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -190,7 +190,7 @@ export default {
   variant='auto'
   :variants="['auto', 'span-full', 'span-1', 'span-2', 'span-3', 'span-4', 'span-5', 'span-6', 'span-7', 'span-8', 'span-9', 'span-10', 'span-11', 'span-12', 'span-13', 'span-14', 'span-15']"
   prefix='row'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid grid-rows-3 grid-flow-col rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid grid-rows-3 grid-flow-col gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -233,7 +233,7 @@ export default {
   variant='auto'
   :variants="['auto', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15']"
   prefix='col-start'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid col-span-2 grid-cols-4 rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid grid-cols-4 gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -277,7 +277,7 @@ export default {
   variant='auto'
   :variants="['auto', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15']"
   prefix='col-end'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid grid-cols-4 col-span-2 rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid grid-cols-4 gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -321,7 +321,7 @@ export default {
   variant='auto'
   :variants="['auto', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15']"
   prefix='row-start'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid grid-rows-3 row-span-2 grid-flow-col rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid grid-rows-3 grid-flow-col gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -365,7 +365,7 @@ export default {
   variant='auto'
   :variants="['auto', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '15']"
   prefix='row-end'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid grid-rows-3 row-span-2 grid-flow-col rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid grid-rows-3 grid-flow-col gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -409,7 +409,7 @@ export default {
   variant='row'
   :variants="['row', 'col', 'row-dense', 'col-dense']"
   prefix='grid-flow'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid grid-cols-3 grid-rows-3 col-span-2 rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 w-17 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid grid-cols-3 grid-rows-3 {class} gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -436,7 +436,7 @@ export default {
   variant='auto'
   :variants="['auto', 'min', 'max', 'fr']"
   prefix='auto-cols'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid col-span-2 col-start-3 col-span-4 rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid {class} gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -472,7 +472,7 @@ export default {
   variant='auto'
   :variants="['auto', 'min', 'max', 'fr']"
   prefix='auto-rows'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid grid-flow-col row-span-4 row-span-2 row-start-3 rounded-md bg-teal-500 bg-teal-100 p-2 w-6 h-6 gap-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid grid-flow-col {class} gap-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -511,7 +511,7 @@ export default {
   variant='2'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '10', '12', '14', '16', '20', '24', '48', '1.5rem', '32px']"
   prefix='gap'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 h-8 grid grid-cols-3 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid {class} grid-cols-3 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -570,7 +570,7 @@ export default {
   variant='2'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '10', '12', '14', '16', '20', '24', '48', '1.5rem', '32px']"
   prefix='gap-x'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 h-8 grid grid-cols-3 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid {class} grid-cols-3 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -597,7 +597,7 @@ export default {
   variant='2'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '10', '12', '14', '16', '20', '24', '48', '1.5rem', '32px']"
   prefix='gap-y'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 h-8 grid grid-cols-3 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid {class} grid-cols-3 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;

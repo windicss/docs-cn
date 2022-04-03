@@ -7,7 +7,7 @@
 <PlaygroundWithVariants
   variant='block'
   :variants="[]"
-  nested=true
+  :nested='true'
   fixed='space-y-2 pt-6 pl-12'
   appended='rounded-md bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400'
   html='
@@ -23,7 +23,7 @@
 <PlaygroundWithVariants
   variant='inline-block'
   :variants="[]"
-  nested=true
+  :nested='true'
   fixed='space-x-1 pt-12 pl-4 text-xs'
   appended='rounded-md bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 text-gray-500'
   html='
@@ -40,7 +40,7 @@
 <PlaygroundWithVariants
   variant='inline'
   :variants="['inline', 'inline-block']"
-  nested=true
+  :nested='true'
   fixed='space-x-1 pt-12 pl-2 text-xs text-white'
   appended='rounded-md bg-teal-500 bg-teal-100 py-2 px-3 bg-red-400 bg-green-400 bg-blue-400 text-gray-500'
   html='
@@ -61,7 +61,7 @@
 <PlaygroundWithVariants
   variant='flow-root'
   :variants="[]"
-  nested=true
+  :nested='true'
   fixed='space-y-2 pt-2'
   appended='rounded-md bg-teal-500 bg-teal-100 w-8 h-8 m-1 bg-red-400 bg-green-400 bg-blue-400 bg-teal-100'
   html='
@@ -83,7 +83,7 @@
 <PlaygroundWithVariants
   variant='contents'
   :variants="['block', 'contents']"
-  nested=true
+  :nested='true'
   fixed='pt-10'
   appended='flex items-center rounded-md flex-1 bg-teal-500 bg-teal-100 h-6 bg-red-400 bg-yellow-400 bg-green-400 bg-blue-400 bg-indigo-100 w-10 m-1 p-1'
   html='&lt;div class="flex items-center bg-teal-100 rounded-md p-1"&gt;
@@ -103,7 +103,7 @@
 <PlaygroundWithVariants
   variant='hidden'
   :variants="['block', 'hidden']"
-  nested=true
+  :nested='true'
   fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center bg-teal-100 rounded-md p-1"&gt;
@@ -120,7 +120,7 @@
 <PlaygroundWithVariants
   variant='visible'
   :variants="['visible', 'invisible']"
-  nested=true
+  :nested='true'
   fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center bg-teal-100 rounded-md p-1"&gt;
@@ -138,7 +138,7 @@
   variant='hidden'
   :variants="['visible', 'hidden']"
   prefix='backface'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='w-34 h-42 transform hover:rotate-y-180 rotate-y-180 relative preserve-3d transition-all duration-500 absolute z-1 z-2 rounded-lg'
   html='&lt;div class="transform hover:rotate-y-180 relative preserve-3d transition-all duration-500"&gt;
@@ -155,7 +155,7 @@
   variant='list-item'
   :variants="['block', 'list-item']"
   fixed='py-4 px-8 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='list-decimal'
   html="&lt;div class='list-decimal'&gt;
   &lt;div class='{class}'&gt;One&lt;/div&gt;

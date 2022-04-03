@@ -50,7 +50,7 @@ The `backface` utility sets whether the back face of an element is visible when 
   variant='hidden'
   :variants="['visible', 'hidden']"
   prefix='backface'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='w-34 h-42 transform hover:rotate-y-180 rotate-y-180 relative preserve-3d transition-all duration-500 absolute z-1 z-2 rounded-lg'
   html='&lt;div class="transform hover:rotate-y-180 relative preserve-3d transition-all duration-500"&gt;
@@ -68,7 +68,7 @@ Utilities for controlling whether an element should explicitly create a new stac
   :variants="['isolate', 'isolation-auto']"
   fixed='dark:text-white opacity-85 overflow-hidden h-full'
   appended='w-full h-32 bg-green-400 w-16 h-16 mix-blend-difference border-2 border-black'
-  nested=true
+  :nested='true'
   html='&lt;div class="w-full h-32 bg-green-400"&gt;
   &lt;div class="{class}"&gt;
     &lt;div class="bg-green-400 w-16 h-16 mix-blend-difference border-2 border-black"&gt;auto&lt;/div&gt;
@@ -86,7 +86,7 @@ Utilities for controlling how an element should blend with the background.
   prefix='mix-blend'
   fixed='dark:text-white opacity-85 overflow-hidden h-full'
   appended='flex justify-center items-center bg-teal-300 bg-yellow-300 w-36 h-36 w-24 h-24 rounded-md'
-  nested=true
+  :nested='true'
   html='&lt;div class=&quot;flex justify-center&quot;&gt;
     &lt;div class=&quot;flex items-center justify-center rounded-md bg-teal-300 h-24 w-36&quot;&gt;
       &lt;div class=&quot;{class} rounded-md h-36 w-24 bg-yellow-300&quot;&gt;&lt;/div&gt;
@@ -102,7 +102,7 @@ Utilities for controlling how an element should blend with the background.
   prefix='shadow'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='bg-teal-400 w-full h-32 rounded-md shadow-2xl'
-  nested=true
+  :nested='true'
   html='&lt;div class=&quot;bg-teal-400 w-full h-32 rounded-md shadow-2xl {class}&quot;&gt;&lt;/div&gt;'
 />
 
@@ -129,7 +129,7 @@ Utilities for controlling how an element's background image should blend with it
   :variants="['normal', 'multiply', 'screen', 'overlay', 'darken', 'lighten', 'color-dodge', 'color-burn', 'hard-light', 'soft-light', 'difference', 'exclusion', 'hue', 'saturation', 'color', 'luminosity']"
   prefix='bg-blend'
   fixed='dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='w-full h-36 bg-no-repeat bg-contain bg-center bg-green-300 rounded-md'
   html="&lt;div class=&quot;w-full h-36 bg-no-repeat bg-green-300 rounded-md bg-contain bg-center {class}&quot; style=&quot;background-image:url(&#39;/assets/bg-blue.svg&#39;);&quot;&gt;
   &lt;/div&gt;"
@@ -144,7 +144,7 @@ Utilities for controlling the background origin of an element's background image
   :variants="['border', 'padding', 'content']"
   prefix='bg-origin'
   fixed='dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='p-6 rounded-md border-4 border-blue-400 border-dashed font-extrabold text-white flex justify-center items-center bg-no-repeat'
   html='&lt;div class="{class} bg-no-repeat p-6 rounded-md border-4 border-blue-400 border-dashed font-extrabold text-white flex justify-center items-center" style="background-image: url(/assets/bg-shop.jpg);"&gt;
       &lt;span&gt;Hello World&lt;/span&gt;
@@ -160,7 +160,7 @@ Utilities for controlling how element fragments should be rendered across multip
   :variants="['slice', 'clone']"
   prefix='decoration'
   fixed='dark:text-white opacity-85 overflow-hidden p-2 h-full'
-  nested=true
+  :nested='true'
   appended='text-5xl font-extrabold bg-gradient-to-r from-green-400 to-blue-500 rounded-16px px-4 text-sm text-white'
   html="
 &lt;div&gt;
@@ -177,7 +177,7 @@ Utilities for controlling the color of insertion text.
   type='color'
   prefix='caret'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='bg-gray-100 py-2 rounded px-4 w-full border border-gray-400'
   html="&lt;input class='{class} bg-gray-100 border border-gray-400 py-2 rounded px-4 w-full' placeholder='Focus Me'&gt;"
 />
@@ -207,7 +207,7 @@ Utilities for controlling the opacity of an element's caret color.
   type='opacity'
   prefix='caret-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='bg-gray-100 py-2 rounded px-4 w-full border border-gray-400 caret-blue-500'
   html="&lt;input class='caret-blue-500 {class} bg-gray-100 border border-gray-400 py-2 rounded px-4 w-full' placeholder='Focus Me'&gt;"
 />
@@ -238,7 +238,7 @@ The `image-render` utility defines how the browser should render an image if it 
   prefix='image-render'
   fixed='p-2 dark:text-white opacity-85'
   appended='w-full h-32'
-  nested=true
+  :nested='true'
   html="&lt;img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAACdJREFUCB1j9Pf3/88ABMmMjCCKgQlMIhGMu3btAquY9mMDWBhDBQAutwfDrUlKzQAAAABJRU5ErkJggg==' class='{class} w-full h-32'&gt;"
 />
 
@@ -251,7 +251,7 @@ Utilities for controlling the bullet/number style of a list.
   :variants="['none', 'disc', 'circle', 'square', 'decimal', 'zero-decimal', 'greek', 'roman', 'upper-roman', 'alpha', 'upper-alpha']"
   prefix='list'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   html="&lt;ul class='{class}'&gt;
   &lt;li&gt;One&lt;/li&gt;
   &lt;li&gt;Two&lt;/li&gt;
@@ -286,7 +286,7 @@ The `stroke-dash` utility is a presentation utility defining the pattern of dash
   :variants="['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '100' ]"
   prefix='stroke-dash'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='stroke-blue-600 fill-transparent stroke-6'
   html='&lt;svg class="fill-transparent stroke-6 stroke-blue-600 {class}" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
     &lt;circle cx="60" cy="60" r="50"&gt;&lt;/circle&gt;
@@ -302,7 +302,7 @@ The `stroke-offset` utility is a presentation utility defining an offset on the 
   :variants="['0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '50', '60', '70', '80', '90', '100']"
   prefix='stroke-offset'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='stroke-blue-600 fill-transparent stroke-6 stroke-dash-50'
   html='&lt;svg class="fill-transparent stroke-6 stroke-blue-600 stroke-dash-50 {class}" version="1.1" xmlns="http://www.w3.org/2000/svg"&gt;
     &lt;circle cx="60" cy="60" r="50"&gt;&lt;/circle&gt;
@@ -318,7 +318,7 @@ The `stroke-cap` utility is a presentation utility defining the shape to be used
   :variants="['auto', 'square', 'round']"
   prefix='stroke-cap'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='stroke-blue-600'
   html='&lt;svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"&gt;
      &lt;g&gt;
@@ -336,7 +336,7 @@ The `stroke-join` utility is a presentation utility defining the shape to be use
   :variants="['auto', 'bevel', 'round']"
   prefix='stroke-join'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='stroke-blue-600'
   html='&lt;svg viewBox="0 0 300 300" xmlns="http://www.w3.org/2000/svg"&gt;
      &lt;g&gt;
@@ -355,7 +355,7 @@ The hyphens utilities specifies how words should be hyphenated when text wraps a
   prefix='hyphens'
   fixed='dark:text-white opacity-85 overflow-hidden'
   appended='border border-blue-300 border-dashed p-2'
-  nested=true
+  :nested='true'
   html="&lt;p class='{class} border p-2 border-blue-300 border-dashed'&gt;An extra&shy;ordinarily long English word!&lt;/&gt;"
 />
 
@@ -368,7 +368,7 @@ The tab-size utilities are used to customize the width of tab characters (U+0009
   :variants="['', '0', '2', '4', '8', '7.5px', '2rem']"
   fixed='dark:text-white opacity-85 overflow-scroll font-mono text-xs'
   prefix='tab'
-  nested=true
+  :nested='true'
   appended='w-full whitespace-pre-wrap'
   html="&lt;p class='w-full whitespace-pre-wrap {class}'&gt;without tab
 	with 1 tab
@@ -445,7 +445,7 @@ Utilities for controlling the opacity of an element's decoration color.
   prefix='underline-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='text-black underline underline-teal-600 underline-2'
-  nested=true
+  :nested='true'
   html="&lt;p class='text-black underline underline-2 underline-teal-600 {class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
 
@@ -477,7 +477,7 @@ Utilities for controlling the length of text decoration.
   prefix='underline'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='text-black underline underline-teal-600'
-  nested=true
+  :nested='true'
   html="&lt;p class='text-black underline underline-teal-600 {class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
 
@@ -678,7 +678,7 @@ The `caption` utility puts the content of a table's `<caption>` on the specified
   :variants="['top', 'bottom']"
   prefix='caption'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table table-caption text-center table-header-group table-row table-cell table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold'
   html='&lt;div class="table {class} text-xs"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Council budget&lt;/div&gt;
@@ -716,7 +716,7 @@ The `empty-cells` utility sets whether borders and backgrounds appear around `<t
   :variants="['visible', 'hidden']"
   prefix='empty-cells'
   fixed='dark:text-white opacity-85 text-xs'
-  nested=true
+  :nested='true'
   appended='border-separate text-emerald-600 border border-emerald-500 p-1 font-medium font-bold py-2 text-center'
   html='&lt;table class="border-separate text-emerald-600 {class}"&gt;
   &lt;caption class="text-center py-2 font-bold"&gt;Client Info&lt;/caption&gt;
@@ -750,7 +750,7 @@ Utilities for controlling transform behaviour.
   :variants="['', 'gpu', 'none']"
   prefix='transform'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='!rotate-180 w-24 h-24'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 {class} !rotate-180"&gt;'
 />
@@ -764,7 +764,7 @@ The transform-style utility sets whether children of an element are positioned i
   :variants="['flat', '3d']"
   prefix='preserve'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible perspect-650 perspect-origin-[150%_150%] absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center perspect-650 perspect-origin-[150%_150%]"&gt;
   &lt;div class="w-full h-full backface-visible {class}"&gt;
@@ -785,7 +785,7 @@ The transform-style utility sets whether children of an element are positioned i
   :variants="['0', '6', '12', '30', '45', '72.5', '90', '180', '-180', '-90', '-72.5', '-45', '-12', '-6']"
   prefix='rotate-x'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -797,7 +797,7 @@ The transform-style utility sets whether children of an element are positioned i
   :variants="['0', '6', '12', '30', '45', '72.5', '90', '180', '-180', '-90', '-72.5', '-45', '-12', '-6']"
   prefix='rotate-y'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 transform'
   html='&lt;img src="/assets/logo.svg" class="w-24 h-24 transform {class}"&gt;'
 />
@@ -809,7 +809,7 @@ The transform-style utility sets whether children of an element are positioned i
   :variants="['0', '6', '12', '30', '45', '72.5', '90', '180', '-180', '-90', '-72.5', '-45', '-12', '-6']"
   prefix='rotate-z'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible preserve-3d perspect-650 perspect-origin-[150%_150%] absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center perspect-650 perspect-origin-[150%_150%]"&gt;
   &lt;div class="w-full h-full backface-visible preserve-3d transform {class}"&gt;
@@ -830,7 +830,7 @@ The transform-style utility sets whether children of an element are positioned i
   :variants="['0', '25', '50', '75', '90', '95', '100', '105', '110', '125', '150']"
   prefix='scale-z'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible preserve-3d perspect-650 perspect-origin-[150%_150%] absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center perspect-650 perspect-origin-[150%_150%]"&gt;
   &lt;div class="w-full h-full backface-visible preserve-3d transform {class}"&gt;
@@ -866,7 +866,7 @@ export default {
   :variants="['0', 'px', 'full', '6', '12', '7.5', '1/2', '2/3', '3/4', '3/5', '3.5rem', '42px', '6em', '-px', '-full', '-6', '-12', '-7.5', '-1/2', '-2/3', '-3/4', '-3/5', '-3.5rem', '-42px']"
   prefix='translate-z'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible preserve-3d perspect-650 perspect-origin-[150%_150%] absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center perspect-650 perspect-origin-[150%_150%]"&gt;
   &lt;div class="w-full h-full backface-visible preserve-3d transform {class}"&gt;
@@ -928,7 +928,7 @@ The `perspect` utility determines the distance between the z=0 plane and the use
   :variants="['none', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '4xl', '5xl', '6xl', '7xl', '100', '200', '300', '400', '500', '600', '700', '800px', '23rem']"
   prefix='perspect'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible preserve-3d perspect-650 perspect-origin-[150%_150%] absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center {class} perspect-origin-[150%_150%]"&gt;
   &lt;div class="w-full h-full backface-visible preserve-3d"&gt;
@@ -969,7 +969,7 @@ The `perspect-origin` utility determines the position at which the viewer is loo
   :variants="['center', 'top', 'top-right', 'right', 'bottom-right', 'bottom', 'bottom-left', 'left', 'top-left', '[150%]', '[-150%]', '[150%_150%]']"
   prefix='perspect-origin'
   fixed='pl-6 pt-6'
-  nested=true
+  :nested='true'
   appended='w-full h-32 text-white text-4xl text-center w-full h-full backface-visible preserve-3d perspect-650 absolute flex items-center justify-center w-24 h-24 transform translate-z-12 rotate-y-180 rotate-y-90 -rotate-y-90 rotate-x-90 -rotate-x-90 bg-opacity-30 bg-opacity-70 bg-black bg-green-500 bg-red-500 bg-blue-500 bg-yellow-500 bg-pink-500'
   html='&lt;div class="w-full h-32 text-white text-4xl text-center perspect-650 {class}"&gt;
   &lt;div class="w-full h-full backface-visible preserve-3d"&gt;
@@ -1009,7 +1009,7 @@ Utilities for enabling and disabling filters on an element.
   :variants="['', 'none']"
   prefix='filter'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='!hue-rotate-30 w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 {class} !hue-rotate-30"&gt;'
 />
@@ -1021,7 +1021,7 @@ Utilities for enabling and disabling filters on an element.
   :variants="['', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '0', '1', '2', '3', '9', '12', '24px', '2rem']"
   prefix='blur'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -1049,7 +1049,7 @@ export default {
   :variants="['0', '50', '75', '90', '95', '100', '105', '110', '115', '125', '150', '175', '200', '251']"
   prefix='brightness'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -1077,7 +1077,7 @@ export default {
   :variants="['0', '50', '75', '90', '95', '100', '105', '110', '115', '125', '150', '175', '200', '251']"
   prefix='contrast'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -1105,7 +1105,7 @@ export default {
   :variants="['', 'sm', 'md', 'lg', 'xl', '2xl', 'none']"
   prefix='drop-shadow'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -1132,7 +1132,7 @@ export default {
   :variants="['', '0', '5', '10', '20', '25', '30', '40' ,'50', '60', '70', '75', '80', '90', '95', '100']"
   prefix='grayscale'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -1159,7 +1159,7 @@ export default {
   :variants="['0', '15', '30', '45', '60', '90', '120', '180', '-120', '-90', '-60', '-45', '-30', '-15']"
   prefix='hue-rotate'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 filter'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -1187,7 +1187,7 @@ export default {
   :variants="['', '0', '5', '10', '20', '25', '30', '40' ,'50', '60', '70', '75', '80', '90', '95', '100']"
   prefix='invert'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -1214,7 +1214,7 @@ export default {
   :variants="['', '0', '5', '10', '20', '25', '30', '40' ,'50', '60', '70', '75', '80', '90', '95', '100']"
   prefix='saturate'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -1242,7 +1242,7 @@ export default {
   :variants="['', '0', '5', '10', '20', '25', '30', '40' ,'50', '60', '70', '75', '80', '90', '95', '100']"
   prefix='sepia'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -1272,7 +1272,7 @@ Utilities for enabling and disabling backdrop filters on an element.
   prefix='backdrop-filter'
   fixed='dark:text-white opacity-85 h-full overflow-hidden'
   appended='w-screen h-full bg-no-repeat bg-center bg-cover !backdrop-blur-md rounded-md text-sm bg-white bg-opacity-30 text-center p-2 p-4 flex flex-col justify-center overflow-hidden'
-  nested=true
+  :nested='true'
   html='
   &lt;div class="p-2 w-screen h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center overflow-hidden" style="background-image: url(/assets/bg-shop.jpg), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));"&gt;
     &lt;div class="{class} !backdrop-blur-md rounded-md text-sm bg-white bg-opacity-30 text-center p-4"&gt;
@@ -1291,7 +1291,7 @@ Utilities for enabling and disabling backdrop filters on an element.
   prefix='backdrop-blur'
   fixed='dark:text-white opacity-85'
   appended='w-screen h-full bg-no-repeat bg-center bg-cover backdrop-filter rounded-md text-sm bg-white bg-opacity-30 text-center p-2 p-4 flex flex-col justify-center overflow-hidden'
-  nested=true
+  :nested='true'
   html='
   &lt;div class="p-2 w-screen h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center overflow-hidden" style="background-image: url(/assets/bg-shop.jpg), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));"&gt;
     &lt;div class="backdrop-filter {class} rounded-md text-sm bg-white bg-opacity-30 text-center p-4"&gt;
@@ -1324,7 +1324,7 @@ export default {
   prefix='backdrop-brightness'
   fixed='dark:text-white opacity-85'
   appended='w-screen h-full bg-no-repeat bg-center bg-cover backdrop-filter rounded-md text-sm bg-white bg-opacity-50 text-center p-2 p-4 flex flex-col justify-center overflow-hidden'
-  nested=true
+  :nested='true'
   html='
   &lt;div class="p-2 w-screen h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center overflow-hidden" style="background-image: url(/assets/bg-shop.jpg), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));"&gt;
     &lt;div class="backdrop-filter {class} rounded-md text-sm bg-white bg-opacity-50 text-center p-4"&gt;
@@ -1357,7 +1357,7 @@ export default {
   prefix='backdrop-contrast'
   fixed='dark:text-white opacity-85'
   appended='w-screen h-full bg-no-repeat bg-center bg-cover backdrop-filter rounded-md text-sm bg-white bg-opacity-50 text-center p-2 p-4 flex flex-col justify-center overflow-hidden'
-  nested=true
+  :nested='true'
   html='
   &lt;div class="p-2 w-screen h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center overflow-hidden" style="background-image: url(/assets/bg-shop.jpg), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));"&gt;
     &lt;div class="backdrop-filter {class} rounded-md text-sm bg-white bg-opacity-50 text-center p-4"&gt;
@@ -1390,7 +1390,7 @@ export default {
   prefix='backdrop-grayscale'
   fixed='dark:text-white opacity-85'
   appended='w-screen h-full bg-no-repeat bg-center bg-cover backdrop-filter rounded-md text-sm bg-white bg-opacity-50 text-center p-2 p-4 flex flex-col justify-center overflow-hidden'
-  nested=true
+  :nested='true'
   html='
   &lt;div class="p-2 w-screen h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center overflow-hidden" style="background-image: url(/assets/bg-shop.jpg), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));"&gt;
     &lt;div class="backdrop-filter {class} rounded-md text-sm bg-white bg-opacity-50 text-center p-4"&gt;
@@ -1422,7 +1422,7 @@ export default {
   prefix='backdrop-hue-rotate'
   fixed='dark:text-white opacity-85'
   appended='w-screen h-full bg-no-repeat bg-center bg-cover backdrop-filter rounded-md text-sm bg-white bg-opacity-50 text-center p-2 p-4 flex flex-col justify-center overflow-hidden'
-  nested=true
+  :nested='true'
   html='
   &lt;div class="p-2 w-screen h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center overflow-hidden" style="background-image: url(/assets/bg-shop.jpg), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));"&gt;
     &lt;div class="backdrop-filter {class} rounded-md text-sm bg-white bg-opacity-50 text-center p-4"&gt;
@@ -1455,7 +1455,7 @@ export default {
   prefix='backdrop-invert'
   fixed='dark:text-white opacity-85'
   appended='w-screen h-full bg-no-repeat bg-center bg-cover backdrop-filter rounded-md text-sm bg-white bg-opacity-50 text-center p-2 p-4 flex flex-col justify-center overflow-hidden'
-  nested=true
+  :nested='true'
   html='
   &lt;div class="p-2 w-screen h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center overflow-hidden" style="background-image: url(/assets/bg-shop.jpg), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));"&gt;
     &lt;div class="backdrop-filter {class} rounded-md text-sm bg-white bg-opacity-50 text-center p-4"&gt;
@@ -1487,7 +1487,7 @@ export default {
   prefix='backdrop-opacity'
   fixed='dark:text-white opacity-85'
   appended='w-screen h-full bg-no-repeat bg-center bg-cover backdrop-filter rounded-md text-sm text-center p-2 p-4 flex flex-col justify-center overflow-hidden border-2'
-  nested=true
+  :nested='true'
   html='
   &lt;div class="p-2 w-screen h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center overflow-hidden" style="background-image: url(/assets/bg-shop.jpg), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));"&gt;
     &lt;div class="backdrop-filter {class} rounded-md text-sm text-center p-4 border-2"&gt;
@@ -1520,7 +1520,7 @@ export default {
   prefix='backdrop-saturate'
   fixed='dark:text-white opacity-85'
   appended='w-screen h-full bg-no-repeat bg-center bg-cover backdrop-filter rounded-md text-sm bg-white bg-opacity-50 text-center p-2 p-4 flex flex-col justify-center overflow-hidden'
-  nested=true
+  :nested='true'
   html='
   &lt;div class="p-2 w-screen h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center overflow-hidden" style="background-image: url(/assets/bg-shop.jpg), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));"&gt;
     &lt;div class="backdrop-filter {class} rounded-md text-sm bg-white bg-opacity-50 text-center p-4"&gt;
@@ -1553,7 +1553,7 @@ export default {
   prefix='backdrop-sepia'
   fixed='dark:text-white opacity-85'
   appended='w-screen h-full bg-no-repeat bg-center bg-cover backdrop-filter rounded-md text-sm bg-white bg-opacity-50 text-center p-2 p-4 flex flex-col justify-center overflow-hidden'
-  nested=true
+  :nested='true'
   html='
   &lt;div class="p-2 w-screen h-full bg-no-repeat bg-center bg-cover flex flex-col justify-center overflow-hidden" style="background-image: url(/assets/bg-shop.jpg), linear-gradient(rgb(219, 166, 166), rgb(0, 0, 172));"&gt;
     &lt;div class="backdrop-filter {class} rounded-md text-sm bg-white bg-opacity-50 text-center p-4"&gt;

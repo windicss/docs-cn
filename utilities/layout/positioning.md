@@ -8,7 +8,7 @@
   variant='5'
   :variants="['first', 'last', 'none', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12', '13', '14', '-1', '-2', '-3', '-4', '-5', '-6', '-7', '-8', '-9', '-10', '-11', '-12', '-13', '-14', '-6666']"
   prefix='order'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='order-1 order-2 order-3 order-4 order-5 order-6 order-7 order-8 order-9 order-10 order-11 rounded-md grid bg-teal-500 bg-yellow-400 bg-teal-100 p-2 w-6 h-6 gap-2 grid-cols-3 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid gap-2 grid-cols-3 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -52,7 +52,7 @@ export default {
   variant='start'
   :variants="['start', 'end', 'center', 'between', 'around', 'evenly']"
   prefix='justify'
-  nested=true
+  :nested='true'
   fixed='pt-20'
   appended='flex rounded-md bg-teal-500 bg-teal-100 p-2 space-x-2 w-6 h-6'
   html='&lt;div class="flex {class} bg-teal-100 rounded-md p-2 space-x-2"&gt;
@@ -70,7 +70,7 @@ export default {
   variant='auto'
   :variants="['auto', 'start', 'end', 'center', 'stretch']"
   prefix='justify-items'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid rounded-md bg-teal-500 bg-teal-100 p-2 min-w-6 h-6 gap-2 grid-cols-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid {class} gap-2 grid-cols-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -93,7 +93,7 @@ export default {
   variant='auto'
   :variants="['auto', 'start', 'end', 'center', 'stretch']"
   prefix='justify-self'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid rounded-md bg-teal-500 bg-yellow-400 bg-teal-100 p-2 min-w-6 h-6 gap-2 grid-cols-2 text-xs text-white text-center flex flex-col justify-center'
   html='&lt;div class="grid gap-2 grid-cols-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center"&gt;
@@ -116,7 +116,7 @@ export default {
   variant='center'
   :variants="['center', 'start', 'end', 'between', 'around', 'evenly']"
   prefix='content'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid rounded-md bg-teal-500 bg-teal-100 p-2 min-w-6 h-6 gap-2 grid-cols-2 text-xs text-white text-center flex flex-col justify-center h-48'
   html='&lt;div class="grid {class} gap-2 grid-cols-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center h-48"&gt;
@@ -137,7 +137,7 @@ export default {
   variant='start'
   :variants="['start', 'end', 'center', 'baseline', 'stretch']"
   prefix='items'
-  nested=true
+  :nested='true'
   fixed='pt-10'
   appended='flex justify-center rounded-md bg-teal-500 bg-teal-100 p-2 space-x-2 w-6 min-h-6 h-32'
   html='&lt;div class="flex {class} justify-center bg-teal-100 rounded-md p-2 space-x-2 h-32"&gt;
@@ -155,7 +155,7 @@ export default {
   variant='center'
   :variants="['auto', 'start', 'end', 'center', 'stretch']"
   prefix='self'
-  nested=true
+  :nested='true'
   fixed='pt-10'
   appended='flex justify-center rounded-md bg-teal-500 bg-yellow-400 bg-teal-100 p-2 space-x-2 w-6 min-h-6 h-32'
   html='&lt;div class="flex justify-center bg-teal-100 rounded-md p-2 space-x-2 h-32"&gt;
@@ -173,7 +173,7 @@ export default {
   variant='center'
   :variants="['center', 'start', 'end', 'between', 'around', 'evenly', 'stretch']"
   prefix='place-content'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid rounded-md bg-teal-500 bg-teal-100 p-2 h-6 gap-2 grid-cols-2 text-xs text-white text-center flex flex-col justify-center h-38'
   html='&lt;div class="grid {class} gap-2 grid-cols-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center h-38"&gt;
@@ -194,7 +194,7 @@ export default {
   variant='auto'
   :variants="['auto', 'start', 'end', 'center', 'stretch']"
   prefix='place-items'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid rounded-md bg-teal-500 bg-teal-100 p-2 min-w-6 h-6 gap-2 grid-cols-2 text-xs text-white text-center flex flex-col justify-center h-38'
   html='&lt;div class="grid {class} gap-2 grid-cols-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center h-38"&gt;
@@ -215,7 +215,7 @@ export default {
   variant='auto'
   :variants="['auto', 'start', 'end', 'center', 'stretch']"
   prefix='place-self'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='grid rounded-md bg-teal-500 bg-yellow-400 bg-teal-100 p-2 min-w-6 h-6 gap-2 grid-cols-2 text-xs text-white text-center flex flex-col justify-center h-38'
   html='&lt;div class="grid gap-2 grid-cols-2 bg-teal-100 rounded-md p-2 text-xs text-white text-center h-38"&gt;
@@ -235,7 +235,7 @@ export default {
 <PlaygroundWithVariants
   variant='static'
   :variants="['static', 'fixed', 'absolute', 'relative', 'sticky']"
-  nested=true
+  :nested='true'
   fixed='relative text-xs'
   appended='rounded-md clear-both bg-teal-500 bg-teal-100 w-8 h-8 mr-2 bg-red-400 bg-green-400 bg-blue-400 inline-block top-0 left-0'
   html='&lt;p&gt;In this demo you can control the &lt;code&gt;position&lt;/code&gt; property for the green box.&lt;/p&gt;
@@ -259,7 +259,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', 'full', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1/3', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-1/3', '-1.5rem', '-32px', '-full']"
   prefix='inset'
-  nested=true
+  :nested='true'
   fixed='relative text-xs text-white w-screen h-full'
   appended='absolute h-8 bg-green-400 rounded-md text-center max-w-24 p-2'
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
@@ -286,7 +286,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', 'full', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1/3', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-1/3', '-1.5rem', '-32px', '-full']"
   prefix='inset-y'
-  nested=true
+  :nested='true'
   fixed='relative text-xs text-white w-screen h-full'
   appended='absolute h-8 bg-green-400 rounded-md text-center max-w-24 p-2'
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
@@ -298,7 +298,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', 'full', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1/3', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-1/3', '-1.5rem', '-32px', '-full']"
   prefix='inset-x'
-  nested=true
+  :nested='true'
   fixed='relative text-xs text-white w-screen h-full'
   appended='absolute h-8 bg-green-400 rounded-md text-center max-w-24 p-2'
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
@@ -311,7 +311,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', 'full', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1/3', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-1/3', '-1.5rem', '-32px', '-full']"
   prefix='top'
-  nested=true
+  :nested='true'
   fixed='relative text-xs text-white w-screen h-full'
   appended='absolute h-8 bg-green-400 rounded-md text-center max-w-24 p-2'
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
@@ -324,7 +324,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', 'full', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1/3', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-1/3', '-1.5rem', '-32px', '-full']"
   prefix='right'
-  nested=true
+  :nested='true'
   fixed='relative text-xs text-white w-screen h-full'
   appended='absolute h-8 bg-green-400 rounded-md text-center max-w-24 p-2'
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
@@ -336,7 +336,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', 'full', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1/3', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-1/3', '-1.5rem', '-32px', '-full']"
   prefix='bottom'
-  nested=true
+  :nested='true'
   fixed='relative text-xs text-white w-screen h-full'
   appended='absolute h-8 bg-green-400 rounded-md text-center max-w-24 p-2'
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
@@ -348,7 +348,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', 'full', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1/3', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-1/3', '-1.5rem', '-32px', '-full']"
   prefix='left'
-  nested=true
+  :nested='true'
   fixed='relative text-xs text-white'
   appended='absolute h-8 bg-green-400 rounded-md text-center max-w-24 p-2'
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
@@ -362,7 +362,7 @@ export default {
   variant='left'
   :variants="['right', 'left', 'none']"
   prefix='float'
-  nested=true
+  :nested='true'
   fixed='text-xs'
   appended='bg-blue-300 rounded-md p-3 text-white'
   html='&lt;div class="{class} bg-blue-300 rounded-md p-3 text-white"&gt;Float me&lt;/div&gt;
@@ -377,7 +377,7 @@ As much mud in the streets as if the waters had but newly retired from the face 
   variant='left'
   :variants="['right', 'left', 'both', 'none']"
   prefix='clear'
-  nested=true
+  :nested='true'
   fixed='text-xs'
   appended='bg-blue-300 rounded-md p-3 text-white float-left float-right h-24'
   html='&lt;div class="float-left bg-blue-300 rounded-md p-3 text-white"&gt;Left&lt;/div&gt;
@@ -396,7 +396,7 @@ As much mud in the streets as if the waters had but newly retired from the face 
   :variants="['isolate', 'isolation-auto']"
   fixed='dark:text-white opacity-85 overflow-hidden h-full'
   appended='w-full h-32 bg-green-400 w-16 h-16 mix-blend-difference border-2 border-black'
-  nested=true
+  :nested='true'
   html='&lt;div class="w-full h-32 bg-green-400"&gt;
   &lt;div class="{class}"&gt;
     &lt;div class="bg-green-400 w-16 h-16 mix-blend-difference border-2 border-black"&gt;auto&lt;/div&gt;
@@ -413,7 +413,7 @@ As much mud in the streets as if the waters had but newly retired from the face 
   :variants="['contain', 'cover', 'fill', 'none', 'scale-down']"
   prefix='object'
   appended='p-2 w-36 h-42 bg-gray-100'
-  nested=true
+  :nested='true'
   html='&lt;img src="/assets/bg-shop.jpg" class="{class} w-36 h-42 bg-gray-100"&gt;
   &lt;/img&gt;'
 />
@@ -427,7 +427,7 @@ As much mud in the streets as if the waters had but newly retired from the face 
   :variants="['bottom', 'center', 'left', 'left-bottom', 'left-top', 'right', 'right-bottom', 'right-top', 'top']"
   prefix='object'
   appended='object-none w-36 h-42'
-  nested=true
+  :nested='true'
   html='&lt;img src="/assets/bg-shop.jpg" class="{class} w-36 h-42 object-none"&gt;
   &lt;/img&gt;'
 />
@@ -466,7 +466,7 @@ export default {
   fixed='relative text-xs text-white text-center'
   prefix='z'
   appended='z-50 flex flex-col justify-center absolute bg-opacity-80 rounded shadow w-8 h-8 w-36 h-36 bg-green-400 bg-blue-400 bg-red-400  z-30 z-10 z-auto top-0 left-0 top-4 left-4 top-8 top-16 top-20 top-24 left-8 ring'
-  nested=true
+  :nested='true'
   html='&lt;div class="flex flex-col justify-center ring rounded shadow-lg bg-opacity-80 absolute {class} w-36 h-36 bg-green-400 top-0 left-0"&gt;Change my z-index&lt;/div&gt;
   &lt;div class="ring rounded shadow-lg bg-opacity-80 absolute w-8 h-8 z-50 top-0 left-0 bg-blue-400"&gt;z-50&lt;/div&gt;
   &lt;div class="ring rounded shadow-lg bg-opacity-80 absolute w-8 h-8 z-30 top-4 left-4 bg-blue-400"&gt;z-30&lt;/div&gt;

@@ -8,7 +8,7 @@
   variant='table'
   :variants='[]'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table-caption border-collapse text-center table-header-group table-row table-cell table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold'
   html='&lt;div class="{class} text-xs border-collapse"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Council budget&lt;/div&gt;
@@ -45,7 +45,7 @@
   variant='inline-table'
   :variants='[]'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table-caption border-collapse text-center table-header-group table-row table-cell table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold'
   html='&lt;div class="{class} text-xs border-collapse"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Council budget&lt;/div&gt;
@@ -84,7 +84,7 @@
   variant='table-caption'
   :variants='[]'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table border-collapse text-center table-header-group table-row table-cell table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold ring ring-amber-400'
   html='&lt;div class="table text-xs border-collapse"&gt;
     &lt;div class="{class} text-center text-emerald-600 py-2 font-bold ring ring-amber-400"&gt;Council budget&lt;/div&gt;
@@ -121,7 +121,7 @@
   variant='table-cell'
   :variants='[]'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table border-collapse table-caption text-center table-header-group table-row table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold ring ring-offset-2 ring-amber-400'
   html='&lt;div class="table text-xs border-collapse"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Council budget&lt;/div&gt;
@@ -158,7 +158,7 @@
   variant='table-row'
   :variants='[]'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table border-collapse text-center table-caption table-header-group table-row table-cell table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold ring ring-offset-2 ring-amber-400'
   html='&lt;div class="table text-xs border-collapse"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Council budget&lt;/div&gt;
@@ -195,7 +195,7 @@
   variant='table-column'
   :variants='[]'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table text-center border-collapse table-caption table-column-group table-column table-row table-cell text-xs border border-emerald-500 bg-emerald-200 bg-teal-200 bg-yellow-200 bg-green-200 p-1 py-2 text-emerald-600 font-medium font-bold'
   html='&lt;div class="table border-collapse text-xs text-emerald-600"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Superheros&lt;/div&gt;
@@ -224,7 +224,7 @@
   variant='table-row-group'
   :variants='[]'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table border-collapse text-center table-caption table-header-group table-row table-cell table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold ring ring-offset-2 ring-amber-400'
   html='&lt;div class="table text-xs text-emerald-600 border-collapse"&gt;
     &lt;div class="table-caption text-center py-2 font-bold"&gt;Council budget&lt;/div&gt;
@@ -261,7 +261,7 @@
   variant='table-column-group'
   :variants='[]'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table text-center table-caption border-collapse table-column-group table-column table-row table-cell text-xs border border-emerald-500 bg-emerald-200 bg-teal-200 bg-yellow-200 bg-green-200 p-1 py-2 text-emerald-600 font-medium font-bold'
   html='&lt;div class="table text-xs text-emerald-600 border-collapse"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Superheros&lt;/div&gt;
@@ -291,7 +291,7 @@
   variant='table-header-group'
   :variants='[]'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table text-center table-caption border-collapse table-header-group table-row table-cell table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold ring ring-offset-2 ring-amber-400'
   html='&lt;div class="table text-xs border-collapse"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Council budget&lt;/div&gt;
@@ -328,7 +328,7 @@
   variant='table-footer-group'
   :variants='[]'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table text-center table-caption border-collapse table-header-group table-row table-cell table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold ring ring-offset-2 ring-amber-400'
   html='&lt;div class="table text-xs border-collapse"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Council budget&lt;/div&gt;
@@ -366,7 +366,7 @@
   :variants="['auto', 'fixed']"
   prefix='table'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='border-collapse text-center text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold w-2/3'
   html='&lt;table class="{class} text-xs border-collapse w-2/3"&gt;
     &lt;caption class="text-center text-emerald-600 py-2 font-bold"&gt;Council budget&lt;/caption&gt;
@@ -404,7 +404,7 @@
   :variants="['collapse', 'separate']"
   prefix='border'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table table-caption text-center table-header-group table-row table-cell table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold'
   html='&lt;div class="table {class} text-xs"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Council budget&lt;/div&gt;
@@ -442,7 +442,7 @@
   :variants="['top', 'bottom']"
   prefix='caption'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='table table-caption text-center table-header-group table-row table-cell table-row-group table-footer-group text-xs border border-emerald-500 bg-emerald-200 p-1 py-2 text-emerald-600 font-medium font-bold'
   html='&lt;div class="table {class} text-xs"&gt;
     &lt;div class="table-caption text-center text-emerald-600 py-2 font-bold"&gt;Council budget&lt;/div&gt;
@@ -480,7 +480,7 @@
   :variants="['visible', 'hidden']"
   prefix='empty-cells'
   fixed='dark:text-white opacity-85 text-xs'
-  nested=true
+  :nested='true'
   appended='border-separate text-emerald-600 border border-emerald-500 p-1 font-medium font-bold py-2 text-center'
   html='&lt;table class="border-separate text-emerald-600 {class}"&gt;
   &lt;caption class="text-center py-2 font-bold"&gt;Client Info&lt;/caption&gt;

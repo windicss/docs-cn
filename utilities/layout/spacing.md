@@ -8,7 +8,7 @@
   variant='4'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '10', '12', '14', '16', '20', '24', '48', '1.5rem', '32px']"
   prefix='p'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-500 bg-teal-100 flex-shrink-0 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -41,7 +41,7 @@ export default {
   variant='4'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '10', '12', '14', '16', '20', '24', '48', '1.5rem', '32px']"
   prefix='py'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-500 flex-shrink-0 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -57,7 +57,7 @@ export default {
   variant='4'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '10', '12', '14', '16', '20', '24', '48', '1.5rem', '32px']"
   prefix='px'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-500 flex-shrink-0 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -73,7 +73,7 @@ export default {
   variant='4'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '10', '12', '14', '16', '20', '24', '48', '1.5rem', '32px']"
   prefix='pt'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded flex-shrink-0 bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -89,7 +89,7 @@ export default {
   variant='4'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '10', '12', '14', '16', '20', '24', '48', '1.5rem', '32px']"
   prefix='pl'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded flex-shrink-0 bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -105,7 +105,7 @@ export default {
   variant='4'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '10', '12', '14', '16', '20', '24', '48', '1.5rem', '32px']"
   prefix='pb'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center flex-shrink-0 rounded bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -121,7 +121,7 @@ export default {
   variant='4'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '10', '12', '14', '16', '20', '24', '48', '1.5rem', '32px']"
   prefix='pr'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center flex-shrink-0 rounded bg-teal-500 bg-teal-100 w-8 h-8 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -137,7 +137,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-14', '-16', '-20', '-24', '-48', '-1.5rem', '-32px']"
   prefix='m'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-100 bg-green-400 p-2 flex-shrink-0'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -170,7 +170,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-14', '-16', '-20', '-24', '-48', '-1.5rem', '-32px']"
   prefix='my'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-100 bg-green-400 p-2 flex-shrink-0'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -186,7 +186,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-14', '-16', '-20', '-24', '-48', '-1.5rem', '-32px']"
   prefix='mx'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-100 bg-green-400 p-2 flex-shrink-0'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -202,7 +202,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-14', '-16', '-20', '-24', '-48', '-1.5rem', '-32px']"
   prefix='mt'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-100 bg-green-400 p-2 flex-shrink-0'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -218,7 +218,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-14', '-16', '-20', '-24', '-48', '-1.5rem', '-32px']"
   prefix='ml'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-100 bg-green-400 p-2 flex-shrink-0'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -234,7 +234,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-14', '-16', '-20', '-24', '-48', '-1.5rem', '-32px']"
   prefix='mb'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-100 bg-green-400 p-2 flex-shrink-0'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -250,7 +250,7 @@ export default {
   variant='4'
   :variants="['0', 'px', 'auto', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-14', '-16', '-20', '-24', '-48', '-1.5rem', '-32px']"
   prefix='mr'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-100 bg-green-400 p-2 flex-shrink-0'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -266,7 +266,7 @@ export default {
   variant='2'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-14', '-16', '-20', '-24', '-48', '-1.5rem', '-32px']"
   prefix='space-y'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='flex items-center flex-col rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center flex-col {class} bg-teal-100 rounded-md p-1"&gt;
@@ -301,7 +301,7 @@ export default {
   variant='reverse'
   :variants="[]"
   prefix='space-y'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='flex items-center flex-col-reverse rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1 space-y-2 space-y-reverse'
   html='&lt;div class="flex items-center flex-col-reverse space-y-2 space-y-reverse bg-teal-100 rounded-md p-1"&gt;
@@ -319,7 +319,7 @@ export default {
   variant='2'
   :variants="['0', 'px', '0.5', '1', '2', '4', '8', '12', '14', '16', '20', '24', '48', '1.5rem', '32px', '-px', '-0.5', '-2', '-4', '-8', '-12', '-14', '-16', '-20', '-24', '-48', '-1.5rem', '-32px']"
   prefix='space-x'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center {class} bg-teal-100 rounded-md p-1"&gt;
@@ -354,7 +354,7 @@ export default {
   variant='reverse'
   :variants="[]"
   prefix='space-x'
-  nested=true
+  :nested='true'
   fixed='!block'
   appended='flex items-center flex-row-reverse rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1 space-x-2 space-x-reverse'
   html='&lt;div class="flex items-center flex-row-reverse space-x-2 space-x-reverse bg-teal-100 rounded-md p-1"&gt;

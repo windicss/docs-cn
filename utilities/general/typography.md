@@ -205,7 +205,7 @@ export default {
   prefix='hyphens'
   fixed='dark:text-white opacity-85 overflow-hidden'
   appended='border border-blue-300 border-dashed p-2'
-  nested=true
+  :nested='true'
   html="&lt;p class='{class} border p-2 border-blue-300 border-dashed'&gt;An extra&shy;ordinarily long English word!&lt;/&gt;"
 />
 
@@ -278,7 +278,7 @@ export default {
   :variants="['', '0', '2', '4', '8', '7.5px', '2rem']"
   fixed='dark:text-white opacity-85 overflow-scroll font-mono text-xs'
   prefix='tab'
-  nested=true
+  :nested='true'
   appended='w-full whitespace-pre-wrap'
   html="&lt;p class='w-full whitespace-pre-wrap {class}'&gt;without tab
 	with 1 tab
@@ -310,7 +310,7 @@ export default {
   variant='left'
   :variants="['left', 'center', 'right', 'justify']"
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   prefix='text'
   html="&lt;p class='{class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
@@ -324,7 +324,7 @@ export default {
   type='color'
   prefix='text'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   html="&lt;p class='{class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
 
@@ -409,7 +409,7 @@ export default {
   prefix='decoration'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='underline decoration-teal-600'
-  nested=true
+  :nested='true'
   html="&lt;p class='text-black underline decoration-teal-600 {class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
 
@@ -469,7 +469,7 @@ export default {
   prefix='underline-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='underline underline-teal-600 underline-2'
-  nested=true
+  :nested='true'
   html="&lt;p class='text-black underline underline-2 underline-teal-600 {class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
 
@@ -530,7 +530,7 @@ export default {
   prefix='text-opacity'
   fixed='p-2 opacity-85 overflow-hidden'
   appended='text-black'
-  nested=true
+  :nested='true'
   html="&lt;p class='text-black {class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
 
@@ -660,7 +660,7 @@ export default {
   variant='truncate'
   :variants="['truncate', 'overflow-ellipsis', 'overflow-clip']"
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   html="&lt;p class='{class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
 
@@ -673,7 +673,7 @@ export default {
   :variants="['baseline', 'top', 'middle', 'bottom', 'text-top', 'text-bottom']"
   fixed='p-2 dark:text-white opacity-85'
   prefix='align'
-  nested=true
+  :nested='true'
   appended='leading-none relative inline-block w-0 h-8 absolute top-0 border-blue-300 border-t border-b border-dashed w-full h-4 relative z-10 text-blue-500 font-medium'
   html='&lt;div class="leading-none relative"&gt;
     &lt;span class="w-0 h-8 inline-block {class}"&gt;
@@ -693,7 +693,7 @@ export default {
   :variants="['normal', 'nowrap', 'pre', 'pre-line', 'pre-wrap']"
   fixed='p-2 dark:text-white opacity-85 overflow-scroll'
   prefix='whitespace'
-  nested=true
+  :nested='true'
   appended='w-full'
   html="&lt;p class='w-full {class}'&gt;First Line
       Second Line
@@ -711,7 +711,7 @@ export default {
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   prefix='break'
   appended='w-4/5 mx-auto bg-blue-200'
-  nested=true
+  :nested='true'
   html="&lt;div class='w-4/5 mx-auto bg-blue-200'&gt;&lt;p class='w-full {class}'&gt;The quick brown fox jumps over the lazy dog
   abcdefghijklmnopqrstuvw&lt;/&gt;&lt;/div&gt;"
 />

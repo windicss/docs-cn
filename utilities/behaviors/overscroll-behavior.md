@@ -14,7 +14,7 @@ Utilities for controlling how the browser behaves when reaching the boundary of 
   :variants="['auto', 'none', 'contain', 'x-auto', 'x-none', 'x-contain', 'y-auto', 'y-none', 'y-contain']"
   prefix='overscroll'
   fixed='dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='bg-blue-100 dark:bg-blue-400 p-2 rounded-md text-xs overflow-auto'
   html='&lt;div class="bg-blue-100 dark:bg-blue-400 p-2 rounded-md text-xs overflow-auto {class}"&gt;
 The value of Pi is

@@ -9,7 +9,7 @@
   :variants="['none', 'spin', 'ping', 'pulse', 'bounce']"
   prefix='animate'
   fixed='p-2 dark:text-white opacity-85 h-full flex flex-col justify-center'
-  nested=true
+  :nested='true'
   appended='transition ease-in-out focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4 ring-blue-500 ring-opacity-50 cursor-pointer transform hover:scale-110 hover:-translate-y-1'
   html='&lt;button tabindex="-1"; class="transition {class} ease-in-out focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4 ring-blue-500 ring-opacity-50 cursor-pointer transform hover:scale-110 hover:-translate-y-1"&gt;
     Click me
@@ -59,7 +59,7 @@ export default {
   prefix='appearance'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden flex flex-col justify-center space-y-5 h-full bg-blue-100 rounded-md'
   appended='w-12'
-  nested=true
+  :nested='true'
   html='
   &lt;select class="w-12"&gt;
   &lt;option&gt;Yes&lt;/option&gt;
@@ -80,7 +80,7 @@ export default {
   :variants="['slice', 'clone']"
   prefix='decoration'
   fixed='dark:text-white opacity-85 overflow-hidden p-2 h-full'
-  nested=true
+  :nested='true'
   appended='text-5xl font-extrabold bg-gradient-to-r from-green-400 to-blue-500 rounded-16px px-4 text-sm text-white'
   html="
 &lt;div&gt;
@@ -97,7 +97,7 @@ export default {
   type='color'
   prefix='caret'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='bg-gray-100 py-2 rounded px-4 w-full border border-gray-400'
   html="&lt;input class='{class} bg-gray-100 border border-gray-400 py-2 rounded px-4 w-full' placeholder='Focus Me'&gt;"
 />
@@ -127,7 +127,7 @@ export default {
   type='opacity'
   prefix='caret-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='bg-gray-100 py-2 rounded px-4 w-full border border-gray-400 caret-blue-500'
   html="&lt;input class='caret-blue-500 {class} bg-gray-100 border border-gray-400 py-2 rounded px-4 w-full' placeholder='Focus Me'&gt;"
 />
@@ -158,7 +158,7 @@ export default {
   prefix='cursor'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-blue-500 ring-4 ring-opacity-50'
-  nested=true
+  :nested='true'
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4 ring-blue-500 ring-opacity-50 {class}&quot;&gt;
     Hover me
   &lt;/button&gt;'
@@ -196,7 +196,7 @@ export default {
   prefix='image-render'
   fixed='p-2 dark:text-white opacity-85'
   appended='w-full h-32'
-  nested=true
+  :nested='true'
   html="&lt;img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAACdJREFUCB1j9Pf3/88ABMmMjCCKgQlMIhGMu3btAquY9mMDWBhDBQAutwfDrUlKzQAAAABJRU5ErkJggg==' class='{class} w-full h-32'&gt;"
 />
 
@@ -209,7 +209,7 @@ export default {
   :variants="['none', 'disc', 'circle', 'square', 'decimal', 'zero-decimal', 'greek', 'roman', 'upper-roman', 'alpha', 'upper-alpha']"
   prefix='list'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   html="&lt;ul class='{class}'&gt;
   &lt;li&gt;One&lt;/li&gt;
   &lt;li&gt;Two&lt;/li&gt;
@@ -244,7 +244,7 @@ export default {
   :variants="['inside', 'outside']"
   prefix='list'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='bg-blue-200 bg-blue-300'
   html="&lt;ul class='{class} bg-blue-300'&gt;
   &lt;li class='bg-blue-200'&gt;One&lt;/li&gt;
@@ -263,7 +263,7 @@ export default {
   prefix='outline'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400'
-  nested=true
+  :nested='true'
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 {class}&quot;&gt;
     Button
   &lt;/button&gt;'
@@ -277,7 +277,7 @@ export default {
   prefix='outline-solid'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400'
-  nested=true
+  :nested='true'
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 {class}&quot;&gt;
     Button
   &lt;/button&gt;'
@@ -291,7 +291,7 @@ export default {
   prefix='outline-dotted'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400'
-  nested=true
+  :nested='true'
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 {class}&quot;&gt;
     Button
   &lt;/button&gt;'
@@ -336,7 +336,7 @@ export default {
   :variants="['auto', 'hidden', 'visible', 'scroll', 'x-auto', 'x-hidden', 'x-visible', 'x-scroll', 'y-auto', 'y-hidden', 'y-visible', 'y-scroll']"
   prefix='overflow'
   fixed='dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='bg-blue-100 dark:bg-blue-400 p-2 rounded-md text-xs'
   html='&lt;div class="bg-blue-100 dark:bg-blue-400 p-2 rounded-md text-xs {class}"&gt;
 The value of Pi is
@@ -361,7 +361,7 @@ The value of Pi is
   :variants="['auto', 'none', 'contain', 'x-auto', 'x-none', 'x-contain', 'y-auto', 'y-none', 'y-contain']"
   prefix='overscroll'
   fixed='dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='bg-blue-100 dark:bg-blue-400 p-2 rounded-md text-xs overflow-auto'
   html='&lt;div class="bg-blue-100 dark:bg-blue-400 p-2 rounded-md text-xs overflow-auto {class}"&gt;
 The value of Pi is
@@ -380,7 +380,7 @@ The value of Pi is
   type='color'
   prefix='placeholder'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='bg-gray-100 py-2 rounded px-4 w-full border border-gray-400'
   html="&lt;input class='{class} bg-gray-100 border border-gray-400 py-2 rounded px-4 w-full' placeholder='Placeholder'&gt;"
 />
@@ -410,7 +410,7 @@ export default {
   type='opacity'
   prefix='placeholder-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='bg-gray-100 py-2 rounded px-4 w-full border border-gray-400 placeholder-black'
   html="&lt;input class='placeholder-black {class} bg-gray-100 border border-gray-400 py-2 rounded px-4 w-full' placeholder='Placeholder'&gt;"
 />
@@ -441,7 +441,7 @@ export default {
   prefix='pointer-events'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='underline text-blue-500'
-  nested=true
+  :nested='true'
   html='&lt;a href="/" class="underline text-blue-500 {class}"&gt;
     Click this link to return to the homepage
   &lt;/a&gt;'
@@ -457,7 +457,7 @@ export default {
   prefix='resize'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none border rounded-md m-0 w-30 h-30 bg-blue-300'
-  nested=true
+  :nested='true'
   html='&lt;textarea class=&quot;{class} focus:outline-none border rounded-md m-0 w-30 h-30 bg-blue-300&quot;&gt;&lt;/textarea&gt;'
 />
 

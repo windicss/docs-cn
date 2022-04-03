@@ -12,7 +12,7 @@ Utilities for controlling the border width between elements.
   prefix='divide-y'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='w-full py-2 text-center divide-y divide-teal-500'
-  nested=true
+  :nested='true'
   html='&lt;div class=&quot;w-full divide-y divide-teal-500 {class}&quot;&gt;
   &lt;div class="text-center py-2"&gt;1&lt;/div&gt;
   &lt;div class="text-center py-2"&gt;2&lt;/div&gt;
@@ -28,7 +28,7 @@ Utilities for controlling the border width between elements.
   prefix='divide-x'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='w-full px-4 text-center divide-x divide-teal-500 flex items-center'
-  nested=true
+  :nested='true'
   html='&lt;div class=&quot;w-full divide-x divide-teal-500 flex items-center {class}&quot;&gt;
   &lt;div class="text-center px-4"&gt;1&lt;/div&gt;
   &lt;div class="text-center px-4"&gt;2&lt;/div&gt;
@@ -86,7 +86,7 @@ Utilities for controlling the border color between elements.
   prefix='divide'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='w-full py-2 text-center divide-y'
-  nested=true
+  :nested='true'
   html='&lt;div class=&quot;w-full divide-y {class}&quot;&gt;
   &lt;div class="text-center py-2"&gt;1&lt;/div&gt;
   &lt;div class="text-center py-2"&gt;2&lt;/div&gt;
@@ -121,7 +121,7 @@ Utilities for controlling the opacity borders between elements.
   prefix='divide-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='w-full py-2 text-center divide-y divide-blue-500'
-  nested=true
+  :nested='true'
   html='&lt;div class=&quot;w-full divide-y divide-blue-500 {class}&quot;&gt;
   &lt;div class="text-center py-2"&gt;1&lt;/div&gt;
   &lt;div class="text-center py-2"&gt;2&lt;/div&gt;
@@ -158,7 +158,7 @@ Utilities for controlling the border style between elements.
   prefix='divide'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='w-full py-2 text-center divide-y divide-blue-500'
-  nested=true
+  :nested='true'
   html='&lt;div class=&quot;w-full divide-y divide-blue-500 {class}&quot;&gt;
   &lt;div class="text-center py-2"&gt;1&lt;/div&gt;
   &lt;div class="text-center py-2"&gt;2&lt;/div&gt;
