@@ -1,9 +1,9 @@
 import docsearch from '@docsearch/js'
 import { useData, useRoute, useRouter } from 'vitepress'
 import { getCurrentInstance, onMounted, watch } from 'vue'
+import React from 'preact/compat'
 
 import type { DefaultTheme } from '@/config'
-import type { DocSearchHit } from '@docsearch/react/dist/esm/types'
 
 export function useSearchBox(props: Readonly<{
   options: DefaultTheme.AlgoliaSearchOptions
@@ -42,7 +42,7 @@ export function useSearchBox(props: Readonly<{
     return pathname + hash
   }
 
-  function update(options: any) {
+  function update(options: DefaultTheme.AlgoliaSearchOptions) {
     if (vm && vm.vnode.el) {
       vm.vnode.el.innerHTML
         = `<div class="algolia-search-box" id="${searchId}"></div>`
@@ -52,7 +52,7 @@ export function useSearchBox(props: Readonly<{
 
   const { lang } = useData()
 
-  function initialize(userOptions: any) {
+  function initialize(userOptions: DefaultTheme.AlgoliaSearchOptions) {
     // if the user has multiple locales, the search results should be filtered
     // based on the language
     const facetFilters = props.multilang ? [`language:${lang.value}`] : []
@@ -67,19 +67,19 @@ export function useSearchBox(props: Readonly<{
           ),
         }),
         navigator: {
-          navigate: ({ suggestionUrl }: { suggestionUrl: string }) => {
+          navigate: ({ itemUrl }) => {
             const { pathname: hitPathname } = new URL(
-              window.location.origin + suggestionUrl,
+              window.location.origin + itemUrl,
             )
             // Router doesn't handle same-page navigation so we use the native
             // browser location API for anchor navigation
             if (route.path === hitPathname)
-              window.location.assign(window.location.origin + suggestionUrl)
+              window.location.assign(window.location.origin + itemUrl)
             else
-              router.go(suggestionUrl)
+              router.go(itemUrl)
           },
         },
-        transformItems: (items: DocSearchHit[]) => {
+        transformItems: (items) => {
           return items.map((item) => {
             return Object.assign({}, item, {
               url: getRelativePath(item.url),
@@ -89,19 +89,13 @@ export function useSearchBox(props: Readonly<{
         hitComponent: ({
           hit,
           children,
-        }: {
-          hit: DocSearchHit
-          children: any
         }) => {
           const relativeHit = hit.url.startsWith('http')
             ? getRelativePath(hit.url as string)
             : hit.url
-          return {
-            type: 'a',
-            ref: undefined,
-            constructor: undefined,
-            key: undefined,
-            props: {
+          // @ts-ignore
+          return React.createElement('a',
+            {
               href: hit.url,
               onClick: (event: MouseEvent) => {
                 if (isSpecialClick(event))
@@ -120,11 +114,11 @@ export function useSearchBox(props: Readonly<{
 
                 router.go(relativeHit)
               },
-              children,
             },
-          }
+            children,
+          )
         },
-      }),
+      } as Omit<Parameters<typeof docsearch>[0], 'appId' | 'apiKey' | 'indexName'>),
     )
   }
 

@@ -4,7 +4,7 @@ const site = isProd ? 'https://windicss.org' : 'http://localhost:3000'
 
 export const metaData = {
   title: 'Windi CSS',
-  description: '下一代工具类 CSS 框架',
+  description: 'Next generation utility-first CSS framework.',
   site,
   image: `${site}/assets/og-image.png`,
 }
