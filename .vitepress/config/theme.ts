@@ -14,7 +14,7 @@ const themeConfig: DefaultTheme.Config = {
   docsBranch: 'main',
   docsRepo: 'windicss/docs',
   editLinks: true,
-  editLinkText: 'Suggest changes to this page',
+  editLinkText: '对此篇文档有建议？戳这里反馈给我们',
   nav,
   sidebar,
 }
