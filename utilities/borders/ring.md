@@ -10,7 +10,7 @@ Utilities for creating outline rings with box-shadows.
   prefix='ring'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-blue-500'
-  nested=true
+  :nested='true'
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 {class} ring-blue-500&quot;&gt;
     Button
   &lt;/button&gt;'
@@ -44,7 +44,7 @@ Utilities for setting the color of outline rings.
   prefix='ring'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4'
-  nested=true
+  :nested='true'
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4 {class}&quot;&gt;
     Button
   &lt;/button&gt;'
@@ -77,7 +77,7 @@ Utilities for setting the opacity of outline rings.
   prefix='ring-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-blue-500 ring-4'
-  nested=true
+  :nested='true'
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4 ring-blue-500 {class}&quot;&gt;
     Button
   &lt;/button&gt;'
@@ -111,7 +111,7 @@ Utilities for simulating an offset when adding outline rings.
   prefix='ring-offset'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 ring-offset-green-400'
-  nested=true
+  :nested='true'
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 {class} ring-offset-green-400&quot;&gt;
     Button
   &lt;/button&gt;'
@@ -146,7 +146,7 @@ Utilities for setting the color of outline ring offsets.
   prefix='ring-offset'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 ring-offset-4'
-  nested=true
+  :nested='true'
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring ring-blue-500 ring-offset-4 {class}&quot;&gt;
     Button
   &lt;/button&gt;'

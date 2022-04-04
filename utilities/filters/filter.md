@@ -7,7 +7,7 @@ Utilities for enabling and disabling filters on an element.
   :variants="['', 'none']"
   prefix='filter'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='!hue-rotate-30 w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 {class} !hue-rotate-30"&gt;'
 />
@@ -19,7 +19,7 @@ Utilities for enabling and disabling filters on an element.
   :variants="['', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', '0', '1', '2', '3', '9', '12', '24px', '2rem']"
   prefix='blur'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -47,7 +47,7 @@ export default {
   :variants="['0', '50', '75', '90', '95', '100', '105', '110', '115', '125', '150', '175', '200', '251']"
   prefix='brightness'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -75,7 +75,7 @@ export default {
   :variants="['0', '50', '75', '90', '95', '100', '105', '110', '115', '125', '150', '175', '200', '251']"
   prefix='contrast'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -103,7 +103,7 @@ export default {
   :variants="['', 'sm', 'md', 'lg', 'xl', '2xl', 'none']"
   prefix='drop-shadow'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -130,7 +130,7 @@ export default {
   :variants="['', '0', '5', '10', '20', '25', '30', '40' ,'50', '60', '70', '75', '80', '90', '95', '100']"
   prefix='grayscale'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -157,7 +157,7 @@ export default {
   :variants="['0', '15', '30', '45', '60', '90', '120', '180', '-120', '-90', '-60', '-45', '-30', '-15']"
   prefix='hue-rotate'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='w-24 h-24 filter'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -185,7 +185,7 @@ export default {
   :variants="['', '0', '5', '10', '20', '25', '30', '40' ,'50', '60', '70', '75', '80', '90', '95', '100']"
   prefix='invert'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -212,7 +212,7 @@ export default {
   :variants="['', '0', '5', '10', '20', '25', '30', '40' ,'50', '60', '70', '75', '80', '90', '95', '100']"
   prefix='saturate'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />
@@ -240,7 +240,7 @@ export default {
   :variants="['', '0', '5', '10', '20', '25', '30', '40' ,'50', '60', '70', '75', '80', '90', '95', '100']"
   prefix='sepia'
   fixed='p-2 dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='filter w-24 h-24'
   html='&lt;img src="/assets/logo.png" class="w-24 h-24 filter {class}"&gt;'
 />

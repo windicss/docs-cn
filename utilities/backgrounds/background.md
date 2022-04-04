@@ -9,7 +9,7 @@
   :variants="['fixed', 'local', 'scroll']"
   prefix='bg'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden flex'
-  nested=true
+  :nested='true'
   appended='w-full h-full overflow-y-scroll bg-center bg-no-repeat'
   html='&lt;div class="{class} w-full h-full overflow-y-scroll bg-no-repeat bg-center" style="background-image:url(&#39;/assets/bg-blue.svg&#39;);"
 &gt;&lt;p&gt;The quick brown fox jumps over the lazy dog. The quick brown fox jumps over the lazy dog.&lt;/p&gt;&lt;/div&gt;'
@@ -24,7 +24,7 @@
   :variants="['border', 'padding', 'content']"
   prefix='bg-clip'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='p-6 bg-cover rounded-md bg-blue-300 border-4 border-blue-400 border-dashed font-extrabold text-white flex justify-center items-center py-2'
   html="&lt;div class=&quot;{class} p-6 bg-cover rounded-md bg-blue-300 border-4 border-blue-400 border-dashed font-extrabold text-white flex justify-center items-center&quot;&gt;
       &lt;span class=&quot;py-2&quot;&gt;Hello World&lt;/span&gt;
@@ -36,7 +36,7 @@
   :variants="[]"
   prefix='bg-clip'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='text-5xl font-extrabold bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500'
   html="&lt;div class=&quot;text-5xl font-extrabold&quot;&gt;
   &lt;span class=&quot;bg-clip-text text-transparent bg-gradient-to-r from-green-400 to-blue-500&quot;&gt;
@@ -54,7 +54,7 @@
   type='color'
   prefix='bg'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='p-2 rounded-md'
   html="&lt;div class='{class} p-2 rounded-md'&gt;&lt;p&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;&lt;/div&gt;"
 />
@@ -85,7 +85,7 @@ export default {
   type='opacity'
   prefix='bg-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='p-2 rounded-md bg-blue-500'
   html="&lt;div class='bg-blue-500 {class} p-2 rounded-md'&gt;&lt;p&gt;The quick brown fox jumps over the lazy dog&lt;/p&gt;&lt;/div&gt;"
 />
@@ -115,7 +115,7 @@ export default {
   :variants="['bottom', 'center', 'left', 'left-bottom', 'left-top', 'right', 'right-bottom', 'right-top', 'top']"
   prefix='bg'
   fixed='dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='mx-auto bg-blue-300 rounded-md w-full bg-no-repeat'
   html='&lt;div class=&quot;mx-auto {class} bg-blue-300 rounded-md w-full bg-no-repeat&quot; style=&quot;background-image:url(&#39;/assets/bg-square.svg&#39;);aspect-ratio: 1 / 1;&quot;&gt;&lt;/div&gt;'
 />
@@ -153,7 +153,7 @@ export default {
   :variants="['repeat', 'no-repeat', 'repeat-x', 'repeat-y', 'repeat-round', 'repeat-space']"
   prefix='bg'
   fixed='h-full dark:text-white opacity-85'
-  nested=true
+  :nested='true'
   appended='mx-auto w-full bg-blue-300 rounded-md'
   html='&lt;div class=&quot;mx-auto w-full bg-blue-300 rounded-md {class}&quot; style=&quot;background-image:url(&#39;/assets/bg-square.svg&#39;);aspect-ratio: 1 / 1;&quot;&gt;
   &lt;/div&gt;'
@@ -168,7 +168,7 @@ export default {
   :variants="['auto', 'cover', 'contain']"
   prefix='bg'
   fixed='dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='w-full h-full bg-no-repeat bg-center'
   html="&lt;div class=&quot;w-full h-full {class} bg-no-repeat bg-center&quot; style=&quot;background-image:url(&#39;/assets/bg-blue.svg&#39;);&quot;&gt;
   &lt;/div&gt;"
@@ -201,7 +201,7 @@ export default {
   :variants="['border', 'padding', 'content']"
   prefix='bg-origin'
   fixed='dark:text-white opacity-85 overflow-hidden'
-  nested=true
+  :nested='true'
   appended='p-6 rounded-md border-4 border-blue-400 border-dashed font-extrabold text-white flex justify-center items-center bg-no-repeat'
   html='&lt;div class="{class} bg-no-repeat p-6 rounded-md border-4 border-blue-400 border-dashed font-extrabold text-white flex justify-center items-center" style="background-image: url(/assets/bg-shop.jpg);"&gt;
       &lt;span&gt;Hello World&lt;/span&gt;

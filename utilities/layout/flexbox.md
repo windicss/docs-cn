@@ -7,7 +7,7 @@
 <PlaygroundWithVariants
   variant='flex'
   :variants="[]"
-  nested=true
+  :nested='true'
   fixed='pt-20'
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 space-x-2 w-6 h-6'
   html='&lt;div class="{class} bg-teal-100 rounded-md p-2 space-x-2"&gt;
@@ -31,7 +31,7 @@ Utilities for controlling the initial size of flex items.
     '5/12', '6/12', '7/12', '8/12', '9/12', '10/12', '11/12', 'full'
   ]"
   prefix="basis"
-  nested=true
+  :nested='true'
   fixed='pt-20'
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 flex flex-row space-x-2 w-6 h-6'
   html='&lt;div class="bg-teal-100 rounded-md p-2 flex flex-row space-x-2"&gt;
@@ -49,7 +49,7 @@ Utilities for controlling the initial size of flex items.
   variant='inline-flex'
   :variants="[]"
   fixed='pt-20'
-  nested=true
+  :nested='true'
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 space-x-2 w-6 h-6'
   html='&lt;div class="{class} bg-teal-100 rounded-md p-2 space-x-2"&gt;
 &lt;div class="rounded-md bg-teal-500 w-6 h-6"&gt;&lt;/div&gt;
@@ -66,7 +66,7 @@ Utilities for controlling the initial size of flex items.
   variant='row'
   :variants="['row', 'row-reverse', 'col', 'col-reverse']"
   prefix='flex'
-  nested=true
+  :nested='true'
   fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center {class} bg-teal-100 rounded-md p-1"&gt;
@@ -84,7 +84,7 @@ Utilities for controlling the initial size of flex items.
   variant='wrap'
   :variants="['wrap', 'wrap-reverse', 'nowrap']"
   prefix='flex'
-  nested=true
+  :nested='true'
   fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-teal-400 bg-yellow-400 bg-green-400 bg-blue-400 bg-purple-400 m-1 p-1'
   html='&lt;div class="flex items-center {class} bg-teal-100 rounded-md p-1"&gt;
@@ -105,7 +105,7 @@ Utilities for controlling the initial size of flex items.
   variant='1'
   :variants="['1', 'auto', 'initial', 'none']"
   prefix='flex'
-  nested=true
+  :nested='true'
   fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center bg-teal-100 rounded-md p-1"&gt;
@@ -142,7 +142,7 @@ export default {
   variant='grow-0'
   :variants="['grow-0', 'grow']"
   prefix='flex'
-  nested=true
+  :nested='true'
   fixed='pt-20'
   appended='flex items-center rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-green-400 bg-blue-400 m-1 p-1'
   html='&lt;div class="flex items-center bg-teal-100 rounded-md p-1"&gt;
@@ -176,7 +176,7 @@ export default {
   variant='shrink-0'
   :variants="['shrink-0', 'shrink']"
   prefix='flex'
-  nested=true
+  :nested='true'
   fixed='pt-20'
   appended='flex items-center flex-nowrap rounded-md bg-teal-500 bg-teal-100 w-6 h-6 bg-red-400 bg-teal-400 bg-yellow-400 bg-green-400 bg-blue-400 bg-purple-400 m-1 p-1'
   html='&lt;div class="flex items-center flex-nowrap bg-teal-100 rounded-md p-1"&gt;

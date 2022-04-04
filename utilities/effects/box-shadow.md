@@ -10,7 +10,7 @@
   prefix='shadow'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='bg-teal-400 w-full h-32 rounded-md'
-  nested=true
+  :nested='true'
   html='&lt;div class=&quot;bg-teal-400 w-full h-32 rounded-md {class}&quot;&gt;&lt;/div&gt;'
 />
 
@@ -44,7 +44,7 @@ export default {
   prefix='shadow'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='bg-teal-400 w-full h-32 rounded-md shadow-2xl'
-  nested=true
+  :nested='true'
   html='&lt;div class=&quot;bg-teal-400 w-full h-32 rounded-md shadow-2xl {class}&quot;&gt;&lt;/div&gt;'
 />
 

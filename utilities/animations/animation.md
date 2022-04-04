@@ -7,7 +7,7 @@ Utilities for animating elements with CSS animations.
   :variants="['none', 'spin', 'ping', 'pulse', 'bounce']"
   prefix='animate'
   fixed='p-2 dark:text-white opacity-85 h-full flex flex-col justify-center'
-  nested=true
+  :nested='true'
   appended='transition ease-in-out focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4 ring-blue-500 ring-opacity-50 cursor-pointer transform hover:scale-110 hover:-translate-y-1'
   html='&lt;button tabindex="-1"; class="transition {class} ease-in-out focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4 ring-blue-500 ring-opacity-50 cursor-pointer transform hover:scale-110 hover:-translate-y-1"&gt;
     Click me

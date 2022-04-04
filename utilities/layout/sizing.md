@@ -9,7 +9,7 @@
   :variants="['auto', 'px', 'full', 'screen', 'min', 'max', 'prose', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'screen-sm', 'screen-md', 'screen-lg', 'screen-xl', 'screen-2xl',
     '0', '1', '1.5', '2', '4', '8', '10', '12', '14', '18', '20', '24', '1/2', '1/3', '3/5', '11/12', '4rem', '60px']"
   prefix='w'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-500 bg-teal-100 flex-shrink-0 h-auto bg-green-400 m-1 p-2'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -42,7 +42,7 @@ export default {
   :variants="['none', 'px', 'full', 'screen', 'min', 'max', 'prose', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'screen-sm', 'screen-md', 'screen-lg', 'screen-xl', 'screen-2xl',
     '0', '1', '1.5', '2', '4', '8', '10', '12', '14', '18', '20', '24', '1/2', '1/3', '3/5', '11/12', '4rem', '60px']"
   prefix='min-w'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-500 bg-teal-100 flex-shrink-0 h-auto bg-green-400 m-1 p-2'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -74,7 +74,7 @@ export default {
   :variants="['none', 'px', 'full', 'screen', 'min', 'max', 'prose', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'screen-sm', 'screen-md', 'screen-lg', 'screen-xl', 'screen-2xl',
     '0', '1', '1.5', '2', '4', '8', '10', '12', '14', '18', '20', '24', '1/2', '1/3', '3/5', '11/12', '4rem', '60px']"
   prefix='max-w'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-500 bg-teal-100 flex-shrink-0 h-auto bg-green-400 m-1 p-2'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -107,7 +107,7 @@ export default {
   :variants="['auto', 'px', 'full', 'screen', 'min', 'max', 'prose', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'screen-sm', 'screen-md', 'screen-lg', 'screen-xl', 'screen-2xl',
     '0', '1', '1.5', '2', '4', '8', '10', '12', '14', '18', '20', '24', '1/2', '1/3', '3/5', '11/12', '4rem', '60px']"
   prefix='h'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-500 bg-teal-100 flex-shrink-0 w-auto bg-green-400 m-1 p-2'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -141,7 +141,7 @@ export default {
   :variants="['none', 'px', 'full', 'screen', 'min', 'max', 'prose', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'screen-sm', 'screen-md', 'screen-lg', 'screen-xl', 'screen-2xl',
     '0', '1', '1.5', '2', '4', '8', '10', '12', '14', '18', '20', '24', '1/2', '1/3', '3/5', '11/12', '4rem', '60px']"
   prefix='min-h'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-500 bg-teal-100 flex-shrink-0 w-auto bg-green-400 m-1 p-2'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -176,7 +176,7 @@ export default {
   :variants="['none', 'px', 'full', 'screen', 'min', 'max', 'prose', 'xs', 'sm', 'md', 'lg', 'xl', '2xl', '3xl', 'screen-sm', 'screen-md', 'screen-lg', 'screen-xl', 'screen-2xl',
     '0', '1', '1.5', '2', '4', '8', '10', '12', '14', '18', '20', '24', '1/2', '1/3', '3/5', '11/12', '4rem', '60px']"
   prefix='max-h'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-500 bg-teal-100 flex-shrink-0 w-auto bg-green-400 m-1 p-2'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;
@@ -214,7 +214,7 @@ export default {
   variant='border'
   :variants="['border', 'content']"
   prefix='box'
-  nested=true
+  :nested='true'
   fixed='text-white text-xs'
   appended='inline-flex items-center rounded bg-teal-500 bg-teal-100 flex-shrink-0 w-full h-32 bg-green-400 text-center flex flex-col justify-center m-1 p-2'
   html='&lt;div class="inline-flex items-center bg-teal-100 rounded"&gt;

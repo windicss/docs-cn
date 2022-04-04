@@ -10,6 +10,6 @@ but this can sometimes be a problem if we want the image to preserve its origina
   prefix='image-render'
   fixed='p-2 dark:text-white opacity-85'
   appended='w-full h-32'
-  nested=true
+  :nested='true'
   html="&lt;img src='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAAECAYAAACp8Z5+AAAAAXNSR0IArs4c6QAAACdJREFUCB1j9Pf3/88ABMmMjCCKgQlMIhGMu3btAquY9mMDWBhDBQAutwfDrUlKzQAAAABJRU5ErkJggg==' class='{class} w-full h-32'&gt;"
 />
