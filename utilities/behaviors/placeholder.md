@@ -9,7 +9,11 @@ Utilities for controlling the color of placeholder text.
   type='color'
   prefix='placeholder'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096
   appended='bg-gray-100 py-2 rounded px-4 w-full border border-gray-400'
   html="&lt;input class='{class} bg-gray-100 border border-gray-400 py-2 rounded px-4 w-full' placeholder='Placeholder'&gt;"
 />
@@ -39,7 +43,11 @@ Utilities for controlling the opacity of an element's placeholder color.
   type='opacity'
   prefix='placeholder-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096
   appended='bg-gray-100 py-2 rounded px-4 w-full border border-gray-400 placeholder-black'
   html="&lt;input class='placeholder-black {class} bg-gray-100 border border-gray-400 py-2 rounded px-4 w-full' placeholder='Placeholder'&gt;"
 />

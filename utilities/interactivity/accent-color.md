@@ -11,4 +11,8 @@ Utilities for controlling the accented color of a form control.
   :nested="true"
   html='&lt;label class="text-xs"&gt;&lt;input type="checkbox" checked /&gt; Browser default&lt;/label&gt;
   &lt;label class="text-xs"&gt;&lt;input type="checkbox" class="{class}" checked /&gt; Customized&lt;/label&gt;'
+<<<<<<< HEAD
 />
+=======
+/>
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096

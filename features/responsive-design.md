@@ -10,7 +10,11 @@
 
 ## 自定义范围 {#custom-range}
 
+<<<<<<< HEAD
 默认情况下，Windi CSS 的断点被设计为移动端优先。
+=======
+By default, Windi CSS's breakpoints are designed as Mobile First.
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096
 
 这就意味着没有前缀的工具类（比如：`p-1`） 作用在所有尺寸的屏幕上，而带有前缀的工具类（比如：`md:p-2`）只在**指定断点及以上尺寸**起作用。
 

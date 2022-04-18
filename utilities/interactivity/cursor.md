@@ -8,7 +8,11 @@ Utilities for controlling the cursor style when hovering over an element.
   prefix='cursor'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-blue-500 ring-4 ring-opacity-50'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 ring-4 ring-blue-500 ring-opacity-50 {class}&quot;&gt;
     Hover me
   &lt;/button&gt;'

@@ -18,7 +18,11 @@ Use sr-only to hide an element visually without hiding it from screen readers:
 </a>
 ```
 
+<<<<<<< HEAD
 Use not-sr-only to undo sr-only, making an element visible to sighted users as well as screen readers. This can be 
+=======
+Use not-sr-only to undo sr-only, making an element visible to sighted users as well as screen readers. This can be
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096
 useful when you want to visually hide something on small screens but show it on larger screens for example:
 
 ```html
@@ -28,7 +32,11 @@ useful when you want to visually hide something on small screens but show it on 
 </a>
 ```
 
+<<<<<<< HEAD
 By default, responsive and focus variants are generated for these utilities. You can use focus:not-sr-only to make an 
+=======
+By default, responsive and focus variants are generated for these utilities. You can use focus:not-sr-only to make an
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096
 element visually hidden by default but visible when the user tabs to it — useful for "skip to content" links:
 
 ```html

@@ -2,7 +2,11 @@
 
 ## Transform 类型 {#transform-type}
 
+<<<<<<< HEAD
 用于控制元素行为的工具类。
+=======
+Utilities for controlling transform behavior.
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096
 
 <PlaygroundWithVariants
   variant=''

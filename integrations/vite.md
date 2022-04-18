@@ -57,11 +57,17 @@ import 'virtual:windi.css'
 
 ### TypeScript {#typeScript}
 
+<<<<<<< HEAD
 希望在你的 `tailwind.config.js` 启用 TypeScript？当然可以。
 
 将它重命名为 `tailwind.config.ts` 即可。
+=======
+Enable TypeScript for your `windi.config.js`? Sure, why not?
 
-```ts tailwind.config.ts
+Rename it to `windi.config.ts` and things just work!
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096
+
+```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
 import formsPlugin from 'windicss/plugin/forms'
 
@@ -188,7 +194,11 @@ export default defineConfig({
 
 ### [属性模式](https://windicss.org/posts/v30.html#attributify-mode) {#attributify-mode}
 
+<<<<<<< HEAD
 通过以下配置启用
+=======
+Enabled it by
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096
 
 ```ts windi.config.ts
 export default {
@@ -199,7 +209,7 @@ export default {
 然后这样使用：
 
 ```html
-<button 
+<button
   bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600"
   text="sm white"
   font="mono light"
@@ -223,7 +233,7 @@ export default {
 ```
 
 ```html
-<button 
+<button
   w:bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600"
   w:text="sm white"
   w:font="mono light"
@@ -234,6 +244,7 @@ export default {
 </button>
 ```
 
+<<<<<<< HEAD
 ### 别名配置 {#alias-config}
 
 请注意，在使用别名时需要加上前缀 * ，例如：
@@ -241,6 +252,15 @@ export default {
 <div class="*hstack">
 ```
 有关快捷方式和别名之间的区别，请阅读 [这篇文章](https://cn.windicss.org/posts/v30.html#alias-config)。
+=======
+### Alias Config
+
+Be aware, alias entries need to be prefixed with * when used, eg:
+```html
+<div class="*hstack">
+```
+See [this release post](https://windicss.org/posts/v30.html#alias-config) for the difference between shortcuts and alias.
+>>>>>>> be07e7e9c469198d9a80231b2bbe139db32f1096
 
 ```ts windi.config.ts
 export default {
