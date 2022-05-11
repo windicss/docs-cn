@@ -7,4 +7,8 @@ Utilities for optimizing upcoming animations of elements that are expected to ch
 | will-change-auto      | will-change: auto;            |
 | will-change-scroll    | will-change: scroll-position; |
 | will-change-contents  | will-change: contents;        |
+<<<<<<< HEAD
 | will-change-transform | will-change: transform;       |
+=======
+| will-change-transform | will-change: transform;       |
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52

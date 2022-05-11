@@ -34,10 +34,17 @@ export function generateStyles(html) {
     .map(i => i.result)
     .join(' ')
 
+<<<<<<< HEAD
   // 基于我们传入的 html 生成预检样式
   const preflightSheet = processor.preflight(html)
 
   // 将 html classes 处理为一个可解释的样式表
+=======
+  // Generate preflight based on the HTML we input
+  const preflightSheet = processor.preflight(html)
+
+  // Process the HTML classes to an interpreted style sheet
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
   const interpretedSheet = processor.interpret(htmlClasses).styleSheet
 
   // 构建样式
@@ -63,10 +70,17 @@ export function generateStyles(html) {
   // 获取 windi processor
   const processor = new Processor()
 
+<<<<<<< HEAD
   // 解析 html 获取与 location 匹配的 class 数组
   const parser = new HTMLParser(html)
 
   // 基于我们输入的 html 生成预检样式
+=======
+  // Parse HTML to get array of class matches with location
+  const parser = new HTMLParser(html)
+
+  // Generate preflight based on the HTML we input
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
   const preflightSheet = processor.preflight(html)
 
   const PREFIX = 'windi-'
@@ -87,7 +101,11 @@ export function generateStyles(html) {
     // 添加被忽略的 classes 并添加到 output
     outputHTML += [style.className, ...style.ignored].join(' ')
 
+<<<<<<< HEAD
     // 为下一次迭代将结束的位置标记为新的开始
+=======
+    // mark the end as our new start for next iteration
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
     indexStart = p.end
   })
 
@@ -123,10 +141,17 @@ export function generateStyles(html) {
   // 获取 windi processor
   const processor = new Processor()
 
+<<<<<<< HEAD
   // 解析 html 获取与 location 匹配的 class 数组
   const parser = new HTMLParser(html)
 
   // 基于我们输入的 html 生成预检样式
+=======
+  // Parse HTML to get array of class matches with location
+  const parser = new HTMLParser(html)
+
+  // Generate preflight based on the HTML we input
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
   const preflightSheet = processor.preflight(html)
 
   // 总是返回数组
@@ -150,7 +175,11 @@ export function generateStyles(html) {
       // 将当前的值追加到累加器值
       acc[attrKey] = [...attrKeyValue, ...attrValue]
     } else {
+<<<<<<< HEAD
       // 将属性值数组添加到累加器
+=======
+      // else add attribute value array to accumulator
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
       acc[attrKey] = attrValue
     }
 

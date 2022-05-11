@@ -12,7 +12,11 @@ Utilities for controlling the border width between elements.
   prefix='divide-y'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='w-full py-2 text-center divide-y divide-teal-500'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
   html='&lt;div class=&quot;w-full divide-y divide-teal-500 {class}&quot;&gt;
   &lt;div class="text-center py-2"&gt;1&lt;/div&gt;
   &lt;div class="text-center py-2"&gt;2&lt;/div&gt;
@@ -28,7 +32,11 @@ Utilities for controlling the border width between elements.
   prefix='divide-x'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='w-full px-4 text-center divide-x divide-teal-500 flex items-center'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
   html='&lt;div class=&quot;w-full divide-x divide-teal-500 flex items-center {class}&quot;&gt;
   &lt;div class="text-center px-4"&gt;1&lt;/div&gt;
   &lt;div class="text-center px-4"&gt;2&lt;/div&gt;
@@ -86,7 +94,11 @@ Utilities for controlling the border color between elements.
   prefix='divide'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='w-full py-2 text-center divide-y'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
   html='&lt;div class=&quot;w-full divide-y {class}&quot;&gt;
   &lt;div class="text-center py-2"&gt;1&lt;/div&gt;
   &lt;div class="text-center py-2"&gt;2&lt;/div&gt;
@@ -121,7 +133,11 @@ Utilities for controlling the opacity borders between elements.
   prefix='divide-opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='w-full py-2 text-center divide-y divide-blue-500'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
   html='&lt;div class=&quot;w-full divide-y divide-blue-500 {class}&quot;&gt;
   &lt;div class="text-center py-2"&gt;1&lt;/div&gt;
   &lt;div class="text-center py-2"&gt;2&lt;/div&gt;
@@ -129,7 +145,10 @@ Utilities for controlling the opacity borders between elements.
 &lt;/div&gt;'
 />
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 <Customizing>
 
 ```js windi.config.js
@@ -158,7 +177,11 @@ Utilities for controlling the border style between elements.
   prefix='divide'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='w-full py-2 text-center divide-y divide-blue-500'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
   html='&lt;div class=&quot;w-full divide-y divide-blue-500 {class}&quot;&gt;
   &lt;div class="text-center py-2"&gt;1&lt;/div&gt;
   &lt;div class="text-center py-2"&gt;2&lt;/div&gt;

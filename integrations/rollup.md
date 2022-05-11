@@ -34,7 +34,11 @@ import 'virtual:windi.css'
 
 ## 配置文件 {#configuration}
 
+<<<<<<< HEAD
 ### 预检样式 (样式重写) {#preflight-style-reseting}
+=======
+### Preflight (style resetting)
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 预检样式 (Preflight) 随需启用，如果你想完全关掉它，可按照下面进行配置
 
@@ -91,7 +95,11 @@ export default {
 
 ### 扫描 {#scanning}
 
+<<<<<<< HEAD
 当服务启动后，`vite-plugin-windicss` 将扫描你的源代码，并把使用到的工具类提取出来。默认情况下，只有 `src/` 且后缀为 `vue, html, mdx, pug, jsx, tsx` 的文件才会被扫描。如果你想扫描本地的其他文件，你可以进行配置如下：
+=======
+On server start, `vite-plugin-windicss` will scan your source code and extract the utilities usages. By default, only files under `src/` with extensions `vue, html, mdx, pug, jsx, tsx` will be included. If you want to enable scanning for other file type of locations, you can configure it via:
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 ```js rollup.config.js
 export default {

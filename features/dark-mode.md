@@ -2,7 +2,11 @@
 
 Windi CSS 拥有开箱即用的暗色模式支持。
 
+<<<<<<< HEAD
 通过对工具类 (utilities) 添加可变修饰前缀 `dark:`，这些工具类将仅会在暗色模式启用的时候生效。在下面的例子中，`Preview` 文本在亮色模式下是红色的，在暗色模式下是绿色的。试看看：
+=======
+By prefixing the `dark:` variant to utilities, they will only apply when dark mode is enabled. With the following example, the `Preview` text will be red on the light mode, and green on the dark mode. Try to play with it:
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 <ToggleDark />
 
@@ -57,9 +61,15 @@ else
   :enableConfig="true"
 />
 
+<<<<<<< HEAD
 ## 媒体查询模式 {#media-query-mode}
 
 在媒体查询模式，它使用了浏览器内置的 `@media (prefers-color-scheme: dark)` 查询，总是会与用户的系统表现相匹配。
+=======
+## Media query mode
+
+In media query mode, it uses the built-in `@media (prefers-color-scheme: dark)` query from the browser that always matches with the user's system preference.
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 ```js windi.config.js
 export default {

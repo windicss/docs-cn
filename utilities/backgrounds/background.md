@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # 背景 {#backgrounds}
+=======
+# Background
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 ## 背景固定 {#background-attachment}
 

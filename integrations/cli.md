@@ -77,7 +77,11 @@ windicss './hello.html' './world.html', './src/**/*.svelte'
 
 #### 生成普通 css {#generate-normal-css}
 
+<<<<<<< HEAD
 使用 `-o` 参数指定生成 css 文件的名称，  `-t` 参数指定是否添加预检样式 (基本样式)。
+=======
+Use the `-o` parameter to specify the name of the generated CSS file, and the `-t` parameter to specify whether to add preflight (basestyles).
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 ```bash
 windicss './**/*.html'
@@ -88,16 +92,26 @@ windicss './test.html' --preflight --output windi.css
 
 #### 最小化构建 {#minimize-build}
 
+<<<<<<< HEAD
 使用 `-m` 或 `--minify` 来生产最小化的 css 文件。此参数主要用于构建时。
+=======
+Use `-m` or `--minify` to generate minimized CSS file. This parameter is mostly used for build time.
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 ```bash
 windicss './**/*.html' -mto windi.min.css
 windicss './**/*.html' -to windi.css --minify
 ```
 
+<<<<<<< HEAD
 #### 使用编译模式 {#using-compiliation-mode}
 
 编译模式会将所有 windi 工具类合并到一个新的类名中， 你可以使用 `-p` 或 `--prefix` 进行指定。
+=======
+#### Using compilation mode
+
+Compilation mode will combine all windi utilities into a new class, which you can specify with `-p` or `--prefix`
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 ```bash
 windicss './**/*.html' -cto windi.css
@@ -128,7 +142,11 @@ windicss './test.html' --compile --preflight --output windi.css
 
 #### 使用归因模式 {#using-attributify-mode}
 
+<<<<<<< HEAD
 你可以将归因模式与解释模式或编译模式相结合。 
+=======
+You can combine attributify mode with interpretation mode or compilation mode.
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 ```bash
 windicss './**/*.html' -ato windi.css
@@ -141,8 +159,8 @@ windicss './test.html' --attributify --compile --preflight --output windi.css
 举个例子
 
 ```html
-<button 
-	bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600"
+<button
+  bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600"
   text="sm white"
   font="mono light"
   p="y-2 x-4"
@@ -178,13 +196,21 @@ module.exports = {
 
 #### 开发模式 {#dev-mode}
 
+<<<<<<< HEAD
 启用开发模式将打开热重载，在检测到文件更改时更新 css 文件。
+=======
+Development mode will turn on hot reloading and will watch your file changes to update your CSS file in real time.
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 ```bash
 windicss './**/*.html' -to windi.css --dev
 ```
 
+<<<<<<< HEAD
 > 注意: 为达到更好的热重载体验 (约5ms) 我们在开发时不会移除内置的 css，所以在发布时使用最小化构建指令进行一次构建，以获得最佳的开发和构建体验。 例如 `windicss './**/*.html' -mto windi.css`
+=======
+> Note: For better hotloading experience (~5ms) we don't remove built CSS at development time, so you are expected to rebuild it once at release time using the minimize command to get the best experience for both development and build. Such as `windicss './**/*.html' -mto windi.css`
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 #### 模糊模式 {#fuzzy-mode}
 
@@ -221,7 +247,11 @@ module.exports = {
 windicss './**/*.html' -to windi.css --dev --style
 ```
 
+<<<<<<< HEAD
 像这样定义样式块：
+=======
+Define style block like this:
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 ```html
 <head>

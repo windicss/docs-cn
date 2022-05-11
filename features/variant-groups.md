@@ -8,7 +8,7 @@
 
 尝试修改一下：
 
-<InlinePlayground 
+<InlinePlayground
   :input="'bg-blue-200 font-light p-2\nhover:(bg-gray-400 font-medium)'"
   :showCSS="true"
   :showMode="true"

@@ -3,7 +3,13 @@
 
 # 从 Tailwind CSS 迁移 {#migrate-from-tailwind-css}
 
+<<<<<<< HEAD
 一些依赖不再是必须的。如果它们只是 Tailwind CSS 的依赖。你可以在 `package.json` 中移除它们。
+=======
+## Packages
+
+Some of your dependencies are no longer required. You can remove them from your `package.json` if they were only needed for Tailwind CSS.
+>>>>>>> 9aba7df1096a2d1f16411dc960282ed4369a2a52
 
 ```diff package.json
 - "tailwindcss": "*",
