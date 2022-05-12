@@ -15,7 +15,11 @@
 - 📄 CSS `@apply` / `@screen` 指令转换
 - 🎳 支持公共组 - 例如： `bg-gray-200 hover:(bg-gray-100 text-red-300)`
 
+<<<<<<< HEAD
 ## 安装 {#install}
+=======
+## Install
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 使用 Vue CLI 进行安装。(建议使用 Vue CLI 4+)
 
@@ -25,7 +29,11 @@ vue add windicss
 
 :warning: 本模块为预发布版本，请报告你发现的任何 [问题](https://github.com/windicss/vue-cli-plugin-windicss/issues)。
 
+<<<<<<< HEAD
 然后，进行配置
+=======
+Then, add the configuartion
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 ```js vue.config.js
 module.exports = {
@@ -37,13 +45,21 @@ module.exports = {
 }
 ```
 
+<<<<<<< HEAD
 最后，在你的入口文件中引入 `windi.css`
+=======
+And finally, import `windi.css` in your entry
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 ```js main.js
 import 'windi.css'
 ```
 
+<<<<<<< HEAD
 现在，开始在你的项目中使用 [类实用程序] 或 [CSS 指令]，并享受它们的便利！⚡️
+=======
+That's it! Starting using [classes utilities] or [CSS directives] in your app, and enjoy the speed! ⚡️
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 ## 迁移 {#migrating}
 

@@ -126,4 +126,8 @@ Utilities for controlling the style of an element's borders.
   :variants="['solid', 'dashed', 'dotted', 'double', 'none']"
   prefix='border'
   fixed='bg-gray-500 bg-opacity-5 border-3 border-teal-500 w-full h-full text-transparent transition-all'
+<<<<<<< HEAD
 />
+=======
+/>
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f

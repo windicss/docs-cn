@@ -8,4 +8,8 @@ Utilities for controlling whether the user can select text in an element.
   prefix='select'
   fixed='p-2 dark:text-white opacity-85'
   html="The quick brown fox jumps over the lazy dog"
+<<<<<<< HEAD
 />
+=======
+/>
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f

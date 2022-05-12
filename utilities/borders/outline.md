@@ -8,7 +8,11 @@ Utilities for controlling an element's outline.
   prefix='outline'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 {class}&quot;&gt;
     Button
   &lt;/button&gt;'
@@ -22,7 +26,11 @@ Utilities for controlling an element's outline.
   prefix='outline-solid'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 {class}&quot;&gt;
     Button
   &lt;/button&gt;'
@@ -36,7 +44,11 @@ Utilities for controlling an element's outline.
   prefix='outline-dotted'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
   html='&lt;button tabindex=&quot;-1&quot; class=&quot;focus:outline-none w-full py-3 rounded font-bold text-white bg-blue-400 {class}&quot;&gt;
     Button
   &lt;/button&gt;'

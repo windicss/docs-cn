@@ -304,8 +304,12 @@ export default {
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
 />
 
+<<<<<<< HEAD
 
 ### Top {#top}
+=======
+### Top
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 <PlaygroundWithVariants
   variant='4'
@@ -317,8 +321,12 @@ export default {
   html='&lt;div class="absolute {class} bg-green-400 rounded-md p-2 text-center max-w-24 h-8"&gt;{class}&lt;/div&gt;'
 />
 
+<<<<<<< HEAD
 
 ### Right {#right}
+=======
+### Right
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 <PlaygroundWithVariants
   variant='4'
@@ -389,7 +397,11 @@ As much mud in the streets as if the waters had but newly retired from the face 
 
 ## Isolation {#isolation}
 
+<<<<<<< HEAD
 用于控制元素是否显式创建新上下文的工具类。这些工具类与 [mix-blend-mode](/utilities/effects/mix-blend-mode.html) 和 [z-index](#z-index) 结合使用时特别有用。
+=======
+Utilities for controlling whether an element should explicitly create a new stacking context. These utilities are especially helpful when used in conjunction with [mix-blend-mode](/utilities/effects/mix-blend-mode) and [z-index](#z-index).
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 <PlaygroundWithVariants
   variant='isolate'

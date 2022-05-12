@@ -7,7 +7,11 @@ Utilities for controlling how element fragments should be rendered across multip
   :variants="['slice', 'clone']"
   prefix='decoration'
   fixed='dark:text-white opacity-85 overflow-hidden p-2 h-full'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
   appended='text-5xl font-extrabold bg-gradient-to-r from-green-400 to-blue-500 rounded-16px px-4 text-sm text-white'
   html="
 &lt;div&gt;

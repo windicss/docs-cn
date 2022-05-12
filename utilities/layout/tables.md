@@ -74,7 +74,7 @@
 &lt;/div&gt;'
 />
 
-| inline-table	| display: inline-table; |
+| inline-table | display: inline-table; |
 
 ## Table Caption {#table-caption}
 
@@ -216,7 +216,12 @@
     &lt;/div&gt;
 &lt;/div&gt;'
 />
+<<<<<<< HEAD
 ## Table Row Group {#table-row-group}
+=======
+
+## Table Row Group
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 `table-row-group` 工具类的行为类似于 HTML `<tbody>` 元素。`<tbody>` 封装了所有表格行（`tr` 元素），它们构成了表格主体元素   （`<table>`）。
 
@@ -473,7 +478,11 @@
 
 ## Table Empty Cells {#table-empty-cells}
 
+<<<<<<< HEAD
 `empty-cells` 工具类用于指定在无可见内容的情况下表格边框和背景的渲染方式。空单元格的一个很好的用例可能是，你可能不知道一个表是否包含空数据，并且决定隐藏它们。
+=======
+The `empty-cells` utility sets whether borders and backgrounds appear around `<table>`cells that have no visible content. A good use case for empty-cells could be a situation where you may not know whether a table will or will not contain empty data points and you decide to hide them.
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 <PlaygroundWithVariants
   variant='visible'
@@ -509,7 +518,11 @@
 
 使用以下工具类来创建表格行为类似的元素。
 
+<<<<<<< HEAD
 #### Raw Html Tags {#raw-html-tags}
+=======
+### Raw Html Tags
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 ```html
 <table>
@@ -539,7 +552,11 @@
 </table>
 ```
 
+<<<<<<< HEAD
 #### 使用 Windi 工具类 {#with-windi-utilities}
+=======
+### With Windi Utilities
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 
 ```html
 <div class="table">

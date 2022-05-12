@@ -8,7 +8,11 @@ Utilities for controlling the opacity of an element.
   prefix='opacity'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='bg-teal-400 w-full h-32 rounded-md'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
   html='&lt;div class=&quot;bg-teal-400 w-full h-32 rounded-md {class}&quot;&gt;&lt;/div&gt;'
 />
 

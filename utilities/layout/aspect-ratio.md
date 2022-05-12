@@ -12,7 +12,10 @@
 | `aspect-h-${float}`  | --tw-aspect-h: `${float};`                                                                                                                                                                                                               |
 | `aspect-${fraction}` | position: 'relative';<br>paddingBottom: `${percent};`<br>'> *': {<br>&emsp;position: 'absolute';<br>&emsp;height: '100%';<br>&emsp;width: '100%';<br>&emsp;top: '0';<br>&emsp;right: '0';<br>&emsp;bottom: '0';<br>&emsp;left: '0';<br>} |
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
 ***
 
 `aspect-w-${float}` will add the following base styles:
@@ -46,4 +49,8 @@ export default {
     // ...
   ],
 }
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 297a90b840fbd7fc76f4f5da8f3b4baa8464949f
