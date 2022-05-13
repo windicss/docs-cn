@@ -9,7 +9,11 @@ Utilities for controlling the bullet/number style of a list.
   :variants="['none', 'disc', 'circle', 'square', 'decimal', 'zero-decimal', 'greek', 'roman', 'upper-roman', 'alpha', 'upper-alpha']"
   prefix='list'
   fixed='p-2 dark:text-white opacity-85'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
   html="&lt;ul class='{class}'&gt;
   &lt;li&gt;One&lt;/li&gt;
   &lt;li&gt;Two&lt;/li&gt;
@@ -44,11 +48,19 @@ Utilities for controlling the position of bullets/numbers in lists.
   :variants="['inside', 'outside']"
   prefix='list'
   fixed='p-2 dark:text-white opacity-85'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
   appended='bg-blue-200 bg-blue-300'
   html="&lt;ul class='{class} bg-blue-300'&gt;
   &lt;li class='bg-blue-200'&gt;One&lt;/li&gt;
   &lt;li class='bg-blue-200'&gt;Two&lt;/li&gt;
   &lt;li class='bg-blue-200'&gt;Three&lt;/li&gt;
 &lt;/ul&gt;"
+<<<<<<< HEAD
 />
+=======
+/>
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a

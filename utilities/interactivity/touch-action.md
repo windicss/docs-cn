@@ -15,7 +15,11 @@ Utilities for controlling how an element can be scrolled and zoomed on touchscre
 | touch-pinch-zoom  | touch-action: pinch-zoom;   |
 | touch-manipulation| touch-action: manipulation; |
 
+<<<<<<< HEAD
 ### Usage
+=======
+## Usage
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
 
 Use the `touch-{action}` utilities to control how an element can be scrolled (panned) and zoomed (pinched) on `
 touchscreens.
@@ -33,4 +37,8 @@ touchscreens.
 <div class="w-full h-48 overflow-auto touch-pan-y ...">
   <!-- ... -->
 </div>
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a

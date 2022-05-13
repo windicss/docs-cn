@@ -73,7 +73,11 @@ export default defineConfig({
 <div :class="{ ['p-'+size]: true}">
 ```
 
+<<<<<<< HEAD
 为了解决这个限制，你需要在 `vite.config.js` 中的 `safelist` 选项中指定可能的组合。
+=======
+For that, you will need to specify the possible combinations in the `safelist` options of `windi.config.js`.
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
 
 ```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
@@ -165,7 +169,7 @@ export default {
     },
   },
 }
-```  
+```
 
 - 配置参考见 [options.ts](https://github.com/windicss/vite-plugin-windicss/blob/main/packages/plugin-utils/src/options.ts)。
 
@@ -234,7 +238,11 @@ export default {
 
 ## 钩子 {#hooks}
 
+<<<<<<< HEAD
 你可以使用以下 nuxt 钩子来修改代码的行为。
+=======
+You can use the following nuxt hooks to modify the behavior of the code.
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
 
 `windicss:config`
 - 参数：FullConfig

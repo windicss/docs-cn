@@ -17,7 +17,11 @@ Windi CSS 只会生成你使用的 CSS 工具类，它允许你在样式类中�
 
 当你想有意忽略你的设计系统，并且对特定的组件有一定的粒度控制时，这是非常有用的。直接的 `p-5px` 和 显示转义的 `p-[5px]` 都是被支持的。
 
+<<<<<<< HEAD
 我们提供了一个 [可视化分析器](/features/analyzer)，可以让你对你项目中所有工具类的使用情况有一个概览，轻松标记出你设计系统中不符合预期的值转义。
+=======
+We also provided [an visual analyser](/features/analyzer) to give you an overview of all the utility usages in your project and to spot unwanted value escaping of your design system with ease.
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
 
 ## 数字 {#numbers}
 
@@ -36,8 +40,12 @@ p-{size} -> padding: {size};
 
 <InlinePlayground :input="'p-3px\np-4rem'" :showCSS="true" :showPreview="false"/>
 
+<<<<<<< HEAD
 
 ## 分数 {#fractions}
+=======
+## Fractions
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
 
 ```less
 w-{fraction} -> width: {fraction -> percent};
@@ -45,8 +53,12 @@ w-{fraction} -> width: {fraction -> percent};
 
 <InlinePlayground :input="'w-9/12'" :showCSS="true" :showPreview="false"/>
 
+<<<<<<< HEAD
 
 ## 颜色 {#colors}
+=======
+## Colors
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
 
 ```css
 text-{color} -> color: rgba(...);

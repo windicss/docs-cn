@@ -7,7 +7,11 @@ Utilities for controlling how an element handles content that is too large for t
   :variants="['auto', 'hidden', 'visible', 'scroll', 'x-auto', 'x-hidden', 'x-visible', 'x-scroll', 'y-auto', 'y-hidden', 'y-visible', 'y-scroll']"
   prefix='overflow'
   fixed='dark:text-white opacity-85 overflow-hidden'
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
   appended='bg-blue-100 dark:bg-blue-400 p-2 rounded-md text-xs'
   html='&lt;div class="bg-blue-100 dark:bg-blue-400 p-2 rounded-md text-xs {class}"&gt;
 The value of Pi is

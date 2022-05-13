@@ -46,7 +46,11 @@ export default {
 }
 ```
 
+<<<<<<< HEAD
 你可以使用编辑器的自动补全功能，来查看可用的配置字段。对功能配置的描述将在对应页面中进行展示。
+=======
+You can use the autocompletion from your editor to see possible configuration fields. Customization for features will be described in the corresponding pages.
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
 
 ## 配置示例 {#example-configuration}
 
@@ -67,7 +71,10 @@ export default defineConfig({
         '2xl': '1536px',
       },
       colors: {
+<<<<<<< HEAD
         gray: colors.coolGray,
+=======
+>>>>>>> 1617bae959351fa4f4341f86a8fc39bbb0648b2a
         blue: colors.sky,
         red: colors.rose,
         pink: colors.fuchsia,
