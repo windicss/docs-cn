@@ -70,5 +70,9 @@ export default {
   :enableConfig="true"
 />
 
+<<<<<<< HEAD
 
 通过此配置项添加的工具类，同样可以直接用可变修饰进行包装，比如 `sm:btn`。这个特性的函数与 `@apply` 指令很类似，它将把所有的工具类合并为一个样式。
+=======
+The utility added by this configuration can also be directly wrapped in variants, such as sm:btn. The purpose of this feature is similar to the `@apply` directive, it will merge all utilities into one style.
+>>>>>>> e1ba83f00cceb991f2619b5a893701f2e516acd0

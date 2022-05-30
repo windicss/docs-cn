@@ -51,8 +51,13 @@ export default defineConfig({
 
 ## 扫描 {#scanning}
 
+<<<<<<< HEAD
 在 dev-server/build 过程开始时，Windi CSS 将会扫描你的源码并提取出你使用的工具类。
 默认情况下，它会扫描在 `src/` 目录下扩展名为 `vue, html, mdx, pug, jsx, tsx` 的文件。
+=======
+When the dev-server/build process starts, Windi CSS will scan your source code and extract utility usages.
+By default, it will scan files under `src/` with extensions `vue, html, mdx, pug, jsx, tsx`.
+>>>>>>> e1ba83f00cceb991f2619b5a893701f2e516acd0
 
 如果你想启用/禁用对其他文件类型或位置的扫描，你可以使用 `include` 以及 `exclude` 选项进行配置：
 

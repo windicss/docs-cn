@@ -1,6 +1,12 @@
+<<<<<<< HEAD
 # 盒阴影 {#box-shadow}
 
 ## 盒阴影大小 {#box-shadow-size}
+=======
+# Box Shadow
+
+## Box Shadow Size
+>>>>>>> e1ba83f00cceb991f2619b5a893701f2e516acd0
 
 用于控制元素盒阴影的工具类。
 
@@ -36,7 +42,11 @@ export default {
 
 </Customizing>
 
+<<<<<<< HEAD
 ### 盒阴影颜色 {#box-shadow-color}
+=======
+## Box Shadow Color
+>>>>>>> e1ba83f00cceb991f2619b5a893701f2e516acd0
 
 <PlaygroundWithVariants
   variant='gray-500'

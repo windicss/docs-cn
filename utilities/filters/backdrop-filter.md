@@ -1,6 +1,10 @@
 # Backdrop Filter
 
+<<<<<<< HEAD
 用于控制元素是否启用背景滤镜的工具类。
+=======
+Utilities for enabling and disabling backdrop filters on an element.
+>>>>>>> e1ba83f00cceb991f2619b5a893701f2e516acd0
 
 <PlaygroundWithVariants
   variant=''
@@ -17,9 +21,13 @@
   &lt;/div&gt;'
 />
 
+<<<<<<< HEAD
 
 
 ## 模糊背景(blur) {#backdrop-blur}
+=======
+## Backdrop Blur
+>>>>>>> e1ba83f00cceb991f2619b5a893701f2e516acd0
 
 <PlaygroundWithVariants
   variant='sm'
@@ -310,4 +318,8 @@ export default {
   },
 }
 ```
+<<<<<<< HEAD
+=======
+
+>>>>>>> e1ba83f00cceb991f2619b5a893701f2e516acd0
 </Customizing>
