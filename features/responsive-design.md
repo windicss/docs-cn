@@ -17,7 +17,7 @@
 我们还添加通过 `<` 和 `@` 前缀的方式，提供了超过查询范围的情况下的更多控制能力。
 
 ```bash
-lg  => equalt to and greater than this breakpoint
+lg  => equal to and greater than this breakpoint
 <lg => smaller than this breakpoint
 @lg => exactly this breakpoint range
 ```
