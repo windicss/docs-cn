@@ -15,4 +15,8 @@ Use the `scroll-smooth` utilities to enable smooth scrolling within an element.
 <html class="scroll-smooth">
   <!-- ... -->
 </html>
+<<<<<<< HEAD
 ```
+=======
+```
+>>>>>>> 13d6adadd92e29a2e95912f8dec0214b82eba237

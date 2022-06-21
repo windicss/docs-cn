@@ -14,7 +14,11 @@
 npx windicss-analysis
 ```
 
+<<<<<<< HEAD
 分析报告将可在 `http://localhost:8113/` 获取
+=======
+The analysis report will be available at `http://localhost:8113/`
+>>>>>>> 13d6adadd92e29a2e95912f8dec0214b82eba237
 
 ### NPM {#npm}
 
@@ -43,7 +47,12 @@ npm i -D windicss-analysis
 
 ### 在线预览 {#online-preview}
 
+<<<<<<< HEAD
 你可以在分析器里看到分析报告的预览
+=======
+You can preview the report of the analyser itself at
+[analysis-demo.windicss.org](http://analysis-demo.windicss.org)
+>>>>>>> 13d6adadd92e29a2e95912f8dec0214b82eba237
 
 [分析报告示例](http://analysis-demo.windicss.org)
 

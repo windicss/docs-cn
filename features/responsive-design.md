@@ -10,14 +10,18 @@
 
 ## 自定义范围 {#custom-range}
 
+<<<<<<< HEAD
 默认情况下，Windi CSS 的断点被设计为移动端优先。
+=======
+By default, Windi CSS's breakpoints are designed as Mobile First.
+>>>>>>> 13d6adadd92e29a2e95912f8dec0214b82eba237
 
 这就意味着没有前缀的工具类（比如：`p-1`） 作用在所有尺寸的屏幕上，而带有前缀的工具类（比如：`md:p-2`）只在**指定断点及以上尺寸**起作用。
 
 我们还添加通过 `<` 和 `@` 前缀的方式，提供了超过查询范围的情况下的更多控制能力。
 
 ```bash
-lg  => greater or equal than this breakpoint
+lg  => equal to and greater than this breakpoint
 <lg => smaller than this breakpoint
 @lg => exactly this breakpoint range
 ```

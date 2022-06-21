@@ -2,13 +2,31 @@
 
 灵感来源于 [tailwindcss-scroll-snap](https://github.com/innocenzi/tailwindcss-scroll-snap)
 
+<<<<<<< HEAD
 ## Scroll Snap Align {#scroll-snap-align}
 
 | Class                         | 属性                                                                                         | 描述                                                                  |
+=======
+## Scroll Snap Align
+
+| Class                         | Properties                                                                                         | Description                                                                  |
+>>>>>>> 13d6adadd92e29a2e95912f8dec0214b82eba237
 | :---------------------------- | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
 | `snap-start`                  | scroll-snap-align: start                                                                           |                                                                              |
 | `snap-end`                    | scroll-snap-align: end                                                                             |                                                                              |
 | `snap-center`                 | scroll-snap-align: center                                                                          |                                                                              |
+<<<<<<< HEAD
+=======
+
+## Scroll Snap Stop
+
+| Class                         | Properties                                                                                         | Description                                                                  |
+| :---------------------------- | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
+| `snap-normal`                 | scroll-snap-stop: normal                                                                           |                                                                              |
+| `snap-always`                 | scroll-snap-stop: always                                                                           |                                                                              |
+
+## Scroll Snap Type
+>>>>>>> 13d6adadd92e29a2e95912f8dec0214b82eba237
 
 ## Scroll Snap Stop {#scroll-snap-stop}
 
@@ -33,6 +51,7 @@
 | `snap-inline`                 | --scroll-snap-axis: inline                                                                         |                                                                              |
 | `snap-both`                   | --scroll-snap-axis: both                                                                           |                                                                              |
 
+<<<<<<< HEAD
 ## Margin, Padding and Other {#margin-padding-and-other}
 
 | Class                         | 属性                                                                                         | 描述                                                                  |
@@ -42,6 +61,17 @@
 | __内边距__                   |                                                                                                    |                                                                              |
 | `snap-p${direction}-${value}` | scroll-snap-padding`${direction}`: `${value}`                                                      | same [Padding Utilities](/utilities/layout/spacing.html#padding)                    |
 | __其它__                     |                                                                                                    |                                                                              |
+=======
+## Margin, Padding and Other
+
+| Class                         | Properties                                                                                         | Description                                                                  |
+| :---------------------------- | :------------------------------------------------------------------------------------------------- | :--------------------------------------------------------------------------- |
+| __Margin__                    |                                                                                                    |                                                                              |
+| `snap-m${direction}-${value}` | scroll-snap-margin`${direction}`: `${value}`                                                       | same [Margin Utilities](/utilities/layout/spacing.html#margin)                      |
+| __Padding__                   |                                                                                                    |                                                                              |
+| `snap-p${direction}-${value}` | scroll-snap-padding`${direction}`: `${value}`                                                      | same [Padding Utilities](/utilities/layout/spacing.html#padding)                    |
+| __Other__                     |                                                                                                    |                                                                              |
+>>>>>>> 13d6adadd92e29a2e95912f8dec0214b82eba237
 | `scrollbar-hide`              | scrollbar-width: none<br>::-webkit-scrollbar: {<br>&nbsp;&nbsp;display: none<br>}                  | visual hide scrollbar                                                        |
 
 ## 用法 {#usage}

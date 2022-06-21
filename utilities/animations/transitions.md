@@ -1,4 +1,8 @@
+<<<<<<< HEAD
 # 过渡和动画 {#transitions-and-animations}
+=======
+# Transitions
+>>>>>>> 13d6adadd92e29a2e95912f8dec0214b82eba237
 
 ## 过渡属性 {#transitions-property}
 
