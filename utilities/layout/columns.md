@@ -10,7 +10,11 @@ Utilities for controlling the number of columns within an element.
     '0', '1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11', '12'
   ]"
   prefix="columns"
+<<<<<<< HEAD
   :nested='true'
+=======
+  nested=true
+>>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
   fixed='pt-20'
   appended='rounded-md bg-teal-500 bg-teal-100 p-2 flex flex-row space-x-2 aspect-square h-6'
   html='&lt;div class="{class} bg-teal-100 rounded-md p-2 flex flex-row space-x-2"&gt;
