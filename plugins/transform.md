@@ -15,4 +15,4 @@ export default {
 }
 ```
 
-See more plugins: https://github.com/windicss/plugins
+查看更多插件: https://github.com/windicss/plugins

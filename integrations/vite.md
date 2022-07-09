@@ -57,15 +57,9 @@ import 'virtual:windi.css'
 
 ### TypeScript {#typeScript}
 
-<<<<<<< HEAD
 希望在你的 `tailwind.config.js` 启用 TypeScript？当然可以。
 
 将它重命名为 `tailwind.config.ts` 即可。
-=======
-Enable TypeScript for your `windi.config.js`? Sure, why not?
-
-Rename it to `windi.config.ts` and things just work!
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 ```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
@@ -111,11 +105,7 @@ import 'virtual:windi-devtools'
 
 ## 配置 {#configuration}
 
-<<<<<<< HEAD
 ### 预检样式 (样式重置) {#preflight}
-=======
-### Preflight (style resetting)
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 在按需使用下预检是启用的。如果需要禁用，可以按以下方式配置
 
@@ -198,11 +188,7 @@ export default defineConfig({
 
 ### [属性模式](https://windicss.org/posts/v30.html#attributify-mode) {#attributify-mode}
 
-<<<<<<< HEAD
 通过以下配置启用
-=======
-Enabled it by
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 ```ts windi.config.ts
 export default {
@@ -248,7 +234,6 @@ export default {
 </button>
 ```
 
-<<<<<<< HEAD
 ### 别名配置 {#alias-config}
 
 请注意，在使用别名时需要加上前缀 * ，例如：
@@ -256,15 +241,6 @@ export default {
 <div class="*hstack">
 ```
 有关快捷方式和别名之间的区别，请阅读 [这篇文章](https://cn.windicss.org/posts/v30.html#alias-config)。
-=======
-### Alias Config
-
-Be aware, alias entries need to be prefixed with * when used, eg:
-```html
-<div class="*hstack">
-```
-See [this release post](https://windicss.org/posts/v30.html#alias-config) for the difference between shortcuts and alias.
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 ```ts windi.config.ts
 export default {

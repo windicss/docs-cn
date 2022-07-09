@@ -17,12 +17,9 @@
 &lt;/div&gt;'
 />
 
-<<<<<<< HEAD
 ## Flex Basis {#flex-basis}
-=======
-## Flex Basis
 
-Utilities for controlling the initial size of flex items.
+用于控制 flex items 初始化大小的工具类。
 
 <PlaygroundWithVariants
   variant='8'
@@ -43,11 +40,9 @@ Utilities for controlling the initial size of flex items.
 &lt;/div&gt;'
 />
 
-## Inline Flex
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
+## Inline Flex {#inline-flex}
 
-Utilities for controlling the initial size of flex items.
-用于控制 flex items 初始化大小的工具类。
+使用 inline-flex 创建一个行内 flex 容器。
 
 <PlaygroundWithVariants
   variant='8'

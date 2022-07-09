@@ -2,7 +2,6 @@
 
 ## 通用 {#general}
 
-<<<<<<< HEAD
 - [颜色](/utilities/general/colors)
 - [排版](/utilities/general/typography)
 - [SVG](/utilities/general/svg)
@@ -11,72 +10,9 @@
 ## 可访问性 {#accessibility}
 
 - [屏幕阅读器](/utilities/accessibility/screen-readers)
-=======
-- [Colors](/utilities/general/colors)
-- [Typography](/utilities/general/typography)
-- [SVG](/utilities/general/svg)
-- [Variants](/utilities/general/variants)
-
-## Accessibility
-
-- [Screen Readers](/utilities/accessibility/screen-readers)
-
-## Animations
-
-- [Animation](/utilities/animations/animation)
-- [Transforms](/utilities/animations/transforms)
-- [Transitions](/utilities/animations/transitions)
-
-## Backgrounds
-
-- [Background](/utilities/backgrounds/background)
-- [Gradients](/utilities/backgrounds/gradients)
-- [Background Blend Mode](/utilities/backgrounds/background-blend-mode)
-
-## Behaviors
-
-- [Box Decoration Break](/utilities/behaviors/box-decoration-break)
-- [Image Rendering](/utilities/behaviors/image-rendering)
-- [Listings](/utilities/behaviors/listings)
-- [Overflow](/utilities/behaviors/overflow)
-- [Overscroll Behavior](/utilities/behaviors/overscroll-behavior)
-- [Placeholder](/utilities/behaviors/placeholder)
-
-## Borders
-
-- [Border](/utilities/borders/border)
-- [Divider](/utilities/borders/divider)
-- [Outline](/utilities/borders/outline)
-- [Ring](/utilities/borders/ring)
-
-## Effects
-
-- [Box Shadow](/utilities/effects/box-shadow)
-- [Opacity](/utilities/effects/opacity)
-- [Mix Blend Mode](/utilities/effects/mix-blend-mode)
-
-## Filters
-
-- [Filter](/utilities/filters/filter)
-- [Backdrop Filter](/utilities/filters/backdrop-filter)
-
-## Interactivity
-
-- [Accent Color](/utilities/interactivity/accent-color)
-- [Appearance](/utilities/interactivity/appearance)
-- [Cursor](/utilities/interactivity/cursor)
-- [Caret](/utilities/interactivity/caret)
-- [Pointer Events](/utilities/interactivity/pointer-events)
-- [Resize](/utilities/interactivity/resize)
-- [Scroll Behavior](/utilities/interactivity/scroll-behavior)
-- [Touch Action](/utilities/interactivity/touch-action)
-- [User Select](/utilities/interactivity/user-select)
-- [Will Change](/utilities/interactivity/will-change)
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 ## 动画 {#animations}
 
-<<<<<<< HEAD
 - [Animation](/utilities/animations/animation)
 - [Transforms](/utilities/animations/transforms)
 - [Transitions](/utilities/animations/transitions)
@@ -131,27 +67,14 @@
 
 - [Columns](/utilities/layout/columns)
 - [容器](/utilities/layout/container)
-=======
-- [Columns](/utilities/layout/columns)
-- [Container](/utilities/layout/container)
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 - [Display](/utilities/layout/display)
 - [Flexbox](/utilities/layout/flexbox)
 - [Grid](/utilities/layout/grid)
 - [Positioning](/utilities/layout/positioning)
-<<<<<<< HEAD
 - [尺寸](/utilities/layout/sizing)
 - [间隔](/utilities/layout/spacing)
 - [表格](/utilities/layout/tables)
 
 ::: tip
 你可以通过搜索栏快速找到所需的工具类。
-=======
-- [Sizing](/utilities/layout/sizing)
-- [Spacing](/utilities/layout/spacing)
-- [Tables](/utilities/layout/tables)
-
-::: tip
-Use the search bar to quickly find the utilities you need.
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 :::

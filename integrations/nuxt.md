@@ -68,16 +68,12 @@ export default defineConfig({
 
 默认情况下，我们会静态扫描你的源码，并找出所有用到的工具类 (utilities)，然后按需生成响应的 CSS。然而，这存在一定限制，运行时生成的工具类并不能被高效地匹配。例如：
 
-```vue
+```html
 <!-- 不会被侦测到  -->
 <div :class="{ ['p-'+size]: true}">
 ```
 
-<<<<<<< HEAD
 为了解决这个限制，你需要在 `vite.config.js` 中的 `safelist` 选项中指定可能的组合。
-=======
-For that, you will need to specify the possible combinations in the `safelist` options of `windi.config.js`.
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 ```ts windi.config.ts
 import { defineConfig } from 'windicss/helpers'
@@ -238,11 +234,7 @@ export default {
 
 ## 钩子 {#hooks}
 
-<<<<<<< HEAD
 你可以使用以下 nuxt 钩子来修改代码的行为。
-=======
-You can use the following nuxt hooks to modify the behavior of the code.
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 `windicss:config`
 - 参数：FullConfig

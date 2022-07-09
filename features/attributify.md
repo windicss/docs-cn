@@ -3,11 +3,7 @@
 
 :warning: 属性化在 [svelte-windicss-preprocess](https://github.com/windicss/svelte-windicss-preprocess) 中不可用。
 
-<<<<<<< HEAD
 基于这个特性，你可以在 html 属性中编写 windi 类。
-=======
-With this feature, you can write windi classes in HTML attributes.
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 > 有关 css 大小的问题，css 大小可能会略有增加，但是在 gzip 压缩下，它的影响很小。
 
@@ -99,11 +95,7 @@ export default {
    dark=...
    ```
 
-<<<<<<< HEAD
 > 当然，你也可以**将它们混合使用**，但我个人**不推荐**。只需要选择一个并持续下去。你会发现你的代码变得更加清晰了。
-=======
-> And of course, you can **mix them** together, but we **don't recommend** it because it reduces the clarity of your code.
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 ## 工具类 {#utilities}
 

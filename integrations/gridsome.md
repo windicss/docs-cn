@@ -48,23 +48,14 @@ export default {
 
 有关配置详细信息，请在[此处](https://windicss.netlify.app/guide/configuration.html)查看。
 
-<<<<<<< HEAD
-
 ## 迁移 {#migrating}
-=======
-## Migrating
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 如果你以前使用过 `gridsome-plugin-tailwindcss`，请参考有关迁移的[文档](https://windicss.netlify.app/guide/migration.html)。
 
 ## 配置 {#configuration}
 
-<<<<<<< HEAD
 - 默认:
-=======
-- Default:
 
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 ```js
 export default {
   scan: {

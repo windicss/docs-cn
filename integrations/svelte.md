@@ -292,11 +292,6 @@ Svelte 本身就会去限制 CSS 样式的作用域，并移除没有使用的�
 <style windi:safelist:global>
 </style>
 ```
-<<<<<<< HEAD
-=======
-
-### Windi CSS classes
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 ### Windi CSS classes {#windi-css-classes}
 
@@ -334,11 +329,7 @@ Svelte 本身就会去限制 CSS 样式的作用域，并移除没有使用的�
   </style>
 ```
 
-<<<<<<< HEAD
 你可以把这些属性任意组合，完整的样式标签是下面这样：
-=======
-You can combine any of this attributes, so full style tag can look like:
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 ```html
   <style global windi:global windi:preflights:global windi:safelist:global>
@@ -348,16 +339,9 @@ You can combine any of this attributes, so full style tag can look like:
   </style>
 ```
 
-<<<<<<< HEAD
 ### VS Code 扩展 {#vs-code-extension}
 
 使用特殊的 CSS 标签语法以及上面的属性，会破坏 VS Code 的 CSS 推断。请确保禁用它们。如果你是使用 [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode)，把下面的设置加到你的 VS Code 配置文件中。
-=======
-### VS Code Extension
-
-Using special CSS tag syntax as well as the attributes above, will break the CSS diagnostics of VS Code. Please make sure to disable them.
-If you are using [Svelte for VS Code](https://marketplace.visualstudio.com/items?itemName=svelte.svelte-vscode), add this setting to your VS Code configuration file.
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
 
 ```json
 {

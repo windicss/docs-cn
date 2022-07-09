@@ -8,11 +8,7 @@ Utilities for suppressing native form control styling.
   prefix='appearance'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden flex flex-col justify-center space-y-5 h-full bg-blue-100 rounded-md'
   appended='w-12'
-<<<<<<< HEAD
   :nested='true'
-=======
-  nested=true
->>>>>>> 7b51475a11f108c475dcd0bfe37dbb63021914f6
   html='
   &lt;select class="w-12"&gt;
   &lt;option&gt;Yes&lt;/option&gt;
