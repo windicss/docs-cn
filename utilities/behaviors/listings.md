@@ -50,5 +50,5 @@ Utilities for controlling the position of bullets/numbers in lists.
   &lt;li class='bg-blue-200'&gt;One&lt;/li&gt;
   &lt;li class='bg-blue-200'&gt;Two&lt;/li&gt;
   &lt;li class='bg-blue-200'&gt;Three&lt;/li&gt;
-&lt;/ul&gt;"
+  &lt;/ul&gt;"
 />

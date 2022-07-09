@@ -19,7 +19,6 @@ Windi CSS 的 webpack 插件通过与语言和框架无关的方式来实现 Win
 | <Logo name="vue" class="inline"/> Vue CLI | [vue-cli-plugin-windicss](/integrations/vue-cli.html) |
 | <Logo name="gridsome" class="inline"/> Gridsome | [gridsome-plugin-windicss](/integrations/gridsome.html) |
 
-
 ### 支持的第二类框架{#second-class-framework-support}
 
 这些框架已经可以成功设置并有文档记录，完全适配 Windi。
@@ -63,7 +62,6 @@ export default {
 }
 ```
 
-
 #### 非 ES 模块安装 {#non-es-modules-install}
 
 对于不支持 es 模块导入语法的 webpack 配置，你可以尝试以下方法。
@@ -84,11 +82,13 @@ export default {
 在一个入口文件或只加载一次的文件中，添加 `windi.css` 的导入。
 
 ESM
+
 ```ts main.js
 import 'windi.css'
 ```
 
 CJS
+
 ```ts main.js
 require('windi.css')
 ```
