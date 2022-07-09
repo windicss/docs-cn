@@ -465,13 +465,24 @@ export default {
 
 用于控制用户允许选择元素文本的工具类。
 
-<PlaygroundWithVariants
-  variant='none'
-  :variants="['none', 'text', 'all', 'auto']"
-  prefix='select'
-  fixed='p-2 dark:text-white opacity-85'
-  html="The quick brown fox jumps over the lazy dog"
-/>
+## Scroll Behavior
+
+Utilities for controlling the scroll behavior of an element.
+
+| Class         | Properties               |
+| :------------ | :----------------------- |
+| scroll-auto   | scroll-behavior: auto;   |
+| scroll-smooth | scroll-behavior: smooth; |
+
+### Usage
+
+Use the `scroll-smooth` utilities to enable smooth scrolling within an element.
+
+```html
+<html class="scroll-smooth">
+  <!-- ... -->
+</html>
+```
 
 ## Screen Readers Access {#screen-readers-access}
 
@@ -510,3 +521,62 @@ export default {
 </a>
 ```
 
+## Touch Action
+
+Utilities for controlling how an element can be scrolled and zoomed on touchscreens.
+
+| Class             | Properties                  |
+| :---------------- | :-------------------------- |
+| touch-auto        | touch-action: auto;         |
+| touch-none        | touch-action: none;         |
+| touch-pan-x       | touch-action: pan-x;        |
+| touch-pan-left    | touch-action: pan-left;     |
+| touch-pan-right   | touch-action: pan-right;    |
+| touch-pan-y       | touch-action: pan-y;        |
+| touch-pan-up      | touch-action: pan-up;       |
+| touch-pan-down    | touch-action: pan-down;     |
+| touch-pinch-zoom  | touch-action: pinch-zoom;   |
+| touch-manipulation| touch-action: manipulation; |
+
+### Usage
+
+Use the `touch-{action}` utilities to control how an element can be scrolled (panned) and zoomed (pinched) on `
+touchscreens.
+
+```html
+<div class="w-full h-48 overflow-auto touch-auto ...">
+  <!-- ... -->
+</div>
+<div class="w-full h-48 overflow-auto touch-none ...">
+  <!-- ... -->
+</div>
+<div class="w-full h-48 overflow-auto touch-pan-x ...">
+  <!-- ... -->
+</div>
+<div class="w-full h-48 overflow-auto touch-pan-y ...">
+  <!-- ... -->
+</div>
+```
+
+## User Select
+
+Utilities for controlling whether the user can select text in an element.
+
+<PlaygroundWithVariants
+  variant='none'
+  :variants="['none', 'text', 'all', 'auto']"
+  prefix='select'
+  fixed='p-2 dark:text-white opacity-85'
+  html="The quick brown fox jumps over the lazy dog"
+/>
+
+## Will Change
+
+Utilities for optimizing upcoming animations of elements that are expected to change.
+
+| Class                 | Properties                    |
+| :-------------------- | :---------------------------- |
+| will-change-auto      | will-change: auto;            |
+| will-change-scroll    | will-change: scroll-position; |
+| will-change-contents  | will-change: contents;        |
+| will-change-transform | will-change: transform;       |

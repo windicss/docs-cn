@@ -19,7 +19,7 @@
 
 使用 Vue CLI 进行安装。(建议使用 Vue CLI 4+)
 
-```
+```bash
 vue add windicss
 ```
 
