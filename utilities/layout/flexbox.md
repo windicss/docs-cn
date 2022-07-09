@@ -40,7 +40,7 @@
 &lt;/div&gt;'
 />
 
-## Inline Flex {#inline-flex}
+## Inline Flex
 
 使用 inline-flex 创建一个行内 flex 容器。
 

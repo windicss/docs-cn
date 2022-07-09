@@ -52,7 +52,7 @@
 
 ## Flow Root {#flow-root}
 
-`flow-root` 工具类生成一个块级元素盒子，它用于建立一个新的 [块级格式上下文](https://developer.mozilla.org/zh-CN/docs/Web/Guide/CSS/Block_formatting_context)，定义格式化根元素的所在位置。
+`flow-root` 工具类生成一个块级元素盒子，它用于建立一个新的 [块级格式上下文](https://developer.mozilla.org/en-US/docs/Web/Guide/CSS/Block_formatting_context)，定义格式化根元素的所在位置。
 
 | Class     | Properties          |
 | :-------- | :------------------ |

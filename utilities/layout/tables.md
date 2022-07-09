@@ -74,7 +74,7 @@
 &lt;/div&gt;'
 />
 
-| inline-table | display: inline-table; |
+| inline-table	| display: inline-table; |
 
 ## Table Caption {#table-caption}
 
@@ -216,7 +216,6 @@
     &lt;/div&gt;
 &lt;/div&gt;'
 />
-
 ## Table Row Group {#table-row-group}
 
 `table-row-group` 工具类的行为类似于 HTML `<tbody>` 元素。`<tbody>` 封装了所有表格行（`tr` 元素），它们构成了表格主体元素   （`<table>`）。

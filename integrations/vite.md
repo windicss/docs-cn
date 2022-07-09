@@ -61,7 +61,7 @@ import 'virtual:windi.css'
 
 将它重命名为 `tailwind.config.ts` 即可。
 
-```ts windi.config.ts
+```ts tailwind.config.ts
 import { defineConfig } from 'windicss/helpers'
 import formsPlugin from 'windicss/plugin/forms'
 
@@ -199,7 +199,7 @@ export default {
 然后这样使用：
 
 ```html
-<button
+<button 
   bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600"
   text="sm white"
   font="mono light"
@@ -223,7 +223,7 @@ export default {
 ```
 
 ```html
-<button
+<button 
   w:bg="blue-400 hover:blue-500 dark:blue-500 dark:hover:blue-600"
   w:text="sm white"
   w:font="mono light"

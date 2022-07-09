@@ -36,6 +36,7 @@ p-{size} -> padding: {size};
 
 <InlinePlayground :input="'p-3px\np-4rem'" :showCSS="true" :showPreview="false"/>
 
+
 ## 分数 {#fractions}
 
 ```less
@@ -43,6 +44,7 @@ w-{fraction} -> width: {fraction -> percent};
 ```
 
 <InlinePlayground :input="'w-9/12'" :showCSS="true" :showPreview="false"/>
+
 
 ## 颜色 {#colors}
 
