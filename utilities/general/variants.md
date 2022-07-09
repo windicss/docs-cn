@@ -154,7 +154,6 @@ export default {
 | siblings | `.${utility} ~ * { ... }` | 目标兄弟节点。 |
 | sibling | `.${utility} + * { ... }` | 目标首个兄弟节点。 |
 
-
 ### 媒体查询 {#media-query}
 
 | 可变修饰 | 规则 | 描述 |

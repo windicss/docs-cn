@@ -68,7 +68,7 @@ export default defineConfig({
 
 默认情况下，我们会静态扫描你的源码，并找出所有用到的工具类 (utilities)，然后按需生成响应的 CSS。然而，这存在一定限制，运行时生成的工具类并不能被高效地匹配。例如：
 
-```vue
+```html
 <!-- 不会被侦测到  -->
 <div :class="{ ['p-'+size]: true}">
 ```

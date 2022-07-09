@@ -12,7 +12,6 @@ Utilities for controlling the opacity of an element.
   html='&lt;div class=&quot;bg-teal-400 w-full h-32 rounded-md {class}&quot;&gt;&lt;/div&gt;'
 />
 
-
 <Customizing>
 
 ```js windi.config.js
