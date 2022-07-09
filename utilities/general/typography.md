@@ -359,9 +359,15 @@ export default {
   html="The quick brown fox jumps over the lazy dog"
 />
 
+<<<<<<< HEAD:utilities/general/typography.md
 ### 文本装饰颜色 {#text-decoration-color}
 
 用于控制文本装饰颜色的工具类。
+=======
+### Text Decoration Color
+
+Utilities for controlling the color of text decoration.
+>>>>>>> 9c61a07 (docs: bring docs up-to-date with v3.4.0 (#147)):utilities/typography.md
 
 <PlaygroundWithVariants
   variant='green-500'
@@ -387,9 +393,15 @@ export default {
 
 </Customizing>
 
+<<<<<<< HEAD:utilities/general/typography.md
 ### 文本装饰样式 {#text-decoration-style}
 
 用于控制文本装饰样式的工具类。
+=======
+### Text Decoration Style
+
+Utilities for controlling the style of text decoration.
+>>>>>>> 9c61a07 (docs: bring docs up-to-date with v3.4.0 (#147)):utilities/typography.md
 
 <PlaygroundWithVariants
   variant='solid'
@@ -399,9 +411,15 @@ export default {
   html="The quick brown fox jumps over the lazy dog"
 />
 
+<<<<<<< HEAD:utilities/general/typography.md
 ### 文本装饰线粗细 {#text-decoration-thickness}
 
 用于控制文本装饰线粗细的工具类。
+=======
+### Text Decoration Thickness
+
+Utilities for controlling the thickness of text decorations.
+>>>>>>> 9c61a07 (docs: bring docs up-to-date with v3.4.0 (#147)):utilities/typography.md
 
 <PlaygroundWithVariants
   variant='auto'
@@ -409,7 +427,11 @@ export default {
   prefix='decoration'
   fixed='p-2 dark:text-white opacity-85 overflow-hidden'
   appended='underline decoration-teal-600'
+<<<<<<< HEAD:utilities/general/typography.md
   :nested='true'
+=======
+  nested=true
+>>>>>>> 9c61a07 (docs: bring docs up-to-date with v3.4.0 (#147)):utilities/typography.md
   html="&lt;p class='text-black underline decoration-teal-600 {class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
 />
 
@@ -459,7 +481,44 @@ export default {
 
 </Customizing>
 
+<<<<<<< HEAD:utilities/general/typography.md
 ### 文本装饰不透明度 {#text-decoration-opacity}
+=======
+### Text Decoration Opacity
+
+Utilities for controlling the opacity of an element's decoration color. This is a fallback of 
+[Text Decoration Color](#text-decoration-color) beginning with WindiCSS v3.4.0. 
+
+<PlaygroundWithVariants
+  variant='50'
+  type='opacity'
+  prefix='underline-opacity'
+  fixed='p-2 dark:text-white opacity-85 overflow-hidden'
+  appended='underline underline-teal-600 underline-2'
+  nested=true
+  html="&lt;p class='text-black underline underline-2 underline-teal-600 {class}'&gt;The quick brown fox jumps over the lazy dog&lt;/&gt;"
+/>
+
+<Customizing>
+
+```js windi.config.js
+export default {
+  theme: {
+    extend: {
+      textDecorationOpacity: {
+        10: '0.1',
+        20: '0.2',
+        95: '0.95',
+      },
+    },
+  },
+}
+```
+
+</Customizing>
+
+## Text Indent
+>>>>>>> 9c61a07 (docs: bring docs up-to-date with v3.4.0 (#147)):utilities/typography.md
 
 用于控制文本装饰颜色的不透明度的工具类。从 WindiCSS v3.4.0 开始作为 [文本装饰颜色](#text-decoration-color) 的备用选项。
 
