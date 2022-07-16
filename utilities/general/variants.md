@@ -134,7 +134,23 @@ export default {
 | marker                      | `.{utility} *::marker, {utility}::marker` | marker 伪元素的目标元素。 能被继承。  |
 | selection                   | `.{utility}::selection { ... }`           | 选择伪元素的目标元素。             |
 
+<<<<<<< HEAD
 ### 父选择器 {#pseudo-selectors-1}
+=======
+#### Pseudo Element Content
+
+The content utilities generate the corresponding content css, such as `content: ""`, which can be very helpful in many cases.
+
+<PlaygroundWithVariants
+  variant='[&quot;&quot;]'
+  :variants="['DEFAULT', '[&quot;&quot;]', '👍', 'open-quote', '\[attr(after)\]']"
+  prefix='after:content'
+  fixed='after:text-red-500 after:pl-2 after:inline-block'
+  html='&lt;div class="{class}" after="after text"&gt;Element&lt;/div&gt;'
+/>
+
+### Parent Selectors
+>>>>>>> 8983be09a03c025f16a3c7462daac9cbeae311d8
 
 | 可变修饰 | 规则 | 描述 |
 | :------ | :--- | :---------- |
