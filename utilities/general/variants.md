@@ -198,7 +198,7 @@ export default {
 
 ## Orientation Variants {#orientation-variants}
 
-| 可变修饰   | 规则  | 描述  |
+| 可变修饰   | 规则 | 描述                                 |
 | :-------- | :---------------------------------------- | :--------------------------------------------------------- |
 | portrait  | `@media (orientation: portrait) { ... }`  | 当设备处于纵向时启用 |
 | landscape | `@media (orientation: landscape) { ... }` | 当设备处于横向时启用 |
