@@ -134,12 +134,9 @@ export default {
 | marker                      | `.{utility} *::marker, {utility}::marker` | marker 伪元素的目标元素。 能被继承。  |
 | selection                   | `.{utility}::selection { ... }`           | 选择伪元素的目标元素。             |
 
-<<<<<<< HEAD
-### 父选择器 {#pseudo-selectors-1}
-=======
-#### Pseudo Element Content
+#### 伪元素内容 {#pseudo-element-content}
 
-The content utilities generate the corresponding content css, such as `content: ""`, which can be very helpful in many cases.
+通过伪元素工具类生成相应的 css 内容，比如 `content: ""`，它在很多情况下都非常有用。
 
 <PlaygroundWithVariants
   variant='[&quot;&quot;]'
@@ -149,8 +146,7 @@ The content utilities generate the corresponding content css, such as `content: 
   html='&lt;div class="{class}" after="after text"&gt;Element&lt;/div&gt;'
 />
 
-### Parent Selectors
->>>>>>> 8983be09a03c025f16a3c7462daac9cbeae311d8
+### 父选择器 {#pseudo-selectors-1}
 
 | 可变修饰 | 规则 | 描述 |
 | :------ | :--- | :---------- |
@@ -202,7 +198,7 @@ The content utilities generate the corresponding content css, such as `content: 
 
 ## Orientation Variants {#orientation-variants}
 
-| Variant   | Rule                                      | Description                                                |
+| 可变修饰   | 规则  | 描述  |
 | :-------- | :---------------------------------------- | :--------------------------------------------------------- |
-| portrait  | `@media (orientation: portrait) { ... }`  | Enable utility when the device is in portrait orientation  |
-| landscape | `@media (orientation: landscape) { ... }` | Enable utility when the device is in landscape orientation |
+| portrait  | `@media (orientation: portrait) { ... }`  | 当设备处于纵向时启用 |
+| landscape | `@media (orientation: landscape) { ... }` | 当设备处于横向时启用 |
