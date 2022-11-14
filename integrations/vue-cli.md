@@ -80,7 +80,7 @@ export default {
 
 #### 禁用预检样式 {#disable-preflight}
 
-_ngridsome.config.js_
+_vue.config.js_
 
 ```js
 module.exports = {
