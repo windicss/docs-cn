@@ -152,11 +152,7 @@ and /* this is multi line comment */
 
 ## **数据类型** {#data-types}
 
-<<<<<<< HEAD
-## **boolean** {#boolean}
-=======
-### **boolean**
->>>>>>> ae4685cea4c44646b5c882d17679bf553e16cb82
+### **boolean** {#boolean}
 
 ```css
 @var open = True;
