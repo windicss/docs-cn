@@ -107,7 +107,11 @@ import 'virtual:windi-devtools'
 
 ### 预检样式 (样式重置) {#preflight}
 
+<<<<<<< HEAD
 在按需使用下预检是启用的。如果需要禁用，可以按以下方式配置
+=======
+Preflight is enabled on-demand. If you'd like to completely disable it, you can configure it as below
+>>>>>>> 57d97e078ced385e26f1611f684a6401869bfeaa
 
 ```ts windi.config.ts
 import { defineConfig } from 'vite-plugin-windicss'
@@ -294,37 +298,38 @@ export default {
 
 ---
 
+<<<<<<< HEAD
 ## SvelteKit (从 1.0.0-next.102 开始) {#sveltekit-as-of-1-0-0-next-102}
 
 通过 `npm i -D vite-plugin-windicss` 安装插件并修改 svelte 配置：
+=======
+## SvelteKit (as of 1.0.1)
+
+Install plugin with `npm i -D vite-plugin-windicss` and edit the `vite.config.js` file:
+>>>>>>> 57d97e078ced385e26f1611f684a6401869bfeaa
 
 ```diff
-import preprocess from 'svelte-preprocess'
+import { sveltekit } from '@sveltejs/kit/vite';
 + import WindiCSS from 'vite-plugin-windicss'
 
-/** @type {import('@sveltejs/kit').Config} */
+/** @type {import('vite').UserConfig} */
 const config = {
-  // Consult https://github.com/sveltejs/svelte-preprocess
-  // for more information about preprocessors
-  preprocess: preprocess(),
-
-  kit: {
-    // hydrate the <div id="svelte"> element in src/app.html
-    target: '#svelte',
-+   vite: {
-+     plugins: [
-+       WindiCSS(),
-+     ],
-+   },
-  },
+  plugins: [
+    sveltekit(),
++   WindiCSS()
+  ]
 };
 
-export default config
+export default config;
 ```
 
+<<<<<<< HEAD
 在 __layout.svelte 文件的顶部添加 `import "virtual:windi.css"` ：
+=======
+Add `import "virtual:windi.css"` to the top of your `+layout.svelte` file:
+>>>>>>> 57d97e078ced385e26f1611f684a6401869bfeaa
 
-```html __layout.svelte
+```html +layout.svelte
 <script>
   import "virtual:windi.css"
 
@@ -333,5 +338,9 @@ export default config
   if (browser) import("virtual:windi-devtools")
   // ...
 </script>
+<<<<<<< HEAD
 <!-- ...其他的 __layout.svelte 代码 -->
+=======
+<!-- ...rest of +layout.svelte -->
+>>>>>>> 57d97e078ced385e26f1611f684a6401869bfeaa
 ```
