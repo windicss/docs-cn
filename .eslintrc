@@ -18,6 +18,7 @@
     }
   ],
   "rules": {
-    "vue/no-mutating-props": "off"
+    "vue/no-mutating-props": "off",
+    "vue/max-attributes-per-line": "off"
   }
 }

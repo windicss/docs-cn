@@ -21,6 +21,7 @@
     "json5": "^2.2.0",
     "lz-string": "^1.4.4",
     "mitt": "^3.0.0",
+    "pnpm": "^6.35.1",
     "preact": "^10.6.6",
     "prism-theme-vars": "^0.2.2",
     "prismjs": "^1.27.0",
