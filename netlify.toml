@@ -4,7 +4,7 @@
 
 [build]
   publish = ".vitepress/dist"
-  command = "npx pnpm i --frozen-lockfile --store=node_modules/.pnpm-store && npm run build"
+  command = "npx pnpm i --ignore-scripts --store=node_modules/.pnpm-store && npm run build"
   functions = ".netlify/functions"
 
 [[redirects]]
