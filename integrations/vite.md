@@ -297,11 +297,6 @@ export default {
 ## SvelteKit (从 1.0.1 开始) {#sveltekit-as-of-1-0-1}
 
 通过 `npm i -D vite-plugin-windicss` 安装插件并修改 svelte 配置：
-=======
-## SvelteKit (as of 1.0.1)
-
-Install plugin with `npm i -D vite-plugin-windicss` and edit the `vite.config.js` file:
->>>>>>> 25bbf603f4fe730be85d73a54e980f02fdf0d291
 
 ```diff
 import { sveltekit } from '@sveltejs/kit/vite';
