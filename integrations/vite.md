@@ -292,9 +292,7 @@ export default {
 
 请参阅 [示例](https://github.com/windicss/vite-plugin-windicss/blob/main/examples) 中的 *react* 、*vue* 和 *vue with pug* 示例项目，或 [`Vitesse`](https://github.com/antfu/vitesse)
 
----
-
-## SvelteKit (从 1.0.1 开始) {#sveltekit-as-of-1-0-1}
+## SvelteKit (as of 1.0.1)
 
 通过 `npm i -D vite-plugin-windicss` 安装插件并修改 `vite.config.js` 配置文件：
 
