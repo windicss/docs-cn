@@ -166,6 +166,9 @@ export const nav: DefaultTheme.Config['nav'] = [
   {
     text: '文章',
     items: [
+      { text: 'Windi CSS is Sunsetting', link: '/posts/sunsetting' },
+      { text: 'separator', link: 'separator' },
+
       // { text: 'API', link: '/posts/api' },
       { text: 'WindiCSS 的故事', link: '/posts/story' },
       { text: 'WindiCSS v2.2 现已推出', link: '/posts/v22' },

@@ -133,7 +133,17 @@ export const sidebar: DefaultTheme.Config['sidebar'] = {
   ],
   '/posts': [
     {
+<<<<<<< HEAD
       text: '发布',
+=======
+      text: 'Important Updates',
+      children: [
+        { text: 'Windi CSS is Sunsetting', link: '/posts/sunsetting' },
+      ],
+    },
+    {
+      text: 'Releases',
+>>>>>>> 097052da79f66cb554aab29d70a213b7e52669eb
       children: [
         // { text: 'API', link: '/posts/api' },
         { text: 'WindiCSS 的故事', link: '/posts/story' },
