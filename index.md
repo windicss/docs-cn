@@ -12,12 +12,6 @@ altActionLink: /features/
 heroImage: /assets/logo.svg
 heroAlt: Windi CSS logo
 
-<<<<<<< HEAD
-newsTitle: 👉 v3.4 现已发布，大量令人激动的新功能等着你！
-newsLink: /posts/v34.html
-
-=======
->>>>>>> 097052da79f66cb554aab29d70a213b7e52669eb
 footer: MIT Licensed | Copyright © 2020-2021 Windi CSS Contributors
 ---
 
